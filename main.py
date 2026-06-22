@@ -119,6 +119,16 @@ def is_trusted(source):
     return any(t in low for t in config.TRUSTED_SOURCES)
 
 
+def _in_window(win, hour):
+    """True if this UTC hour is inside the (start, end) window (handles wrap)."""
+    if not win:
+        return True
+    start, end = win
+    if start <= end:
+        return start <= hour < end
+    return hour >= start or hour < end
+
+
 # ---------- compose captions ----------
 def build_caption(text, source, pillar):
     hashtag = config.PILLAR_HASHTAGS.get(pillar, "")
@@ -156,8 +166,10 @@ def post_news(client, api_v1, entry, pillar, text):
 
 
 def maybe_post_afghan_fact(client, state):
-    """Once a day: a positive/historic Afghan pride fact."""
+    """Once a day, during Afghan hours: a positive/historic Afghan pride fact."""
     if state.get("fact_date") == today():
+        return
+    if not _in_window(config.AFGHAN_FACT_WINDOW, datetime.now(timezone.utc).hour):
         return
     text = writer.write_afghan_fact()
     if not text:
@@ -201,6 +213,7 @@ def main():
 
     # 2) news — respect per-run and per-day caps
     posts_made = 0
+    hour = datetime.now(timezone.utc).hour
     pillars = list(config.PILLARS.items())
     random.shuffle(pillars)  # vary which topic leads each run
 
@@ -210,6 +223,8 @@ def main():
         if state["posts_today"] >= config.MAX_POSTS_PER_DAY:
             print("Daily post cap reached.")
             break
+        if not _in_window(config.PILLAR_WINDOWS.get(pillar), hour):
+            continue  # outside this topic's geo/time window
 
         entries = collect_entries(pillar, spec)
         for entry in entries:

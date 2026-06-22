@@ -87,6 +87,18 @@ PILLAR_HASHTAGS = {
     "us_foreign_policy": "",
 }
 
+# Geo-aware posting windows (UTC). Each topic only posts while its target
+# audience is awake/active. (start, end) in UTC hours; start>end wraps midnight.
+# None = post any time. Afghanistan is UTC+4:30; US is UTC-5..-8.
+PILLAR_WINDOWS = {
+    "global": None,                  # world audience, any time
+    "afghanistan": (2, 19),          # ~06:30-23:30 Afghan time
+    "us_foreign_policy": (13, 5),    # ~US morning to late evening (wraps midnight)
+    "worldcup": (12, 4),             # UK afternoon + Americas match hours (wraps)
+    "afghan_cricket": (3, 17),       # South Asia match hours
+}
+AFGHAN_FACT_WINDOW = (2, 19)         # post the daily Afghan pride fact in Afghan hours
+
 # Cricket headlines that are negative for Afghanistan are skipped (cheap rule
 # pre-filter; the AI writer also judges tone as a backstop).
 AFGHAN_CRICKET_SKIP = [
