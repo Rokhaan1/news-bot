@@ -31,12 +31,14 @@ PILLARS = {
         "feeds": [
             "https://www.aljazeera.com/xml/rss/all.xml",
             "http://feeds.bbci.co.uk/news/world/rss.xml",
+            "https://www.theguardian.com/world/rss",
         ],
     },
     "us_foreign_policy": {
         "hard_news": True,
         "feeds": [
             "http://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml",
+            "https://www.theguardian.com/us-news/rss",
             "https://www.aljazeera.com/xml/rss/all.xml",
         ],
     },
@@ -45,6 +47,7 @@ PILLARS = {
         "feeds": [
             "https://www.khaama.com/feed/",
             "https://tolonews.com/rss.xml",
+            "https://www.ariananews.af/feed/",
             "https://www.aljazeera.com/xml/rss/all.xml",
         ],
     },

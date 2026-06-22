@@ -123,7 +123,7 @@ def build_caption(text, source, pillar):
     hashtag = config.PILLAR_HASHTAGS.get(pillar, "")
     credit = f"\n\nSource: {source}"
     tail = f"\n{hashtag}" if hashtag else ""
-    budget = 280 - len(credit) - len(tail)
+    budget = 1200 - len(credit) - len(tail)   # Premium supports long posts
     if len(text) > budget:
         text = text[: budget - 1].rstrip() + "…"
     return text + credit + tail
@@ -131,7 +131,7 @@ def build_caption(text, source, pillar):
 
 def build_video_caption(caption, url, sub):
     via = f"\n\n{url}\n(via r/{sub})"
-    budget = 280 - len(via)
+    budget = 900 - len(via)
     if len(caption) > budget:
         caption = caption[: budget - 1].rstrip() + "…"
     return caption + via

@@ -49,7 +49,8 @@ _BAD = [
 
 
 def _looks_bad(text):
-    if not text or len(text.strip()) < 8 or len(text) > 320:
+    # Premium account supports long posts, so only reject truly empty/runaway text.
+    if not text or len(text.strip()) < 8 or len(text) > 1500:
         return True
     low = text.lower()
     return any(p in low for p in _BAD)
@@ -79,9 +80,11 @@ def write_news(pillar, headline, source):
         "  - it's cricket that is embarrassing for Afghanistan, or off-field "
         "cricket admin/squad/schedule news, OR\n"
         "  - it's clearly trivial / not real news (celebrity gossip, lifestyle).\n"
-        "Otherwise reply with ONLY the rewritten post: max 240 characters, third "
-        "person, no quotes, no preamble, no hashtags, and NEVER mention @Rokhaan, "
-        "the account, or its 'coverage'. A source credit is added separately."
+        "Otherwise reply with ONLY the rewritten post: aim for 250-450 characters "
+        "(this is a Premium account — write a substantive, engaging post, not just "
+        "a headline), third person, no quotes, no preamble, no hashtags, and NEVER "
+        "mention @Rokhaan, the account, or its 'coverage'. A source credit is added "
+        "separately."
         + extra
     )
     try:
