@@ -137,6 +137,8 @@ def maybe_post_video(client, state):
         if not v["title"] or v["url"] in state["posted_set"]:
             continue
         caption = writer.write_video_caption(v["title"], v["subreddit"])
+        if not caption:          # bad/refusal reply -> don't post junk
+            continue
         text = build_video_caption(caption, v["url"], v["subreddit"])
         try:
             client.create_tweet(text=text)
