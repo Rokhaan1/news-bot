@@ -99,7 +99,12 @@ def collect_entries(pillar, spec):
             if epoch is not None and (now - epoch) > config.MAX_AGE_HOURS * 3600:
                 continue  # too old — keep it fresh
             entries.append({"title": title, "source": source, "epoch": epoch or 0})
-    entries.sort(key=lambda e: e["epoch"], reverse=True)  # newest first
+    if pillar == "worldcup":
+        # England items first (for engagement), then newest
+        entries.sort(key=lambda e: (0 if "england" in e["title"].lower() else 1,
+                                    -e["epoch"]))
+    else:
+        entries.sort(key=lambda e: e["epoch"], reverse=True)  # newest first
     return entries
 
 

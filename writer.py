@@ -52,6 +52,19 @@ def _looks_bad(text):
 
 def write_news(pillar, headline, source):
     """Returns {"skip": bool, "text": str}. Safe — never returns junk text."""
+    extra = ""
+    if pillar == "afghan_cricket":
+        extra = (
+            "\nThis is CRICKET. Only proceed if it is about an Afghanistan match "
+            "being played now or just finished (live play, scores, results, key "
+            "performances). If it is off-field news (squad changes, schedules, "
+            "board/admin, league business), reply with exactly: SKIP.")
+    elif pillar == "worldcup":
+        extra = (
+            "\nThis is the FIFA World Cup 2026 (happening now) — write with energy. "
+            "If the item involves ENGLAND, write as an enthusiastic England "
+            "supporter (still factual). Otherwise an exciting, neutral football tone.")
+
     prompt = (
         f"Pillar: {pillar}\nHeadline: {headline}\nSource: {source}\n\n"
         "Decide and respond:\n"
@@ -61,6 +74,7 @@ def write_news(pillar, headline, source):
         "- Otherwise reply with ONLY the rewritten post in the account's voice "
         "(max 240 characters, no quotes, no preamble, no hashtags, third person). "
         "A source credit is added separately, so don't include one."
+        + extra
     )
     try:
         resp = _c().messages.create(
