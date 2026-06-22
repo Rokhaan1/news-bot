@@ -45,7 +45,13 @@ VOICE = (
     "'Afghan officials', 'the Afghan government', 'Afghanistan's government', or "
     "'Kabul' as if they were the legitimate state. Do NOT conflate the Taliban's "
     "interests with the interests, benefit, or will of Afghanistan or its people. "
-    "Keep a clear line between the Afghan nation/people and the Taliban regime."
+    "Keep a clear line between the Afghan nation/people and the Taliban regime.\n\n"
+    "DURAND LINE: Never describe the Durand Line as 'the border' or 'the official "
+    "border' between Afghanistan and Pakistan, and never call areas across it "
+    "'Pakistani territory' as settled fact. Afghanistan has never formally "
+    "recognized the Durand Line as its international border. Refer to it as 'the "
+    "Durand Line' (a disputed, colonial-era demarcation), not 'the "
+    "Afghanistan-Pakistan border'."
 )
 
 # Phrases that mean the model replied ABOUT the task instead of doing it.
