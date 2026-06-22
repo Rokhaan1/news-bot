@@ -40,6 +40,11 @@ _BAD = [
     "cannot help", "can't help", "i'm just an", "i cannot create",
     "i can't create", "i cannot write", "i can't write", "i need more",
     "could you", "please provide", "the task", "you have asked",
+    # meta-commentary markers (the AI talking ABOUT the post / account)
+    "falls outside", "core coverage", "coverage area", "doesn't align",
+    "does not align", "@rokhaan", "rokhaan's", "the account's", "account's beat",
+    "outside the account", "this story falls", "doesn't fit", "does not fit",
+    "i'd skip", "i would skip", "i'd recommend", "note:",
 ]
 
 
@@ -66,14 +71,17 @@ def write_news(pillar, headline, source):
             "supporter (still factual). Otherwise an exciting, neutral football tone.")
 
     prompt = (
-        f"Pillar: {pillar}\nHeadline: {headline}\nSource: {source}\n\n"
-        "Decide and respond:\n"
-        "- If this item is embarrassing/negative for Afghanistan in CRICKET "
-        "(e.g. Afghanistan losing heavily), OR is off-topic, OR is not "
-        "substantive news, reply with exactly: SKIP\n"
-        "- Otherwise reply with ONLY the rewritten post in the account's voice "
-        "(max 240 characters, no quotes, no preamble, no hashtags, third person). "
-        "A source credit is added separately, so don't include one."
+        f"Pillar: {pillar}\nFresh headline: {headline}\nSource: {source}\n\n"
+        "Turn this into ONE short post in @Rokhaan's voice. "
+        "DEFAULT TO POSTING — almost every real news item should be posted "
+        "(politics, conflict, diplomacy, elections, world events all count).\n"
+        "Reply with the single word SKIP (nothing else, no explanation) ONLY if:\n"
+        "  - it's cricket that is embarrassing for Afghanistan, or off-field "
+        "cricket admin/squad/schedule news, OR\n"
+        "  - it's clearly trivial / not real news (celebrity gossip, lifestyle).\n"
+        "Otherwise reply with ONLY the rewritten post: max 240 characters, third "
+        "person, no quotes, no preamble, no hashtags, and NEVER mention @Rokhaan, "
+        "the account, or its 'coverage'. A source credit is added separately."
         + extra
     )
     try:
@@ -85,8 +93,9 @@ def write_news(pillar, headline, source):
         if out.upper().startswith("SKIP"):
             return {"skip": True, "text": ""}
         if _looks_bad(out):
-            print("  (AI reply looked off — using raw headline instead)")
-            return {"skip": False, "text": headline}
+            # AI gave meta/refusal text instead of a post — never post it.
+            print("  (AI reply looked like meta/refusal — skipping this item)")
+            return {"skip": True, "text": ""}
         return {"skip": False, "text": out}
     except Exception as e:
         print(f"  (AI writer fell back to raw headline: {e})")
