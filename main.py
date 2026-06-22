@@ -14,6 +14,7 @@ never written in the code.
 import os
 import json
 import html
+import random
 import feedparser
 import tweepy
 
@@ -114,14 +115,16 @@ def main():
     client, api_v1 = make_client()
     posts_made = 0
 
-    for pillar, spec in config.PILLARS.items():
+    # Shuffle pillars so a different topic leads each run (variety over time).
+    pillars = list(config.PILLARS.items())
+    random.shuffle(pillars)
+
+    for pillar, spec in pillars:
         if posts_made >= config.MAX_POSTS_PER_RUN:
             break
 
         entries = collect_entries(pillar, spec)
         for entry in entries:
-            if posts_made >= config.MAX_POSTS_PER_RUN:
-                break
             if entry["title"] in history:
                 continue
             # hard news must be corroborated by 2+ sources
@@ -132,6 +135,7 @@ def main():
                 history.add(entry["title"])
                 posts_made += 1
                 print(f"POSTED [{pillar}] {entry['title']}")
+                break  # only one post per pillar per run -> spreads topics
             except Exception as e:
                 print(f"FAILED [{pillar}] {entry['title']}: {e}")
 

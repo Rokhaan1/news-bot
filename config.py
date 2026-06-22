@@ -5,7 +5,7 @@ No secret keys live here — those are stored safely in GitHub Secrets.
 """
 
 # ----- POSTING LIMITS (keeps cost low + account safe) -----
-MAX_POSTS_PER_RUN = 1          # how many tweets per scheduled run (1 while testing)
+MAX_POSTS_PER_RUN = 2          # tweets per scheduled run (x4 runs/day = up to ~8/day)
 MIN_MINUTES_BETWEEN_POSTS = 0  # spacing handled by the schedule itself
 
 # ----- COST CONTROL -----
