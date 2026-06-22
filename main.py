@@ -1,46 +1,80 @@
 """
 The bot's brain. Each run it:
-  1. reads RSS feeds for every pillar
-  2. filters to relevant, fresh headlines
+  1. (once/day) posts one viral video from Reddit with an AI caption
+  2. reads RSS feeds for every news pillar
   3. verifies hard-news with the 2-source rule
-  4. skips anything already posted
-  5. builds a graphic + caption (with source credit)
-  6. posts to X via the API
-  7. remembers what it posted
+  4. skips anti-Afghanistan cricket (rules + AI tone judge)
+  5. rewrites each post in @Rokhaan's voice (Claude Haiku)
+  6. builds a branded graphic + caption (with source credit)
+  7. posts to X, respecting per-run and per-day caps
 
-Secret keys are read from environment variables (set in GitHub Secrets) —
-never written in the code.
+Secret keys are read from environment variables (GitHub Secrets):
+  X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_TOKEN_SECRET, ANTHROPIC_API_KEY
 """
 import os
 import json
 import html
 import random
+from datetime import datetime, timezone
+
 import feedparser
 import tweepy
 
 import config
+import writer
+import videos
 from verify import is_corroborated
 from graphics import make_card
 
-HISTORY_FILE = "posted.json"
+STATE_FILE = "state.json"
 
 
-# ---------- history (so we never repeat a post) ----------
-def load_history():
-    if os.path.exists(HISTORY_FILE):
-        with open(HISTORY_FILE, "r", encoding="utf-8") as f:
-            return set(json.load(f))
-    return set()
+# ---------- daily state (history + counters) ----------
+def today():
+    return datetime.now(timezone.utc).date().isoformat()
 
 
-def save_history(history):
-    with open(HISTORY_FILE, "w", encoding="utf-8") as f:
-        json.dump(sorted(history), f, indent=2)
+def load_state():
+    if os.path.exists(STATE_FILE):
+        with open(STATE_FILE, "r", encoding="utf-8") as f:
+            s = json.load(f)
+    else:
+        s = {}
+    s.setdefault("posted", [])
+    s.setdefault("date", today())
+    s.setdefault("posts_today", 0)
+    s.setdefault("videos_date", "")
+    # reset the daily counter when the date rolls over
+    if s["date"] != today():
+        s["date"] = today()
+        s["posts_today"] = 0
+    s["posted_set"] = set(s["posted"])
+    return s
+
+
+def save_state(s):
+    s["posted"] = sorted(s.pop("posted_set"))
+    with open(STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(s, f, indent=2)
+
+
+# ---------- X client ----------
+def make_client():
+    client = tweepy.Client(
+        consumer_key=os.environ["X_API_KEY"],
+        consumer_secret=os.environ["X_API_SECRET"],
+        access_token=os.environ["X_ACCESS_TOKEN"],
+        access_token_secret=os.environ["X_ACCESS_TOKEN_SECRET"],
+    )
+    auth = tweepy.OAuth1UserHandler(
+        os.environ["X_API_KEY"], os.environ["X_API_SECRET"],
+        os.environ["X_ACCESS_TOKEN"], os.environ["X_ACCESS_TOKEN_SECRET"],
+    )
+    return client, tweepy.API(auth)
 
 
 # ---------- gather candidate stories ----------
 def collect_entries(pillar, spec):
-    """Return a list of {title, link, source} for one pillar."""
     entries = []
     keywords = config.PILLAR_KEYWORDS.get(pillar, [])
     for feed_url in spec["feeds"]:
@@ -50,23 +84,20 @@ def collect_entries(pillar, spec):
             title = html.unescape(item.get("title", "").strip())
             if not title:
                 continue
-            # keyword filter (empty list = accept all)
             if keywords and not any(k in title.lower() for k in keywords):
                 continue
-            entries.append({
-                "title": title,
-                "link": item.get("link", ""),
-                "source": source,
-            })
+            entries.append({"title": title, "source": source})
     return entries
 
 
-# ---------- compose the tweet text ----------
-def build_caption(entry, pillar):
+def is_negative_afghan(title):
+    low = title.lower()
+    return any(p in low for p in config.AFGHAN_CRICKET_SKIP)
+
+
+# ---------- compose captions ----------
+def build_caption(text, source, pillar):
     hashtag = config.PILLAR_HASHTAGS.get(pillar, "")
-    source = entry["source"]
-    text = entry["title"]
-    # leave room for source credit + hashtag within 280 chars
     credit = f"\n\nSource: {source}"
     tail = f"\n{hashtag}" if hashtag else ""
     budget = 280 - len(credit) - len(tail)
@@ -75,72 +106,95 @@ def build_caption(entry, pillar):
     return text + credit + tail
 
 
-# ---------- post to X ----------
-def make_client():
-    client = tweepy.Client(
-        consumer_key=os.environ["X_API_KEY"],
-        consumer_secret=os.environ["X_API_SECRET"],
-        access_token=os.environ["X_ACCESS_TOKEN"],
-        access_token_secret=os.environ["X_ACCESS_TOKEN_SECRET"],
-    )
-    # v1.1 API is needed for media (image) upload
-    auth = tweepy.OAuth1UserHandler(
-        os.environ["X_API_KEY"], os.environ["X_API_SECRET"],
-        os.environ["X_ACCESS_TOKEN"], os.environ["X_ACCESS_TOKEN_SECRET"],
-    )
-    api_v1 = tweepy.API(auth)
-    return client, api_v1
+def build_video_caption(caption, url, sub):
+    via = f"\n\n{url}\n(via r/{sub})"
+    budget = 280 - len(via)
+    if len(caption) > budget:
+        caption = caption[: budget - 1].rstrip() + "…"
+    return caption + via
 
 
-def post_item(client, api_v1, entry, pillar):
-    caption = build_caption(entry, pillar)
+# ---------- posting ----------
+def post_news(client, api_v1, entry, pillar, text):
+    caption = build_caption(text, entry["source"], pillar)
     media_ids = None
-    # Try to attach an image. If image upload isn't available on this API
-    # plan, fall back to a text-only post instead of failing.
     try:
         img = make_card(pillar, entry["title"], entry["source"])
         media = api_v1.media_upload(img)
         media_ids = [media.media_id]
     except Exception as e:
-        print(f"  (image skipped — upload not available: {e})")
+        print(f"  (image skipped: {e})")
     if media_ids:
         client.create_tweet(text=caption, media_ids=media_ids)
     else:
         client.create_tweet(text=caption)
 
 
+def maybe_post_video(client, state):
+    if config.VIDEOS_PER_DAY <= 0 or state["videos_date"] == today():
+        return
+    for v in videos.fetch_videos():
+        if not v["title"] or v["url"] in state["posted_set"]:
+            continue
+        caption = writer.write_video_caption(v["title"], v["subreddit"])
+        text = build_video_caption(caption, v["url"], v["subreddit"])
+        try:
+            client.create_tweet(text=text)
+            state["posted_set"].add(v["url"])
+            state["videos_date"] = today()
+            print(f"POSTED [video/{v['mood']}] {v['title'][:60]}")
+            return
+        except Exception as e:
+            print(f"FAILED [video] {v['title'][:50]}: {e}")
+
+
 # ---------- main loop ----------
 def main():
-    history = load_history()
+    state = load_state()
     client, api_v1 = make_client()
-    posts_made = 0
 
-    # Shuffle pillars so a different topic leads each run (variety over time).
+    # 1) one viral video per day
+    maybe_post_video(client, state)
+
+    # 2) news — respect per-run and per-day caps
+    posts_made = 0
     pillars = list(config.PILLARS.items())
-    random.shuffle(pillars)
+    random.shuffle(pillars)  # vary which topic leads each run
 
     for pillar, spec in pillars:
         if posts_made >= config.MAX_POSTS_PER_RUN:
             break
+        if state["posts_today"] >= config.MAX_POSTS_PER_DAY:
+            print("Daily post cap reached.")
+            break
 
         entries = collect_entries(pillar, spec)
         for entry in entries:
-            if entry["title"] in history:
+            if entry["title"] in state["posted_set"]:
                 continue
-            # hard news must be corroborated by 2+ sources
             if spec["hard_news"] and not is_corroborated(entry, entries):
                 continue
-            try:
-                post_item(client, api_v1, entry, pillar)
-                history.add(entry["title"])
-                posts_made += 1
-                print(f"POSTED [{pillar}] {entry['title']}")
-                break  # only one post per pillar per run -> spreads topics
-            except Exception as e:
-                print(f"FAILED [{pillar}] {entry['title']}: {e}")
+            if pillar == "afghan_cricket" and is_negative_afghan(entry["title"]):
+                state["posted_set"].add(entry["title"])  # mark seen, don't re-check
+                continue
 
-    save_history(history)
-    print(f"Done. {posts_made} post(s) this run.")
+            result = writer.write_news(pillar, entry["title"], entry["source"])
+            state["posted_set"].add(entry["title"])  # seen either way (saves AI calls)
+            if result["skip"]:
+                print(f"SKIPPED [{pillar}] {entry['title'][:55]}")
+                continue
+            try:
+                post_news(client, api_v1, entry, pillar, result["text"])
+                posts_made += 1
+                state["posts_today"] += 1
+                print(f"POSTED [{pillar}] {entry['title'][:55]}")
+                break  # one post per pillar per run -> variety
+            except Exception as e:
+                print(f"FAILED [{pillar}] {entry['title'][:50]}: {e}")
+
+    save_state(state)
+    print(f"Done. {posts_made} news post(s) this run; {state['posts_today']}/"
+          f"{config.MAX_POSTS_PER_DAY} today.")
 
 
 if __name__ == "__main__":

@@ -1,20 +1,22 @@
 name: News Bot
 
-# Runs automatically on a schedule (UTC times). No PC needed.
-# These 4 times = a spread across the day. Adjust as you like.
+# Runs automatically every ~15 minutes (UTC). No PC needed.
+# Daily/ per-run caps in config.py keep volume + cost under control.
 on:
   schedule:
-    - cron: "0 6 * * *"    # 06:00 UTC
-    - cron: "0 11 * * *"   # 11:00 UTC
-    - cron: "0 15 * * *"   # 15:00 UTC
-    - cron: "0 19 * * *"   # 19:00 UTC
+    - cron: "*/15 * * * *"
   workflow_dispatch: {}     # also lets you run it manually with one click
+
+# Prevent overlapping runs
+concurrency:
+  group: news-bot
+  cancel-in-progress: false
 
 jobs:
   post:
     runs-on: ubuntu-latest
     permissions:
-      contents: write       # allows committing posted.json back
+      contents: write       # allows committing state.json back
     steps:
       - uses: actions/checkout@v4
 
@@ -31,12 +33,14 @@ jobs:
           X_API_SECRET: ${{ secrets.X_API_SECRET }}
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
           X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python main.py
 
       - name: Remember what was posted
         run: |
           git config user.name "news-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add posted.json
-          git commit -m "update post history" || echo "nothing to commit"
+          git add state.json
+          git commit -m "update post state" || echo "nothing to commit"
+          git pull --rebase --autostash || true
           git push

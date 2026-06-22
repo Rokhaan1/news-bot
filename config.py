@@ -1,21 +1,17 @@
 """
 Configuration for the news bot.
-Edit this file to change sources, posting rules, and limits.
+Edit this file to change sources, posting limits, and behaviour.
 No secret keys live here — those are stored safely in GitHub Secrets.
 """
 
-# ----- POSTING LIMITS (keeps cost low + account safe) -----
-MAX_POSTS_PER_RUN = 2          # tweets per scheduled run (x4 runs/day = up to ~8/day)
-MIN_MINUTES_BETWEEN_POSTS = 0  # spacing handled by the schedule itself
-
-# ----- COST CONTROL -----
-# Posts with a URL cost ~$0.20 vs ~$0.015 without. So we credit sources by
-# NAME, not link, by default. Only "video" items may include a link.
-ALLOW_LINKS = False            # set True only for selective video-link posts
+# ----- POSTING LIMITS (cost control) -----
+# X charges ~$0.015 per post (text/image), ~$0.20 if the post contains a link.
+MAX_POSTS_PER_RUN = 1     # news posts per scheduled run (runs every ~15 min)
+MAX_POSTS_PER_DAY = 6     # hard daily cap on news posts (tune freely)
+VIDEOS_PER_DAY    = 1     # viral video link-posts per day ($0.20 each)
 
 # ----- CONTENT PILLARS + THEIR RSS FEEDS -----
-# Each pillar lists trusted feeds. "hard_news" pillars require 2-source
-# confirmation before posting; others (sports) can post from one source.
+# "hard_news" pillars require 2-source confirmation before posting.
 PILLARS = {
     "global": {
         "hard_news": True,
@@ -71,3 +67,14 @@ PILLAR_HASHTAGS = {
     "global": "",
     "us_foreign_policy": "",
 }
+
+# Cricket headlines that are negative for Afghanistan are skipped (cheap rule
+# pre-filter; the AI writer also judges tone as a backstop).
+AFGHAN_CRICKET_SKIP = [
+    "beat afghanistan", "sweep afghanistan", "thrash afghanistan",
+    "afghanistan lose", "afghanistan lost", "afghanistan slump",
+    "afghanistan collapse", "defeat afghanistan", "hammer afghanistan",
+    "crush afghanistan", "dominate afghanistan", "afghanistan beaten",
+    "afghanistan crash", "afghanistan thrashed", "afghanistan humbled",
+    "win against afghanistan", "victory over afghanistan", "rout afghanistan",
+]
