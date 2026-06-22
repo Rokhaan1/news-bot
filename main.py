@@ -14,7 +14,9 @@ Secret keys are read from environment variables (GitHub Secrets):
 import os
 import json
 import html
+import time
 import random
+import calendar
 from datetime import datetime, timezone
 
 import feedparser
@@ -74,25 +76,41 @@ def make_client():
 
 
 # ---------- gather candidate stories ----------
+def _published_epoch(item):
+    t = item.get("published_parsed") or item.get("updated_parsed")
+    return calendar.timegm(t) if t else None
+
+
 def collect_entries(pillar, spec):
+    """Return fresh entries (newest first), older-than-MAX_AGE_HOURS dropped."""
     entries = []
     keywords = config.PILLAR_KEYWORDS.get(pillar, [])
+    now = time.time()
     for feed_url in spec["feeds"]:
         parsed = feedparser.parse(feed_url)
         source = parsed.feed.get("title", feed_url)
-        for item in parsed.entries[:15]:
+        for item in parsed.entries[:25]:
             title = html.unescape(item.get("title", "").strip())
             if not title:
                 continue
             if keywords and not any(k in title.lower() for k in keywords):
                 continue
-            entries.append({"title": title, "source": source})
+            epoch = _published_epoch(item)
+            if epoch is not None and (now - epoch) > config.MAX_AGE_HOURS * 3600:
+                continue  # too old — keep it fresh
+            entries.append({"title": title, "source": source, "epoch": epoch or 0})
+    entries.sort(key=lambda e: e["epoch"], reverse=True)  # newest first
     return entries
 
 
 def is_negative_afghan(title):
     low = title.lower()
     return any(p in low for p in config.AFGHAN_CRICKET_SKIP)
+
+
+def is_trusted(source):
+    low = (source or "").lower()
+    return any(t in low for t in config.TRUSTED_SOURCES)
 
 
 # ---------- compose captions ----------
@@ -118,12 +136,13 @@ def build_video_caption(caption, url, sub):
 def post_news(client, api_v1, entry, pillar, text):
     caption = build_caption(text, entry["source"], pillar)
     media_ids = None
-    try:
-        img = make_card(pillar, entry["title"], entry["source"])
-        media = api_v1.media_upload(img)
-        media_ids = [media.media_id]
-    except Exception as e:
-        print(f"  (image skipped: {e})")
+    if config.ATTACH_IMAGES:
+        try:
+            img = make_card(pillar, entry["title"], entry["source"])
+            media = api_v1.media_upload(img)
+            media_ids = [media.media_id]
+        except Exception as e:
+            print(f"  (image skipped: {e})")
     if media_ids:
         client.create_tweet(text=caption, media_ids=media_ids)
     else:
@@ -174,7 +193,8 @@ def main():
         for entry in entries:
             if entry["title"] in state["posted_set"]:
                 continue
-            if spec["hard_news"] and not is_corroborated(entry, entries):
+            if (spec["hard_news"] and not is_corroborated(entry, entries)
+                    and not is_trusted(entry["source"])):
                 continue
             if pillar == "afghan_cricket" and is_negative_afghan(entry["title"]):
                 state["posted_set"].add(entry["title"])  # mark seen, don't re-check
@@ -189,7 +209,7 @@ def main():
                 post_news(client, api_v1, entry, pillar, result["text"])
                 posts_made += 1
                 state["posts_today"] += 1
-                print(f"POSTED [{pillar}] {entry['title'][:55]}")
+                print(f"POSTED [{pillar}] :: {result['text']}")
                 break  # one post per pillar per run -> variety
             except Exception as e:
                 print(f"FAILED [{pillar}] {entry['title'][:50]}: {e}")

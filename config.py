@@ -10,6 +10,19 @@ MAX_POSTS_PER_RUN = 1     # news posts per scheduled run (runs every ~15 min)
 MAX_POSTS_PER_DAY = 6     # hard daily cap on news posts (tune freely)
 VIDEOS_PER_DAY    = 1     # viral video link-posts per day ($0.20 each)
 
+# Attach a generated graphic to each post? Off = clean text-only posts.
+ATTACH_IMAGES = False
+
+# FRESHNESS: only post genuinely recent news (no stale, days-old items).
+MAX_AGE_HOURS = 24        # ignore anything older than this; newest posted first
+
+# Major outlets we trust to post from a single source (so news isn't blocked
+# waiting for a 2nd source). All our feeds are reputable.
+TRUSTED_SOURCES = [
+    "bbc", "al jazeera", "aljazeera", "reuters", "associated press", "ap ",
+    "khaama", "tolonews", "ariana", "espn", "cricinfo", "afghanistan international",
+]
+
 # ----- CONTENT PILLARS + THEIR RSS FEEDS -----
 # "hard_news" pillars require 2-source confirmation before posting.
 PILLARS = {
@@ -53,7 +66,7 @@ PILLARS = {
 PILLAR_KEYWORDS = {
     "afghanistan": ["afghan", "kabul", "taliban", "afghanistan"],
     "afghan_cricket": ["afghan", "rashid", "nabi", "gurbaz"],
-    "worldcup": ["world cup", "fifa"],
+    "worldcup": [],  # World Cup is the dominant soccer story now — take top items
     "us_foreign_policy": ["u.s.", "us ", "washington", "biden", "trump",
                           "state department", "pentagon"],
     "global": [],  # no filter — takes top world headlines
