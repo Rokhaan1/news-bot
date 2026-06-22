@@ -46,6 +46,7 @@ def load_state():
     s.setdefault("date", today())
     s.setdefault("posts_today", 0)
     s.setdefault("videos_date", "")
+    s.setdefault("fact_date", "")
     # reset the daily counter when the date rolls over
     if s["date"] != today():
         s["date"] = today()
@@ -154,6 +155,21 @@ def post_news(client, api_v1, entry, pillar, text):
         client.create_tweet(text=caption)
 
 
+def maybe_post_afghan_fact(client, state):
+    """Once a day: a positive/historic Afghan pride fact."""
+    if state.get("fact_date") == today():
+        return
+    text = writer.write_afghan_fact()
+    if not text:
+        return
+    try:
+        client.create_tweet(text=text)
+        state["fact_date"] = today()
+        print(f"POSTED [afghan_fact] {text[:60]}")
+    except Exception as e:
+        print(f"FAILED [afghan_fact] {e}")
+
+
 def maybe_post_video(client, state):
     if config.VIDEOS_PER_DAY <= 0 or state["videos_date"] == today():
         return
@@ -179,7 +195,8 @@ def main():
     state = load_state()
     client, api_v1 = make_client()
 
-    # 1) one viral video per day
+    # 1) one Afghan pride fact + one viral video per day
+    maybe_post_afghan_fact(client, state)
     maybe_post_video(client, state)
 
     # 2) news — respect per-run and per-day caps

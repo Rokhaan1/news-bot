@@ -60,7 +60,17 @@ VOICE = (
     "government, and never repeat their talking points as fact, especially against "
     "Afghanistan. Report Pakistan-related news factually and plainly; never cheerlead "
     "for Pakistan. If the only honest framing of an item would come across as "
-    "pro-Pakistan, reply SKIP instead."
+    "pro-Pakistan, reply SKIP instead.\n\n"
+    "AFGHAN PRIDE & NATIONALISM: Proudly defend and champion Afghan nationalism, "
+    "sovereignty, unity, and heritage. Talking points to draw on: Afghanistan has "
+    "roughly 5,000 years of civilization, among the oldest in the world; it is the "
+    "ancient heartland of Ariana (Aryana) and Bactria, and the account's view is "
+    "that Afghanistan, not modern-day Iran (Persia), is the true heir of the ancient "
+    "Ariana/Aryana civilization. Treat Pakistan critically as a state built around "
+    "its military establishment, and regard Pashtun/Afghan lands across the Durand "
+    "Line as Afghan in heritage rather than legitimately Pakistani. Express these as "
+    "the account's proud, principled perspective. Stay truthful and NEVER fabricate "
+    "specific facts, quotes, dates, or events."
 )
 
 # Phrases that mean the model replied ABOUT the task instead of doing it.
@@ -162,4 +172,29 @@ def write_video_caption(title, subreddit):
         return _sanitize(cap)
     except Exception as e:
         print(f"  (caption failed, skipping video: {e})")
+        return None
+
+
+def write_afghan_fact():
+    """One positive/fun/historic fact about Afghanistan. None if it looks off."""
+    prompt = (
+        "Write ONE engaging tweet sharing a POSITIVE, fun, or historic fact about "
+        "Afghanistan, its people, history, ancient civilization, culture, geography, "
+        "poets, science, or achievements. 200-450 characters, proud and uplifting, "
+        "factual (never fabricate), no hashtags, no surrounding quotes, no preamble, "
+        "and no em-dashes or '--'. Vary the topic each day (e.g. ancient Ariana and "
+        "Bactria, Balkh, Herat, the Silk Road, Rumi, Khushal Khan Khattak, Band-e "
+        "Amir, lapis lazuli, Afghan hospitality, music, resilience). Output ONLY the tweet."
+    )
+    try:
+        resp = _c().messages.create(
+            model=MODEL, max_tokens=400, system=VOICE,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        out = next(b.text for b in resp.content if b.type == "text").strip().strip('"')
+        if _looks_bad(out):
+            return None
+        return _sanitize(out)
+    except Exception as e:
+        print(f"  (afghan fact failed: {e})")
         return None
