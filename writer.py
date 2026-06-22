@@ -6,10 +6,22 @@ captions. Reads ANTHROPIC_API_KEY from the environment.
 SAFETY: if the model returns a refusal / meta reply ("I can't...", etc.) or
 junk, we never post it — news falls back to the raw headline, video is skipped.
 """
+import re
 import anthropic
 
 MODEL = "claude-haiku-4-5"   # cheapest capable model (~$1 / 1M input tokens)
 _client = None
+
+
+def _sanitize(text):
+    """Strip the em-dash 'AI tell' (— – --) and tidy spacing."""
+    if not text:
+        return text
+    text = text.replace("—", ", ").replace("–", ", ").replace("--", ", ")
+    text = re.sub(r"\s+([,.;:!?])", r"\1", text)   # no space before punctuation
+    text = re.sub(r"(,\s*){2,}", ", ", text)        # collapse double commas
+    text = re.sub(r"\s{2,}", " ", text)             # collapse double spaces
+    return text.strip()
 
 
 def _c():
@@ -84,7 +96,8 @@ def write_news(pillar, headline, source):
         "(this is a Premium account — write a substantive, engaging post, not just "
         "a headline), third person, no quotes, no preamble, no hashtags, and NEVER "
         "mention @Rokhaan, the account, or its 'coverage'. A source credit is added "
-        "separately."
+        "separately. Write naturally like a human; do NOT use em-dashes (—) or "
+        "double hyphens (--) anywhere, use commas or periods instead."
         + extra
     )
     try:
@@ -99,10 +112,10 @@ def write_news(pillar, headline, source):
             # AI gave meta/refusal text instead of a post — never post it.
             print("  (AI reply looked like meta/refusal — skipping this item)")
             return {"skip": True, "text": ""}
-        return {"skip": False, "text": out}
+        return {"skip": False, "text": _sanitize(out)}
     except Exception as e:
         print(f"  (AI writer fell back to raw headline: {e})")
-        return {"skip": False, "text": headline}
+        return {"skip": False, "text": _sanitize(headline)}
 
 
 def write_video_caption(title, subreddit):
@@ -112,7 +125,7 @@ def write_video_caption(title, subreddit):
         "Write ONE short caption (max 180 characters) that could go viral — "
         "hook the reader and match the mood (funny / heartwarming / "
         "motivational). No hashtags, no surrounding quotes, no preamble. "
-        "Output ONLY the caption."
+        "Do NOT use em-dashes (—) or double hyphens (--). Output ONLY the caption."
     )
     try:
         resp = _c().messages.create(
@@ -123,7 +136,7 @@ def write_video_caption(title, subreddit):
         if _looks_bad(cap):
             print("  (video caption looked off — skipping this video)")
             return None
-        return cap
+        return _sanitize(cap)
     except Exception as e:
         print(f"  (caption failed, skipping video: {e})")
         return None

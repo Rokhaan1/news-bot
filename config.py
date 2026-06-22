@@ -21,6 +21,7 @@ MAX_AGE_HOURS = 24        # ignore anything older than this; newest posted first
 TRUSTED_SOURCES = [
     "bbc", "al jazeera", "aljazeera", "reuters", "associated press", "ap ",
     "khaama", "tolonews", "ariana", "espn", "cricinfo", "afghanistan international",
+    "guardian", "un news", "united nations",
 ]
 
 # ----- CONTENT PILLARS + THEIR RSS FEEDS -----
@@ -32,6 +33,7 @@ PILLARS = {
             "https://www.aljazeera.com/xml/rss/all.xml",
             "http://feeds.bbci.co.uk/news/world/rss.xml",
             "https://www.theguardian.com/world/rss",
+            "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
         ],
     },
     "us_foreign_policy": {
@@ -49,6 +51,7 @@ PILLARS = {
             "https://tolonews.com/rss.xml",
             "https://www.ariananews.af/feed/",
             "https://www.aljazeera.com/xml/rss/all.xml",
+            "https://news.un.org/feed/subscribe/en/news/region/asia-pacific/rss.xml",
         ],
     },
     "worldcup": {
