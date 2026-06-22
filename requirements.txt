@@ -1,0 +1,5 @@
+# Python libraries the bot needs (installed automatically in the cloud)
+tweepy==4.14.0        # posts to X via the API
+feedparser==6.0.11    # reads RSS news feeds
+matplotlib==3.9.2     # generates data graphics (graphs/cards)
+requests==2.32.3      # fetches data

@@ -1,0 +1,6 @@
+# Never commit secrets or local junk
+.env
+*.env
+__pycache__/
+*.pyc
+card.png
