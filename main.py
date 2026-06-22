@@ -93,9 +93,19 @@ def make_client():
 
 def post_item(client, api_v1, entry, pillar):
     caption = build_caption(entry, pillar)
-    img = make_card(pillar, entry["title"], entry["source"])
-    media = api_v1.media_upload(img)
-    client.create_tweet(text=caption, media_ids=[media.media_id])
+    media_ids = None
+    # Try to attach an image. If image upload isn't available on this API
+    # plan, fall back to a text-only post instead of failing.
+    try:
+        img = make_card(pillar, entry["title"], entry["source"])
+        media = api_v1.media_upload(img)
+        media_ids = [media.media_id]
+    except Exception as e:
+        print(f"  (image skipped — upload not available: {e})")
+    if media_ids:
+        client.create_tweet(text=caption, media_ids=media_ids)
+    else:
+        client.create_tweet(text=caption)
 
 
 # ---------- main loop ----------
