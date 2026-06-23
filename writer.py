@@ -13,11 +13,28 @@ MODEL = "claude-haiku-4-5"   # cheapest capable model (~$1 / 1M input tokens)
 _client = None
 
 
+# Governance terms that belong to the Taliban regime, not "Afghanistan"/"Afghan".
+_GOV = (r"(government|administration|cabinet|authorities|officials?|ministry|"
+        r"ministries|minister|prime minister|deputy prime minister|"
+        r"foreign minister|interior minister|spokesman|spokesperson|"
+        r"spokespeople|regime|leadership|rule)")
+
+
+def _fix_taliban(text):
+    """Force Taliban governance references: 'Afghanistan's/Afghan <gov>' -> Taliban."""
+    text = re.sub(r"\bAfghanistan'?s\s+" + _GOV, r"the Taliban's \1", text, flags=re.I)
+    text = re.sub(r"\bthe\s+Afghan\s+" + _GOV, r"the Taliban \1", text, flags=re.I)
+    text = re.sub(r"\bAfghan\s+" + _GOV, r"Taliban \1", text, flags=re.I)
+    text = re.sub(r"\bKabul'?s\s+" + _GOV, r"the Taliban's \1", text, flags=re.I)
+    return text
+
+
 def _sanitize(text):
-    """Strip the em-dash 'AI tell' (— – --) and tidy spacing."""
+    """Strip the em-dash 'AI tell', fix Taliban references, tidy spacing."""
     if not text:
         return text
     text = text.replace("—", ", ").replace("–", ", ").replace("--", ", ")
+    text = _fix_taliban(text)
     text = re.sub(r"\s+([,.;:!?])", r"\1", text)   # no space before punctuation
     text = re.sub(r"(,\s*){2,}", ", ", text)        # collapse double commas
     text = re.sub(r"\s{2,}", " ", text)             # collapse double spaces
@@ -46,7 +63,11 @@ VOICE = (
     "and do not derive their authority from the Afghan people. Refer to them as "
     "'the Taliban', 'Taliban officials', or 'Taliban rule/regime'. NEVER call them "
     "'Afghan officials', 'the Afghan government', 'Afghanistan's government', or "
-    "'Kabul' as if they were the legitimate state. Do NOT conflate the Taliban's "
+    "'Kabul' as if they were the legitimate state. This applies to ALL titles and "
+    "bodies: write 'the Taliban's prime minister', 'the Taliban's foreign minister', "
+    "'Taliban officials', 'Taliban authorities', 'the Taliban's ministry of ...' — "
+    "NEVER 'Afghanistan's prime minister', 'the Afghan foreign minister', 'Afghan "
+    "officials', or 'the Afghan government'. Do NOT conflate the Taliban's "
     "interests with the interests, benefit, or will of Afghanistan or its people. "
     "Keep a clear line between the Afghan nation/people and the Taliban regime.\n\n"
     "DURAND LINE: Never describe the Durand Line as 'the border' or 'the official "
