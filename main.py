@@ -47,6 +47,7 @@ def load_state():
     s.setdefault("posts_today", 0)
     s.setdefault("videos_date", "")
     s.setdefault("fact_date", "")
+    s.setdefault("last_news_ts", 0)
     # reset the daily counter when the date rolls over
     if s["date"] != today():
         s["date"] = today()
@@ -213,11 +214,16 @@ def main():
 
     # 2) news — respect per-run and per-day caps
     posts_made = 0
+    spacing_ok = (time.time() - state.get("last_news_ts", 0)
+                  ) >= config.MIN_MINUTES_BETWEEN_NEWS * 60
     hour = datetime.now(timezone.utc).hour
     pillars = list(config.PILLARS.items())
     random.shuffle(pillars)  # vary which topic leads each run
 
     for pillar, spec in pillars:
+        if not spacing_ok:
+            print("Spacing: too soon since last news post; skipping this run.")
+            break
         if posts_made >= config.MAX_POSTS_PER_RUN:
             break
         if state["posts_today"] >= config.MAX_POSTS_PER_DAY:
@@ -246,6 +252,7 @@ def main():
                 post_news(client, api_v1, entry, pillar, result["text"])
                 posts_made += 1
                 state["posts_today"] += 1
+                state["last_news_ts"] = time.time()
                 print(f"POSTED [{pillar}] :: {result['text']}")
                 break  # one post per pillar per run -> variety
             except Exception as e:
