@@ -22,10 +22,10 @@ _GOV = (r"(government|administration|cabinet|authorities|officials?|ministry|"
 
 def _fix_taliban(text):
     """Force Taliban governance references: 'Afghanistan's/Afghan <gov>' -> Taliban."""
-    text = re.sub(r"\bAfghanistan'?s\s+" + _GOV, r"the Taliban's \1", text, flags=re.I)
+    text = re.sub(r"\bAfghanistan['’]?s\s+" + _GOV, r"the Taliban's \1", text, flags=re.I)
     text = re.sub(r"\bthe\s+Afghan\s+" + _GOV, r"the Taliban \1", text, flags=re.I)
     text = re.sub(r"\bAfghan\s+" + _GOV, r"Taliban \1", text, flags=re.I)
-    text = re.sub(r"\bKabul'?s\s+" + _GOV, r"the Taliban's \1", text, flags=re.I)
+    text = re.sub(r"\bKabul['’]?s\s+" + _GOV, r"the Taliban's \1", text, flags=re.I)
     return text
 
 
