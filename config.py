@@ -7,9 +7,9 @@ No secret keys live here — those are stored safely in GitHub Secrets.
 # ----- POSTING LIMITS (cost control) -----
 # X charges ~$0.015 per post (text/image), ~$0.20 if the post contains a link.
 MAX_POSTS_PER_RUN = 1     # news posts per scheduled run (runs every ~15 min)
-MAX_POSTS_PER_DAY = 10    # hard daily cap on news posts (tune freely)
+MAX_POSTS_PER_DAY = 6     # experts: 3-6 quality posts/day beats 10+ (authority)
 FOOTBALL_PER_DAY  = 1     # viral English-football share from X per day (quote tweet)
-MIN_MINUTES_BETWEEN_NEWS = 75   # space news posts out across the day (no bursts)
+MIN_MINUTES_BETWEEN_NEWS = 110  # spread posts across the day for steady early engagement
 
 # Attach a generated graphic to each post? Off = clean text-only posts.
 ATTACH_IMAGES = False
