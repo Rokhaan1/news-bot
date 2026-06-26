@@ -13,6 +13,7 @@ def find_viral_football(client):
         resp = client.search_recent_tweets(
             query=QUERY, max_results=25,
             tweet_fields=["public_metrics", "lang", "possibly_sensitive"],
+            user_auth=False,   # use app-only Bearer token
         )
     except Exception as e:
         print(f"  (football search failed: {e})")

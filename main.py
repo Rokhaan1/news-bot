@@ -66,6 +66,7 @@ def save_state(s):
 # ---------- X client ----------
 def make_client():
     client = tweepy.Client(
+        bearer_token=os.environ.get("X_BEARER_TOKEN"),  # for reads/search
         consumer_key=os.environ["X_API_KEY"],
         consumer_secret=os.environ["X_API_SECRET"],
         access_token=os.environ["X_ACCESS_TOKEN"],
