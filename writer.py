@@ -116,17 +116,19 @@ VOICE = (
 # These never appear in a normal third-person news rewrite, so they're a
 # reliable "do not post this" signal.
 _BAD = [
-    "i can't", "i cannot", "i am unable", "i'm unable", "unable to",
-    "as an ai", "as a language model", "language model", "i apologize",
-    "i apologise", "i'm sorry", "i am sorry", "i won't", "i will not",
-    "i don't have", "i do not have", "i'm not able", "i am not able",
-    "cannot fulfill", "can't fulfill", "cannot assist", "can't assist",
-    "cannot help", "can't help", "i'm just an", "i cannot create",
-    "i can't create", "i cannot write", "i can't write", "i need more",
-    # meta-commentary markers (the AI talking ABOUT the post / account)
-    "falls outside", "core coverage", "coverage area", "doesn't align with",
-    "does not align with", "@rokhaan", "rokhaan's", "the account's", "account's beat",
-    "outside the account", "this story falls", "i'd skip", "i would skip",
+    # high-precision AI refusal / meta markers (won't appear in real posts)
+    "as an ai", "as a language model", "language model",
+    "i cannot fulfill", "i can't fulfill",
+    "i cannot help with", "i can't help with",
+    "i cannot assist", "i can't assist",
+    "i cannot create that", "i can't create that",
+    "i cannot write that", "i can't write that",
+    "i cannot generate", "i can't generate",
+    "i'm not able to", "i am not able to",
+    # meta about the account / task (never in a normal post)
+    "falls outside", "core coverage", "coverage area", "this story falls",
+    "@rokhaan", "the account's coverage", "outside the account",
+    "i'd skip this", "i would skip this",
 ]
 
 
