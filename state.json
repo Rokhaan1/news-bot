@@ -1,6 +1,7 @@
 {
   "posted": [
     "'Every team does it': How World Cup sides thwart o...",
+    "2070650055271546974",
     "34 Hindu families in Canada seeking return to Afghanistan, says former MP",
     "Afghanistan officials call for investment during Indian expo visit",
     "Afghanistan opt to bat; Reddy, Prasidh and Dubey return for India",
@@ -155,13 +156,20 @@
   "last_news_ts": 1782515872.901014,
   "videos_date": "2026-06-26",
   "fact_date": "2026-06-26",
-  "football_date": "",
+  "football_date": "2026-06-26",
   "log": [
     {
       "id": "2070647765747839358",
       "pillar": "global",
       "hour": 23,
       "ts": 1782515872.901015,
+      "eng": null
+    },
+    {
+      "id": "2070651004819739053",
+      "pillar": "worldcup",
+      "hour": 23,
+      "ts": 1782516645.194261,
       "eng": null
     }
   ],
