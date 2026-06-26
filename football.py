@@ -3,8 +3,9 @@ Find a viral English-football post on X (Twitter) to share with our own text.
 Uses the X API recent-search (small read cost). Returns the best tweet or None.
 """
 
-QUERY = ('(England OR "Three Lions" OR "Premier League" OR #ENG OR #ThreeLions '
-         'OR "Harry Kane" OR Bellingham) has:media lang:en -is:retweet -is:reply')
+QUERY = ('("Premier League" OR "Three Lions" OR #ThreeLions OR "England football" '
+         'OR Bellingham OR Saka OR Foden OR "Harry Kane" OR Wembley) has:media '
+         'lang:en -is:retweet -is:reply -cricket -Test -ODI -wicket -batting')
 
 
 def find_viral_football(client):
