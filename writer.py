@@ -227,12 +227,13 @@ def write_video_caption(title, subreddit):
 def write_football_caption(tweet_text):
     """Engaging, viral-style caption for an English football post. None if bad."""
     prompt = (
-        "Here is a trending English football post from X (Twitter):\n"
+        "Here is what's trending in English football on X right now:\n"
         f"\"{tweet_text}\"\n\n"
-        "Write ONE short, engaging caption (max 180 characters) to share it with, "
-        "that could go viral: English football flavour, a bit personal and "
-        "opinionated, pro-England when relevant. No hashtags, no surrounding quotes, "
-        "no preamble, no em-dashes or '--'. Output ONLY the caption."
+        "Write ONE standalone, engaging post (max 280 characters) reacting to this "
+        "as your OWN native take, NOT a caption referencing another post. Make it "
+        "opinionated and conversation-starting (invite replies), English-football "
+        "flavour, pro-England when relevant. No links, no @handles, no hashtags, no "
+        "surrounding quotes, no preamble, no em-dashes or '--'. Output ONLY the post."
     )
     try:
         resp = _c().messages.create(

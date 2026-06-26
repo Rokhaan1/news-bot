@@ -197,22 +197,30 @@ def maybe_post_football(client, state):
     if not _in_window(config.PILLAR_WINDOWS.get("worldcup"),
                       datetime.now(timezone.utc).hour):
         return
-    for tweet in football.find_viral_football(client):
-        tid = str(tweet.id)
-        if tid in state["posted_set"]:
-            continue
-        caption = writer.write_football_caption(tweet.text)
-        if not caption:
-            continue
+    tweets = football.find_viral_football(client)
+    # pick the top trending football moment we haven't used as inspiration yet
+    top = next((t for t in tweets if str(t.id) not in state["posted_set"]), None)
+    if not top:
+        return
+    take = writer.write_football_caption(top.text)   # an original native take
+    if not take:
+        return
+    try:
+        rid = None
+        resp = client.create_tweet(text=take)         # native post, no link/quote
         try:
-            client.create_tweet(text=caption, quote_tweet_id=tid)  # quote = on-platform
-            state["posted_set"].add(tid)
-            state["football_date"] = today()
-            print(f"POSTED [football] {caption[:60]}")
-            return
-        except Exception as e:
-            print(f"  (football quote failed for {tid}: {e}; trying next)")
-            continue
+            rid = str(resp.data["id"])
+        except Exception:
+            pass
+        state["posted_set"].add(str(top.id))          # don't reuse this moment
+        state["football_date"] = today()
+        if rid:
+            state["log"].append({"id": rid, "pillar": "worldcup",
+                                 "hour": datetime.now(timezone.utc).hour,
+                                 "ts": time.time(), "eng": None})
+        print(f"POSTED [football] {take[:70]}")
+    except Exception as e:
+        print(f"FAILED [football] {e}")
 
 
 def measure_and_learn(client, state):
