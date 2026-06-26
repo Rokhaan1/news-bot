@@ -242,6 +242,7 @@ def write_football_caption(tweet_text):
         )
         cap = next(b.text for b in resp.content if b.type == "text").strip().strip('"')
         if _looks_bad(cap):
+            print(f"  (football take flagged: len={len(cap)} preview={cap[:140]!r})")
             return None
         return _sanitize(cap)
     except Exception as e:
