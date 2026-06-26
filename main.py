@@ -49,6 +49,8 @@ def load_state():
     s.setdefault("football_date", "")
     s.setdefault("fact_date", "")
     s.setdefault("last_news_ts", 0)
+    s.setdefault("log", [])         # [{id, pillar, hour, ts, eng}] performance log
+    s.setdefault("insights", {})    # {pillar: avg_engagement}
     # reset the daily counter when the date rolls over
     if s["date"] != today():
         s["date"] = today()
@@ -162,9 +164,13 @@ def post_news(client, api_v1, entry, pillar, text):
         except Exception as e:
             print(f"  (image skipped: {e})")
     if media_ids:
-        client.create_tweet(text=caption, media_ids=media_ids)
+        resp = client.create_tweet(text=caption, media_ids=media_ids)
     else:
-        client.create_tweet(text=caption)
+        resp = client.create_tweet(text=caption)
+    try:
+        return str(resp.data["id"])      # tweet id, for performance tracking
+    except Exception:
+        return None
 
 
 def maybe_post_afghan_fact(client, state):
@@ -209,10 +215,50 @@ def maybe_post_football(client, state):
             continue
 
 
+def measure_and_learn(client, state):
+    """Read engagement for posts >3h old, then average it per topic (insights)."""
+    now = time.time()
+    measured = 0
+    for e in state.get("log", []):
+        if measured >= 5:
+            break
+        if e.get("eng") is None and now - e.get("ts", 0) > 3 * 3600:
+            try:
+                t = client.get_tweet(e["id"], tweet_fields=["public_metrics"])
+                m = (t.data.public_metrics if t and t.data else {}) or {}
+                e["eng"] = (m.get("like_count", 0) + m.get("retweet_count", 0)
+                            + m.get("reply_count", 0) + m.get("quote_count", 0))
+                measured += 1
+            except Exception:
+                e["eng"] = -1  # inaccessible/deleted — skip it
+    state["log"] = state["log"][-120:]   # keep the log bounded
+
+    sums, counts = {}, {}
+    for e in state["log"]:
+        v = e.get("eng")
+        if isinstance(v, (int, float)) and v >= 0:
+            sums[e["pillar"]] = sums.get(e["pillar"], 0) + v
+            counts[e["pillar"]] = counts.get(e["pillar"], 0) + 1
+    state["insights"] = {p: round(sums[p] / counts[p], 1) for p in sums}
+    if state["insights"]:
+        print("Insights (avg engagement per topic):", state["insights"])
+
+
+def ranked_pillars(state):
+    """Order topics by learned engagement (winners first), with some exploration."""
+    ins = state.get("insights", {})
+    base = (sum(ins.values()) / len(ins)) if ins else 5.0
+    pillars = list(config.PILLARS.items())
+    pillars.sort(key=lambda ps: -(ins.get(ps[0], base) * (0.5 + random.random())))
+    return pillars
+
+
 # ---------- main loop ----------
 def main():
     state = load_state()
     client, api_v1 = make_client()
+
+    measure_and_learn(client, state)   # read recent performance, refresh insights
 
     # 1) one Afghan pride fact + one viral English-football share per day
     maybe_post_afghan_fact(client, state)
@@ -223,8 +269,7 @@ def main():
     spacing_ok = (time.time() - state.get("last_news_ts", 0)
                   ) >= config.MIN_MINUTES_BETWEEN_NEWS * 60
     hour = datetime.now(timezone.utc).hour
-    pillars = list(config.PILLARS.items())
-    random.shuffle(pillars)  # vary which topic leads each run
+    pillars = ranked_pillars(state)  # learned winners first, with exploration
 
     for pillar, spec in pillars:
         if not spacing_ok:
@@ -255,10 +300,13 @@ def main():
                 print(f"SKIPPED [{pillar}] {entry['title'][:55]}")
                 continue
             try:
-                post_news(client, api_v1, entry, pillar, result["text"])
+                rid = post_news(client, api_v1, entry, pillar, result["text"])
                 posts_made += 1
                 state["posts_today"] += 1
                 state["last_news_ts"] = time.time()
+                if rid:
+                    state["log"].append({"id": rid, "pillar": pillar, "hour": hour,
+                                         "ts": time.time(), "eng": None})
                 print(f"POSTED [{pillar}] :: {result['text']}")
                 break  # one post per pillar per run -> variety
             except Exception as e:
