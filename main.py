@@ -191,22 +191,22 @@ def maybe_post_football(client, state):
     if not _in_window(config.PILLAR_WINDOWS.get("worldcup"),
                       datetime.now(timezone.utc).hour):
         return
-    tweet = football.find_viral_football(client)
-    if not tweet:
-        return
-    tid = str(tweet.id)
-    if tid in state["posted_set"]:
-        return
-    caption = writer.write_football_caption(tweet.text)
-    if not caption:
-        return
-    try:
-        client.create_tweet(text=caption, quote_tweet_id=tid)  # quote, no link cost
-        state["posted_set"].add(tid)
-        state["football_date"] = today()
-        print(f"POSTED [football] {caption[:60]}")
-    except Exception as e:
-        print(f"FAILED [football] {e}")
+    for tweet in football.find_viral_football(client):
+        tid = str(tweet.id)
+        if tid in state["posted_set"]:
+            continue
+        caption = writer.write_football_caption(tweet.text)
+        if not caption:
+            continue
+        try:
+            client.create_tweet(text=caption, quote_tweet_id=tid)  # quote = on-platform
+            state["posted_set"].add(tid)
+            state["football_date"] = today()
+            print(f"POSTED [football] {caption[:60]}")
+            return
+        except Exception as e:
+            print(f"  (football quote failed for {tid}: {e}; trying next)")
+            continue
 
 
 # ---------- main loop ----------

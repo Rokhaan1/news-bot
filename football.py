@@ -8,7 +8,7 @@ QUERY = ('(England OR "Three Lions" OR "Premier League" OR #ENG OR #ThreeLions '
 
 
 def find_viral_football(client):
-    """Return the highest-engagement recent English-football tweet, or None."""
+    """Return recent English-football tweets, highest engagement first."""
     try:
         resp = client.search_recent_tweets(
             query=QUERY, max_results=25,
@@ -17,9 +17,9 @@ def find_viral_football(client):
         )
     except Exception as e:
         print(f"  (football search failed: {e})")
-        return None
+        return []
 
-    best, best_score = None, -1
+    scored = []
     for t in (resp.data or []):
         if getattr(t, "possibly_sensitive", False):
             continue
@@ -27,6 +27,6 @@ def find_viral_football(client):
         score = (m.get("like_count", 0)
                  + 2 * m.get("retweet_count", 0)
                  + m.get("reply_count", 0))
-        if score > best_score:
-            best_score, best = score, t
-    return best
+        scored.append((score, t))
+    scored.sort(key=lambda x: x[0], reverse=True)
+    return [t for _, t in scored]
