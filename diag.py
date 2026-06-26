@@ -1,4 +1,4 @@
-"""One-time diagnostic: which X read operations does this API plan allow?"""
+"""Find which search query shape works on this plan."""
 import os
 import tweepy
 
@@ -10,18 +10,19 @@ c = tweepy.Client(
     access_token_secret=os.environ["X_ACCESS_TOKEN_SECRET"],
 )
 
-TID = "1908531085736108481"  # a public Premier League tweet
+QUERIES = {
+    "simple": "England lang:en",
+    "or_terms": '(England OR "Premier League" OR Bellingham) lang:en -is:retweet',
+    "has_media": '(England OR "Premier League") has:media lang:en -is:retweet',
+    "has_videos": '(England OR "Premier League") has:videos lang:en -is:retweet',
+    "no_reply": '(England OR "Premier League") has:media lang:en -is:retweet -is:reply',
+    "full": ('(England OR "Three Lions" OR "Premier League" OR #ENG OR #ThreeLions '
+             'OR "Harry Kane" OR Bellingham) has:media lang:en -is:retweet -is:reply'),
+}
 
-def test(name, fn):
+for name, q in QUERIES.items():
     try:
-        r = fn()
-        print(f"OK   {name}: {r}")
+        r = c.search_recent_tweets(q, max_results=10, user_auth=False)
+        print(f"OK   {name}: {len(r.data or [])} results")
     except Exception as e:
         print(f"FAIL {name}: {type(e).__name__}: {e}")
-
-test("get_me (user ctx)", lambda: (c.get_me().data or {}).get("username")
-     if isinstance(c.get_me().data, dict) else getattr(c.get_me().data, "username", "?"))
-test("get_tweet bearer", lambda: bool(c.get_tweet(TID, tweet_fields=["public_metrics"], user_auth=False).data))
-test("get_tweet user", lambda: bool(c.get_tweet(TID, tweet_fields=["public_metrics"], user_auth=True).data))
-test("search bearer", lambda: len(c.search_recent_tweets("England", max_results=10, user_auth=False).data or []))
-test("search user", lambda: len(c.search_recent_tweets("England", max_results=10, user_auth=True).data or []))
