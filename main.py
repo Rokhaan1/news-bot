@@ -201,9 +201,11 @@ def maybe_post_football(client, state):
     # pick the top trending football moment we haven't used as inspiration yet
     top = next((t for t in tweets if str(t.id) not in state["posted_set"]), None)
     if not top:
+        print(f"  (football: no fresh candidate from {len(tweets)} found)")
         return
     take = writer.write_football_caption(top.text)   # an original native take
     if not take:
+        print("  (football: take rejected by guard)")
         return
     try:
         rid = None

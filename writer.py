@@ -123,12 +123,10 @@ _BAD = [
     "cannot fulfill", "can't fulfill", "cannot assist", "can't assist",
     "cannot help", "can't help", "i'm just an", "i cannot create",
     "i can't create", "i cannot write", "i can't write", "i need more",
-    "could you", "please provide", "the task", "you have asked",
     # meta-commentary markers (the AI talking ABOUT the post / account)
-    "falls outside", "core coverage", "coverage area", "doesn't align",
-    "does not align", "@rokhaan", "rokhaan's", "the account's", "account's beat",
-    "outside the account", "this story falls", "doesn't fit", "does not fit",
-    "i'd skip", "i would skip", "i'd recommend", "note:",
+    "falls outside", "core coverage", "coverage area", "doesn't align with",
+    "does not align with", "@rokhaan", "rokhaan's", "the account's", "account's beat",
+    "outside the account", "this story falls", "i'd skip", "i would skip",
 ]
 
 
