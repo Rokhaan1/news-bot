@@ -23,6 +23,8 @@ _GOV = (r"(government|administration|cabinet|authorities|officials?|ministry|"
 def _fix_taliban(text):
     """Force Taliban governance references: 'Afghanistan's/Afghan <gov>' -> Taliban."""
     text = re.sub(r"\bAfghanistan['’]?s\s+" + _GOV, r"the Taliban's \1", text, flags=re.I)
+    text = re.sub(r"\bthe\s+Afghanistan\s+" + _GOV, r"the Taliban \1", text, flags=re.I)
+    text = re.sub(r"\bAfghanistan\s+" + _GOV, r"Taliban \1", text, flags=re.I)
     text = re.sub(r"\bthe\s+Afghan\s+" + _GOV, r"the Taliban \1", text, flags=re.I)
     text = re.sub(r"\bAfghan\s+" + _GOV, r"Taliban \1", text, flags=re.I)
     text = re.sub(r"\bKabul['’]?s\s+" + _GOV, r"the Taliban's \1", text, flags=re.I)
@@ -53,6 +55,10 @@ VOICE = (
     "covering global breaking news, US foreign policy, Afghanistan, the FIFA "
     "World Cup, and Afghan cricket. Voice: sharp, confident, human and personal, "
     "like an individual journalist with a point of view, not a wire service. "
+    "Make posts feel a bit personal, your own take and reaction, not a newswire. "
+    "Be subtly and INDIRECTLY critical of bad actors and wrongdoers (aggressors, "
+    "oppressors, and those who harm Afghanistan or its people) through framing and "
+    "pointed observation, never crude attacks or slurs. "
     "Never invent facts beyond what the headline states. ALWAYS take a "
     "pro-Afghanistan stance: champion the Afghan people, their nation, sovereignty, "
     "dignity, resilience, and achievements, and frame stories sympathetically toward "
@@ -133,9 +139,19 @@ def write_news(pillar, headline, source):
             "board/admin, league business), reply with exactly: SKIP.")
     elif pillar == "worldcup":
         extra = (
-            "\nThis is the FIFA World Cup 2026 (happening now) — write with energy. "
+            "\nThis is the FIFA World Cup 2026 (happening now), write with energy. "
             "If the item involves ENGLAND, write as an enthusiastic England "
             "supporter (still factual). Otherwise an exciting, neutral football tone.")
+    elif pillar == "us_foreign_policy":
+        extra = (
+            "\nONLY US FOREIGN AFFAIRS. Post only if it is about US foreign policy, "
+            "diplomacy, international relations, sanctions, war, alliances, or US "
+            "actions abroad. If it is US DOMESTIC/internal politics (elections, "
+            "Congress bills, courts, parties, culture, domestic scandals), reply SKIP.")
+    elif pillar == "global":
+        extra = (
+            "\nONLY BREAKING / MAJOR world news. If the item is a soft feature, "
+            "human-interest, lifestyle, opinion column, or minor story, reply SKIP.")
 
     prompt = (
         f"Pillar: {pillar}\nFresh headline: {headline}\nSource: {source}\n\n"
@@ -193,6 +209,30 @@ def write_video_caption(title, subreddit):
         return _sanitize(cap)
     except Exception as e:
         print(f"  (caption failed, skipping video: {e})")
+        return None
+
+
+def write_football_caption(tweet_text):
+    """Engaging, viral-style caption for an English football post. None if bad."""
+    prompt = (
+        "Here is a trending English football post from X (Twitter):\n"
+        f"\"{tweet_text}\"\n\n"
+        "Write ONE short, engaging caption (max 180 characters) to share it with, "
+        "that could go viral: English football flavour, a bit personal and "
+        "opinionated, pro-England when relevant. No hashtags, no surrounding quotes, "
+        "no preamble, no em-dashes or '--'. Output ONLY the caption."
+    )
+    try:
+        resp = _c().messages.create(
+            model=MODEL, max_tokens=200, system=VOICE,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        cap = next(b.text for b in resp.content if b.type == "text").strip().strip('"')
+        if _looks_bad(cap):
+            return None
+        return _sanitize(cap)
+    except Exception as e:
+        print(f"  (football caption failed: {e})")
         return None
 
 

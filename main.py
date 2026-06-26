@@ -24,7 +24,7 @@ import tweepy
 
 import config
 import writer
-import videos
+import football
 from verify import is_corroborated
 from graphics import make_card
 
@@ -46,6 +46,7 @@ def load_state():
     s.setdefault("date", today())
     s.setdefault("posts_today", 0)
     s.setdefault("videos_date", "")
+    s.setdefault("football_date", "")
     s.setdefault("fact_date", "")
     s.setdefault("last_news_ts", 0)
     # reset the daily counter when the date rolls over
@@ -131,14 +132,13 @@ def _in_window(win, hour):
 
 
 # ---------- compose captions ----------
-def build_caption(text, source, pillar):
+def build_caption(text, pillar):
     hashtag = config.PILLAR_HASHTAGS.get(pillar, "")
-    credit = f"\n\nSource: {source}"
-    tail = f"\n{hashtag}" if hashtag else ""
-    budget = 1200 - len(credit) - len(tail)   # Premium supports long posts
+    tail = f"\n\n{hashtag}" if hashtag else ""
+    budget = 1200 - len(tail)   # Premium supports long posts; no source credit
     if len(text) > budget:
         text = text[: budget - 1].rstrip() + "…"
-    return text + credit + tail
+    return text + tail
 
 
 def build_video_caption(caption, url, sub):
@@ -151,7 +151,7 @@ def build_video_caption(caption, url, sub):
 
 # ---------- posting ----------
 def post_news(client, api_v1, entry, pillar, text):
-    caption = build_caption(text, entry["source"], pillar)
+    caption = build_caption(text, pillar)
     media_ids = None
     if config.ATTACH_IMAGES:
         try:
@@ -183,24 +183,29 @@ def maybe_post_afghan_fact(client, state):
         print(f"FAILED [afghan_fact] {e}")
 
 
-def maybe_post_video(client, state):
-    if config.VIDEOS_PER_DAY <= 0 or state["videos_date"] == today():
+def maybe_post_football(client, state):
+    """Once a day, in football hours: share a viral English-football post from X."""
+    if config.FOOTBALL_PER_DAY <= 0 or state.get("football_date") == today():
         return
-    for v in videos.fetch_videos():
-        if not v["title"] or v["url"] in state["posted_set"]:
-            continue
-        caption = writer.write_video_caption(v["title"], v["subreddit"])
-        if not caption:          # bad/refusal reply -> don't post junk
-            continue
-        text = build_video_caption(caption, v["url"], v["subreddit"])
-        try:
-            client.create_tweet(text=text)
-            state["posted_set"].add(v["url"])
-            state["videos_date"] = today()
-            print(f"POSTED [video/{v['mood']}] {v['title'][:60]}")
-            return
-        except Exception as e:
-            print(f"FAILED [video] {v['title'][:50]}: {e}")
+    if not _in_window(config.PILLAR_WINDOWS.get("worldcup"),
+                      datetime.now(timezone.utc).hour):
+        return
+    tweet = football.find_viral_football(client)
+    if not tweet:
+        return
+    tid = str(tweet.id)
+    if tid in state["posted_set"]:
+        return
+    caption = writer.write_football_caption(tweet.text)
+    if not caption:
+        return
+    try:
+        client.create_tweet(text=caption, quote_tweet_id=tid)  # quote, no link cost
+        state["posted_set"].add(tid)
+        state["football_date"] = today()
+        print(f"POSTED [football] {caption[:60]}")
+    except Exception as e:
+        print(f"FAILED [football] {e}")
 
 
 # ---------- main loop ----------
@@ -208,9 +213,9 @@ def main():
     state = load_state()
     client, api_v1 = make_client()
 
-    # 1) one Afghan pride fact + one viral video per day
+    # 1) one Afghan pride fact + one viral English-football share per day
     maybe_post_afghan_fact(client, state)
-    maybe_post_video(client, state)
+    maybe_post_football(client, state)
 
     # 2) news — respect per-run and per-day caps
     posts_made = 0

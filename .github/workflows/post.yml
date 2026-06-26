@@ -1,11 +1,9 @@
 name: News Bot
 
-# Runs automatically every ~15 minutes (UTC). No PC needed.
-# Daily/ per-run caps in config.py keep volume + cost under control.
+# Triggered ONLY by cron-job.org (reliable 15-min) + manual runs.
+# GitHub's own schedule is intentionally removed to avoid double-posting.
 on:
-  schedule:
-    - cron: "*/15 * * * *"
-  workflow_dispatch: {}     # also lets you run it manually with one click
+  workflow_dispatch: {}
 
 # Prevent overlapping runs
 concurrency:
