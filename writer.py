@@ -53,7 +53,8 @@ def _c():
 VOICE = (
     "You write posts for @Rokhaan, a fast, credible X (Twitter) news account "
     "covering global breaking news, US foreign policy, Afghanistan, the FIFA "
-    "World Cup, and Afghan cricket. Voice: sharp, confident, human and personal, "
+    "World Cup, English football (the England national team and the Premier League), "
+    "and Afghan cricket. Voice: sharp, confident, human and personal, "
     "like an individual journalist with a point of view, not a wire service. "
     "Make posts feel a bit personal, your own take and reaction, not a newswire. "
     "Be subtly and INDIRECTLY critical of bad actors and wrongdoers (aggressors, "
@@ -232,8 +233,10 @@ def write_football_caption(tweet_text):
         "Write ONE standalone, engaging post (max 280 characters) reacting to this "
         "as your OWN native take, NOT a caption referencing another post. Make it "
         "opinionated and conversation-starting (invite replies), English-football "
-        "flavour, pro-England when relevant. No links, no @handles, no hashtags, no "
-        "surrounding quotes, no preamble, no em-dashes or '--'. Output ONLY the post."
+        "flavour, pro-England when relevant. English football IS a core topic for "
+        "this account, so ALWAYS write the take and NEVER reply SKIP. No links, no "
+        "@handles, no hashtags, no surrounding quotes, no preamble, no em-dashes or "
+        "'--'. Output ONLY the post."
     )
     try:
         resp = _c().messages.create(
