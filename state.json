@@ -53,6 +53,7 @@
     "Iran war live: US waives oil sanctions, to release $12bn in frozen funds",
     "Iraq's plan to stop Mbapp\u00e9? Ask to play 3 keepers",
     "Is Harry Kane the last of England's world-class st...",
+    "Israel and Lebanon sign framework agreement after US-brokered talks",
     "Israel kills turtle conservationist Mona Khalil",
     "JD Vance touts progress on key issues in US-Iran negotiations",
     "Japan quintuples visa fees in first price hike since 1978",
@@ -150,9 +151,19 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-06-26",
-  "posts_today": 3,
-  "last_news_ts": 0,
+  "posts_today": 4,
+  "last_news_ts": 1782515872.901014,
   "videos_date": "2026-06-26",
   "fact_date": "2026-06-26",
-  "football_date": ""
+  "football_date": "",
+  "log": [
+    {
+      "id": "2070647765747839358",
+      "pillar": "global",
+      "hour": 23,
+      "ts": 1782515872.901015,
+      "eng": null
+    }
+  ],
+  "insights": {}
 }
