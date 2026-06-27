@@ -3,6 +3,7 @@
     "'Every team does it': How World Cup sides thwart o...",
     "2070650055271546974",
     "2070652122463445440",
+    "2070653625806868577",
     "2070654995041509683",
     "34 Hindu families in Canada seeking return to Afghanistan, says former MP",
     "Afghanistan officials call for investment during Indian expo visit",
@@ -153,12 +154,12 @@
     "\u2018No sense of direction\u2019: The downfall of Keir Starmer",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-06-26",
-  "posts_today": 4,
+  "date": "2026-06-27",
+  "posts_today": 0,
   "last_news_ts": 1782515872.901014,
   "videos_date": "2026-06-26",
   "fact_date": "2026-06-26",
-  "football_date": "2026-06-26",
+  "football_date": "2026-06-27",
   "log": [
     {
       "id": "2070647765747839358",
@@ -186,6 +187,13 @@
       "pillar": "worldcup",
       "hour": 23,
       "ts": 1782518200.5650802,
+      "eng": null
+    },
+    {
+      "id": "2070658604504580546",
+      "pillar": "worldcup",
+      "hour": 0,
+      "ts": 1782518457.0559916,
       "eng": null
     }
   ],
