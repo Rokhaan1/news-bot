@@ -138,6 +138,7 @@
     "Venezuela earthquakes: frantic search for survivors continues, with 235 confirmed dead so far \u2013 latest updates",
     "Venezuela rocked by powerful back-to-back earthquakes",
     "Venice protest planned for US ambassador\u2019s superyacht visit",
+    "WFP Says Pakistan Border Closures Deepen Afghanistan\u2019s Humanitarian Crisis",
     "Watch World Cup Day 11: Egypt\u2019s first-ever win; Spain crushes Saudi Arabia",
     "Watch: 'I wish him well' - Trump reacts to Starmer's resignation",
     "Watching Spain's Yamal score his first World Cup g...",
@@ -163,8 +164,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-06-27",
-  "posts_today": 4,
-  "last_news_ts": 1782544541.5594676,
+  "posts_today": 5,
+  "last_news_ts": 1782551741.7079196,
   "videos_date": "2026-06-26",
   "fact_date": "2026-06-27",
   "football_date": "2026-06-27",
@@ -238,6 +239,13 @@
       "hour": 7,
       "ts": 1782544541.5594685,
       "eng": null
+    },
+    {
+      "id": "2070798210277450174",
+      "pillar": "afghanistan",
+      "hour": 9,
+      "ts": 1782551741.7079203,
+      "eng": null
     }
   ],
   "insights": {
@@ -249,6 +257,7 @@
     "Trump justifies strikes on Iran amid ceasefire",
     "Rescue efforts turn to recovery as aftershocks shake Venezuela",
     "Venice protest planned for US ambassador\u2019s superyacht visit",
-    "Which teams are in the World Cup round of 32, and what\u2019s the schedule?"
+    "Which teams are in the World Cup round of 32, and what\u2019s the schedule?",
+    "WFP Says Pakistan Border Closures Deepen Afghanistan\u2019s Humanitarian Crisis"
   ]
 }
