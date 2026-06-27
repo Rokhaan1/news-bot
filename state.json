@@ -230,7 +230,7 @@
       "pillar": "global",
       "hour": 5,
       "ts": 1782537338.204999,
-      "eng": null
+      "eng": 0
     },
     {
       "id": "2070768010768355450",
@@ -241,7 +241,7 @@
     }
   ],
   "insights": {
-    "global": 0.5,
+    "global": 0.3,
     "worldcup": 0.8,
     "us_foreign_policy": 0.0
   },
