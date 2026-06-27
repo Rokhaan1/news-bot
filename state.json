@@ -79,6 +79,7 @@
     "Plan to auction over 100 Titanic artifacts faces US government opposition",
     "Polio-Free Afghanistan Calls for Nationwide Effort to Eliminate Polio",
     "Political turmoil: UK will see its seventh prime minister in 10 years",
+    "Polygamous sect leader guilty of abuse after girls found in trailer on highway",
     "Prabhsimran, Gaikwad, Tilak score fifties in DLS loss to Afghanistan A",
     "Prasidh five-for, Jaiswal hundred help India sweep Afghanistan 3-0",
     "Premier League 2026-27 fixtures: When will the top...",
@@ -107,7 +108,9 @@
     "Thursday briefing: Why EU\u200b-Taliban talks have sparked outrage among Afghan women \u200b",
     "Transfer rumors, news: PSG to compete with Man Uni...",
     "Trump administration moves to restart LGBTQ+ suicide hotline it initially ended",
+    "Trump justifies strikes on Iran amid ceasefire",
     "Trump launches America250 festivities with a rally on the National Mall",
+    "Trump news at a glance: president tests out a new \u2018red scare\u2019 ahead of midterms",
     "Trump news at a glance: president\u2019s pool project plagued by peeling paint \u2013 and algae blooms",
     "Trump says five people arrested as he again blames \u2018vandals\u2019 for reflecting pool damage without giving evidence \u2013 live",
     "Trump says repairs to algae-plagued Reflecting Pool will begin immediately",
@@ -156,8 +159,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-06-27",
-  "posts_today": 0,
-  "last_news_ts": 1782515872.901014,
+  "posts_today": 1,
+  "last_news_ts": 1782522934.3704467,
   "videos_date": "2026-06-26",
   "fact_date": "2026-06-26",
   "football_date": "2026-06-27",
@@ -203,8 +206,17 @@
       "hour": 0,
       "ts": 1782518751.463108,
       "eng": null
+    },
+    {
+      "id": "2070677383628120095",
+      "pillar": "us_foreign_policy",
+      "hour": 1,
+      "ts": 1782522934.3704479,
+      "eng": null
     }
   ],
   "insights": {},
-  "recent": []
+  "recent": [
+    "Trump justifies strikes on Iran amid ceasefire"
+  ]
 }
