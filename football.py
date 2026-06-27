@@ -1,29 +1,40 @@
 """
-Find a viral English-football post on X (Twitter) to share with our own text.
-Uses the X API recent-search (small read cost). Returns the best tweet or None.
+Find trending content about ENGLAND'S NATIONAL TEAM at the World Cup, to react
+to with our own take. National team only (no clubs/Premier League/transfers),
+and only very recent content so we post around actual match time.
 """
+from datetime import datetime, timezone
 
-QUERY = ('("Premier League" OR "Three Lions" OR #ThreeLions OR "England football" '
-         'OR Bellingham OR Saka OR Foden OR "Harry Kane" OR Wembley) has:media '
-         'lang:en -is:retweet -is:reply -cricket -Test -ODI -wicket -batting')
+# England national team + World Cup context; exclude clubs/league/cricket.
+QUERY = ('England ("World Cup" OR "Three Lions" OR #ThreeLions OR #ENG '
+         'OR #WorldCup) has:media lang:en -is:retweet -is:reply '
+         '-"Premier League" -transfer -cricket -Test -ODI -wicket')
+
+MAX_AGE_HOURS = 3   # only "live match" buzz from the last few hours
 
 
 def find_viral_football(client):
-    """Return recent English-football tweets, highest engagement first."""
+    """Return recent England-NT World-Cup tweets (last few hours), best first."""
     try:
         resp = client.search_recent_tweets(
             query=QUERY, max_results=25,
-            tweet_fields=["public_metrics", "lang", "possibly_sensitive"],
-            user_auth=False,   # use app-only Bearer token
+            tweet_fields=["public_metrics", "created_at", "possibly_sensitive"],
+            user_auth=False,
         )
     except Exception as e:
         print(f"  (football search failed: {e})")
         return []
 
+    now = datetime.now(timezone.utc)
     scored = []
     for t in (resp.data or []):
         if getattr(t, "possibly_sensitive", False):
             continue
+        ca = getattr(t, "created_at", None)
+        if ca is None:
+            continue
+        if (now - ca).total_seconds() > MAX_AGE_HOURS * 3600:
+            continue   # too old -> no live match happening
         m = t.public_metrics or {}
         score = (m.get("like_count", 0)
                  + 2 * m.get("retweet_count", 0)

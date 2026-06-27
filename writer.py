@@ -53,8 +53,8 @@ def _c():
 VOICE = (
     "You write posts for @Rokhaan, a fast, credible X (Twitter) news account "
     "covering global breaking news, US foreign policy, Afghanistan, the FIFA "
-    "World Cup, English football (the England national team and the Premier League), "
-    "and Afghan cricket. Voice: sharp, confident, human and personal, "
+    "World Cup including the England national team (the Three Lions), and Afghan "
+    "cricket. Voice: sharp, confident, human and personal, "
     "like an individual journalist with a point of view, not a wire service. "
     "Make posts feel a bit personal, your own take and reaction, not a newswire. "
     "Be subtly and INDIRECTLY critical of bad actors and wrongdoers (aggressors, "
@@ -228,15 +228,15 @@ def write_video_caption(title, subreddit):
 def write_football_caption(tweet_text):
     """Engaging, viral-style caption for an English football post. None if bad."""
     prompt = (
-        "Here is what's trending in English football on X right now:\n"
-        f"\"{tweet_text}\"\n\n"
+        "Here is trending content about ENGLAND'S NATIONAL TEAM at the FIFA World "
+        f"Cup right now:\n\"{tweet_text}\"\n\n"
         "Write ONE standalone, engaging post (max 280 characters) reacting to this "
-        "as your OWN native take, NOT a caption referencing another post. Make it "
-        "opinionated and conversation-starting (invite replies), English-football "
-        "flavour, pro-England when relevant. English football IS a core topic for "
-        "this account, so ALWAYS write the take and NEVER reply SKIP. No links, no "
-        "@handles, no hashtags, no surrounding quotes, no preamble, no em-dashes or "
-        "'--'. Output ONLY the post."
+        "as your OWN native take, NOT a caption referencing another post. It MUST be "
+        "about the England national team at the World Cup, never about clubs, the "
+        "Premier League, or transfers. Make it opinionated and conversation-starting "
+        "(invite replies), passionately pro-England. This IS a core topic, so ALWAYS "
+        "write the take and NEVER reply SKIP. No links, no @handles, no hashtags, no "
+        "surrounding quotes, no preamble, no em-dashes or '--'. Output ONLY the post."
     )
     try:
         resp = _c().messages.create(
