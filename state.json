@@ -88,6 +88,7 @@
     "Ransom note claims Nancy Guthrie died after abduction",
     "Reflecting pool to be drained again as Trump claims five vandalism arrests",
     "Republican-linked PACs funding Democratic US primaries: Why it matters",
+    "Rescue efforts turn to recovery as aftershocks shake Venezuela",
     "Rescuers search rubble for survivors as Venezuela earthquakes kill at least 235",
     "Russian troop build-up threatens city seen as key to seizing Ukraine's Donbas",
     "Saar: Astana\u2019s New Era of Engagement with Kabul",
@@ -159,8 +160,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-06-27",
-  "posts_today": 1,
-  "last_news_ts": 1782522934.3704467,
+  "posts_today": 2,
+  "last_news_ts": 1782530137.116937,
   "videos_date": "2026-06-26",
   "fact_date": "2026-06-27",
   "football_date": "2026-06-27",
@@ -198,14 +199,14 @@
       "pillar": "worldcup",
       "hour": 0,
       "ts": 1782518457.0559916,
-      "eng": null
+      "eng": 2
     },
     {
       "id": "2070659839299330553",
       "pillar": "worldcup",
       "hour": 0,
       "ts": 1782518751.463108,
-      "eng": null
+      "eng": 1
     },
     {
       "id": "2070677383628120095",
@@ -213,13 +214,21 @@
       "hour": 1,
       "ts": 1782522934.3704479,
       "eng": null
+    },
+    {
+      "id": "2070707594067357958",
+      "pillar": "global",
+      "hour": 3,
+      "ts": 1782530137.1169384,
+      "eng": null
     }
   ],
   "insights": {
     "global": 1.0,
-    "worldcup": 0.3
+    "worldcup": 0.8
   },
   "recent": [
-    "Trump justifies strikes on Iran amid ceasefire"
+    "Trump justifies strikes on Iran amid ceasefire",
+    "Rescue efforts turn to recovery as aftershocks shake Venezuela"
   ]
 }
