@@ -25,7 +25,7 @@ import tweepy
 import config
 import writer
 import football
-from verify import is_corroborated
+from verify import is_corroborated, keywords
 from graphics import make_card
 
 STATE_FILE = "state.json"
@@ -51,6 +51,7 @@ def load_state():
     s.setdefault("last_news_ts", 0)
     s.setdefault("log", [])         # [{id, pillar, hour, ts, eng}] performance log
     s.setdefault("insights", {})    # {pillar: avg_engagement}
+    s.setdefault("recent", [])      # recent titles, for duplicate-event detection
     # reset the daily counter when the date rolls over
     if s["date"] != today():
         s["date"] = today()
@@ -122,6 +123,14 @@ def is_negative_afghan(title):
 def is_trusted(source):
     low = (source or "").lower()
     return any(t in low for t in config.TRUSTED_SOURCES)
+
+
+def _is_dup(title, recent):
+    """True if this headline covers the same event as a recently-posted one."""
+    k = keywords(title)
+    if len(k) < 4:
+        return False
+    return any(len(k & keywords(rt)) >= 4 for rt in recent)
 
 
 def _in_window(win, hour):
@@ -297,6 +306,9 @@ def main():
         for entry in entries:
             if entry["title"] in state["posted_set"]:
                 continue
+            if _is_dup(entry["title"], state["recent"]):   # same event already posted
+                state["posted_set"].add(entry["title"])
+                continue
             if (spec["hard_news"] and not is_corroborated(entry, entries)
                     and not is_trusted(entry["source"])):
                 continue
@@ -317,6 +329,8 @@ def main():
                 if rid:
                     state["log"].append({"id": rid, "pillar": pillar, "hour": hour,
                                          "ts": time.time(), "eng": None})
+                state["recent"].append(entry["title"])
+                state["recent"] = state["recent"][-25:]
                 print(f"POSTED [{pillar}] :: {result['text']}")
                 break  # one post per pillar per run -> variety
             except Exception as e:

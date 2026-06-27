@@ -163,8 +163,12 @@ def write_news(pillar, headline, source):
             "Congress bills, courts, parties, culture, domestic scandals), reply SKIP.")
     elif pillar == "global":
         extra = (
-            "\nONLY BREAKING / MAJOR world news. If the item is a soft feature, "
-            "human-interest, lifestyle, opinion column, or minor story, reply SKIP.")
+            "\nONLY BREAKING / MAJOR world news. SKIP if it is a soft feature, "
+            "human-interest, lifestyle, opinion column, or minor story. ALSO SKIP "
+            "US DOMESTIC/internal politics (Congress, the Supreme Court or courts, "
+            "elections, parties, guns, immigration policy, culture-war, domestic "
+            "scandals) — the US is covered ONLY for its foreign affairs, never "
+            "internal matters.")
 
     prompt = (
         f"Pillar: {pillar}\nFresh headline: {headline}\nSource: {source}\n\n"
