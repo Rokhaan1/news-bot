@@ -213,7 +213,7 @@
       "pillar": "us_foreign_policy",
       "hour": 1,
       "ts": 1782522934.3704479,
-      "eng": null
+      "eng": 0
     },
     {
       "id": "2070707594067357958",
@@ -225,7 +225,8 @@
   ],
   "insights": {
     "global": 1.0,
-    "worldcup": 0.8
+    "worldcup": 0.8,
+    "us_foreign_policy": 0.0
   },
   "recent": [
     "Trump justifies strikes on Iran amid ceasefire",
