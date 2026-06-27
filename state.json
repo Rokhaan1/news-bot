@@ -142,6 +142,8 @@
     "Watch: 'I wish him well' - Trump reacts to Starmer's resignation",
     "Watching Spain's Yamal score his first World Cup g...",
     "What does Trump want from a new UK prime minister?",
+    "Which teams are in the World Cup round of 32, and what\u2019s the schedule?",
+    "Which teams have qualified for the World Cup 2026 knockouts, round of 32?",
     "Who is Tommy Robinson? The Karl Stefanovic guest who has cost Australia\u2019s famed TV host his job",
     "Why Coca-Cola and the US taxman are at war over a $20bn tax bill",
     "Why has Keir Starmer resigned as UK prime minister, and who will take over?",
@@ -161,8 +163,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-06-27",
-  "posts_today": 3,
-  "last_news_ts": 1782537338.2049978,
+  "posts_today": 4,
+  "last_news_ts": 1782544541.5594676,
   "videos_date": "2026-06-26",
   "fact_date": "2026-06-27",
   "football_date": "2026-06-27",
@@ -229,6 +231,13 @@
       "hour": 5,
       "ts": 1782537338.204999,
       "eng": null
+    },
+    {
+      "id": "2070768010768355450",
+      "pillar": "global",
+      "hour": 7,
+      "ts": 1782544541.5594685,
+      "eng": null
     }
   ],
   "insights": {
@@ -239,6 +248,7 @@
   "recent": [
     "Trump justifies strikes on Iran amid ceasefire",
     "Rescue efforts turn to recovery as aftershocks shake Venezuela",
-    "Venice protest planned for US ambassador\u2019s superyacht visit"
+    "Venice protest planned for US ambassador\u2019s superyacht visit",
+    "Which teams are in the World Cup round of 32, and what\u2019s the schedule?"
   ]
 }
