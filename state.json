@@ -137,6 +137,7 @@
     "Venezuela earthquakes live updates: buildings collapse in Caracas as officials warn \u2018high casualties\u2019 likely",
     "Venezuela earthquakes: frantic search for survivors continues, with 235 confirmed dead so far \u2013 latest updates",
     "Venezuela rocked by powerful back-to-back earthquakes",
+    "Venice protest planned for US ambassador\u2019s superyacht visit",
     "Watch World Cup Day 11: Egypt\u2019s first-ever win; Spain crushes Saudi Arabia",
     "Watch: 'I wish him well' - Trump reacts to Starmer's resignation",
     "Watching Spain's Yamal score his first World Cup g...",
@@ -160,8 +161,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-06-27",
-  "posts_today": 2,
-  "last_news_ts": 1782530137.116937,
+  "posts_today": 3,
+  "last_news_ts": 1782537338.2049978,
   "videos_date": "2026-06-26",
   "fact_date": "2026-06-27",
   "football_date": "2026-06-27",
@@ -221,6 +222,13 @@
       "hour": 3,
       "ts": 1782530137.1169384,
       "eng": null
+    },
+    {
+      "id": "2070737797695013224",
+      "pillar": "global",
+      "hour": 5,
+      "ts": 1782537338.204999,
+      "eng": null
     }
   ],
   "insights": {
@@ -230,6 +238,7 @@
   },
   "recent": [
     "Trump justifies strikes on Iran amid ceasefire",
-    "Rescue efforts turn to recovery as aftershocks shake Venezuela"
+    "Rescue efforts turn to recovery as aftershocks shake Venezuela",
+    "Venice protest planned for US ambassador\u2019s superyacht visit"
   ]
 }
