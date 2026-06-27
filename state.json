@@ -170,7 +170,7 @@
       "pillar": "global",
       "hour": 23,
       "ts": 1782515872.901015,
-      "eng": null
+      "eng": 1
     },
     {
       "id": "2070651004819739053",
@@ -215,7 +215,9 @@
       "eng": null
     }
   ],
-  "insights": {},
+  "insights": {
+    "global": 1.0
+  },
   "recent": [
     "Trump justifies strikes on Iran amid ceasefire"
   ]
