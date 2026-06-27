@@ -177,14 +177,14 @@
       "pillar": "worldcup",
       "hour": 23,
       "ts": 1782516645.194261,
-      "eng": null
+      "eng": 1
     },
     {
       "id": "2070654728707489981",
       "pillar": "worldcup",
       "hour": 23,
       "ts": 1782517533.0129952,
-      "eng": null
+      "eng": 0
     },
     {
       "id": "2070657528657019157",
@@ -216,7 +216,8 @@
     }
   ],
   "insights": {
-    "global": 1.0
+    "global": 1.0,
+    "worldcup": 0.5
   },
   "recent": [
     "Trump justifies strikes on Iran amid ceasefire"
