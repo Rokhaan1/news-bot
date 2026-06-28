@@ -95,6 +95,7 @@
     "Rescuers search rubble for survivors as Venezuela earthquakes kill at least 235",
     "Russian troop build-up threatens city seen as key to seizing Ukraine's Donbas",
     "Saar: Astana\u2019s New Era of Engagement with Kabul",
+    "Saar: Concerns over Afghan deportations from Europe discussed",
     "Saar: Rejection of security threats from Afghan soil discussed",
     "Salah leads rally as Egypt get first-ever WC win",
     "Schools close as more than half of France under red heat alerts",
@@ -168,8 +169,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-06-28",
-  "posts_today": 2,
-  "last_news_ts": 1782612063.2565663,
+  "posts_today": 3,
+  "last_news_ts": 1782619253.0080786,
   "videos_date": "2026-06-26",
   "fact_date": "2026-06-28",
   "football_date": "2026-06-28",
@@ -278,6 +279,13 @@
       "hour": 2,
       "ts": 1782612063.2565677,
       "eng": null
+    },
+    {
+      "id": "2071081373255840129",
+      "pillar": "afghanistan",
+      "hour": 4,
+      "ts": 1782619253.0080795,
+      "eng": null
     }
   ],
   "insights": {
@@ -294,6 +302,7 @@
     "WFP Says Pakistan Border Closures Deepen Afghanistan\u2019s Humanitarian Crisis",
     "Afghan women\u2019s situation highlighted at SCO Forum amid ongoing global debate",
     "Still uninspiring, but England avoid nightmare Wor...",
-    "6.1-Magnitude Earthquake Shakes Kabul and Northern Afghanistan"
+    "6.1-Magnitude Earthquake Shakes Kabul and Northern Afghanistan",
+    "Saar: Concerns over Afghan deportations from Europe discussed"
   ]
 }
