@@ -6,6 +6,7 @@
     "2070652122463445440",
     "2070653625806868577",
     "2070654995041509683",
+    "2071019294817751240",
     "34 Hindu families in Canada seeking return to Afghanistan, says former MP",
     "Afghan women\u2019s situation highlighted at SCO Forum amid ongoing global debate",
     "Afghanistan officials call for investment during Indian expo visit",
@@ -98,6 +99,7 @@
     "Schools close as more than half of France under red heat alerts",
     "Serbian Dejan Dedovic appointed head coach of Afghanistan national futsal team",
     "Spain have Yamal back -- and they finally look lik...",
+    "Still uninspiring, but England avoid nightmare Wor...",
     "Supreme Court allows Trump to end protected status for Haitian and Syrian immigrants",
     "Supreme court hands Trump administration big win with rulings on key immigration cases \u2013 as it happened",
     "Tahawol: Central Asia, European Union and Afghanistan discussed",
@@ -164,12 +166,12 @@
     "\u2018No sense of direction\u2019: The downfall of Keir Starmer",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-06-27",
-  "posts_today": 6,
-  "last_news_ts": 1782558940.7874508,
+  "date": "2026-06-28",
+  "posts_today": 1,
+  "last_news_ts": 1782604862.3040566,
   "videos_date": "2026-06-26",
   "fact_date": "2026-06-27",
-  "football_date": "2026-06-27",
+  "football_date": "2026-06-28",
   "log": [
     {
       "id": "2070647765747839358",
@@ -254,6 +256,20 @@
       "hour": 11,
       "ts": 1782558940.7874522,
       "eng": 2
+    },
+    {
+      "id": "2071021000263709125",
+      "pillar": "worldcup",
+      "hour": 0,
+      "ts": 1782604858.9646256,
+      "eng": null
+    },
+    {
+      "id": "2071021014075523200",
+      "pillar": "worldcup",
+      "hour": 0,
+      "ts": 1782604862.3040578,
+      "eng": null
     }
   ],
   "insights": {
@@ -268,6 +284,7 @@
     "Venice protest planned for US ambassador\u2019s superyacht visit",
     "Which teams are in the World Cup round of 32, and what\u2019s the schedule?",
     "WFP Says Pakistan Border Closures Deepen Afghanistan\u2019s Humanitarian Crisis",
-    "Afghan women\u2019s situation highlighted at SCO Forum amid ongoing global debate"
+    "Afghan women\u2019s situation highlighted at SCO Forum amid ongoing global debate",
+    "Still uninspiring, but England avoid nightmare Wor..."
   ]
 }
