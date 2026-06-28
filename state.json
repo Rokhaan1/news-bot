@@ -8,6 +8,7 @@
     "2070654995041509683",
     "2071019294817751240",
     "34 Hindu families in Canada seeking return to Afghanistan, says former MP",
+    "6.1-Magnitude Earthquake Shakes Kabul and Northern Afghanistan",
     "Afghan women\u2019s situation highlighted at SCO Forum amid ongoing global debate",
     "Afghanistan officials call for investment during Indian expo visit",
     "Afghanistan opt to bat; Reddy, Prasidh and Dubey return for India",
@@ -167,10 +168,10 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-06-28",
-  "posts_today": 1,
-  "last_news_ts": 1782604862.3040566,
+  "posts_today": 2,
+  "last_news_ts": 1782612063.2565663,
   "videos_date": "2026-06-26",
-  "fact_date": "2026-06-27",
+  "fact_date": "2026-06-28",
   "football_date": "2026-06-28",
   "log": [
     {
@@ -270,6 +271,13 @@
       "hour": 0,
       "ts": 1782604862.3040578,
       "eng": null
+    },
+    {
+      "id": "2071051217351168204",
+      "pillar": "afghanistan",
+      "hour": 2,
+      "ts": 1782612063.2565677,
+      "eng": null
     }
   ],
   "insights": {
@@ -285,6 +293,7 @@
     "Which teams are in the World Cup round of 32, and what\u2019s the schedule?",
     "WFP Says Pakistan Border Closures Deepen Afghanistan\u2019s Humanitarian Crisis",
     "Afghan women\u2019s situation highlighted at SCO Forum amid ongoing global debate",
-    "Still uninspiring, but England avoid nightmare Wor..."
+    "Still uninspiring, but England avoid nightmare Wor...",
+    "6.1-Magnitude Earthquake Shakes Kabul and Northern Afghanistan"
   ]
 }
