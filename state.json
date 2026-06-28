@@ -286,7 +286,7 @@
       "pillar": "afghanistan",
       "hour": 4,
       "ts": 1782619253.0080795,
-      "eng": null
+      "eng": 0
     },
     {
       "id": "2071111585226002523",
@@ -300,7 +300,7 @@
     "global": 0.5,
     "worldcup": 0.6,
     "us_foreign_policy": 0.0,
-    "afghanistan": 2.0
+    "afghanistan": 1.5
   },
   "recent": [
     "Trump justifies strikes on Iran amid ceasefire",
