@@ -7,6 +7,7 @@
     "2070653625806868577",
     "2070654995041509683",
     "2071019294817751240",
+    "2071372787092955644",
     "34 Hindu families in Canada seeking return to Afghanistan, says former MP",
     "6.1-Magnitude Earthquake Shakes Kabul and Northern Afghanistan",
     "6.1-magnitude earthquake hits Afghanistan, epicenter in Badakhshan",
@@ -27,6 +28,7 @@
     "Australia politics live: David Pocock rues \u2018farcical\u2019 tax review; Pauline Hanson explains stance on paid parental leave",
     "Australia politics live: Jim Chalmers hails \u2018important day for tax reform\u2019 as Greens promise to support passage of budget measures",
     "Australia politics live: Paterson says Hanson\u2019s vision for monocultural Australia \u2018deeply weird\u2019 as he defends Taylor\u2019s response",
+    "Australia politics live: Taylor says Coalition \u2018lost trust\u2019 of public as poll numbers keep falling; Monique Ryan pushes bill to fix Hecs debts",
     "Australia politics live: \u2018Keep the flame of memory burning\u2019, PM tells opening of new Australian War Memorial gallery",
     "Bielsa's Uruguay anger Cape Verde over fair play",
     "British parliament to debate Israeli influence on UK politics: What we know",
@@ -124,6 +126,7 @@
     "Trump says five people arrested as he again blames \u2018vandals\u2019 for reflecting pool damage without giving evidence \u2013 live",
     "Trump says repairs to algae-plagued Reflecting Pool will begin immediately",
     "Trump-backed political outsider wins Colombia election, initial count shows",
+    "Two boys rescued from Venezuela earthquake rubble after days of being trapped",
     "Two students arrested after three killed in Philippines school shooting",
     "UK Labour Party Leadership contest may loom after UK PM Starmer resigns",
     "UK Prime Minister Keir Starmer announces resignation plan",
@@ -171,12 +174,12 @@
     "\u2018No sense of direction\u2019: The downfall of Keir Starmer",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-06-28",
-  "posts_today": 6,
-  "last_news_ts": 1782640858.3837938,
+  "date": "2026-06-29",
+  "posts_today": 1,
+  "last_news_ts": 1782691259.2195332,
   "videos_date": "2026-06-26",
   "fact_date": "2026-06-28",
-  "football_date": "2026-06-28",
+  "football_date": "2026-06-29",
   "log": [
     {
       "id": "2070647765747839358",
@@ -310,6 +313,20 @@
       "hour": 10,
       "ts": 1782640858.383795,
       "eng": 1
+    },
+    {
+      "id": "2071383375273746537",
+      "pillar": "worldcup",
+      "hour": 0,
+      "ts": 1782691255.9076917,
+      "eng": null
+    },
+    {
+      "id": "2071383389244973201",
+      "pillar": "global",
+      "hour": 0,
+      "ts": 1782691259.2195346,
+      "eng": null
     }
   ],
   "insights": {
@@ -330,6 +347,7 @@
     "Saar: Concerns over Afghan deportations from Europe discussed",
     "Afghanistan, Uzbekistan set for friendly cricket clash in Khost",
     "Afghanistan committed to continued cooperation with UN on humanitarian and development projects: FM Muttaqi",
-    "6.1-magnitude earthquake hits Afghanistan, epicenter in Badakhshan"
+    "6.1-magnitude earthquake hits Afghanistan, epicenter in Badakhshan",
+    "Two boys rescued from Venezuela earthquake rubble after days of being trapped"
   ]
 }
