@@ -41,6 +41,7 @@
     "Concei\u00e7\u00e3o: No obligation to pass ball to Ronaldo",
     "Copy of Salah stepped up, but World Cup 2026 is proving to...",
     "Cracks are showing in Trump\u2019s blue-collar base | Steven Greenhouse",
+    "Critically injured airstrike victims airlifted to Kabul for emergency treatment",
     "Dettol apologises after \u2018toxic men\u2019 advert sparks backlash in China",
     "Earthquake of magnitude 5.2 strikes Afghanistan\u2019s Hindu Kush region",
     "Ebola cases surpass 1,000 in DR Congo amid violence and displacement",
@@ -180,8 +181,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-06-29",
-  "posts_today": 4,
-  "last_news_ts": 1782712859.8703408,
+  "posts_today": 5,
+  "last_news_ts": 1782720059.6390533,
   "videos_date": "2026-06-26",
   "fact_date": "2026-06-29",
   "football_date": "2026-06-29",
@@ -353,6 +354,13 @@
       "hour": 6,
       "ts": 1782712859.8703415,
       "eng": null
+    },
+    {
+      "id": "2071504186894663848",
+      "pillar": "afghanistan",
+      "hour": 8,
+      "ts": 1782720059.6390543,
+      "eng": null
     }
   ],
   "insights": {
@@ -377,6 +385,7 @@
     "Two boys rescued from Venezuela earthquake rubble after days of being trapped",
     "Ancelotti refuses to engage in Japan 'mind games'",
     "Pakistan says its security forces killed 29 fighters along Afghan border",
-    "Pakistan Orders Police to Arrest Afghans Without Valid Visas From July 10"
+    "Pakistan Orders Police to Arrest Afghans Without Valid Visas From July 10",
+    "Critically injured airstrike victims airlifted to Kabul for emergency treatment"
   ]
 }
