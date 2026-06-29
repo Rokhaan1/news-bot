@@ -83,6 +83,7 @@
     "Neymar trains before Scotland World Cup clash",
     "Oil prices back to pre-war levels on rising Middle East supply",
     "Pakistan issues nationwide alert over fears of heavy rains, floods",
+    "Pakistan says its security forces killed 29 fighters along Afghan border",
     "Pakistani truckers return home after 9 months stranded in Afghanistan",
     "Partey 'ready' for England after missing opener",
     "Plan to auction over 100 Titanic artifacts faces US government opposition",
@@ -178,8 +179,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-06-29",
-  "posts_today": 2,
-  "last_news_ts": 1782698460.93988,
+  "posts_today": 3,
+  "last_news_ts": 1782705660.6904302,
   "videos_date": "2026-06-26",
   "fact_date": "2026-06-29",
   "football_date": "2026-06-29",
@@ -337,6 +338,13 @@
       "hour": 2,
       "ts": 1782698460.9398816,
       "eng": null
+    },
+    {
+      "id": "2071443793371643952",
+      "pillar": "afghanistan",
+      "hour": 4,
+      "ts": 1782705660.6904316,
+      "eng": null
     }
   ],
   "insights": {
@@ -359,6 +367,7 @@
     "Afghanistan committed to continued cooperation with UN on humanitarian and development projects: FM Muttaqi",
     "6.1-magnitude earthquake hits Afghanistan, epicenter in Badakhshan",
     "Two boys rescued from Venezuela earthquake rubble after days of being trapped",
-    "Ancelotti refuses to engage in Japan 'mind games'"
+    "Ancelotti refuses to engage in Japan 'mind games'",
+    "Pakistan says its security forces killed 29 fighters along Afghan border"
   ]
 }
