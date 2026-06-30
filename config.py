@@ -51,6 +51,8 @@ PILLARS = {
             "https://www.khaama.com/feed/",
             "https://tolonews.com/rss.xml",
             "https://www.ariananews.af/feed/",
+            "https://pajhwok.com/feed/",
+            "https://feeds.bbci.co.uk/pashto/rss.xml",   # Pashto-language source
             "https://www.aljazeera.com/xml/rss/all.xml",
             "https://news.un.org/feed/subscribe/en/news/region/asia-pacific/rss.xml",
         ],
@@ -79,11 +81,11 @@ PILLAR_KEYWORDS = {
     "global": [],  # no filter — takes top world headlines
 }
 
-# Hashtags appended per pillar (kept minimal)
+# No hashtags anywhere (per request; 2026 algorithm doesn't reward them)
 PILLAR_HASHTAGS = {
-    "worldcup": "#WorldCup2026",
-    "afghan_cricket": "#AfghanAtalan",
-    "afghanistan": "#Afghanistan",
+    "worldcup": "",
+    "afghan_cricket": "",
+    "afghanistan": "",
     "global": "",
     "us_foreign_policy": "",
 }

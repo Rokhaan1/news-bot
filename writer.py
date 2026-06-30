@@ -9,7 +9,8 @@ junk, we never post it — news falls back to the raw headline, video is skipped
 import re
 import anthropic
 
-MODEL = "claude-haiku-4-5"   # cheapest capable model (~$1 / 1M input tokens)
+MODEL = "claude-haiku-4-5"          # fast/cheap for high-volume news
+QUALITY_MODEL = "claude-opus-4-8"   # best quality for facts + Pashto (low volume)
 _client = None
 
 
@@ -28,6 +29,19 @@ def _fix_taliban(text):
     text = re.sub(r"\bthe\s+Afghan\s+" + _GOV, r"the Taliban \1", text, flags=re.I)
     text = re.sub(r"\bAfghan\s+" + _GOV, r"Taliban \1", text, flags=re.I)
     text = re.sub(r"\bKabul['’]?s\s+" + _GOV, r"the Taliban's \1", text, flags=re.I)
+    # the Taliban are never a legitimate "government" — use rule/regime
+    text = re.sub(r"\bde facto government\b", "Taliban rule", text, flags=re.I)
+    text = re.sub(r"\b(the\s+)?Afghan(istan)?\s+government\b", "the Taliban", text, flags=re.I)
+    text = re.sub(r"\bgovernment of Afghanistan\b", "the Taliban", text, flags=re.I)
+    text = re.sub(r"\bTaliban government\b", "Taliban regime", text, flags=re.I)
+    return text
+
+
+def _fix_border(text):
+    """Remove 'border/frontier' framing for the Afghanistan-Pakistan (Durand) line."""
+    text = re.sub(r"\b(the\s+)?(afghan(istan)?[-\s]?pakistan|pakistan[-\s]?afghan(istan)?)"
+                  r"\s+border\b", "the Durand Line", text, flags=re.I)
+    text = re.sub(r"\bDurand Line border\b", "Durand Line", text, flags=re.I)
     return text
 
 
@@ -37,6 +51,7 @@ def _sanitize(text):
         return text
     text = text.replace("—", ", ").replace("–", ", ").replace("--", ", ")
     text = _fix_taliban(text)
+    text = _fix_border(text)
     text = re.sub(r"\s+([,.;:!?])", r"\1", text)   # no space before punctuation
     text = re.sub(r"(,\s*){2,}", ", ", text)        # collapse double commas
     text = re.sub(r"\s{2,}", " ", text)             # collapse double spaces
@@ -54,9 +69,11 @@ VOICE = (
     "You write posts for @Rokhaan, a fast, credible X (Twitter) news account "
     "covering global breaking news, US foreign policy, Afghanistan, the FIFA "
     "World Cup including the England national team (the Three Lions), and Afghan "
-    "cricket. Voice: sharp, confident, human and personal, "
-    "like an individual journalist with a point of view, not a wire service. "
-    "Make posts feel a bit personal, your own take and reaction, not a newswire. "
+    "cricket. You are a PROFESSIONAL POLITICAL ANALYST and a leading EXPERT on "
+    "Afghanistan, its history, ancient civilization, politics, and geopolitics. "
+    "Voice: authoritative, incisive and analytical, with genuine personal conviction, "
+    "never a bland wire service. Write at expert op-ed level: real insight, historical "
+    "and geopolitical context, depth, never shallow, generic, or thin. "
     "Be subtly and INDIRECTLY critical of bad actors and wrongdoers (aggressors, "
     "oppressors, and those who harm Afghanistan or its people) through framing and "
     "pointed observation, never crude attacks or slurs. "
@@ -65,10 +82,13 @@ VOICE = (
     "dignity, resilience, and achievements, and frame stories sympathetically toward "
     "Afghanistan and Afghans, while staying truthful (never fabricate). Pro-Afghanistan "
     "means pro the Afghan PEOPLE and NATION, NOT pro-Taliban (keep that distinction).\n\n"
-    "CRITICAL EDITORIAL RULE on Afghanistan: The Taliban are the de facto rulers "
-    "but are NOT a legitimate, elected, or internationally recognized government, "
-    "and do not derive their authority from the Afghan people. Refer to them as "
-    "'the Taliban', 'Taliban officials', or 'Taliban rule/regime'. NEVER call them "
+    "CRITICAL EDITORIAL RULE on Afghanistan: The Taliban are an extremist FRINGE "
+    "group that seized power amid the 2021 US withdrawal, NOT through any mandate "
+    "from Afghans. They are illegitimate, unelected, internationally unrecognized, "
+    "and they do NOT represent the people of Afghanistan. Refer to their rule ONLY "
+    "as 'the Taliban', 'Taliban rule', or 'the Taliban regime'. There is NO "
+    "'Afghan government', 'Afghan minister', or 'Afghan ministry', only the Taliban. "
+    "NEVER call them "
     "'Afghan officials', 'the Afghan government', 'Afghanistan's government', or "
     "'Kabul' as if they were the legitimate state. This applies to ALL titles and "
     "bodies: write 'the Taliban's prime minister', 'the Taliban's foreign minister', "
@@ -82,8 +102,13 @@ VOICE = (
     "'Pakistani territory' as settled fact. Afghanistan has never formally "
     "recognized the Durand Line as its international border. Refer to it as 'the "
     "Durand Line' (a disputed, colonial-era demarcation), not 'the "
-    "Afghanistan-Pakistan border'.\n\n"
-    "PAKISTAN: Never write pro-Pakistan posts. Do not praise, promote, or "
+    "Afghanistan-Pakistan border'. NEVER use the words 'border', 'cross-border', "
+    "'frontier', or 'border region' in the Afghanistan-Pakistan context. The Pashtun "
+    "and Baloch lands east of the Durand Line are historically Afghan, treat them as "
+    "Afghan lands under Pakistani control, not a settled border.\n\n"
+    "PAKISTAN: Hold a consistently critical, ANTI-PAKISTAN stance toward the "
+    "Pakistani state and its military/ISI establishment (never pro-Taliban, only "
+    "pro-Afghanistan). Never write pro-Pakistan posts. Do not praise, promote, or "
     "sympathetically frame the Pakistani state, military (including the ISI), or "
     "government, and never repeat their talking points as fact, especially against "
     "Afghanistan. Report Pakistan-related news factually and plainly; never cheerlead "
@@ -108,7 +133,7 @@ VOICE = (
     "all on-platform. "
     "4) Sound genuinely human and varied, never template-like, thin, or generic "
     "(AI-pattern content gets suppressed). "
-    "5) Use AT MOST one hashtag, usually zero. "
+    "5) NEVER use hashtags. "
     "6) Be punchy and substantive; the first 30-60 minutes of engagement decide "
     "whether a post takes off, so make every word earn attention."
 )
@@ -260,17 +285,22 @@ def write_football_caption(tweet_text):
 def write_afghan_fact():
     """One positive/fun/historic fact about Afghanistan. None if it looks off."""
     prompt = (
-        "Write ONE engaging tweet sharing a POSITIVE, fun, or historic fact about "
-        "Afghanistan, its people, history, ancient civilization, culture, geography, "
-        "poets, science, or achievements. 200-450 characters, proud and uplifting, "
-        "factual (never fabricate), no hashtags, no surrounding quotes, no preamble, "
-        "and no em-dashes or '--'. Vary the topic each day (e.g. ancient Ariana and "
-        "Bactria, Balkh, Herat, the Silk Road, Rumi, Khushal Khan Khattak, Band-e "
-        "Amir, lapis lazuli, Afghan hospitality, music, resilience). Output ONLY the tweet."
+        "Write ONE expert, engaging tweet sharing a POSITIVE or historic fact about "
+        "Afghanistan, with a strong focus on its ANCIENT CIVILIZATION and HISTORICAL "
+        "SITES thousands of years old. Draw on a wide, varied range, for example: the "
+        "Bamiyan valley and its giant Buddhas, Mes Aynak, Balkh (the 'Mother of "
+        "Cities'), the Minaret of Jam, Herat's Citadel and Musalla, Ghazni, Ai-Khanoum "
+        "and Greco-Bactrian heritage, Gandhara and Hadda, the Kushan empire, ancient "
+        "Aryana, the Silk Road, lapis lazuli from Badakhshan, and great figures (Rumi "
+        "of Balkh, Rabia Balkhi, Sanai, Avicenna's Balkh roots, Khushal Khan Khattak). "
+        "Pick a DIFFERENT topic each day, go well beyond lakes and stones, give a real, "
+        "specific, expert detail. 200-450 characters, proud and authoritative, factual "
+        "(never fabricate), no hashtags, no quotes, no preamble, no em-dashes or '--'. "
+        "Output ONLY the tweet."
     )
     try:
         resp = _c().messages.create(
-            model=MODEL, max_tokens=400, system=VOICE,
+            model=QUALITY_MODEL, max_tokens=600, system=VOICE,
             messages=[{"role": "user", "content": prompt}],
         )
         out = next(b.text for b in resp.content if b.type == "text").strip().strip('"')
@@ -279,4 +309,29 @@ def write_afghan_fact():
         return _sanitize(out)
     except Exception as e:
         print(f"  (afghan fact failed: {e})")
+        return None
+
+
+def write_pashto_post():
+    """One original pro-Afghanistan tweet in flawless Pashto. None on failure."""
+    prompt = (
+        "Write ONE original tweet in PASHTO (پښتو) with flawless, native, error-free "
+        "spelling and grammar. Topic: pro-Afghanistan, for example Afghan history, "
+        "ancient civilization, a historical site thousands of years old, national "
+        "pride and resilience, or a sharp pro-Afghanistan political point "
+        "(anti-occupation and anti-Pakistan, never pro-Taliban). Dignified, expert "
+        "tone. 150-400 characters. Pashto script ONLY, no Latin letters, no hashtags, "
+        "no quotes, no preamble, no em-dashes. Output ONLY the Pashto tweet."
+    )
+    try:
+        resp = _c().messages.create(
+            model=QUALITY_MODEL, max_tokens=600, system=VOICE,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        out = next(b.text for b in resp.content if b.type == "text").strip().strip('"')
+        if len(out.strip()) < 8:
+            return None
+        return out   # Pashto: skip the English-centric guards/sanitizer
+    except Exception as e:
+        print(f"  (pashto failed: {e})")
         return None

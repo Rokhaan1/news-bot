@@ -48,6 +48,7 @@ def load_state():
     s.setdefault("videos_date", "")
     s.setdefault("football_date", "")
     s.setdefault("fact_date", "")
+    s.setdefault("pashto_date", "")
     s.setdefault("last_news_ts", 0)
     s.setdefault("log", [])         # [{id, pillar, hour, ts, eng}] performance log
     s.setdefault("insights", {})    # {pillar: avg_engagement}
@@ -199,6 +200,23 @@ def maybe_post_afghan_fact(client, state):
         print(f"FAILED [afghan_fact] {e}")
 
 
+def maybe_post_pashto(client, state):
+    """Once a day, during Afghan hours: an original pro-Afghanistan Pashto post."""
+    if state.get("pashto_date") == today():
+        return
+    if not _in_window(config.AFGHAN_FACT_WINDOW, datetime.now(timezone.utc).hour):
+        return
+    text = writer.write_pashto_post()
+    if not text:
+        return
+    try:
+        client.create_tweet(text=text)
+        state["pashto_date"] = today()
+        print(f"POSTED [pashto] {text[:40]}")
+    except Exception as e:
+        print(f"FAILED [pashto] {e}")
+
+
 def maybe_post_football(client, state):
     """Once a day, in football hours: share a viral English-football post from X."""
     if config.FOOTBALL_PER_DAY <= 0 or state.get("football_date") == today():
@@ -281,6 +299,7 @@ def main():
 
     # 1) one Afghan pride fact + one viral English-football share per day
     maybe_post_afghan_fact(client, state)
+    maybe_post_pashto(client, state)
     maybe_post_football(client, state)
 
     # 2) news — respect per-run and per-day caps
