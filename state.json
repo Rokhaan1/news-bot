@@ -90,6 +90,7 @@
     "Pakistan Orders Police to Arrest Afghans Without Valid Visas From July 10",
     "Pakistan issues nationwide alert over fears of heavy rains, floods",
     "Pakistan says its security forces killed 29 fighters along Afghan border",
+    "Pakistani strikes kill dozens of Afghan villagers",
     "Pakistani truckers return home after 9 months stranded in Afghanistan",
     "Partey 'ready' for England after missing opener",
     "Plan to auction over 100 Titanic artifacts faces US government opposition",
@@ -185,10 +186,10 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-06-30",
-  "posts_today": 1,
-  "last_news_ts": 1782777659.6894073,
+  "posts_today": 2,
+  "last_news_ts": 1782784859.661129,
   "videos_date": "2026-06-26",
-  "fact_date": "2026-06-29",
+  "fact_date": "2026-06-30",
   "football_date": "2026-06-30",
   "log": [
     {
@@ -386,6 +387,13 @@
       "hour": 0,
       "ts": 1782777659.6894085,
       "eng": null
+    },
+    {
+      "id": "2071775977970323626",
+      "pillar": "afghanistan",
+      "hour": 2,
+      "ts": 1782784859.6611304,
+      "eng": null
     }
   ],
   "insights": {
@@ -413,6 +421,7 @@
     "Pakistan Orders Police to Arrest Afghans Without Valid Visas From July 10",
     "Critically injured airstrike victims airlifted to Kabul for emergency treatment",
     "Karzai condemns Pakistani airstrikes, calls them violation of Afghanistan\u2019s sovereignty",
-    "Israeli strike kills two, setting tents ablaze in Gaza humanitarian zone"
+    "Israeli strike kills two, setting tents ablaze in Gaza humanitarian zone",
+    "Pakistani strikes kill dozens of Afghan villagers"
   ]
 }
