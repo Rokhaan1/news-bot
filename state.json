@@ -55,6 +55,7 @@
     "Far-right de la Espriella elected Colombia president: What\u2019s next?",
     "First round of US-Iran talks ends with encouraging progress, mediators say",
     "Former Kenyan justice minister blocked from entering Uganda, lawyers' body says",
+    "Founder of Asian super-app Gojek sentenced to years in jail for corruption",
     "Four years later, same debate for Portugal: Why is...",
     "France braces for another day of sweltering heat as Europe heatwave spreads",
     "France confirms first Ebola case",
@@ -190,8 +191,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-06-30",
-  "posts_today": 5,
-  "last_news_ts": 1782806455.7335072,
+  "posts_today": 6,
+  "last_news_ts": 1782813656.4561613,
   "videos_date": "2026-06-26",
   "fact_date": "2026-06-30",
   "football_date": "2026-06-30",
@@ -419,6 +420,13 @@
       "hour": 8,
       "ts": 1782806455.733508,
       "eng": null
+    },
+    {
+      "id": "2071896760444682563",
+      "pillar": "global",
+      "hour": 10,
+      "ts": 1782813656.456162,
+      "eng": null
     }
   ],
   "insights": {
@@ -450,6 +458,7 @@
     "Pakistani strikes kill dozens of Afghan villagers",
     "Tahawol: Pakistan\u2019s attacks on civilians in Afghanistan",
     "Australia issues highest-level travel warning for Afghanistan",
-    "Heavy security deployed in South Africa ahead of anti-migrant protests"
+    "Heavy security deployed in South Africa ahead of anti-migrant protests",
+    "Founder of Asian super-app Gojek sentenced to years in jail for corruption"
   ]
 }
