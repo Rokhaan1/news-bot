@@ -8,6 +8,7 @@
     "2070654995041509683",
     "2071019294817751240",
     "2071372787092955644",
+    "2071741783474868607",
     "34 Hindu families in Canada seeking return to Afghanistan, says former MP",
     "6.1-Magnitude Earthquake Shakes Kabul and Northern Afghanistan",
     "6.1-magnitude earthquake hits Afghanistan, epicenter in Badakhshan",
@@ -27,6 +28,7 @@
     "Australia Launches Parliamentary Friendship Group for the People of Afghanistan",
     "Australia news live: Karl Stefanovic says his podcast is \u2018about freedom of speech\u2019 after Nine announces his immediate departure",
     "Australia politics live: David Pocock rues \u2018farcical\u2019 tax review; Pauline Hanson explains stance on paid parental leave",
+    "Australia politics live: Geoffrey Watson criticises \u2018silly\u2019 call to pause Victorian big build projects over corruption",
     "Australia politics live: Jim Chalmers hails \u2018important day for tax reform\u2019 as Greens promise to support passage of budget measures",
     "Australia politics live: Paterson says Hanson\u2019s vision for monocultural Australia \u2018deeply weird\u2019 as he defends Taylor\u2019s response",
     "Australia politics live: Taylor says Coalition \u2018lost trust\u2019 of public as poll numbers keep falling; Monique Ryan pushes bill to fix Hecs debts",
@@ -70,6 +72,7 @@
     "Is Harry Kane the last of England's world-class st...",
     "Israel and Lebanon sign framework agreement after US-brokered talks",
     "Israel kills turtle conservationist Mona Khalil",
+    "Israeli strike kills two, setting tents ablaze in Gaza humanitarian zone",
     "JD Vance touts progress on key issues in US-Iran negotiations",
     "Japan quintuples visa fees in first price hike since 1978",
     "Kabul Delegation Attends Brussels Migration Talks: Balki",
@@ -181,12 +184,12 @@
     "\u2018No sense of direction\u2019: The downfall of Keir Starmer",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-06-29",
-  "posts_today": 6,
-  "last_news_ts": 1782727260.1888561,
+  "date": "2026-06-30",
+  "posts_today": 1,
+  "last_news_ts": 1782777659.6894073,
   "videos_date": "2026-06-26",
   "fact_date": "2026-06-29",
-  "football_date": "2026-06-29",
+  "football_date": "2026-06-30",
   "log": [
     {
       "id": "2070647765747839358",
@@ -369,6 +372,20 @@
       "hour": 10,
       "ts": 1782727260.188857,
       "eng": 0
+    },
+    {
+      "id": "2071745767815962763",
+      "pillar": "worldcup",
+      "hour": 0,
+      "ts": 1782777657.0068772,
+      "eng": null
+    },
+    {
+      "id": "2071745779060916681",
+      "pillar": "global",
+      "hour": 0,
+      "ts": 1782777659.6894085,
+      "eng": null
     }
   ],
   "insights": {
@@ -395,6 +412,7 @@
     "Pakistan says its security forces killed 29 fighters along Afghan border",
     "Pakistan Orders Police to Arrest Afghans Without Valid Visas From July 10",
     "Critically injured airstrike victims airlifted to Kabul for emergency treatment",
-    "Karzai condemns Pakistani airstrikes, calls them violation of Afghanistan\u2019s sovereignty"
+    "Karzai condemns Pakistani airstrikes, calls them violation of Afghanistan\u2019s sovereignty",
+    "Israeli strike kills two, setting tents ablaze in Gaza humanitarian zone"
   ]
 }
