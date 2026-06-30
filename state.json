@@ -122,6 +122,7 @@
     "Supreme court hands Trump administration big win with rulings on key immigration cases \u2013 as it happened",
     "Tahawol: Central Asia, European Union and Afghanistan discussed",
     "Tahawol: Efforts to eliminate drugs across Afghanistan discussed",
+    "Tahawol: Pakistan\u2019s attacks on civilians in Afghanistan",
     "Tesla crash that killed a woman under US federal investigation",
     "The ICC must investigate Israel\u2019s genocidal use of sexual violence",
     "The champion they didn\u2019t want: inside Wyndham Clark\u2019s lonely US Open coronation",
@@ -186,8 +187,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-06-30",
-  "posts_today": 2,
-  "last_news_ts": 1782784859.661129,
+  "posts_today": 3,
+  "last_news_ts": 1782792059.985588,
   "videos_date": "2026-06-26",
   "fact_date": "2026-06-30",
   "football_date": "2026-06-30",
@@ -394,6 +395,13 @@
       "hour": 2,
       "ts": 1782784859.6611304,
       "eng": null
+    },
+    {
+      "id": "2071806178192195787",
+      "pillar": "afghanistan",
+      "hour": 4,
+      "ts": 1782792059.985589,
+      "eng": null
     }
   ],
   "insights": {
@@ -422,6 +430,7 @@
     "Critically injured airstrike victims airlifted to Kabul for emergency treatment",
     "Karzai condemns Pakistani airstrikes, calls them violation of Afghanistan\u2019s sovereignty",
     "Israeli strike kills two, setting tents ablaze in Gaza humanitarian zone",
-    "Pakistani strikes kill dozens of Afghan villagers"
+    "Pakistani strikes kill dozens of Afghan villagers",
+    "Tahawol: Pakistan\u2019s attacks on civilians in Afghanistan"
   ]
 }
