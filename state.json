@@ -194,7 +194,7 @@
   "posts_today": 6,
   "last_news_ts": 1782813656.4561613,
   "videos_date": "2026-06-26",
-  "fact_date": "",
+  "fact_date": "2026-06-30",
   "football_date": "2026-06-30",
   "log": [
     {
@@ -460,5 +460,6 @@
     "Australia issues highest-level travel warning for Afghanistan",
     "Heavy security deployed in South Africa ahead of anti-migrant protests",
     "Founder of Asian super-app Gojek sentenced to years in jail for corruption"
-  ]
+  ],
+  "pashto_date": "2026-06-30"
 }
