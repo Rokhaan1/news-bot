@@ -53,10 +53,12 @@ def load_state():
     s.setdefault("log", [])         # [{id, pillar, hour, ts, eng}] performance log
     s.setdefault("insights", {})    # {pillar: avg_engagement}
     s.setdefault("recent", [])      # recent titles, for duplicate-event detection
-    # reset the daily counter when the date rolls over
+    s.setdefault("slots_done", [])  # UTC hours of POST_SLOTS already filled today
+    # reset the daily counters when the date rolls over
     if s["date"] != today():
         s["date"] = today()
         s["posts_today"] = 0
+        s["slots_done"] = []
     s["posted_set"] = set(s["posted"])
     return s
 
@@ -142,6 +144,21 @@ def _in_window(win, hour):
     if start <= end:
         return start <= hour < end
     return hour >= start or hour < end
+
+
+def _due_slot(hour, done):
+    """Return the earliest POST_SLOT that is due at this UTC hour and not yet
+    filled today, or None. Catch-up is capped so a slot never bleeds into the
+    next slot's hour."""
+    slots = config.POST_SLOTS
+    for i, slot in enumerate(slots):
+        if slot["hour"] in done:
+            continue
+        nxt = slots[i + 1]["hour"] if i + 1 < len(slots) else 24
+        end = min(slot["hour"] + config.SLOT_CATCHUP_HOURS, nxt - 1)
+        if slot["hour"] <= hour <= end:
+            return slot
+    return None
 
 
 # ---------- compose captions ----------
@@ -302,58 +319,65 @@ def main():
     maybe_post_pashto(client, state)
     maybe_post_football(client, state)
 
-    # 2) news — respect per-run and per-day caps
+    # 2) news — post at fixed UTC slots, each timed to a target audience.
     posts_made = 0
-    spacing_ok = (time.time() - state.get("last_news_ts", 0)
-                  ) >= config.MIN_MINUTES_BETWEEN_NEWS * 60
     hour = datetime.now(timezone.utc).hour
-    pillars = ranked_pillars(state)  # learned winners first, with exploration
-
-    for pillar, spec in pillars:
-        if not spacing_ok:
-            print("Spacing: too soon since last news post; skipping this run.")
-            break
-        if posts_made >= config.MAX_POSTS_PER_RUN:
-            break
-        if state["posts_today"] >= config.MAX_POSTS_PER_DAY:
-            print("Daily post cap reached.")
-            break
-        if not _in_window(config.PILLAR_WINDOWS.get(pillar), hour):
-            continue  # outside this topic's geo/time window
-
-        entries = collect_entries(pillar, spec)
-        for entry in entries:
-            if entry["title"] in state["posted_set"]:
-                continue
-            if _is_dup(entry["title"], state["recent"]):   # same event already posted
-                state["posted_set"].add(entry["title"])
-                continue
-            if (spec["hard_news"] and not is_corroborated(entry, entries)
-                    and not is_trusted(entry["source"])):
-                continue
-            if pillar == "afghan_cricket" and is_negative_afghan(entry["title"]):
-                state["posted_set"].add(entry["title"])  # mark seen, don't re-check
+    slot = _due_slot(hour, state["slots_done"])
+    if slot is None:
+        print("No posting slot is due this run.")
+    elif state["posts_today"] >= config.MAX_POSTS_PER_DAY:
+        print("Daily post cap reached.")
+    else:
+        # this slot's preferred pillars first, then the rest by learned
+        # engagement, so the slot still fires if the preferred topics are dry.
+        ranked = [p for p, _ in ranked_pillars(state)]
+        order = slot["pillars"] + [p for p in ranked if p not in slot["pillars"]]
+        for pillar in order:
+            if posts_made >= config.MAX_POSTS_PER_RUN:
+                break
+            spec = config.PILLARS.get(pillar)
+            if not spec:
                 continue
 
-            result = writer.write_news(pillar, entry["title"], entry["source"])
-            state["posted_set"].add(entry["title"])  # seen either way (saves AI calls)
-            if result["skip"]:
-                print(f"SKIPPED [{pillar}] {entry['title'][:55]}")
-                continue
-            try:
-                rid = post_news(client, api_v1, entry, pillar, result["text"])
-                posts_made += 1
-                state["posts_today"] += 1
-                state["last_news_ts"] = time.time()
-                if rid:
-                    state["log"].append({"id": rid, "pillar": pillar, "hour": hour,
-                                         "ts": time.time(), "eng": None})
-                state["recent"].append(entry["title"])
-                state["recent"] = state["recent"][-25:]
-                print(f"POSTED [{pillar}] :: {result['text']}")
-                break  # one post per pillar per run -> variety
-            except Exception as e:
-                print(f"FAILED [{pillar}] {entry['title'][:50]}: {e}")
+            entries = collect_entries(pillar, spec)
+            for entry in entries:
+                if entry["title"] in state["posted_set"]:
+                    continue
+                if _is_dup(entry["title"], state["recent"]):   # same event already posted
+                    state["posted_set"].add(entry["title"])
+                    continue
+                if (spec["hard_news"] and not is_corroborated(entry, entries)
+                        and not is_trusted(entry["source"])):
+                    continue
+                if pillar == "afghan_cricket" and is_negative_afghan(entry["title"]):
+                    state["posted_set"].add(entry["title"])  # mark seen, don't re-check
+                    continue
+
+                result = writer.write_news(pillar, entry["title"], entry["source"])
+                state["posted_set"].add(entry["title"])  # seen either way (saves AI calls)
+                if result["skip"]:
+                    print(f"SKIPPED [{pillar}] {entry['title'][:55]}")
+                    continue
+                try:
+                    rid = post_news(client, api_v1, entry, pillar, result["text"])
+                    posts_made += 1
+                    state["posts_today"] += 1
+                    state["last_news_ts"] = time.time()
+                    if rid:
+                        state["log"].append({"id": rid, "pillar": pillar, "hour": hour,
+                                             "ts": time.time(), "eng": None})
+                    state["recent"].append(entry["title"])
+                    state["recent"] = state["recent"][-25:]
+                    print(f"POSTED [{pillar}] :: {result['text']}")
+                    break  # one post this run
+                except Exception as e:
+                    print(f"FAILED [{pillar}] {entry['title'][:50]}: {e}")
+            if posts_made:
+                break
+
+        if posts_made:
+            state["slots_done"].append(slot["hour"])
+            print(f"Filled {slot['hour']:02d}:00 UTC slot ({slot['pillars'][0]}).")
 
     save_state(state)
     print(f"Done. {posts_made} news post(s) this run; {state['posts_today']}/"

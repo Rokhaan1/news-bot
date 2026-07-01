@@ -26,8 +26,12 @@ Always verify from a second source before posting hard news.
 - **Images/graphs:** auto-generate clean DATA graphics (standings tables, scorecards, timelines, bar charts) as PNGs via script — free. NO photo-like AI images (fake-news risk).
 
 ## Posting Cadence (start here)
-- 3–6 posts/day, spread across the day.
-- Mix pillars; lead with whatever is genuinely breaking that day.
+- 3 news posts/day at fixed UTC slots, each timed to a target audience:
+  - **14:00 UTC** → Afghanistan evening (~18:30) — lead with Afghan news.
+  - **16:00 UTC** → UK late afternoon (~17:00) — World Cup / global.
+  - **19:00 UTC** → US noon–afternoon (12:00 PT / 15:00 ET) — US foreign policy / global.
+- Each slot falls back to the next-best pillar if its topic has no fresh news.
+- Lead with whatever is genuinely breaking that day within the slot's audience.
 - Reply to 5–10 bigger accounts in these topics daily (real engagement = growth).
 
 ## Growth Levers (the unsexy truth)
