@@ -9,6 +9,7 @@
     "2071019294817751240",
     "2071372787092955644",
     "2071741783474868607",
+    "2072099860048760840",
     "34 Hindu families in Canada seeking return to Afghanistan, says former MP",
     "6.1-Magnitude Earthquake Shakes Kabul and Northern Afghanistan",
     "6.1-magnitude earthquake hits Afghanistan, epicenter in Badakhshan",
@@ -32,6 +33,7 @@
     "Australia politics live: David Pocock rues \u2018farcical\u2019 tax review; Pauline Hanson explains stance on paid parental leave",
     "Australia politics live: Geoffrey Watson criticises \u2018silly\u2019 call to pause Victorian big build projects over corruption",
     "Australia politics live: Jim Chalmers hails \u2018important day for tax reform\u2019 as Greens promise to support passage of budget measures",
+    "Australia politics live: PM defends Treasury prediction that house prices will continue to rise despite tax reforms",
     "Australia politics live: Paterson says Hanson\u2019s vision for monocultural Australia \u2018deeply weird\u2019 as he defends Taylor\u2019s response",
     "Australia politics live: Taylor says Coalition \u2018lost trust\u2019 of public as poll numbers keep falling; Monique Ryan pushes bill to fix Hecs debts",
     "Australia politics live: \u2018Keep the flame of memory burning\u2019, PM tells opening of new Australian War Memorial gallery",
@@ -153,6 +155,7 @@
     "US Senate passes bipartisan bill to lower housing costs",
     "US conducts strikes on Iran after attack on cargo ship",
     "US eases oil sanctions as Iran denies Vance claim on nuclear inspectors",
+    "US envoys in Doha to meet mediators but not Iranians, Qatar says",
     "US judge blocks Trump administration subpoena against Minnesota officials",
     "US players insist momentum remains with them despite late loss to Turkey",
     "US raises concern as RSF forces encircle Sudanese city of el-Obeid",
@@ -190,12 +193,12 @@
     "\u2018No sense of direction\u2019: The downfall of Keir Starmer",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-06-30",
-  "posts_today": 6,
-  "last_news_ts": 1782813656.4561613,
+  "date": "2026-07-01",
+  "posts_today": 1,
+  "last_news_ts": 1782864059.868959,
   "videos_date": "2026-06-26",
   "fact_date": "2026-06-30",
-  "football_date": "2026-06-30",
+  "football_date": "2026-07-01",
   "log": [
     {
       "id": "2070647765747839358",
@@ -427,6 +430,20 @@
       "hour": 10,
       "ts": 1782813656.456162,
       "eng": 1
+    },
+    {
+      "id": "2072108152745529388",
+      "pillar": "worldcup",
+      "hour": 0,
+      "ts": 1782864056.310099,
+      "eng": null
+    },
+    {
+      "id": "2072108167702491182",
+      "pillar": "global",
+      "hour": 0,
+      "ts": 1782864059.86896,
+      "eng": null
     }
   ],
   "insights": {
@@ -459,7 +476,8 @@
     "Tahawol: Pakistan\u2019s attacks on civilians in Afghanistan",
     "Australia issues highest-level travel warning for Afghanistan",
     "Heavy security deployed in South Africa ahead of anti-migrant protests",
-    "Founder of Asian super-app Gojek sentenced to years in jail for corruption"
+    "Founder of Asian super-app Gojek sentenced to years in jail for corruption",
+    "US envoys in Doha to meet mediators but not Iranians, Qatar says"
   ],
   "pashto_date": "2026-06-30"
 }
