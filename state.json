@@ -462,11 +462,11 @@
       "pillar": "global",
       "hour": 4,
       "ts": 1782878457.0912528,
-      "eng": null
+      "eng": 1
     }
   ],
   "insights": {
-    "global": 0.4,
+    "global": 0.5,
     "worldcup": 0.4,
     "us_foreign_policy": 0.0,
     "afghanistan": 0.6
