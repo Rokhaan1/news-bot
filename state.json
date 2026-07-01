@@ -36,6 +36,7 @@
     "Australia politics live: PM defends Treasury prediction that house prices will continue to rise despite tax reforms",
     "Australia politics live: Paterson says Hanson\u2019s vision for monocultural Australia \u2018deeply weird\u2019 as he defends Taylor\u2019s response",
     "Australia politics live: Taylor says Coalition \u2018lost trust\u2019 of public as poll numbers keep falling; Monique Ryan pushes bill to fix Hecs debts",
+    "Australia politics live: author Anna Funder says she\u2019s a \u2018victim of crime\u2019 as creatives lobby government to protect them from AI",
     "Australia politics live: \u2018Keep the flame of memory burning\u2019, PM tells opening of new Australian War Memorial gallery",
     "Bielsa's Uruguay anger Cape Verde over fair play",
     "British parliament to debate Israeli influence on UK politics: What we know",
@@ -73,6 +74,7 @@
     "India hand Prince Yadav debut as Afghanistan bowl in Lucknow",
     "Iran invites Afghanistan\u2019s prime minister to attend funeral ceremony of Ali Khamenei",
     "Iran leave note in dressing room thanking LA",
+    "Iran leaves World Cup with warm send-off from Mexican fans",
     "Iran war live: US waives oil sanctions, to release $12bn in frozen funds",
     "Iraq's plan to stop Mbapp\u00e9? Ask to play 3 keepers",
     "Is Harry Kane the last of England's world-class st...",
@@ -92,6 +94,7 @@
     "Messi, Haaland, Mbapp\u00e9, Kane: Who will be the Worl...",
     "Mohammad Saleem added to Afghanistan squad for India ODIs",
     "Neymar trains before Scotland World Cup clash",
+    "North Korea\u2019s Kim hails \u2018unshakeable will\u2019 to develop ties with China\u2019s Xi",
     "Oil prices back to pre-war levels on rising Middle East supply",
     "Pakistan Orders Police to Arrest Afghans Without Valid Visas From July 10",
     "Pakistan issues nationwide alert over fears of heavy rains, floods",
@@ -139,6 +142,7 @@
     "Trump administration moves to restart LGBTQ+ suicide hotline it initially ended",
     "Trump justifies strikes on Iran amid ceasefire",
     "Trump launches America250 festivities with a rally on the National Mall",
+    "Trump made more than $1bn from crypto in first year back in office",
     "Trump news at a glance: president tests out a new \u2018red scare\u2019 ahead of midterms",
     "Trump news at a glance: president\u2019s pool project plagued by peeling paint \u2013 and algae blooms",
     "Trump says five people arrested as he again blames \u2018vandals\u2019 for reflecting pool damage without giving evidence \u2013 live",
@@ -194,10 +198,10 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-01",
-  "posts_today": 1,
-  "last_news_ts": 1782864059.868959,
+  "posts_today": 2,
+  "last_news_ts": 1782871279.8029528,
   "videos_date": "2026-06-26",
-  "fact_date": "2026-06-30",
+  "fact_date": "2026-07-01",
   "football_date": "2026-07-01",
   "log": [
     {
@@ -444,6 +448,13 @@
       "hour": 0,
       "ts": 1782864059.86896,
       "eng": null
+    },
+    {
+      "id": "2072138450187559337",
+      "pillar": "global",
+      "hour": 2,
+      "ts": 1782871279.8029537,
+      "eng": null
     }
   ],
   "insights": {
@@ -453,7 +464,6 @@
     "afghanistan": 0.6
   },
   "recent": [
-    "Trump justifies strikes on Iran amid ceasefire",
     "Rescue efforts turn to recovery as aftershocks shake Venezuela",
     "Venice protest planned for US ambassador\u2019s superyacht visit",
     "Which teams are in the World Cup round of 32, and what\u2019s the schedule?",
@@ -477,7 +487,8 @@
     "Australia issues highest-level travel warning for Afghanistan",
     "Heavy security deployed in South Africa ahead of anti-migrant protests",
     "Founder of Asian super-app Gojek sentenced to years in jail for corruption",
-    "US envoys in Doha to meet mediators but not Iranians, Qatar says"
+    "US envoys in Doha to meet mediators but not Iranians, Qatar says",
+    "North Korea\u2019s Kim hails \u2018unshakeable will\u2019 to develop ties with China\u2019s Xi"
   ],
-  "pashto_date": "2026-06-30"
+  "pashto_date": "2026-07-01"
 }
