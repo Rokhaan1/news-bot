@@ -7,9 +7,28 @@ No secret keys live here — those are stored safely in GitHub Secrets.
 # ----- POSTING LIMITS (cost control) -----
 # X charges ~$0.015 per post (text/image), ~$0.20 if the post contains a link.
 MAX_POSTS_PER_RUN = 1     # news posts per scheduled run (runs every ~15 min)
-MAX_POSTS_PER_DAY = 3     # recovery: steady, low, high-quality (reach was suppressed)
+MAX_POSTS_PER_DAY = 3     # safety cap; day is driven by POST_SLOTS below (3 slots)
 FOOTBALL_PER_DAY  = 1     # English-football native take/day (reads X trends, posts own text)
-MIN_MINUTES_BETWEEN_NEWS = 110  # spread posts across the day for steady early engagement
+
+# ----- POSTING SCHEDULE (UTC) -----
+# Three news posts/day, each fired at a fixed UTC hour timed to a real
+# audience's peak local time (summer offsets: UK=BST/UTC+1, Afghanistan=UTC+4:30,
+# US=EDT/UTC-4 .. PDT/UTC-7):
+#   14:00 UTC = ~18:30 Afghanistan  -> Afghan evening
+#   16:00 UTC = ~17:00 UK           -> UK late afternoon
+#   19:00 UTC = ~15:00 US East / 12:00 US West -> US noon/afternoon
+# Each slot lists its preferred pillars in order; the bot posts the first that
+# has a fresh, verified item and falls back through the rest by learned
+# engagement, so a slot is never wasted.
+POST_SLOTS = [
+    {"hour": 14, "pillars": ["afghanistan", "afghan_cricket", "global"]},
+    {"hour": 16, "pillars": ["worldcup", "global", "afghanistan"]},
+    {"hour": 19, "pillars": ["us_foreign_policy", "global", "worldcup"]},
+]
+# A run may be late (cron hiccup / Actions queue). Still fire a slot up to this
+# many UTC hours after its target — but never past the next slot's hour — so one
+# missed tick doesn't skip the whole slot.
+SLOT_CATCHUP_HOURS = 2
 
 # Attach a generated graphic to each post? Off = clean text-only posts.
 ATTACH_IMAGES = False
