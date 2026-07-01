@@ -25,6 +25,7 @@
     "Alan Greenspan, architect of the modern American economy, dies aged 100",
     "Alan Greenspan, longtime head of the US federal reserve, dies aged 100",
     "Ancelotti refuses to engage in Japan 'mind games'",
+    "Anthropic says US lifts export ban on its advanced AI tools",
     "Argentina vs Austria LIVE: World Cup 2026",
     "At Least 12 Afghans Executed in Iran This Year, Rights Monitors Report",
     "Australia Launches Parliamentary Friendship Group for the People of Afghanistan",
@@ -198,8 +199,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-01",
-  "posts_today": 2,
-  "last_news_ts": 1782871279.8029528,
+  "posts_today": 3,
+  "last_news_ts": 1782878457.0912514,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-01",
   "football_date": "2026-07-01",
@@ -455,6 +456,13 @@
       "hour": 2,
       "ts": 1782871279.8029537,
       "eng": null
+    },
+    {
+      "id": "2072168553994678654",
+      "pillar": "global",
+      "hour": 4,
+      "ts": 1782878457.0912528,
+      "eng": null
     }
   ],
   "insights": {
@@ -464,7 +472,6 @@
     "afghanistan": 0.6
   },
   "recent": [
-    "Rescue efforts turn to recovery as aftershocks shake Venezuela",
     "Venice protest planned for US ambassador\u2019s superyacht visit",
     "Which teams are in the World Cup round of 32, and what\u2019s the schedule?",
     "WFP Says Pakistan Border Closures Deepen Afghanistan\u2019s Humanitarian Crisis",
@@ -488,7 +495,8 @@
     "Heavy security deployed in South Africa ahead of anti-migrant protests",
     "Founder of Asian super-app Gojek sentenced to years in jail for corruption",
     "US envoys in Doha to meet mediators but not Iranians, Qatar says",
-    "North Korea\u2019s Kim hails \u2018unshakeable will\u2019 to develop ties with China\u2019s Xi"
+    "North Korea\u2019s Kim hails \u2018unshakeable will\u2019 to develop ties with China\u2019s Xi",
+    "Anthropic says US lifts export ban on its advanced AI tools"
   ],
   "pashto_date": "2026-07-01"
 }
