@@ -491,7 +491,7 @@
       "pillar": "afghanistan",
       "hour": 2,
       "ts": 1782957677.84742,
-      "eng": null
+      "eng": 0
     },
     {
       "id": "2072530979642593560",
@@ -505,7 +505,7 @@
     "global": 0.4,
     "worldcup": 0.3,
     "us_foreign_policy": 0.0,
-    "afghanistan": 0.6
+    "afghanistan": 0.5
   },
   "recent": [
     "Afghan women\u2019s situation highlighted at SCO Forum amid ongoing global debate",
