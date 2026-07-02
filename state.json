@@ -10,6 +10,7 @@
     "2071372787092955644",
     "2071741783474868607",
     "2072099860048760840",
+    "2072467319213736036",
     "34 Hindu families in Canada seeking return to Afghanistan, says former MP",
     "6.1-Magnitude Earthquake Shakes Kabul and Northern Afghanistan",
     "6.1-magnitude earthquake hits Afghanistan, epicenter in Badakhshan",
@@ -31,6 +32,7 @@
     "Australia Launches Parliamentary Friendship Group for the People of Afghanistan",
     "Australia issues highest-level travel warning for Afghanistan",
     "Australia news live: Karl Stefanovic says his podcast is \u2018about freedom of speech\u2019 after Nine announces his immediate departure",
+    "Australia politics live: Aly says further gambling reforms a possibility; minister defends automated aged care assessment tool",
     "Australia politics live: David Pocock rues \u2018farcical\u2019 tax review; Pauline Hanson explains stance on paid parental leave",
     "Australia politics live: Geoffrey Watson criticises \u2018silly\u2019 call to pause Victorian big build projects over corruption",
     "Australia politics live: Jim Chalmers hails \u2018important day for tax reform\u2019 as Greens promise to support passage of budget measures",
@@ -48,6 +50,7 @@
     "China's import of custard apples is sparking fears in Taiwan",
     "Concei\u00e7\u00e3o: No obligation to pass ball to Ronaldo",
     "Copy of Salah stepped up, but World Cup 2026 is proving to...",
+    "Couple arrested after daring Empire State marriage proposal stunt",
     "Cracks are showing in Trump\u2019s blue-collar base | Steven Greenhouse",
     "Critically injured airstrike victims airlifted to Kabul for emergency treatment",
     "Dettol apologises after \u2018toxic men\u2019 advert sparks backlash in China",
@@ -73,6 +76,7 @@
     "How Freeman's Pro Bowl dad helped him live his Wor...",
     "India face test of depth in first-ever ODI series against Afghanistan",
     "India hand Prince Yadav debut as Afghanistan bowl in Lucknow",
+    "Iran football team welcomed home after World Cup exit",
     "Iran invites Afghanistan\u2019s prime minister to attend funeral ceremony of Ali Khamenei",
     "Iran leave note in dressing room thanking LA",
     "Iran leaves World Cup with warm send-off from Mexican fans",
@@ -162,6 +166,7 @@
     "US eases oil sanctions as Iran denies Vance claim on nuclear inspectors",
     "US envoys in Doha to meet mediators but not Iranians, Qatar says",
     "US judge blocks Trump administration subpoena against Minnesota officials",
+    "US judge sides with NAACP over proposed mail-in ballot restrictions",
     "US players insist momentum remains with them despite late loss to Turkey",
     "US raises concern as RSF forces encircle Sudanese city of el-Obeid",
     "US strike on an alleged drug boat in eastern Pacific kills two",
@@ -198,12 +203,12 @@
     "\u2018No sense of direction\u2019: The downfall of Keir Starmer",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-07-01",
-  "posts_today": 3,
-  "last_news_ts": 1782878457.0912514,
+  "date": "2026-07-02",
+  "posts_today": 1,
+  "last_news_ts": 1782950471.380818,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-01",
-  "football_date": "2026-07-01",
+  "football_date": "2026-07-02",
   "log": [
     {
       "id": "2070647765747839358",
@@ -463,6 +468,20 @@
       "hour": 4,
       "ts": 1782878457.0912528,
       "eng": 1
+    },
+    {
+      "id": "2072470585914098018",
+      "pillar": "worldcup",
+      "hour": 0,
+      "ts": 1782950467.1268084,
+      "eng": null
+    },
+    {
+      "id": "2072470603756658933",
+      "pillar": "global",
+      "hour": 0,
+      "ts": 1782950471.3808186,
+      "eng": null
     }
   ],
   "insights": {
@@ -472,7 +491,6 @@
     "afghanistan": 0.6
   },
   "recent": [
-    "Venice protest planned for US ambassador\u2019s superyacht visit",
     "Which teams are in the World Cup round of 32, and what\u2019s the schedule?",
     "WFP Says Pakistan Border Closures Deepen Afghanistan\u2019s Humanitarian Crisis",
     "Afghan women\u2019s situation highlighted at SCO Forum amid ongoing global debate",
@@ -496,7 +514,8 @@
     "Founder of Asian super-app Gojek sentenced to years in jail for corruption",
     "US envoys in Doha to meet mediators but not Iranians, Qatar says",
     "North Korea\u2019s Kim hails \u2018unshakeable will\u2019 to develop ties with China\u2019s Xi",
-    "Anthropic says US lifts export ban on its advanced AI tools"
+    "Anthropic says US lifts export ban on its advanced AI tools",
+    "Iran football team welcomed home after World Cup exit"
   ],
   "pashto_date": "2026-07-01"
 }
