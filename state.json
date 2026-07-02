@@ -125,6 +125,7 @@
     "Saar: Astana\u2019s New Era of Engagement with Kabul",
     "Saar: Concerns over Afghan deportations from Europe discussed",
     "Saar: Rejection of security threats from Afghan soil discussed",
+    "Saar: Uzbekistan-Qatar support for Afghanistan\u2019s development disucssed",
     "Salah leads rally as Egypt get first-ever WC win",
     "Schools close as more than half of France under red heat alerts",
     "Serbian Dejan Dedovic appointed head coach of Afghanistan national futsal team",
@@ -134,6 +135,7 @@
     "Still uninspiring, but England avoid nightmare Wor...",
     "Supreme Court allows Trump to end protected status for Haitian and Syrian immigrants",
     "Supreme court hands Trump administration big win with rulings on key immigration cases \u2013 as it happened",
+    "Tahawol: Afghanistan\u2019s retaliatory attacks against Pakistan discussed",
     "Tahawol: Central Asia, European Union and Afghanistan discussed",
     "Tahawol: Efforts to eliminate drugs across Afghanistan discussed",
     "Tahawol: Pakistan\u2019s attacks on civilians in Afghanistan",
@@ -204,10 +206,10 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-02",
-  "posts_today": 1,
-  "last_news_ts": 1782950471.380818,
+  "posts_today": 2,
+  "last_news_ts": 1782957677.8474188,
   "videos_date": "2026-06-26",
-  "fact_date": "2026-07-01",
+  "fact_date": "2026-07-02",
   "football_date": "2026-07-02",
   "log": [
     {
@@ -482,6 +484,13 @@
       "hour": 0,
       "ts": 1782950471.3808186,
       "eng": null
+    },
+    {
+      "id": "2072500829907808698",
+      "pillar": "afghanistan",
+      "hour": 2,
+      "ts": 1782957677.84742,
+      "eng": null
     }
   ],
   "insights": {
@@ -491,7 +500,6 @@
     "afghanistan": 0.6
   },
   "recent": [
-    "Which teams are in the World Cup round of 32, and what\u2019s the schedule?",
     "WFP Says Pakistan Border Closures Deepen Afghanistan\u2019s Humanitarian Crisis",
     "Afghan women\u2019s situation highlighted at SCO Forum amid ongoing global debate",
     "Still uninspiring, but England avoid nightmare Wor...",
@@ -515,7 +523,8 @@
     "US envoys in Doha to meet mediators but not Iranians, Qatar says",
     "North Korea\u2019s Kim hails \u2018unshakeable will\u2019 to develop ties with China\u2019s Xi",
     "Anthropic says US lifts export ban on its advanced AI tools",
-    "Iran football team welcomed home after World Cup exit"
+    "Iran football team welcomed home after World Cup exit",
+    "Saar: Uzbekistan-Qatar support for Afghanistan\u2019s development disucssed"
   ],
-  "pashto_date": "2026-07-01"
+  "pashto_date": "2026-07-02"
 }
