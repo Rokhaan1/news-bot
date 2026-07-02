@@ -47,6 +47,7 @@
     "Cape Verde cause latest WC shock, deny Uruguay",
     "Cape Verde fan goes wild live on BBC News as his country scores",
     "China adds 10 US firms, including rare-earth miner, to export control list",
+    "China resumes work on highway project in Tajikistan close to Afghan border",
     "China's import of custard apples is sparking fears in Taiwan",
     "Concei\u00e7\u00e3o: No obligation to pass ball to Ronaldo",
     "Copy of Salah stepped up, but World Cup 2026 is proving to...",
@@ -206,8 +207,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-02",
-  "posts_today": 2,
-  "last_news_ts": 1782957677.8474188,
+  "posts_today": 3,
+  "last_news_ts": 1782964866.1082196,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-02",
   "football_date": "2026-07-02",
@@ -491,6 +492,13 @@
       "hour": 2,
       "ts": 1782957677.84742,
       "eng": null
+    },
+    {
+      "id": "2072530979642593560",
+      "pillar": "afghanistan",
+      "hour": 4,
+      "ts": 1782964866.1082208,
+      "eng": null
     }
   ],
   "insights": {
@@ -500,7 +508,6 @@
     "afghanistan": 0.6
   },
   "recent": [
-    "WFP Says Pakistan Border Closures Deepen Afghanistan\u2019s Humanitarian Crisis",
     "Afghan women\u2019s situation highlighted at SCO Forum amid ongoing global debate",
     "Still uninspiring, but England avoid nightmare Wor...",
     "6.1-Magnitude Earthquake Shakes Kabul and Northern Afghanistan",
@@ -524,7 +531,8 @@
     "North Korea\u2019s Kim hails \u2018unshakeable will\u2019 to develop ties with China\u2019s Xi",
     "Anthropic says US lifts export ban on its advanced AI tools",
     "Iran football team welcomed home after World Cup exit",
-    "Saar: Uzbekistan-Qatar support for Afghanistan\u2019s development disucssed"
+    "Saar: Uzbekistan-Qatar support for Afghanistan\u2019s development disucssed",
+    "China resumes work on highway project in Tajikistan close to Afghan border"
   ],
   "pashto_date": "2026-07-02"
 }
