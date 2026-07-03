@@ -11,6 +11,7 @@
     "2071741783474868607",
     "2072099860048760840",
     "2072467319213736036",
+    "2072822059739095420",
     "34 Hindu families in Canada seeking return to Afghanistan, says former MP",
     "6.1-Magnitude Earthquake Shakes Kabul and Northern Afghanistan",
     "6.1-magnitude earthquake hits Afghanistan, epicenter in Badakhshan",
@@ -32,6 +33,7 @@
     "Australia Launches Parliamentary Friendship Group for the People of Afghanistan",
     "Australia issues highest-level travel warning for Afghanistan",
     "Australia news live: Karl Stefanovic says his podcast is \u2018about freedom of speech\u2019 after Nine announces his immediate departure",
+    "Australia news live: PM says he is \u2018not against someone having a punt\u2019 as Pocock attacks \u2018weak\u2019 gambling reforms",
     "Australia politics live: Aly says further gambling reforms a possibility; minister defends automated aged care assessment tool",
     "Australia politics live: David Pocock rues \u2018farcical\u2019 tax review; Pauline Hanson explains stance on paid parental leave",
     "Australia politics live: Geoffrey Watson criticises \u2018silly\u2019 call to pause Victorian big build projects over corruption",
@@ -99,6 +101,7 @@
     "Mbapp\u00e9: I knew Messi would keeping scoring goals",
     "Messi, Haaland, Mbapp\u00e9, Kane: Who will be the Worl...",
     "Mohammad Saleem added to Afghanistan squad for India ODIs",
+    "Moira Deeming launches lawsuit against Victorian Liberal president before party meets to decide her future",
     "Neymar trains before Scotland World Cup clash",
     "North Korea\u2019s Kim hails \u2018unshakeable will\u2019 to develop ties with China\u2019s Xi",
     "Oil prices back to pre-war levels on rising Middle East supply",
@@ -112,6 +115,7 @@
     "Polio-Free Afghanistan Calls for Nationwide Effort to Eliminate Polio",
     "Political turmoil: UK will see its seventh prime minister in 10 years",
     "Polygamous sect leader guilty of abuse after girls found in trailer on highway",
+    "Portugal fans gather ahead of Ronaldo-Modric clash",
     "Prabhsimran, Gaikwad, Tilak score fifties in DLS loss to Afghanistan A",
     "Prasidh five-for, Jaiswal hundred help India sweep Afghanistan 3-0",
     "Premier League 2026-27 fixtures: When will the top...",
@@ -147,6 +151,7 @@
     "Three dead in Philippines high school shooting over bullying 'grudge'",
     "Thursday briefing: Why EU\u200b-Taliban talks have sparked outrage among Afghan women \u200b",
     "Transfer rumors, news: PSG to compete with Man Uni...",
+    "Trump administration indicts Olympic athlete for Reflecting Pool vandalism",
     "Trump administration moves to restart LGBTQ+ suicide hotline it initially ended",
     "Trump justifies strikes on Iran amid ceasefire",
     "Trump launches America250 festivities with a rally on the National Mall",
@@ -191,6 +196,7 @@
     "Who is Tommy Robinson? The Karl Stefanovic guest who has cost Australia\u2019s famed TV host his job",
     "Why Coca-Cola and the US taxman are at war over a $20bn tax bill",
     "Why has Keir Starmer resigned as UK prime minister, and who will take over?",
+    "Will the end of TPS for Haitians mean a caregiving crisis in US?",
     "World Cup 'smart' ball is a game changer. Just don...",
     "World Cup Daily: Crying Belgium fan saved by VAR; ...",
     "World Cup VAR review: Why was Iran's goal ruled ou...",
@@ -206,12 +212,12 @@
     "\u2018No sense of direction\u2019: The downfall of Keir Starmer",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-07-02",
-  "posts_today": 3,
-  "last_news_ts": 1782964866.1082196,
+  "date": "2026-07-03",
+  "posts_today": 1,
+  "last_news_ts": 1783036873.058141,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-02",
-  "football_date": "2026-07-02",
+  "football_date": "2026-07-03",
   "log": [
     {
       "id": "2070647765747839358",
@@ -499,6 +505,20 @@
       "hour": 4,
       "ts": 1782964866.1082208,
       "eng": 0
+    },
+    {
+      "id": "2072832978162458746",
+      "pillar": "worldcup",
+      "hour": 0,
+      "ts": 1783036868.1863954,
+      "eng": null
+    },
+    {
+      "id": "2072832998647431506",
+      "pillar": "global",
+      "hour": 0,
+      "ts": 1783036873.058142,
+      "eng": null
     }
   ],
   "insights": {
@@ -508,7 +528,6 @@
     "afghanistan": 0.5
   },
   "recent": [
-    "Afghan women\u2019s situation highlighted at SCO Forum amid ongoing global debate",
     "Still uninspiring, but England avoid nightmare Wor...",
     "6.1-Magnitude Earthquake Shakes Kabul and Northern Afghanistan",
     "Saar: Concerns over Afghan deportations from Europe discussed",
@@ -532,7 +551,8 @@
     "Anthropic says US lifts export ban on its advanced AI tools",
     "Iran football team welcomed home after World Cup exit",
     "Saar: Uzbekistan-Qatar support for Afghanistan\u2019s development disucssed",
-    "China resumes work on highway project in Tajikistan close to Afghan border"
+    "China resumes work on highway project in Tajikistan close to Afghan border",
+    "Portugal fans gather ahead of Ronaldo-Modric clash"
   ],
   "pashto_date": "2026-07-02"
 }
