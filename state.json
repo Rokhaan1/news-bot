@@ -77,6 +77,7 @@
     "Heavy security deployed in South Africa ahead of anti-migrant protests",
     "How Canada\u2019s Muslims face \u2018perfect storm\u2019 amid rising xenophobia",
     "How Freeman's Pro Bowl dad helped him live his Wor...",
+    "IEA PM reviews progress of Kabul\u2013Jalalabad second highway project",
     "India face test of depth in first-ever ODI series against Afghanistan",
     "India hand Prince Yadav debut as Afghanistan bowl in Lucknow",
     "Iran football team welcomed home after World Cup exit",
@@ -213,10 +214,10 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-03",
-  "posts_today": 1,
-  "last_news_ts": 1783036873.058141,
+  "posts_today": 2,
+  "last_news_ts": 1783044080.6980805,
   "videos_date": "2026-06-26",
-  "fact_date": "2026-07-02",
+  "fact_date": "2026-07-03",
   "football_date": "2026-07-03",
   "log": [
     {
@@ -519,6 +520,13 @@
       "hour": 0,
       "ts": 1783036873.058142,
       "eng": null
+    },
+    {
+      "id": "2072863229739401639",
+      "pillar": "afghanistan",
+      "hour": 2,
+      "ts": 1783044080.6980815,
+      "eng": null
     }
   ],
   "insights": {
@@ -528,7 +536,6 @@
     "afghanistan": 0.5
   },
   "recent": [
-    "Still uninspiring, but England avoid nightmare Wor...",
     "6.1-Magnitude Earthquake Shakes Kabul and Northern Afghanistan",
     "Saar: Concerns over Afghan deportations from Europe discussed",
     "Afghanistan, Uzbekistan set for friendly cricket clash in Khost",
@@ -552,7 +559,8 @@
     "Iran football team welcomed home after World Cup exit",
     "Saar: Uzbekistan-Qatar support for Afghanistan\u2019s development disucssed",
     "China resumes work on highway project in Tajikistan close to Afghan border",
-    "Portugal fans gather ahead of Ronaldo-Modric clash"
+    "Portugal fans gather ahead of Ronaldo-Modric clash",
+    "IEA PM reviews progress of Kabul\u2013Jalalabad second highway project"
   ],
-  "pashto_date": "2026-07-02"
+  "pashto_date": "2026-07-03"
 }
