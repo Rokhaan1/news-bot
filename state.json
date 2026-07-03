@@ -34,6 +34,7 @@
     "Australia issues highest-level travel warning for Afghanistan",
     "Australia news live: Karl Stefanovic says his podcast is \u2018about freedom of speech\u2019 after Nine announces his immediate departure",
     "Australia news live: PM says he is \u2018not against someone having a punt\u2019 as Pocock attacks \u2018weak\u2019 gambling reforms",
+    "Australia news live: minister says it\u2019s safe to \u2018keep buying eggs, keep buying chicken\u2019 as east coast records first suspected bird flu case",
     "Australia politics live: Aly says further gambling reforms a possibility; minister defends automated aged care assessment tool",
     "Australia politics live: David Pocock rues \u2018farcical\u2019 tax review; Pauline Hanson explains stance on paid parental leave",
     "Australia politics live: Geoffrey Watson criticises \u2018silly\u2019 call to pause Victorian big build projects over corruption",
@@ -214,8 +215,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-03",
-  "posts_today": 2,
-  "last_news_ts": 1783044080.6980805,
+  "posts_today": 3,
+  "last_news_ts": 1783051265.5858784,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-03",
   "football_date": "2026-07-03",
@@ -527,6 +528,13 @@
       "hour": 2,
       "ts": 1783044080.6980815,
       "eng": null
+    },
+    {
+      "id": "2072893365369401716",
+      "pillar": "global",
+      "hour": 4,
+      "ts": 1783051265.5858793,
+      "eng": null
     }
   ],
   "insights": {
@@ -536,7 +544,6 @@
     "afghanistan": 0.5
   },
   "recent": [
-    "6.1-Magnitude Earthquake Shakes Kabul and Northern Afghanistan",
     "Saar: Concerns over Afghan deportations from Europe discussed",
     "Afghanistan, Uzbekistan set for friendly cricket clash in Khost",
     "Afghanistan committed to continued cooperation with UN on humanitarian and development projects: FM Muttaqi",
@@ -560,7 +567,8 @@
     "Saar: Uzbekistan-Qatar support for Afghanistan\u2019s development disucssed",
     "China resumes work on highway project in Tajikistan close to Afghan border",
     "Portugal fans gather ahead of Ronaldo-Modric clash",
-    "IEA PM reviews progress of Kabul\u2013Jalalabad second highway project"
+    "IEA PM reviews progress of Kabul\u2013Jalalabad second highway project",
+    "Australia news live: minister says it\u2019s safe to \u2018keep buying eggs, keep buying chicken\u2019 as east coast records first suspected bird flu case"
   ],
   "pashto_date": "2026-07-03"
 }
