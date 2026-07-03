@@ -315,8 +315,8 @@ def main():
     measure_and_learn(client, state)   # read recent performance, refresh insights
 
     # 1) one Afghan pride fact + one viral English-football share per day
+    # Pashto post disabled: generated Pashto quality was not reliable.
     maybe_post_afghan_fact(client, state)
-    maybe_post_pashto(client, state)
     maybe_post_football(client, state)
 
     # 2) news — post at fixed UTC slots, each timed to a target audience.
