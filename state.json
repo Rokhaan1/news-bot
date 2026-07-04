@@ -172,6 +172,7 @@
     "UK Prime Minister Keir Starmer\u2019s resignation speech in full",
     "UNAMA Calls for Equal Opportunities for Afghan Women on International Day of Women in Diplomacy",
     "UNICEF Warns Climate Change Increasing Child Malnutrition Risks in Afghanistan",
+    "US Backs Pakistan\u2019s Right to Self-Defense After Deadly Strikes in Afghanistan",
     "US House committee reaches bipartisan deal on social media rules for kids",
     "US Senate passes bipartisan bill to lower housing costs",
     "US conducts strikes on Iran after attack on cargo ship",
@@ -218,10 +219,10 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-04",
-  "posts_today": 1,
-  "last_news_ts": 1783123261.650939,
+  "posts_today": 2,
+  "last_news_ts": 1783130474.1045184,
   "videos_date": "2026-06-26",
-  "fact_date": "2026-07-03",
+  "fact_date": "2026-07-04",
   "football_date": "2026-07-04",
   "log": [
     {
@@ -552,6 +553,13 @@
       "hour": 0,
       "ts": 1783123261.6509402,
       "eng": null
+    },
+    {
+      "id": "2073225589943611737",
+      "pillar": "afghanistan",
+      "hour": 2,
+      "ts": 1783130474.1045194,
+      "eng": null
     }
   ],
   "insights": {
@@ -561,7 +569,6 @@
     "afghanistan": 0.5
   },
   "recent": [
-    "Afghanistan, Uzbekistan set for friendly cricket clash in Khost",
     "Afghanistan committed to continued cooperation with UN on humanitarian and development projects: FM Muttaqi",
     "6.1-magnitude earthquake hits Afghanistan, epicenter in Badakhshan",
     "Two boys rescued from Venezuela earthquake rubble after days of being trapped",
@@ -585,7 +592,8 @@
     "Portugal fans gather ahead of Ronaldo-Modric clash",
     "IEA PM reviews progress of Kabul\u2013Jalalabad second highway project",
     "Australia news live: minister says it\u2019s safe to \u2018keep buying eggs, keep buying chicken\u2019 as east coast records first suspected bird flu case",
-    "Venezuela\u2019s Rodriguez blames \u2018propaganda\u2019 for quake response backlash"
+    "Venezuela\u2019s Rodriguez blames \u2018propaganda\u2019 for quake response backlash",
+    "US Backs Pakistan\u2019s Right to Self-Defense After Deadly Strikes in Afghanistan"
   ],
-  "pashto_date": "2026-07-03"
+  "pashto_date": "2026-07-04"
 }
