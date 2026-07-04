@@ -30,6 +30,7 @@
     "Ancelotti refuses to engage in Japan 'mind games'",
     "Anthropic says US lifts export ban on its advanced AI tools",
     "Argentina vs Austria LIVE: World Cup 2026",
+    "Arias sends Colombia into World Cup last-16 with 1-0 win over Ghana",
     "At Least 12 Afghans Executed in Iran This Year, Rights Monitors Report",
     "Australia Launches Parliamentary Friendship Group for the People of Afghanistan",
     "Australia issues highest-level travel warning for Afghanistan",
@@ -219,8 +220,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-04",
-  "posts_today": 2,
-  "last_news_ts": 1783130474.1045184,
+  "posts_today": 3,
+  "last_news_ts": 1783137659.6093264,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-04",
   "football_date": "2026-07-04",
@@ -560,6 +561,13 @@
       "hour": 2,
       "ts": 1783130474.1045194,
       "eng": null
+    },
+    {
+      "id": "2073255728165388531",
+      "pillar": "global",
+      "hour": 4,
+      "ts": 1783137659.6093273,
+      "eng": null
     }
   ],
   "insights": {
@@ -569,7 +577,6 @@
     "afghanistan": 0.5
   },
   "recent": [
-    "Afghanistan committed to continued cooperation with UN on humanitarian and development projects: FM Muttaqi",
     "6.1-magnitude earthquake hits Afghanistan, epicenter in Badakhshan",
     "Two boys rescued from Venezuela earthquake rubble after days of being trapped",
     "Ancelotti refuses to engage in Japan 'mind games'",
@@ -593,7 +600,8 @@
     "IEA PM reviews progress of Kabul\u2013Jalalabad second highway project",
     "Australia news live: minister says it\u2019s safe to \u2018keep buying eggs, keep buying chicken\u2019 as east coast records first suspected bird flu case",
     "Venezuela\u2019s Rodriguez blames \u2018propaganda\u2019 for quake response backlash",
-    "US Backs Pakistan\u2019s Right to Self-Defense After Deadly Strikes in Afghanistan"
+    "US Backs Pakistan\u2019s Right to Self-Defense After Deadly Strikes in Afghanistan",
+    "Arias sends Colombia into World Cup last-16 with 1-0 win over Ghana"
   ],
   "pashto_date": "2026-07-04"
 }
