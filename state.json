@@ -12,6 +12,7 @@
     "2072099860048760840",
     "2072467319213736036",
     "2072822059739095420",
+    "2073190585188380837",
     "34 Hindu families in Canada seeking return to Afghanistan, says former MP",
     "6.1-Magnitude Earthquake Shakes Kabul and Northern Afghanistan",
     "6.1-magnitude earthquake hits Afghanistan, epicenter in Badakhshan",
@@ -60,6 +61,7 @@
     "Dettol apologises after \u2018toxic men\u2019 advert sparks backlash in China",
     "Earthquake of magnitude 5.2 strikes Afghanistan\u2019s Hindu Kush region",
     "Ebola cases surpass 1,000 in DR Congo amid violence and displacement",
+    "Egypt say Dallas police officer pushed player, team director at World Cup",
     "England\u2019s Spence appears to refuse handshake with booed Ghana player Partey",
     "Every team's odds to win the World Cup",
     "Ex-Trump adviser John Bolton expected to plead guilty in classified information case \u2013 US politics live",
@@ -187,6 +189,7 @@
     "Venezuela earthquakes live updates: buildings collapse in Caracas as officials warn \u2018high casualties\u2019 likely",
     "Venezuela earthquakes: frantic search for survivors continues, with 235 confirmed dead so far \u2013 latest updates",
     "Venezuela rocked by powerful back-to-back earthquakes",
+    "Venezuela\u2019s Rodriguez blames \u2018propaganda\u2019 for quake response backlash",
     "Venice protest planned for US ambassador\u2019s superyacht visit",
     "WFP Says Pakistan Border Closures Deepen Afghanistan\u2019s Humanitarian Crisis",
     "Watch World Cup Day 11: Egypt\u2019s first-ever win; Spain crushes Saudi Arabia",
@@ -214,12 +217,12 @@
     "\u2018No sense of direction\u2019: The downfall of Keir Starmer",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-07-03",
-  "posts_today": 3,
-  "last_news_ts": 1783051265.5858784,
+  "date": "2026-07-04",
+  "posts_today": 1,
+  "last_news_ts": 1783123261.650939,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-03",
-  "football_date": "2026-07-03",
+  "football_date": "2026-07-04",
   "log": [
     {
       "id": "2070647765747839358",
@@ -535,6 +538,20 @@
       "hour": 4,
       "ts": 1783051265.5858793,
       "eng": 1
+    },
+    {
+      "id": "2073195326677066203",
+      "pillar": "worldcup",
+      "hour": 0,
+      "ts": 1783123258.7999277,
+      "eng": null
+    },
+    {
+      "id": "2073195338656006414",
+      "pillar": "global",
+      "hour": 0,
+      "ts": 1783123261.6509402,
+      "eng": null
     }
   ],
   "insights": {
@@ -544,7 +561,6 @@
     "afghanistan": 0.5
   },
   "recent": [
-    "Saar: Concerns over Afghan deportations from Europe discussed",
     "Afghanistan, Uzbekistan set for friendly cricket clash in Khost",
     "Afghanistan committed to continued cooperation with UN on humanitarian and development projects: FM Muttaqi",
     "6.1-magnitude earthquake hits Afghanistan, epicenter in Badakhshan",
@@ -568,7 +584,8 @@
     "China resumes work on highway project in Tajikistan close to Afghan border",
     "Portugal fans gather ahead of Ronaldo-Modric clash",
     "IEA PM reviews progress of Kabul\u2013Jalalabad second highway project",
-    "Australia news live: minister says it\u2019s safe to \u2018keep buying eggs, keep buying chicken\u2019 as east coast records first suspected bird flu case"
+    "Australia news live: minister says it\u2019s safe to \u2018keep buying eggs, keep buying chicken\u2019 as east coast records first suspected bird flu case",
+    "Venezuela\u2019s Rodriguez blames \u2018propaganda\u2019 for quake response backlash"
   ],
   "pashto_date": "2026-07-03"
 }
