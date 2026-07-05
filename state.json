@@ -13,6 +13,7 @@
     "2072467319213736036",
     "2072822059739095420",
     "2073190585188380837",
+    "2073554928736346303",
     "34 Hindu families in Canada seeking return to Afghanistan, says former MP",
     "6.1-Magnitude Earthquake Shakes Kabul and Northern Afghanistan",
     "6.1-magnitude earthquake hits Afghanistan, epicenter in Badakhshan",
@@ -34,6 +35,7 @@
     "At Least 12 Afghans Executed in Iran This Year, Rights Monitors Report",
     "Australia Launches Parliamentary Friendship Group for the People of Afghanistan",
     "Australia issues highest-level travel warning for Afghanistan",
+    "Australia news live: Dan Tehan says Liberals \u2018not entertaining\u2019 idea of coalition with One Nation; first east coast bird flu case confirmed",
     "Australia news live: Karl Stefanovic says his podcast is \u2018about freedom of speech\u2019 after Nine announces his immediate departure",
     "Australia news live: PM says he is \u2018not against someone having a punt\u2019 as Pocock attacks \u2018weak\u2019 gambling reforms",
     "Australia news live: minister says it\u2019s safe to \u2018keep buying eggs, keep buying chicken\u2019 as east coast records first suspected bird flu case",
@@ -155,6 +157,7 @@
     "Three Afghan Migrants Drown on Iran\u2019s Caspian Coast, One Still Missing",
     "Three dead in Philippines high school shooting over bullying 'grudge'",
     "Thursday briefing: Why EU\u200b-Taliban talks have sparked outrage among Afghan women \u200b",
+    "Ticket prices plunge for USA-Belgium World Cup last-16 match",
     "Transfer rumors, news: PSG to compete with Man Uni...",
     "Trump administration indicts Olympic athlete for Reflecting Pool vandalism",
     "Trump administration moves to restart LGBTQ+ suicide hotline it initially ended",
@@ -204,6 +207,7 @@
     "Why Coca-Cola and the US taxman are at war over a $20bn tax bill",
     "Why has Keir Starmer resigned as UK prime minister, and who will take over?",
     "Will the end of TPS for Haitians mean a caregiving crisis in US?",
+    "Woman arrested after body of four-year-old boy found in Central Coast home",
     "World Cup 'smart' ball is a game changer. Just don...",
     "World Cup Daily: Crying Belgium fan saved by VAR; ...",
     "World Cup VAR review: Why was Iran's goal ruled ou...",
@@ -219,12 +223,12 @@
     "\u2018No sense of direction\u2019: The downfall of Keir Starmer",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-07-04",
-  "posts_today": 3,
-  "last_news_ts": 1783137659.6093264,
+  "date": "2026-07-05",
+  "posts_today": 1,
+  "last_news_ts": 1783209676.0512054,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-04",
-  "football_date": "2026-07-04",
+  "football_date": "2026-07-05",
   "log": [
     {
       "id": "2070647765747839358",
@@ -568,6 +572,20 @@
       "hour": 4,
       "ts": 1783137659.6093273,
       "eng": 0
+    },
+    {
+      "id": "2073557776618639688",
+      "pillar": "worldcup",
+      "hour": 0,
+      "ts": 1783209673.59167,
+      "eng": null
+    },
+    {
+      "id": "2073557787054084181",
+      "pillar": "global",
+      "hour": 0,
+      "ts": 1783209676.051207,
+      "eng": null
     }
   ],
   "insights": {
@@ -577,7 +595,6 @@
     "afghanistan": 0.5
   },
   "recent": [
-    "6.1-magnitude earthquake hits Afghanistan, epicenter in Badakhshan",
     "Two boys rescued from Venezuela earthquake rubble after days of being trapped",
     "Ancelotti refuses to engage in Japan 'mind games'",
     "Pakistan says its security forces killed 29 fighters along Afghan border",
@@ -601,7 +618,8 @@
     "Australia news live: minister says it\u2019s safe to \u2018keep buying eggs, keep buying chicken\u2019 as east coast records first suspected bird flu case",
     "Venezuela\u2019s Rodriguez blames \u2018propaganda\u2019 for quake response backlash",
     "US Backs Pakistan\u2019s Right to Self-Defense After Deadly Strikes in Afghanistan",
-    "Arias sends Colombia into World Cup last-16 with 1-0 win over Ghana"
+    "Arias sends Colombia into World Cup last-16 with 1-0 win over Ghana",
+    "Ticket prices plunge for USA-Belgium World Cup last-16 match"
   ],
   "pashto_date": "2026-07-04"
 }
