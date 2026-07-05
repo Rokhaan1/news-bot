@@ -38,6 +38,7 @@
     "Australia news live: Dan Tehan says Liberals \u2018not entertaining\u2019 idea of coalition with One Nation; first east coast bird flu case confirmed",
     "Australia news live: Karl Stefanovic says his podcast is \u2018about freedom of speech\u2019 after Nine announces his immediate departure",
     "Australia news live: PM says he is \u2018not against someone having a punt\u2019 as Pocock attacks \u2018weak\u2019 gambling reforms",
+    "Australia news live: Tehan criticises Labor for rising electricity bills as Bowen points to Coalition \u2018hypocrisy\u2019; suspected space debris washes up near Townsville",
     "Australia news live: minister says it\u2019s safe to \u2018keep buying eggs, keep buying chicken\u2019 as east coast records first suspected bird flu case",
     "Australia politics live: Aly says further gambling reforms a possibility; minister defends automated aged care assessment tool",
     "Australia politics live: David Pocock rues \u2018farcical\u2019 tax review; Pauline Hanson explains stance on paid parental leave",
@@ -69,9 +70,11 @@
     "Every team's odds to win the World Cup",
     "Ex-Trump adviser John Bolton expected to plead guilty in classified information case \u2013 US politics live",
     "Far-right de la Espriella elected Colombia president: What\u2019s next?",
+    "Fireworks light up New York City to mark 250 years of US independence",
     "First round of US-Iran talks ends with encouraging progress, mediators say",
     "Former Kenyan justice minister blocked from entering Uganda, lawyers' body says",
     "Founder of Asian super-app Gojek sentenced to years in jail for corruption",
+    "Founder of prominent underground church released from prison in China",
     "Four years later, same debate for Portugal: Why is...",
     "France braces for another day of sweltering heat as Europe heatwave spreads",
     "France confirms first Ebola case",
@@ -142,6 +145,7 @@
     "Salah leads rally as Egypt get first-ever WC win",
     "Schools close as more than half of France under red heat alerts",
     "Serbian Dejan Dedovic appointed head coach of Afghanistan national futsal team",
+    "Severe weather disrupts US\u2019s 250th celebrations",
     "Source: Fire in final stage of deal for Lewandowsk...",
     "Sources: Diomande close to preferred PSG move",
     "Spain have Yamal back -- and they finally look lik...",
@@ -225,8 +229,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-05",
-  "posts_today": 2,
-  "last_news_ts": 1783216968.3791366,
+  "posts_today": 3,
+  "last_news_ts": 1783224076.2277753,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-05",
   "football_date": "2026-07-05",
@@ -594,6 +598,13 @@
       "hour": 2,
       "ts": 1783216968.3791375,
       "eng": null
+    },
+    {
+      "id": "2073618185648058681",
+      "pillar": "global",
+      "hour": 4,
+      "ts": 1783224076.2277765,
+      "eng": null
     }
   ],
   "insights": {
@@ -603,7 +614,6 @@
     "afghanistan": 0.5
   },
   "recent": [
-    "Ancelotti refuses to engage in Japan 'mind games'",
     "Pakistan says its security forces killed 29 fighters along Afghan border",
     "Pakistan Orders Police to Arrest Afghans Without Valid Visas From July 10",
     "Critically injured airstrike victims airlifted to Kabul for emergency treatment",
@@ -627,7 +637,8 @@
     "US Backs Pakistan\u2019s Right to Self-Defense After Deadly Strikes in Afghanistan",
     "Arias sends Colombia into World Cup last-16 with 1-0 win over Ghana",
     "Ticket prices plunge for USA-Belgium World Cup last-16 match",
-    "Saar: Ongoing condemnation of Pakistan\u2019s attacks on Afghanistan discussed"
+    "Saar: Ongoing condemnation of Pakistan\u2019s attacks on Afghanistan discussed",
+    "Founder of prominent underground church released from prison in China"
   ],
   "pashto_date": "2026-07-05"
 }
