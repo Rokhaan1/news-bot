@@ -136,6 +136,7 @@
     "Russian troop build-up threatens city seen as key to seizing Ukraine's Donbas",
     "Saar: Astana\u2019s New Era of Engagement with Kabul",
     "Saar: Concerns over Afghan deportations from Europe discussed",
+    "Saar: Ongoing condemnation of Pakistan\u2019s attacks on Afghanistan discussed",
     "Saar: Rejection of security threats from Afghan soil discussed",
     "Saar: Uzbekistan-Qatar support for Afghanistan\u2019s development disucssed",
     "Salah leads rally as Egypt get first-ever WC win",
@@ -224,10 +225,10 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-05",
-  "posts_today": 1,
-  "last_news_ts": 1783209676.0512054,
+  "posts_today": 2,
+  "last_news_ts": 1783216968.3791366,
   "videos_date": "2026-06-26",
-  "fact_date": "2026-07-04",
+  "fact_date": "2026-07-05",
   "football_date": "2026-07-05",
   "log": [
     {
@@ -586,6 +587,13 @@
       "hour": 0,
       "ts": 1783209676.051207,
       "eng": null
+    },
+    {
+      "id": "2073588373256872302",
+      "pillar": "afghanistan",
+      "hour": 2,
+      "ts": 1783216968.3791375,
+      "eng": null
     }
   ],
   "insights": {
@@ -595,7 +603,6 @@
     "afghanistan": 0.5
   },
   "recent": [
-    "Two boys rescued from Venezuela earthquake rubble after days of being trapped",
     "Ancelotti refuses to engage in Japan 'mind games'",
     "Pakistan says its security forces killed 29 fighters along Afghan border",
     "Pakistan Orders Police to Arrest Afghans Without Valid Visas From July 10",
@@ -619,7 +626,8 @@
     "Venezuela\u2019s Rodriguez blames \u2018propaganda\u2019 for quake response backlash",
     "US Backs Pakistan\u2019s Right to Self-Defense After Deadly Strikes in Afghanistan",
     "Arias sends Colombia into World Cup last-16 with 1-0 win over Ghana",
-    "Ticket prices plunge for USA-Belgium World Cup last-16 match"
+    "Ticket prices plunge for USA-Belgium World Cup last-16 match",
+    "Saar: Ongoing condemnation of Pakistan\u2019s attacks on Afghanistan discussed"
   ],
-  "pashto_date": "2026-07-04"
+  "pashto_date": "2026-07-05"
 }
