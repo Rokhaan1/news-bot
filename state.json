@@ -579,14 +579,14 @@
       "pillar": "worldcup",
       "hour": 0,
       "ts": 1783209673.59167,
-      "eng": null
+      "eng": 0
     },
     {
       "id": "2073557787054084181",
       "pillar": "global",
       "hour": 0,
       "ts": 1783209676.051207,
-      "eng": null
+      "eng": 0
     },
     {
       "id": "2073588373256872302",
@@ -598,7 +598,7 @@
   ],
   "insights": {
     "global": 0.4,
-    "worldcup": 0.4,
+    "worldcup": 0.3,
     "us_foreign_policy": 0.0,
     "afghanistan": 0.5
   },
