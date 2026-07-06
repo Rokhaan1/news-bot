@@ -39,6 +39,7 @@
     "Australia news live: Dan Tehan says Liberals \u2018not entertaining\u2019 idea of coalition with One Nation; first east coast bird flu case confirmed",
     "Australia news live: Karl Stefanovic says his podcast is \u2018about freedom of speech\u2019 after Nine announces his immediate departure",
     "Australia news live: PM says he is \u2018not against someone having a punt\u2019 as Pocock attacks \u2018weak\u2019 gambling reforms",
+    "Australia news live: PM signs defence pact with Fiji; Meta tells antisemitism inquiry it banned some claims about \u2018Zionists\u2019",
     "Australia news live: Plibersek defends PM after his comments about Kylie Minogue, saying she\u2019s a \u2018big fan as well\u2019",
     "Australia news live: Tehan criticises Labor for rising electricity bills as Bowen points to Coalition \u2018hypocrisy\u2019; suspected space debris washes up near Townsville",
     "Australia news live: minister says it\u2019s safe to \u2018keep buying eggs, keep buying chicken\u2019 as east coast records first suspected bird flu case",
@@ -51,6 +52,7 @@
     "Australia politics live: Taylor says Coalition \u2018lost trust\u2019 of public as poll numbers keep falling; Monique Ryan pushes bill to fix Hecs debts",
     "Australia politics live: author Anna Funder says she\u2019s a \u2018victim of crime\u2019 as creatives lobby government to protect them from AI",
     "Australia politics live: \u2018Keep the flame of memory burning\u2019, PM tells opening of new Australian War Memorial gallery",
+    "Australian PM apologises for 'inappropriate' comments about Kylie Minogue",
     "Bielsa's Uruguay anger Cape Verde over fair play",
     "British parliament to debate Israeli influence on UK politics: What we know",
     "Cairo erupts in celebration after Egypt\u2019s first ever win in a World Cup",
@@ -232,10 +234,10 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-06",
-  "posts_today": 1,
-  "last_news_ts": 1783296078.8601143,
+  "posts_today": 2,
+  "last_news_ts": 1783303281.6582909,
   "videos_date": "2026-06-26",
-  "fact_date": "2026-07-05",
+  "fact_date": "2026-07-06",
   "football_date": "2026-07-06",
   "log": [
     {
@@ -622,6 +624,13 @@
       "hour": 0,
       "ts": 1783296078.8601155,
       "eng": null
+    },
+    {
+      "id": "2073950397413413107",
+      "pillar": "global",
+      "hour": 2,
+      "ts": 1783303281.6582918,
+      "eng": null
     }
   ],
   "insights": {
@@ -631,7 +640,6 @@
     "afghanistan": 0.5
   },
   "recent": [
-    "Pakistan Orders Police to Arrest Afghans Without Valid Visas From July 10",
     "Critically injured airstrike victims airlifted to Kabul for emergency treatment",
     "Karzai condemns Pakistani airstrikes, calls them violation of Afghanistan\u2019s sovereignty",
     "Israeli strike kills two, setting tents ablaze in Gaza humanitarian zone",
@@ -655,7 +663,8 @@
     "Ticket prices plunge for USA-Belgium World Cup last-16 match",
     "Saar: Ongoing condemnation of Pakistan\u2019s attacks on Afghanistan discussed",
     "Founder of prominent underground church released from prison in China",
-    "Marine Le Pen appeal verdict: Why this moment matters for France"
+    "Marine Le Pen appeal verdict: Why this moment matters for France",
+    "Australia news live: PM signs defence pact with Fiji; Meta tells antisemitism inquiry it banned some claims about \u2018Zionists\u2019"
   ],
-  "pashto_date": "2026-07-05"
+  "pashto_date": "2026-07-06"
 }
