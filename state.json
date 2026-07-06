@@ -157,6 +157,7 @@
     "Still uninspiring, but England avoid nightmare Wor...",
     "Supreme Court allows Trump to end protected status for Haitian and Syrian immigrants",
     "Supreme court hands Trump administration big win with rulings on key immigration cases \u2013 as it happened",
+    "Sweden spends millions on Afghan voluntary return campaign with no participants so far",
     "Tahawol: Afghanistan\u2019s retaliatory attacks against Pakistan discussed",
     "Tahawol: Central Asia, European Union and Afghanistan discussed",
     "Tahawol: Efforts to eliminate drugs across Afghanistan discussed",
@@ -234,8 +235,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-06",
-  "posts_today": 2,
-  "last_news_ts": 1783303281.6582909,
+  "posts_today": 3,
+  "last_news_ts": 1783310475.101319,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-06",
   "football_date": "2026-07-06",
@@ -631,6 +632,13 @@
       "hour": 2,
       "ts": 1783303281.6582918,
       "eng": null
+    },
+    {
+      "id": "2073980568673362338",
+      "pillar": "afghanistan",
+      "hour": 4,
+      "ts": 1783310475.1013205,
+      "eng": null
     }
   ],
   "insights": {
@@ -640,7 +648,6 @@
     "afghanistan": 0.5
   },
   "recent": [
-    "Critically injured airstrike victims airlifted to Kabul for emergency treatment",
     "Karzai condemns Pakistani airstrikes, calls them violation of Afghanistan\u2019s sovereignty",
     "Israeli strike kills two, setting tents ablaze in Gaza humanitarian zone",
     "Pakistani strikes kill dozens of Afghan villagers",
@@ -664,7 +671,8 @@
     "Saar: Ongoing condemnation of Pakistan\u2019s attacks on Afghanistan discussed",
     "Founder of prominent underground church released from prison in China",
     "Marine Le Pen appeal verdict: Why this moment matters for France",
-    "Australia news live: PM signs defence pact with Fiji; Meta tells antisemitism inquiry it banned some claims about \u2018Zionists\u2019"
+    "Australia news live: PM signs defence pact with Fiji; Meta tells antisemitism inquiry it banned some claims about \u2018Zionists\u2019",
+    "Sweden spends millions on Afghan voluntary return campaign with no participants so far"
   ],
   "pashto_date": "2026-07-06"
 }
