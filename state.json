@@ -14,6 +14,7 @@
     "2072822059739095420",
     "2073190585188380837",
     "2073554928736346303",
+    "2073919892684787902",
     "34 Hindu families in Canada seeking return to Afghanistan, says former MP",
     "6.1-Magnitude Earthquake Shakes Kabul and Northern Afghanistan",
     "6.1-magnitude earthquake hits Afghanistan, epicenter in Badakhshan",
@@ -38,6 +39,7 @@
     "Australia news live: Dan Tehan says Liberals \u2018not entertaining\u2019 idea of coalition with One Nation; first east coast bird flu case confirmed",
     "Australia news live: Karl Stefanovic says his podcast is \u2018about freedom of speech\u2019 after Nine announces his immediate departure",
     "Australia news live: PM says he is \u2018not against someone having a punt\u2019 as Pocock attacks \u2018weak\u2019 gambling reforms",
+    "Australia news live: Plibersek defends PM after his comments about Kylie Minogue, saying she\u2019s a \u2018big fan as well\u2019",
     "Australia news live: Tehan criticises Labor for rising electricity bills as Bowen points to Coalition \u2018hypocrisy\u2019; suspected space debris washes up near Townsville",
     "Australia news live: minister says it\u2019s safe to \u2018keep buying eggs, keep buying chicken\u2019 as east coast records first suspected bird flu case",
     "Australia politics live: Aly says further gambling reforms a possibility; minister defends automated aged care assessment tool",
@@ -108,6 +110,7 @@
     "Largest ever cocaine bust in Australia after police raid underground bunker",
     "Late singer Oliver Tree's body returned to US after helicopter crash",
     "Lost memoir of Hiroshima survivor found after decades in US archive",
+    "Marine Le Pen appeal verdict: Why this moment matters for France",
     "Mbapp\u00e9: I knew Messi would keeping scoring goals",
     "Messi, Haaland, Mbapp\u00e9, Kane: Who will be the Worl...",
     "Mohammad Saleem added to Afghanistan squad for India ODIs",
@@ -228,12 +231,12 @@
     "\u2018No sense of direction\u2019: The downfall of Keir Starmer",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-07-05",
-  "posts_today": 3,
-  "last_news_ts": 1783224076.2277753,
+  "date": "2026-07-06",
+  "posts_today": 1,
+  "last_news_ts": 1783296078.8601143,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-05",
-  "football_date": "2026-07-05",
+  "football_date": "2026-07-06",
   "log": [
     {
       "id": "2070647765747839358",
@@ -605,6 +608,20 @@
       "hour": 4,
       "ts": 1783224076.2277765,
       "eng": 1
+    },
+    {
+      "id": "2073920172126052693",
+      "pillar": "worldcup",
+      "hour": 0,
+      "ts": 1783296075.4174178,
+      "eng": null
+    },
+    {
+      "id": "2073920186588012795",
+      "pillar": "global",
+      "hour": 0,
+      "ts": 1783296078.8601155,
+      "eng": null
     }
   ],
   "insights": {
@@ -614,7 +631,6 @@
     "afghanistan": 0.5
   },
   "recent": [
-    "Pakistan says its security forces killed 29 fighters along Afghan border",
     "Pakistan Orders Police to Arrest Afghans Without Valid Visas From July 10",
     "Critically injured airstrike victims airlifted to Kabul for emergency treatment",
     "Karzai condemns Pakistani airstrikes, calls them violation of Afghanistan\u2019s sovereignty",
@@ -638,7 +654,8 @@
     "Arias sends Colombia into World Cup last-16 with 1-0 win over Ghana",
     "Ticket prices plunge for USA-Belgium World Cup last-16 match",
     "Saar: Ongoing condemnation of Pakistan\u2019s attacks on Afghanistan discussed",
-    "Founder of prominent underground church released from prison in China"
+    "Founder of prominent underground church released from prison in China",
+    "Marine Le Pen appeal verdict: Why this moment matters for France"
   ],
   "pashto_date": "2026-07-05"
 }
