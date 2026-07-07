@@ -37,6 +37,7 @@
     "At Least 12 Afghans Executed in Iran This Year, Rights Monitors Report",
     "Australia Launches Parliamentary Friendship Group for the People of Afghanistan",
     "Australia issues highest-level travel warning for Afghanistan",
+    "Australia news live: China missile test \u2018not something a friend does\u2019, Solomon Islands PM says in joint appearance with Albanese",
     "Australia news live: Dan Tehan says Liberals \u2018not entertaining\u2019 idea of coalition with One Nation; first east coast bird flu case confirmed",
     "Australia news live: Karl Stefanovic says his podcast is \u2018about freedom of speech\u2019 after Nine announces his immediate departure",
     "Australia news live: PM says he is \u2018not against someone having a punt\u2019 as Pocock attacks \u2018weak\u2019 gambling reforms",
@@ -238,8 +239,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-07",
-  "posts_today": 2,
-  "last_news_ts": 1783389694.2441196,
+  "posts_today": 3,
+  "last_news_ts": 1783396875.5236385,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-07",
   "football_date": "2026-07-07",
@@ -663,6 +664,13 @@
       "hour": 2,
       "ts": 1783389694.244121,
       "eng": null
+    },
+    {
+      "id": "2074342958506377708",
+      "pillar": "global",
+      "hour": 4,
+      "ts": 1783396875.5236404,
+      "eng": null
     }
   ],
   "insights": {
@@ -672,7 +680,6 @@
     "afghanistan": 0.5
   },
   "recent": [
-    "Pakistani strikes kill dozens of Afghan villagers",
     "Tahawol: Pakistan\u2019s attacks on civilians in Afghanistan",
     "Australia issues highest-level travel warning for Afghanistan",
     "Heavy security deployed in South Africa ahead of anti-migrant protests",
@@ -696,7 +703,8 @@
     "Australia news live: PM signs defence pact with Fiji; Meta tells antisemitism inquiry it banned some claims about \u2018Zionists\u2019",
     "Sweden spends millions on Afghan voluntary return campaign with no participants so far",
     "Jailers and officials at Russia's 'torture prisons' in Ukraine exposed by BBC",
-    "Tahawol: UN Officials Visit Kabul \u2014 Political Impact & Consequences"
+    "Tahawol: UN Officials Visit Kabul \u2014 Political Impact & Consequences",
+    "Australia news live: China missile test \u2018not something a friend does\u2019, Solomon Islands PM says in joint appearance with Albanese"
   ],
   "pashto_date": "2026-07-07"
 }
