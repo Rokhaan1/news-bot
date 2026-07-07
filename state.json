@@ -663,7 +663,7 @@
       "pillar": "afghanistan",
       "hour": 2,
       "ts": 1783389694.244121,
-      "eng": null
+      "eng": 0
     },
     {
       "id": "2074342958506377708",
@@ -677,7 +677,7 @@
     "global": 0.4,
     "worldcup": 0.4,
     "us_foreign_policy": 0.0,
-    "afghanistan": 0.5
+    "afghanistan": 0.4
   },
   "recent": [
     "Tahawol: Pakistan\u2019s attacks on civilians in Afghanistan",
