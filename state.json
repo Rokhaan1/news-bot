@@ -15,6 +15,7 @@
     "2073190585188380837",
     "2073554928736346303",
     "2073919892684787902",
+    "2074279836869149070",
     "34 Hindu families in Canada seeking return to Afghanistan, says former MP",
     "6.1-Magnitude Earthquake Shakes Kabul and Northern Afghanistan",
     "6.1-magnitude earthquake hits Afghanistan, epicenter in Badakhshan",
@@ -104,6 +105,7 @@
     "Israel kills turtle conservationist Mona Khalil",
     "Israeli strike kills two, setting tents ablaze in Gaza humanitarian zone",
     "JD Vance touts progress on key issues in US-Iran negotiations",
+    "Jailers and officials at Russia's 'torture prisons' in Ukraine exposed by BBC",
     "Japan quintuples visa fees in first price hike since 1978",
     "Kabul Delegation Attends Brussels Migration Talks: Balki",
     "Kane's late miss sees England frustrated by Ghana",
@@ -234,12 +236,12 @@
     "\u2018No sense of direction\u2019: The downfall of Keir Starmer",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-07-06",
-  "posts_today": 3,
-  "last_news_ts": 1783310475.101319,
+  "date": "2026-07-07",
+  "posts_today": 1,
+  "last_news_ts": 1783382481.4553626,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-06",
-  "football_date": "2026-07-06",
+  "football_date": "2026-07-07",
   "log": [
     {
       "id": "2070647765747839358",
@@ -639,6 +641,20 @@
       "hour": 4,
       "ts": 1783310475.1013205,
       "eng": 0
+    },
+    {
+      "id": "2074282575183708435",
+      "pillar": "worldcup",
+      "hour": 0,
+      "ts": 1783382479.0053992,
+      "eng": null
+    },
+    {
+      "id": "2074282585472294990",
+      "pillar": "global",
+      "hour": 0,
+      "ts": 1783382481.455364,
+      "eng": null
     }
   ],
   "insights": {
@@ -648,7 +664,6 @@
     "afghanistan": 0.5
   },
   "recent": [
-    "Karzai condemns Pakistani airstrikes, calls them violation of Afghanistan\u2019s sovereignty",
     "Israeli strike kills two, setting tents ablaze in Gaza humanitarian zone",
     "Pakistani strikes kill dozens of Afghan villagers",
     "Tahawol: Pakistan\u2019s attacks on civilians in Afghanistan",
@@ -672,7 +687,8 @@
     "Founder of prominent underground church released from prison in China",
     "Marine Le Pen appeal verdict: Why this moment matters for France",
     "Australia news live: PM signs defence pact with Fiji; Meta tells antisemitism inquiry it banned some claims about \u2018Zionists\u2019",
-    "Sweden spends millions on Afghan voluntary return campaign with no participants so far"
+    "Sweden spends millions on Afghan voluntary return campaign with no participants so far",
+    "Jailers and officials at Russia's 'torture prisons' in Ukraine exposed by BBC"
   ],
   "pashto_date": "2026-07-06"
 }
