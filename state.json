@@ -164,6 +164,7 @@
     "Tahawol: Central Asia, European Union and Afghanistan discussed",
     "Tahawol: Efforts to eliminate drugs across Afghanistan discussed",
     "Tahawol: Pakistan\u2019s attacks on civilians in Afghanistan",
+    "Tahawol: UN Officials Visit Kabul \u2014 Political Impact & Consequences",
     "Tesla crash that killed a woman under US federal investigation",
     "The ICC must investigate Israel\u2019s genocidal use of sexual violence",
     "The champion they didn\u2019t want: inside Wyndham Clark\u2019s lonely US Open coronation",
@@ -237,10 +238,10 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-07",
-  "posts_today": 1,
-  "last_news_ts": 1783382481.4553626,
+  "posts_today": 2,
+  "last_news_ts": 1783389694.2441196,
   "videos_date": "2026-06-26",
-  "fact_date": "2026-07-06",
+  "fact_date": "2026-07-07",
   "football_date": "2026-07-07",
   "log": [
     {
@@ -655,6 +656,13 @@
       "hour": 0,
       "ts": 1783382481.455364,
       "eng": null
+    },
+    {
+      "id": "2074312838110490917",
+      "pillar": "afghanistan",
+      "hour": 2,
+      "ts": 1783389694.244121,
+      "eng": null
     }
   ],
   "insights": {
@@ -664,7 +672,6 @@
     "afghanistan": 0.5
   },
   "recent": [
-    "Israeli strike kills two, setting tents ablaze in Gaza humanitarian zone",
     "Pakistani strikes kill dozens of Afghan villagers",
     "Tahawol: Pakistan\u2019s attacks on civilians in Afghanistan",
     "Australia issues highest-level travel warning for Afghanistan",
@@ -688,7 +695,8 @@
     "Marine Le Pen appeal verdict: Why this moment matters for France",
     "Australia news live: PM signs defence pact with Fiji; Meta tells antisemitism inquiry it banned some claims about \u2018Zionists\u2019",
     "Sweden spends millions on Afghan voluntary return campaign with no participants so far",
-    "Jailers and officials at Russia's 'torture prisons' in Ukraine exposed by BBC"
+    "Jailers and officials at Russia's 'torture prisons' in Ukraine exposed by BBC",
+    "Tahawol: UN Officials Visit Kabul \u2014 Political Impact & Consequences"
   ],
-  "pashto_date": "2026-07-06"
+  "pashto_date": "2026-07-07"
 }
