@@ -694,11 +694,11 @@
       "pillar": "global",
       "hour": 2,
       "ts": 1783476090.9865298,
-      "eng": null
+      "eng": 2
     }
   ],
   "insights": {
-    "global": 0.3,
+    "global": 0.4,
     "worldcup": 0.3,
     "us_foreign_policy": 0.0,
     "afghanistan": 0.4
