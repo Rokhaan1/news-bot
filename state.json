@@ -42,6 +42,7 @@
     "Australia news live: Dan Tehan says Liberals \u2018not entertaining\u2019 idea of coalition with One Nation; first east coast bird flu case confirmed",
     "Australia news live: Karl Stefanovic says his podcast is \u2018about freedom of speech\u2019 after Nine announces his immediate departure",
     "Australia news live: PM says he is \u2018not against someone having a punt\u2019 as Pocock attacks \u2018weak\u2019 gambling reforms",
+    "Australia news live: PM says \u2018no evidence\u2019 cyber-attack behind national Telstra outages as carrier tries to pin down cause",
     "Australia news live: PM signs defence pact with Fiji; Meta tells antisemitism inquiry it banned some claims about \u2018Zionists\u2019",
     "Australia news live: Plibersek defends PM after his comments about Kylie Minogue, saying she\u2019s a \u2018big fan as well\u2019",
     "Australia news live: Tehan criticises Labor for rising electricity bills as Bowen points to Coalition \u2018hypocrisy\u2019; suspected space debris washes up near Townsville",
@@ -241,10 +242,10 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-08",
-  "posts_today": 1,
-  "last_news_ts": 1783468875.5779285,
+  "posts_today": 2,
+  "last_news_ts": 1783476090.9865282,
   "videos_date": "2026-06-26",
-  "fact_date": "2026-07-07",
+  "fact_date": "2026-07-08",
   "football_date": "2026-07-08",
   "log": [
     {
@@ -687,6 +688,13 @@
       "hour": 0,
       "ts": 1783468875.5779295,
       "eng": null
+    },
+    {
+      "id": "2074675212256522691",
+      "pillar": "global",
+      "hour": 2,
+      "ts": 1783476090.9865298,
+      "eng": null
     }
   ],
   "insights": {
@@ -696,7 +704,6 @@
     "afghanistan": 0.4
   },
   "recent": [
-    "Australia issues highest-level travel warning for Afghanistan",
     "Heavy security deployed in South Africa ahead of anti-migrant protests",
     "Founder of Asian super-app Gojek sentenced to years in jail for corruption",
     "US envoys in Doha to meet mediators but not Iranians, Qatar says",
@@ -720,7 +727,8 @@
     "Jailers and officials at Russia's 'torture prisons' in Ukraine exposed by BBC",
     "Tahawol: UN Officials Visit Kabul \u2014 Political Impact & Consequences",
     "Australia news live: China missile test \u2018not something a friend does\u2019, Solomon Islands PM says in joint appearance with Albanese",
-    "US launches strikes on Iran after tankers hit in Strait of Hormuz"
+    "US launches strikes on Iran after tankers hit in Strait of Hormuz",
+    "Australia news live: PM says \u2018no evidence\u2019 cyber-attack behind national Telstra outages as carrier tries to pin down cause"
   ],
-  "pashto_date": "2026-07-07"
+  "pashto_date": "2026-07-08"
 }
