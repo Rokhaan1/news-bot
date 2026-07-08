@@ -156,6 +156,7 @@
     "Schools close as more than half of France under red heat alerts",
     "Serbian Dejan Dedovic appointed head coach of Afghanistan national futsal team",
     "Severe weather disrupts US\u2019s 250th celebrations",
+    "Shapoor Zadran\u2019s body returns to Kabul as family, teammates and officials pay tribute",
     "Source: Fire in final stage of deal for Lewandowsk...",
     "Sources: Diomande close to preferred PSG move",
     "Spain have Yamal back -- and they finally look lik...",
@@ -242,8 +243,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-08",
-  "posts_today": 2,
-  "last_news_ts": 1783476090.9865282,
+  "posts_today": 3,
+  "last_news_ts": 1783519297.8260782,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-08",
   "football_date": "2026-07-08",
@@ -695,6 +696,13 @@
       "hour": 2,
       "ts": 1783476090.9865298,
       "eng": 2
+    },
+    {
+      "id": "2074856434815119584",
+      "pillar": "afghanistan",
+      "hour": 14,
+      "ts": 1783519297.8260796,
+      "eng": null
     }
   ],
   "insights": {
@@ -704,7 +712,6 @@
     "afghanistan": 0.4
   },
   "recent": [
-    "Heavy security deployed in South Africa ahead of anti-migrant protests",
     "Founder of Asian super-app Gojek sentenced to years in jail for corruption",
     "US envoys in Doha to meet mediators but not Iranians, Qatar says",
     "North Korea\u2019s Kim hails \u2018unshakeable will\u2019 to develop ties with China\u2019s Xi",
@@ -728,10 +735,13 @@
     "Tahawol: UN Officials Visit Kabul \u2014 Political Impact & Consequences",
     "Australia news live: China missile test \u2018not something a friend does\u2019, Solomon Islands PM says in joint appearance with Albanese",
     "US launches strikes on Iran after tankers hit in Strait of Hormuz",
-    "Australia news live: PM says \u2018no evidence\u2019 cyber-attack behind national Telstra outages as carrier tries to pin down cause"
+    "Australia news live: PM says \u2018no evidence\u2019 cyber-attack behind national Telstra outages as carrier tries to pin down cause",
+    "Shapoor Zadran\u2019s body returns to Kabul as family, teammates and officials pay tribute"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [],
   "recent_facts": [],
-  "slots_done": []
+  "slots_done": [
+    14
+  ]
 }
