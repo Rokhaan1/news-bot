@@ -287,26 +287,28 @@ def write_football_caption(tweet_text):
         return None
 
 
-def write_afghan_fact():
-    """One positive/fun/historic fact about Afghanistan. None if it looks off."""
+def write_afghan_fact(topic=None, avoid=None):
+    """One positive/historic fact about Afghanistan on a rotated heritage TOPIC.
+    `avoid` is a list of recent fact tweets NOT to repeat. None if it looks off."""
+    focus = topic or "any one aspect of Afghanistan's ancient Aryana civilization"
+    avoid_block = ""
+    if avoid:
+        joined = "\n".join(f"- {a[:120]}" for a in avoid)
+        avoid_block = (
+            "You have RECENTLY posted the tweets below. Do NOT repeat their subject, "
+            "framing, place, or wording — say something clearly different:\n"
+            f"{joined}\n"
+        )
     prompt = (
-        "Write ONE expert, engaging tweet sharing a POSITIVE or historic fact about "
-        "Afghanistan, with a strong focus on its ANCIENT CIVILIZATION and HISTORICAL "
-        "SITES thousands of years old. Draw on a wide, varied range, for example: the "
-        "Bamiyan valley and its giant Buddhas, Mes Aynak, Balkh (the 'Mother of "
-        "Cities'), the Minaret of Jam, Herat's Citadel and Musalla, Ghazni, Ai-Khanoum "
-        "and Greco-Bactrian heritage, Gandhara and Hadda, ancient Aryana, the Silk "
-        "Road, lapis lazuli from Badakhshan, and especially the GREAT EMPIRES centered "
-        "in or born of Afghanistan: the Greco-Bactrians, the Kushans under Kanishka, "
-        "the Saffarids of Yaqub ibn Layth, the Samanids, the Ghaznavids of Mahmud of "
-        "Ghazni, the Ghurids (Minaret of Jam), Timurid Herat's renaissance under "
-        "Gawharshad and Behzad, the Hotak dynasty of Mirwais Hotak, and the Durrani "
-        "Empire founded by Ahmad Shah Durrani in 1747 (father of modern Afghanistan); "
-        "also great figures (Rumi of Balkh, Rabia Balkhi, Sanai, Avicenna's Balkh "
-        "roots, Khushal Khan Khattak, Al-Biruni). "
-        "Pick a DIFFERENT topic each day, go well beyond lakes and stones, give a real, "
-        "specific, expert detail. 200-450 characters, proud and authoritative, factual "
-        "(never fabricate), no hashtags, no quotes, no preamble, no em-dashes or '--'. "
+        "Write ONE expert, engaging tweet sharing a POSITIVE, specific historic fact "
+        "about Afghanistan's roughly 5,000-year Aryana (Ariana) civilization.\n"
+        f"TODAY'S TOPIC — write specifically about: {focus}.\n"
+        f"{avoid_block}"
+        "Cover the WHOLE country and its full timeline, not one place. Do NOT default "
+        "to Balkh or lapis lazuli unless that is literally today's topic. Give a real, "
+        "concrete, expert detail (a name, date, place, or achievement) that fits the "
+        "topic — never vague, never fabricated. 200-450 characters, proud and "
+        "authoritative, no hashtags, no quotes, no preamble, no em-dashes or '--'. "
         "Output ONLY the tweet."
     )
     try:

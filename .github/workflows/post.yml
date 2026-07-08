@@ -1,9 +1,17 @@
 name: News Bot
 
-# Triggered ONLY by cron-job.org (reliable 15-min) + manual runs.
-# GitHub's own schedule is intentionally removed to avoid double-posting.
+# Runs on GitHub's own schedule (self-contained, no external trigger needed),
+# plus manual/dispatch runs. Double-posting is prevented in the app: news posts
+# are gated by POST_SLOTS + slots_done, and the daily fact/football posts by
+# their *_date guards, so extra runs in a slot post at most once.
 on:
   workflow_dispatch: {}
+  schedule:
+    # All times UTC. Several ticks per slot absorb GitHub's scheduler delay.
+    - cron: '0,20,40 14 * * *'   # Afghan-evening slot   (~18:30 Kabul)
+    - cron: '0,20,40 16 * * *'   # UK late-afternoon slot (~17:00 London)
+    - cron: '0,20,40 19 * * *'   # US noon/afternoon slot (12:00 PT / 15:00 ET)
+    - cron: '0 15,17,20 * * *'   # catch-up ticks if a slot's runs were delayed
 
 # Prevent overlapping runs
 concurrency:

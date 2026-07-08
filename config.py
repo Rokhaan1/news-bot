@@ -121,6 +121,39 @@ PILLAR_WINDOWS = {
 }
 AFGHAN_FACT_WINDOW = (2, 19)         # post the daily Afghan pride fact in Afghan hours
 
+# Heritage topics for the daily Afghan pride fact. The bot rotates through
+# these (and avoids recently used ones) so the fact isn't always Balkh/lapis.
+# They span the WHOLE country and its full ~5,000-year Aryana (Ariana) timeline
+# on purpose. Add or reorder freely — one is chosen per day.
+HERITAGE_TOPICS = [
+    "the ancient name Aryana/Ariana and the Aryan homeland of the Avesta, marking ~5,000 years of continuous civilization across the Afghan lands",
+    "Zoroaster (Zarathustra) and the birth of Zoroastrian thought in ancient Ariana",
+    "the Greco-Bactrian kingdom and the Hellenistic city of Ai-Khanoum on the Oxus",
+    "the Kushan Empire under Kanishka linking Rome, India and China along the Silk Road",
+    "Gandhara civilization and its Greco-Buddhist art at Hadda",
+    "the Bamiyan valley, its colossal Buddhas and painted cave monasteries",
+    "Mes Aynak, the vast ancient Buddhist copper city south of Kabul",
+    "Begram (ancient Kapisa) and the Begram ivories and Roman-Indian treasures",
+    "Old Kandahar, Alexandria in Arachosia, and Ashoka's bilingual Greek-Aramaic edicts",
+    "the Minaret of Jam and the Ghurid Empire of central Afghanistan",
+    "the Ghaznavid Empire of Mahmud of Ghazni and the polymath Al-Biruni at his court",
+    "the Saffarids of Yaqub ibn Layth and the Samanid renaissance",
+    "Timurid Herat's golden age: Queen Gawharshad, the Musalla complex and the painter Behzad",
+    "Herat's Citadel (Qala Ikhtyaruddin) and the city's layered ancient history",
+    "the Durrani Empire founded by Ahmad Shah Durrani in 1747, the birth of modern Afghanistan",
+    "Mirwais Hotak and the Hotak dynasty of Kandahar",
+    "the Kabul Shahi (Hindu Shahi) kingdoms of Kabul and Gandhara",
+    "Seistan/Zabulistan and the epic hero Rustam of the Shahnameh",
+    "Khwaja Abdullah Ansari, the revered Sage of Herat",
+    "Sanai of Ghazni, pioneer of Persian Sufi poetry",
+    "Khushal Khan Khattak, the warrior-poet of the Pashtuns",
+    "Rumi (Jalaluddin Balkhi) and Rabia Balkhi, poets born of the Afghan lands",
+    "the Wakhan corridor, Badakhshan and the ancient Silk Road trade",
+    "Nuristan (ancient Kafiristan) and its distinct pre-Islamic culture",
+    "Ghazni as a medieval world center of learning, the 'Bride of Cities'",
+    "the Kushano-Sasanian era and the crossroads culture of ancient Afghanistan",
+]
+
 # Cricket headlines that are negative for Afghanistan are skipped (cheap rule
 # pre-filter; the AI writer also judges tone as a backstop).
 AFGHAN_CRICKET_SKIP = [

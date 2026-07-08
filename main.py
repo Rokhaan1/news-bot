@@ -53,6 +53,8 @@ def load_state():
     s.setdefault("log", [])         # [{id, pillar, hour, ts, eng}] performance log
     s.setdefault("insights", {})    # {pillar: avg_engagement}
     s.setdefault("recent", [])      # recent titles, for duplicate-event detection
+    s.setdefault("fact_topics", [])  # recently used heritage topics (rotation memory)
+    s.setdefault("recent_facts", [])  # recent Afghan-fact tweets (anti-repeat memory)
     s.setdefault("slots_done", [])  # UTC hours of POST_SLOTS already filled today
     # reset the daily counters when the date rolls over
     if s["date"] != today():
@@ -201,17 +203,35 @@ def post_news(client, api_v1, entry, pillar, text):
 
 
 def maybe_post_afghan_fact(client, state):
-    """Once a day, during Afghan hours: a positive/historic Afghan pride fact."""
+    """Once a day, during Afghan hours: a positive/historic Afghan pride fact.
+    Rotates through HERITAGE_TOPICS and rejects near-duplicates of recent facts
+    so it stops repeating the same Balkh/lapis tweet."""
     if state.get("fact_date") == today():
         return
     if not _in_window(config.AFGHAN_FACT_WINDOW, datetime.now(timezone.utc).hour):
         return
-    text = writer.write_afghan_fact()
+
+    recent_topics = state.get("fact_topics", [])
+    recent_facts = state.get("recent_facts", [])
+    # prefer a topic we haven't used recently; fall back to any if all are used
+    pool = [t for t in config.HERITAGE_TOPICS if t not in recent_topics] \
+        or list(config.HERITAGE_TOPICS)
+    topic = random.choice(pool)
+
+    text = None
+    for _ in range(3):   # retry if the model still returns a near-duplicate
+        cand = writer.write_afghan_fact(topic=topic, avoid=recent_facts[-8:])
+        if cand and not _is_dup(cand, recent_facts):
+            text = cand
+            break
     if not text:
+        print("SKIPPED [afghan_fact] no fresh, non-duplicate fact this run")
         return
     try:
         client.create_tweet(text=text)
         state["fact_date"] = today()
+        state["fact_topics"] = (recent_topics + [topic])[-14:]
+        state["recent_facts"] = (recent_facts + [text])[-12:]
         print(f"POSTED [afghan_fact] {text[:60]}")
     except Exception as e:
         print(f"FAILED [afghan_fact] {e}")
