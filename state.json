@@ -16,6 +16,7 @@
     "2073554928736346303",
     "2073919892684787902",
     "2074279836869149070",
+    "2074644526711402661",
     "34 Hindu families in Canada seeking return to Afghanistan, says former MP",
     "6.1-Magnitude Earthquake Shakes Kabul and Northern Afghanistan",
     "6.1-magnitude earthquake hits Afghanistan, epicenter in Badakhshan",
@@ -199,6 +200,7 @@
     "US envoys in Doha to meet mediators but not Iranians, Qatar says",
     "US judge blocks Trump administration subpoena against Minnesota officials",
     "US judge sides with NAACP over proposed mail-in ballot restrictions",
+    "US launches strikes on Iran after tankers hit in Strait of Hormuz",
     "US players insist momentum remains with them despite late loss to Turkey",
     "US raises concern as RSF forces encircle Sudanese city of el-Obeid",
     "US strike on an alleged drug boat in eastern Pacific kills two",
@@ -238,12 +240,12 @@
     "\u2018No sense of direction\u2019: The downfall of Keir Starmer",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-07-07",
-  "posts_today": 3,
-  "last_news_ts": 1783396875.5236385,
+  "date": "2026-07-08",
+  "posts_today": 1,
+  "last_news_ts": 1783468875.5779285,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-07",
-  "football_date": "2026-07-07",
+  "football_date": "2026-07-08",
   "log": [
     {
       "id": "2070647765747839358",
@@ -671,6 +673,20 @@
       "hour": 4,
       "ts": 1783396875.5236404,
       "eng": 0
+    },
+    {
+      "id": "2074644934661996551",
+      "pillar": "worldcup",
+      "hour": 0,
+      "ts": 1783468872.2665908,
+      "eng": null
+    },
+    {
+      "id": "2074644948649931240",
+      "pillar": "global",
+      "hour": 0,
+      "ts": 1783468875.5779295,
+      "eng": null
     }
   ],
   "insights": {
@@ -680,7 +696,6 @@
     "afghanistan": 0.4
   },
   "recent": [
-    "Tahawol: Pakistan\u2019s attacks on civilians in Afghanistan",
     "Australia issues highest-level travel warning for Afghanistan",
     "Heavy security deployed in South Africa ahead of anti-migrant protests",
     "Founder of Asian super-app Gojek sentenced to years in jail for corruption",
@@ -704,7 +719,8 @@
     "Sweden spends millions on Afghan voluntary return campaign with no participants so far",
     "Jailers and officials at Russia's 'torture prisons' in Ukraine exposed by BBC",
     "Tahawol: UN Officials Visit Kabul \u2014 Political Impact & Consequences",
-    "Australia news live: China missile test \u2018not something a friend does\u2019, Solomon Islands PM says in joint appearance with Albanese"
+    "Australia news live: China missile test \u2018not something a friend does\u2019, Solomon Islands PM says in joint appearance with Albanese",
+    "US launches strikes on Iran after tankers hit in Strait of Hormuz"
   ],
   "pashto_date": "2026-07-07"
 }
