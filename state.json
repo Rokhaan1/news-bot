@@ -17,6 +17,7 @@
     "2073919892684787902",
     "2074279836869149070",
     "2074644526711402661",
+    "2074999523357720646",
     "34 Hindu families in Canada seeking return to Afghanistan, says former MP",
     "6.1-Magnitude Earthquake Shakes Kabul and Northern Afghanistan",
     "6.1-magnitude earthquake hits Afghanistan, epicenter in Badakhshan",
@@ -242,12 +243,12 @@
     "\u2018No sense of direction\u2019: The downfall of Keir Starmer",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-07-08",
-  "posts_today": 3,
+  "date": "2026-07-09",
+  "posts_today": 0,
   "last_news_ts": 1783519297.8260782,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-08",
-  "football_date": "2026-07-08",
+  "football_date": "2026-07-09",
   "log": [
     {
       "id": "2070647765747839358",
@@ -703,6 +704,13 @@
       "hour": 14,
       "ts": 1783519297.8260796,
       "eng": 2
+    },
+    {
+      "id": "2075007378890842417",
+      "pillar": "worldcup",
+      "hour": 0,
+      "ts": 1783555285.6768565,
+      "eng": null
     }
   ],
   "insights": {
@@ -741,7 +749,5 @@
   "pashto_date": "2026-07-08",
   "fact_topics": [],
   "recent_facts": [],
-  "slots_done": [
-    14
-  ]
+  "slots_done": []
 }
