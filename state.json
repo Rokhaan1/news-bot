@@ -64,6 +64,7 @@
     "Cairo erupts in celebration after Egypt\u2019s first ever win in a World Cup",
     "Cape Verde cause latest WC shock, deny Uruguay",
     "Cape Verde fan goes wild live on BBC News as his country scores",
+    "Chemical weapons watchdog restores Syria\u2019s voting rights, citing progress",
     "China adds 10 US firms, including rare-earth miner, to export control list",
     "China resumes work on highway project in Tajikistan close to Afghan border",
     "China's import of custard apples is sparking fears in Taiwan",
@@ -245,8 +246,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-09",
-  "posts_today": 1,
-  "last_news_ts": 1783605673.8343172,
+  "posts_today": 2,
+  "last_news_ts": 1783612870.7060835,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-09",
   "football_date": "2026-07-09",
@@ -719,6 +720,13 @@
       "hour": 14,
       "ts": 1783605673.8343186,
       "eng": null
+    },
+    {
+      "id": "2075248907953774746",
+      "pillar": "global",
+      "hour": 16,
+      "ts": 1783612870.706085,
+      "eng": null
     }
   ],
   "insights": {
@@ -728,7 +736,6 @@
     "afghanistan": 0.5
   },
   "recent": [
-    "US envoys in Doha to meet mediators but not Iranians, Qatar says",
     "North Korea\u2019s Kim hails \u2018unshakeable will\u2019 to develop ties with China\u2019s Xi",
     "Anthropic says US lifts export ban on its advanced AI tools",
     "Iran football team welcomed home after World Cup exit",
@@ -752,7 +759,8 @@
     "US launches strikes on Iran after tankers hit in Strait of Hormuz",
     "Australia news live: PM says \u2018no evidence\u2019 cyber-attack behind national Telstra outages as carrier tries to pin down cause",
     "Shapoor Zadran\u2019s body returns to Kabul as family, teammates and officials pay tribute",
-    "Afghanistan, India hold fourth Joint Committee Meeting"
+    "Afghanistan, India hold fourth Joint Committee Meeting",
+    "Chemical weapons watchdog restores Syria\u2019s voting rights, citing progress"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -762,6 +770,7 @@
     "At Mahmud of Ghazni's court around 1000 AD, Afghanistan hosted one of history's greatest minds: Al-Biruni. From Ghazni, he calculated the Earth's radius with stunning accuracy, mastered astronomy, and wrote the Kitab al-Hind. The Ghaznavid Empire made this land a beacon of science. Who else was doing this a thousand years ago?"
   ],
   "slots_done": [
-    14
+    14,
+    16
   ]
 }
