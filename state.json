@@ -247,7 +247,7 @@
   "posts_today": 0,
   "last_news_ts": 1783519297.8260782,
   "videos_date": "2026-06-26",
-  "fact_date": "2026-07-08",
+  "fact_date": "2026-07-09",
   "football_date": "2026-07-09",
   "log": [
     {
@@ -747,7 +747,11 @@
     "Shapoor Zadran\u2019s body returns to Kabul as family, teammates and officials pay tribute"
   ],
   "pashto_date": "2026-07-08",
-  "fact_topics": [],
-  "recent_facts": [],
+  "fact_topics": [
+    "the Ghaznavid Empire of Mahmud of Ghazni and the polymath Al-Biruni at his court"
+  ],
+  "recent_facts": [
+    "At Mahmud of Ghazni's court around 1000 AD, Afghanistan hosted one of history's greatest minds: Al-Biruni. From Ghazni, he calculated the Earth's radius with stunning accuracy, mastered astronomy, and wrote the Kitab al-Hind. The Ghaznavid Empire made this land a beacon of science. Who else was doing this a thousand years ago?"
+  ],
   "slots_done": []
 }
