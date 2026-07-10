@@ -62,6 +62,7 @@
     "Australian PM apologises for 'inappropriate' comments about Kylie Minogue",
     "Bielsa's Uruguay anger Cape Verde over fair play",
     "British parliament to debate Israeli influence on UK politics: What we know",
+    "Burnham will have to master something Starmer couldn\u2019t: the art of dealing with Donald Trump | Gaby Hinsliff",
     "Cairo erupts in celebration after Egypt\u2019s first ever win in a World Cup",
     "Cape Verde cause latest WC shock, deny Uruguay",
     "Cape Verde fan goes wild live on BBC News as his country scores",
@@ -185,6 +186,7 @@
     "Transfer rumors, news: PSG to compete with Man Uni...",
     "Trump administration indicts Olympic athlete for Reflecting Pool vandalism",
     "Trump administration moves to restart LGBTQ+ suicide hotline it initially ended",
+    "Trump hints at further Iran negotiations after exchange of fire over Hormuz",
     "Trump justifies strikes on Iran amid ceasefire",
     "Trump launches America250 festivities with a rally on the National Mall",
     "Trump made more than $1bn from crypto in first year back in office",
@@ -235,6 +237,7 @@
     "Will the end of TPS for Haitians mean a caregiving crisis in US?",
     "Woman arrested after body of four-year-old boy found in Central Coast home",
     "World Cup 'smart' ball is a game changer. Just don...",
+    "World Cup 2026: \u2018violent disorder\u2019 in London after France\u2019s win over Morocco; Spain v Belgium buildup; Jesus takes Portugal job \u2013 as it happened",
     "World Cup Daily: Crying Belgium fan saved by VAR; ...",
     "World Cup VAR review: Why was Iran's goal ruled ou...",
     "World Cup live updates: Ronaldo nets a pair of goa...",
@@ -244,14 +247,15 @@
     "https://www.reddit.com/r/funny/comments/1udo6i4/referee_drops_his_watch_player_picks_it_up/",
     "https://www.reddit.com/r/funny/comments/1uemjr8/the_timeless_james_earl_jones_glare_of_unbridled/",
     "https://www.reddit.com/r/funny/comments/1ufn0hu/dolphin_no_scopes_a_guy_with_a_fish/",
+    "\u2018Brazen attempt to seize control\u2019: Democratic leader vows to fight Trump\u2019s election commission firings \u2013 live",
     "\u2018Daily cuts\u2026 infections\u2019: India\u2019s e-waste workers face toxic health risks",
     "\u2018I leave the biggest job\u2019: Keir Stamer\u2019s resignation speech in full",
     "\u2018No sense of direction\u2019: The downfall of Keir Starmer",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-10",
-  "posts_today": 2,
-  "last_news_ts": 1783699271.866842,
+  "posts_today": 3,
+  "last_news_ts": 1783710072.185009,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-10",
   "football_date": "2026-07-10",
@@ -759,6 +763,13 @@
       "hour": 16,
       "ts": 1783699271.8668432,
       "eng": null
+    },
+    {
+      "id": "2075656600531112122",
+      "pillar": "us_foreign_policy",
+      "hour": 19,
+      "ts": 1783710072.1850097,
+      "eng": null
     }
   ],
   "insights": {
@@ -768,7 +779,6 @@
     "afghanistan": 0.5
   },
   "recent": [
-    "Saar: Uzbekistan-Qatar support for Afghanistan\u2019s development disucssed",
     "China resumes work on highway project in Tajikistan close to Afghan border",
     "Portugal fans gather ahead of Ronaldo-Modric clash",
     "IEA PM reviews progress of Kabul\u2013Jalalabad second highway project",
@@ -792,7 +802,8 @@
     "Chemical weapons watchdog restores Syria\u2019s voting rights, citing progress",
     "US expands Iran strikes Iran hitting  fishing piers near nuclear plant",
     "Pakistan to Begin Deportation of Around 20,000 Afghans From Peshawar",
-    "Copy of Police called to incident at England media center"
+    "Copy of Police called to incident at England media center",
+    "Trump hints at further Iran negotiations after exchange of fire over Hormuz"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -805,6 +816,7 @@
   ],
   "slots_done": [
     14,
-    16
+    16,
+    19
   ]
 }
