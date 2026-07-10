@@ -70,6 +70,7 @@
     "China resumes work on highway project in Tajikistan close to Afghan border",
     "China's import of custard apples is sparking fears in Taiwan",
     "Concei\u00e7\u00e3o: No obligation to pass ball to Ronaldo",
+    "Copy of Police called to incident at England media center",
     "Copy of Salah stepped up, but World Cup 2026 is proving to...",
     "Couple arrested after daring Empire State marriage proposal stunt",
     "Cracks are showing in Trump\u2019s blue-collar base | Steven Greenhouse",
@@ -249,8 +250,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-10",
-  "posts_today": 1,
-  "last_news_ts": 1783692075.342748,
+  "posts_today": 2,
+  "last_news_ts": 1783699271.866842,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-10",
   "football_date": "2026-07-10",
@@ -751,6 +752,13 @@
       "hour": 14,
       "ts": 1783692075.342749,
       "eng": null
+    },
+    {
+      "id": "2075611300588400693",
+      "pillar": "worldcup",
+      "hour": 16,
+      "ts": 1783699271.8668432,
+      "eng": null
     }
   ],
   "insights": {
@@ -760,7 +768,6 @@
     "afghanistan": 0.5
   },
   "recent": [
-    "Iran football team welcomed home after World Cup exit",
     "Saar: Uzbekistan-Qatar support for Afghanistan\u2019s development disucssed",
     "China resumes work on highway project in Tajikistan close to Afghan border",
     "Portugal fans gather ahead of Ronaldo-Modric clash",
@@ -784,7 +791,8 @@
     "Afghanistan, India hold fourth Joint Committee Meeting",
     "Chemical weapons watchdog restores Syria\u2019s voting rights, citing progress",
     "US expands Iran strikes Iran hitting  fishing piers near nuclear plant",
-    "Pakistan to Begin Deportation of Around 20,000 Afghans From Peshawar"
+    "Pakistan to Begin Deportation of Around 20,000 Afghans From Peshawar",
+    "Copy of Police called to incident at England media center"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -796,6 +804,7 @@
     "In 11th-century Herat, Khwaja Abdullah Ansari turned the Persian language into a vessel for the soul. Born there in 1006, this Sufi master and scholar composed the \"Munajat,\" intimate whispered prayers still recited a thousand years on. His shrine at Gazur Gah remains a jewel of Afghan heritage. Herat has always been a city of light."
   ],
   "slots_done": [
-    14
+    14,
+    16
   ]
 }
