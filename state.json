@@ -132,6 +132,7 @@
     "Pakistan Orders Police to Arrest Afghans Without Valid Visas From July 10",
     "Pakistan issues nationwide alert over fears of heavy rains, floods",
     "Pakistan says its security forces killed 29 fighters along Afghan border",
+    "Pakistan to Begin Deportation of Around 20,000 Afghans From Peshawar",
     "Pakistani strikes kill dozens of Afghan villagers",
     "Pakistani truckers return home after 9 months stranded in Afghanistan",
     "Partey 'ready' for England after missing opener",
@@ -248,8 +249,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-10",
-  "posts_today": 0,
-  "last_news_ts": 1783623671.0709126,
+  "posts_today": 1,
+  "last_news_ts": 1783692075.342748,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-10",
   "football_date": "2026-07-10",
@@ -743,6 +744,13 @@
       "hour": 0,
       "ts": 1783641666.032238,
       "eng": 0
+    },
+    {
+      "id": "2075581116007018615",
+      "pillar": "afghanistan",
+      "hour": 14,
+      "ts": 1783692075.342749,
+      "eng": null
     }
   ],
   "insights": {
@@ -752,7 +760,6 @@
     "afghanistan": 0.5
   },
   "recent": [
-    "Anthropic says US lifts export ban on its advanced AI tools",
     "Iran football team welcomed home after World Cup exit",
     "Saar: Uzbekistan-Qatar support for Afghanistan\u2019s development disucssed",
     "China resumes work on highway project in Tajikistan close to Afghan border",
@@ -776,7 +783,8 @@
     "Shapoor Zadran\u2019s body returns to Kabul as family, teammates and officials pay tribute",
     "Afghanistan, India hold fourth Joint Committee Meeting",
     "Chemical weapons watchdog restores Syria\u2019s voting rights, citing progress",
-    "US expands Iran strikes Iran hitting  fishing piers near nuclear plant"
+    "US expands Iran strikes Iran hitting  fishing piers near nuclear plant",
+    "Pakistan to Begin Deportation of Around 20,000 Afghans From Peshawar"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -787,5 +795,7 @@
     "At Mahmud of Ghazni's court around 1000 AD, Afghanistan hosted one of history's greatest minds: Al-Biruni. From Ghazni, he calculated the Earth's radius with stunning accuracy, mastered astronomy, and wrote the Kitab al-Hind. The Ghaznavid Empire made this land a beacon of science. Who else was doing this a thousand years ago?",
     "In 11th-century Herat, Khwaja Abdullah Ansari turned the Persian language into a vessel for the soul. Born there in 1006, this Sufi master and scholar composed the \"Munajat,\" intimate whispered prayers still recited a thousand years on. His shrine at Gazur Gah remains a jewel of Afghan heritage. Herat has always been a city of light."
   ],
-  "slots_done": []
+  "slots_done": [
+    14
+  ]
 }
