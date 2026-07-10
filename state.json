@@ -18,6 +18,7 @@
     "2074279836869149070",
     "2074644526711402661",
     "2074999523357720646",
+    "2075365072419872820",
     "34 Hindu families in Canada seeking return to Afghanistan, says former MP",
     "6.1-Magnitude Earthquake Shakes Kabul and Northern Afghanistan",
     "6.1-magnitude earthquake hits Afghanistan, epicenter in Badakhshan",
@@ -246,12 +247,12 @@
     "\u2018No sense of direction\u2019: The downfall of Keir Starmer",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-07-09",
-  "posts_today": 3,
+  "date": "2026-07-10",
+  "posts_today": 0,
   "last_news_ts": 1783623671.0709126,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-09",
-  "football_date": "2026-07-09",
+  "football_date": "2026-07-10",
   "log": [
     {
       "id": "2070647765747839358",
@@ -735,6 +736,13 @@
       "hour": 19,
       "ts": 1783623671.070914,
       "eng": 0
+    },
+    {
+      "id": "2075369684250058827",
+      "pillar": "worldcup",
+      "hour": 0,
+      "ts": 1783641666.032238,
+      "eng": null
     }
   ],
   "insights": {
@@ -777,9 +785,5 @@
   "recent_facts": [
     "At Mahmud of Ghazni's court around 1000 AD, Afghanistan hosted one of history's greatest minds: Al-Biruni. From Ghazni, he calculated the Earth's radius with stunning accuracy, mastered astronomy, and wrote the Kitab al-Hind. The Ghaznavid Empire made this land a beacon of science. Who else was doing this a thousand years ago?"
   ],
-  "slots_done": [
-    14,
-    16,
-    19
-  ]
+  "slots_done": []
 }
