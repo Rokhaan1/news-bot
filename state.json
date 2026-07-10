@@ -769,13 +769,13 @@
       "pillar": "us_foreign_policy",
       "hour": 19,
       "ts": 1783710072.1850097,
-      "eng": null
+      "eng": 1
     }
   ],
   "insights": {
     "global": 0.4,
     "worldcup": 0.3,
-    "us_foreign_policy": 0.0,
+    "us_foreign_policy": 0.3,
     "afghanistan": 0.5
   },
   "recent": [
