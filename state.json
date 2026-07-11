@@ -19,6 +19,7 @@
     "2074644526711402661",
     "2074999523357720646",
     "2075365072419872820",
+    "2075727757787431247",
     "34 Hindu families in Canada seeking return to Afghanistan, says former MP",
     "6.1-Magnitude Earthquake Shakes Kabul and Northern Afghanistan",
     "6.1-magnitude earthquake hits Afghanistan, epicenter in Badakhshan",
@@ -253,12 +254,12 @@
     "\u2018No sense of direction\u2019: The downfall of Keir Starmer",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-07-10",
-  "posts_today": 3,
+  "date": "2026-07-11",
+  "posts_today": 0,
   "last_news_ts": 1783710072.185009,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-10",
-  "football_date": "2026-07-10",
+  "football_date": "2026-07-11",
   "log": [
     {
       "id": "2070647765747839358",
@@ -770,6 +771,13 @@
       "hour": 19,
       "ts": 1783710072.1850097,
       "eng": 1
+    },
+    {
+      "id": "2075732080475222220",
+      "pillar": "worldcup",
+      "hour": 0,
+      "ts": 1783728068.0055263,
+      "eng": null
     }
   ],
   "insights": {
@@ -814,9 +822,5 @@
     "At Mahmud of Ghazni's court around 1000 AD, Afghanistan hosted one of history's greatest minds: Al-Biruni. From Ghazni, he calculated the Earth's radius with stunning accuracy, mastered astronomy, and wrote the Kitab al-Hind. The Ghaznavid Empire made this land a beacon of science. Who else was doing this a thousand years ago?",
     "In 11th-century Herat, Khwaja Abdullah Ansari turned the Persian language into a vessel for the soul. Born there in 1006, this Sufi master and scholar composed the \"Munajat,\" intimate whispered prayers still recited a thousand years on. His shrine at Gazur Gah remains a jewel of Afghan heritage. Herat has always been a city of light."
   ],
-  "slots_done": [
-    14,
-    16,
-    19
-  ]
+  "slots_done": []
 }
