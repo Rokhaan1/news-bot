@@ -195,6 +195,7 @@
     "Trump made more than $1bn from crypto in first year back in office",
     "Trump news at a glance: president tests out a new \u2018red scare\u2019 ahead of midterms",
     "Trump news at a glance: president\u2019s pool project plagued by peeling paint \u2013 and algae blooms",
+    "Trump rushed Kennedy Center renovations for Fifa peace prize ceremony, whistleblowers say",
     "Trump says five people arrested as he again blames \u2018vandals\u2019 for reflecting pool damage without giving evidence \u2013 live",
     "Trump says repairs to algae-plagued Reflecting Pool will begin immediately",
     "Trump-backed political outsider wins Colombia election, initial count shows",
@@ -258,8 +259,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-11",
-  "posts_today": 2,
-  "last_news_ts": 1783785674.9265852,
+  "posts_today": 3,
+  "last_news_ts": 1783796468.2659917,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-11",
   "football_date": "2026-07-11",
@@ -795,6 +796,13 @@
       "hour": 16,
       "ts": 1783785674.9265862,
       "eng": null
+    },
+    {
+      "id": "2076018971950686517",
+      "pillar": "us_foreign_policy",
+      "hour": 19,
+      "ts": 1783796468.2659929,
+      "eng": null
     }
   ],
   "insights": {
@@ -804,7 +812,6 @@
     "afghanistan": 0.5
   },
   "recent": [
-    "IEA PM reviews progress of Kabul\u2013Jalalabad second highway project",
     "Australia news live: minister says it\u2019s safe to \u2018keep buying eggs, keep buying chicken\u2019 as east coast records first suspected bird flu case",
     "Venezuela\u2019s Rodriguez blames \u2018propaganda\u2019 for quake response backlash",
     "US Backs Pakistan\u2019s Right to Self-Defense After Deadly Strikes in Afghanistan",
@@ -828,7 +835,8 @@
     "Copy of Police called to incident at England media center",
     "Trump hints at further Iran negotiations after exchange of fire over Hormuz",
     "Afghan envoy, UNHCR chief discuss support for returnees from Pakistan and Iran",
-    "A tale of two No. 10s: England's Bellingham, Norwa..."
+    "A tale of two No. 10s: England's Bellingham, Norwa...",
+    "Trump rushed Kennedy Center renovations for Fifa peace prize ceremony, whistleblowers say"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -843,6 +851,7 @@
   ],
   "slots_done": [
     14,
-    16
+    16,
+    19
   ]
 }
