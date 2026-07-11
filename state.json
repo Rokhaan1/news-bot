@@ -23,6 +23,7 @@
     "34 Hindu families in Canada seeking return to Afghanistan, says former MP",
     "6.1-Magnitude Earthquake Shakes Kabul and Northern Afghanistan",
     "6.1-magnitude earthquake hits Afghanistan, epicenter in Badakhshan",
+    "A tale of two No. 10s: England's Bellingham, Norwa...",
     "Afghan envoy, UNHCR chief discuss support for returnees from Pakistan and Iran",
     "Afghan women\u2019s situation highlighted at SCO Forum amid ongoing global debate",
     "Afghanistan committed to continued cooperation with UN on humanitarian and development projects: FM Muttaqi",
@@ -242,6 +243,7 @@
     "World Cup 2026: \u2018violent disorder\u2019 in London after France\u2019s win over Morocco; Spain v Belgium buildup; Jesus takes Portugal job \u2013 as it happened",
     "World Cup Daily: Crying Belgium fan saved by VAR; ...",
     "World Cup VAR review: Why was Iran's goal ruled ou...",
+    "World Cup daily: Free England-Norway ticket for Er...",
     "World Cup live updates: Ronaldo nets a pair of goa...",
     "Worries exposed for England as Kane looks lost and...",
     "https://www.reddit.com/r/funny/comments/1ubta6p/camo/",
@@ -256,8 +258,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-11",
-  "posts_today": 1,
-  "last_news_ts": 1783778470.04296,
+  "posts_today": 2,
+  "last_news_ts": 1783785674.9265852,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-11",
   "football_date": "2026-07-11",
@@ -786,6 +788,13 @@
       "hour": 14,
       "ts": 1783778470.0429606,
       "eng": null
+    },
+    {
+      "id": "2075973701380796479",
+      "pillar": "worldcup",
+      "hour": 16,
+      "ts": 1783785674.9265862,
+      "eng": null
     }
   ],
   "insights": {
@@ -795,7 +804,6 @@
     "afghanistan": 0.5
   },
   "recent": [
-    "Portugal fans gather ahead of Ronaldo-Modric clash",
     "IEA PM reviews progress of Kabul\u2013Jalalabad second highway project",
     "Australia news live: minister says it\u2019s safe to \u2018keep buying eggs, keep buying chicken\u2019 as east coast records first suspected bird flu case",
     "Venezuela\u2019s Rodriguez blames \u2018propaganda\u2019 for quake response backlash",
@@ -819,7 +827,8 @@
     "Pakistan to Begin Deportation of Around 20,000 Afghans From Peshawar",
     "Copy of Police called to incident at England media center",
     "Trump hints at further Iran negotiations after exchange of fire over Hormuz",
-    "Afghan envoy, UNHCR chief discuss support for returnees from Pakistan and Iran"
+    "Afghan envoy, UNHCR chief discuss support for returnees from Pakistan and Iran",
+    "A tale of two No. 10s: England's Bellingham, Norwa..."
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -833,6 +842,7 @@
     "They called Ghazni the \"Bride of Cities,\" and it earned the title. Under the Ghaznavids in the 11th century, this Afghan capital drew poets like Farrukhi and Unsuri, and its libraries and madrasas made it a magnet of learning from India to Central Asia. A world capital, on Afghan soil. Who taught the world then?"
   ],
   "slots_done": [
-    14
+    14,
+    16
   ]
 }
