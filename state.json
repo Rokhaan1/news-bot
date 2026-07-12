@@ -134,6 +134,7 @@
     "Moira Deeming launches lawsuit against Victorian Liberal president before party meets to decide her future",
     "Neymar trains before Scotland World Cup clash",
     "North Korea\u2019s Kim hails \u2018unshakeable will\u2019 to develop ties with China\u2019s Xi",
+    "OIC, Muslim World League discuss support for Afghanistan on sidelines of Islamabad conference",
     "Oil prices back to pre-war levels on rising Middle East supply",
     "Pakistan Orders Police to Arrest Afghans Without Valid Visas From July 10",
     "Pakistan issues nationwide alert over fears of heavy rains, floods",
@@ -260,8 +261,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-12",
-  "posts_today": 0,
-  "last_news_ts": 1783796468.2659917,
+  "posts_today": 1,
+  "last_news_ts": 1783865017.7595215,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-12",
   "football_date": "2026-07-12",
@@ -811,6 +812,13 @@
       "hour": 0,
       "ts": 1783814564.1730847,
       "eng": 1
+    },
+    {
+      "id": "2076306489132941346",
+      "pillar": "afghanistan",
+      "hour": 14,
+      "ts": 1783865017.7595222,
+      "eng": null
     }
   ],
   "insights": {
@@ -820,7 +828,6 @@
     "afghanistan": 0.5
   },
   "recent": [
-    "Australia news live: minister says it\u2019s safe to \u2018keep buying eggs, keep buying chicken\u2019 as east coast records first suspected bird flu case",
     "Venezuela\u2019s Rodriguez blames \u2018propaganda\u2019 for quake response backlash",
     "US Backs Pakistan\u2019s Right to Self-Defense After Deadly Strikes in Afghanistan",
     "Arias sends Colombia into World Cup last-16 with 1-0 win over Ghana",
@@ -844,7 +851,8 @@
     "Trump hints at further Iran negotiations after exchange of fire over Hormuz",
     "Afghan envoy, UNHCR chief discuss support for returnees from Pakistan and Iran",
     "A tale of two No. 10s: England's Bellingham, Norwa...",
-    "Trump rushed Kennedy Center renovations for Fifa peace prize ceremony, whistleblowers say"
+    "Trump rushed Kennedy Center renovations for Fifa peace prize ceremony, whistleblowers say",
+    "OIC, Muslim World League discuss support for Afghanistan on sidelines of Islamabad conference"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -859,5 +867,7 @@
     "They called Ghazni the \"Bride of Cities,\" and it earned the title. Under the Ghaznavids in the 11th century, this Afghan capital drew poets like Farrukhi and Unsuri, and its libraries and madrasas made it a magnet of learning from India to Central Asia. A world capital, on Afghan soil. Who taught the world then?",
     "At Hadda, near Jalalabad, ancient Afghan sculptors fused Hellenic and Buddhist worlds into stucco of astonishing tenderness. Buddhas with the serene features of Apollo, monks rendered with unnerving realism. This was Gandhara's genius, born on Afghan soil. The East gave it soul, Afghanistan gave it form. Who else did this first?"
   ],
-  "slots_done": []
+  "slots_done": [
+    14
+  ]
 }
