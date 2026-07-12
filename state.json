@@ -820,7 +820,7 @@
       "pillar": "afghanistan",
       "hour": 14,
       "ts": 1783865017.7595222,
-      "eng": null
+      "eng": 3
     },
     {
       "id": "2076336083361505420",
@@ -834,7 +834,7 @@
     "global": 0.4,
     "worldcup": 0.3,
     "us_foreign_policy": 0.2,
-    "afghanistan": 0.5
+    "afghanistan": 0.6
   },
   "recent": [
     "US Backs Pakistan\u2019s Right to Self-Defense After Deadly Strikes in Afghanistan",
