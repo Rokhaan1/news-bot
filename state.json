@@ -263,7 +263,7 @@
   "posts_today": 0,
   "last_news_ts": 1783796468.2659917,
   "videos_date": "2026-06-26",
-  "fact_date": "2026-07-11",
+  "fact_date": "2026-07-12",
   "football_date": "2026-07-12",
   "log": [
     {
@@ -850,12 +850,14 @@
   "fact_topics": [
     "the Ghaznavid Empire of Mahmud of Ghazni and the polymath Al-Biruni at his court",
     "Khwaja Abdullah Ansari, the revered Sage of Herat",
-    "Ghazni as a medieval world center of learning, the 'Bride of Cities'"
+    "Ghazni as a medieval world center of learning, the 'Bride of Cities'",
+    "Gandhara civilization and its Greco-Buddhist art at Hadda"
   ],
   "recent_facts": [
     "At Mahmud of Ghazni's court around 1000 AD, Afghanistan hosted one of history's greatest minds: Al-Biruni. From Ghazni, he calculated the Earth's radius with stunning accuracy, mastered astronomy, and wrote the Kitab al-Hind. The Ghaznavid Empire made this land a beacon of science. Who else was doing this a thousand years ago?",
     "In 11th-century Herat, Khwaja Abdullah Ansari turned the Persian language into a vessel for the soul. Born there in 1006, this Sufi master and scholar composed the \"Munajat,\" intimate whispered prayers still recited a thousand years on. His shrine at Gazur Gah remains a jewel of Afghan heritage. Herat has always been a city of light.",
-    "They called Ghazni the \"Bride of Cities,\" and it earned the title. Under the Ghaznavids in the 11th century, this Afghan capital drew poets like Farrukhi and Unsuri, and its libraries and madrasas made it a magnet of learning from India to Central Asia. A world capital, on Afghan soil. Who taught the world then?"
+    "They called Ghazni the \"Bride of Cities,\" and it earned the title. Under the Ghaznavids in the 11th century, this Afghan capital drew poets like Farrukhi and Unsuri, and its libraries and madrasas made it a magnet of learning from India to Central Asia. A world capital, on Afghan soil. Who taught the world then?",
+    "At Hadda, near Jalalabad, ancient Afghan sculptors fused Hellenic and Buddhist worlds into stucco of astonishing tenderness. Buddhas with the serene features of Apollo, monks rendered with unnerving realism. This was Gandhara's genius, born on Afghan soil. The East gave it soul, Afghanistan gave it form. Who else did this first?"
   ],
   "slots_done": []
 }
