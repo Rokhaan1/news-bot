@@ -75,6 +75,7 @@
     "China resumes work on highway project in Tajikistan close to Afghan border",
     "China's import of custard apples is sparking fears in Taiwan",
     "Concei\u00e7\u00e3o: No obligation to pass ball to Ronaldo",
+    "Concern for renewed war in Iran as US attacks military, civilian targets",
     "Copy of Police called to incident at England media center",
     "Copy of Salah stepped up, but World Cup 2026 is proving to...",
     "Couple arrested after daring Empire State marriage proposal stunt",
@@ -128,6 +129,7 @@
     "Late singer Oliver Tree's body returned to US after helicopter crash",
     "Lost memoir of Hiroshima survivor found after decades in US archive",
     "Marine Le Pen appeal verdict: Why this moment matters for France",
+    "Martha Lillard, last known US polio survivor using iron lung, dies aged 78",
     "Mbapp\u00e9: I knew Messi would keeping scoring goals",
     "Messi, Haaland, Mbapp\u00e9, Kane: Who will be the Worl...",
     "Mohammad Saleem added to Afghanistan squad for India ODIs",
@@ -240,6 +242,7 @@
     "Which teams are in the World Cup round of 32, and what\u2019s the schedule?",
     "Which teams have qualified for the World Cup 2026 knockouts, round of 32?",
     "Who is Tommy Robinson? The Karl Stefanovic guest who has cost Australia\u2019s famed TV host his job",
+    "Who will replace Trump ally Lindsey Graham in the US Senate?",
     "Why Coca-Cola and the US taxman are at war over a $20bn tax bill",
     "Why has Keir Starmer resigned as UK prime minister, and who will take over?",
     "Will the end of TPS for Haitians mean a caregiving crisis in US?",
@@ -263,8 +266,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-12",
-  "posts_today": 2,
-  "last_news_ts": 1783872073.5430472,
+  "posts_today": 3,
+  "last_news_ts": 1783882872.5526638,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-12",
   "football_date": "2026-07-12",
@@ -828,6 +831,13 @@
       "hour": 16,
       "ts": 1783872073.5430484,
       "eng": null
+    },
+    {
+      "id": "2076381377780502981",
+      "pillar": "us_foreign_policy",
+      "hour": 19,
+      "ts": 1783882872.5526648,
+      "eng": null
     }
   ],
   "insights": {
@@ -837,7 +847,6 @@
     "afghanistan": 0.6
   },
   "recent": [
-    "US Backs Pakistan\u2019s Right to Self-Defense After Deadly Strikes in Afghanistan",
     "Arias sends Colombia into World Cup last-16 with 1-0 win over Ghana",
     "Ticket prices plunge for USA-Belgium World Cup last-16 match",
     "Saar: Ongoing condemnation of Pakistan\u2019s attacks on Afghanistan discussed",
@@ -861,7 +870,8 @@
     "A tale of two No. 10s: England's Bellingham, Norwa...",
     "Trump rushed Kennedy Center renovations for Fifa peace prize ceremony, whistleblowers say",
     "OIC, Muslim World League discuss support for Afghanistan on sidelines of Islamabad conference",
-    "Syrian parliament convenes for first time following al-Assad\u2019s overthrow"
+    "Syrian parliament convenes for first time following al-Assad\u2019s overthrow",
+    "Concern for renewed war in Iran as US attacks military, civilian targets"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -878,6 +888,7 @@
   ],
   "slots_done": [
     14,
-    16
+    16,
+    19
   ]
 }
