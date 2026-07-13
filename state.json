@@ -197,6 +197,7 @@
     "Transfer rumors, news: PSG to compete with Man Uni...",
     "Trump administration indicts Olympic athlete for Reflecting Pool vandalism",
     "Trump administration moves to restart LGBTQ+ suicide hotline it initially ended",
+    "Trump administration vows to \u2018disable\u2019 International Criminal Court",
     "Trump hints at further Iran negotiations after exchange of fire over Hormuz",
     "Trump justifies strikes on Iran amid ceasefire",
     "Trump launches America250 festivities with a rally on the National Mall",
@@ -224,6 +225,7 @@
     "US insists Strait of Hormuz is open as it exchanges strikes with Iran",
     "US judge blocks Trump administration subpoena against Minnesota officials",
     "US judge sides with NAACP over proposed mail-in ballot restrictions",
+    "US judge voids Donald Trump's $1.8bn settlement with IRS that gave him immunity from tax audits",
     "US launches strikes on Iran after tankers hit in Strait of Hormuz",
     "US players insist momentum remains with them despite late loss to Turkey",
     "US raises concern as RSF forces encircle Sudanese city of el-Obeid",
@@ -269,8 +271,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-13",
-  "posts_today": 2,
-  "last_news_ts": 1783958485.8541665,
+  "posts_today": 3,
+  "last_news_ts": 1783969281.6587353,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-13",
   "football_date": "2026-07-13",
@@ -862,6 +864,13 @@
       "hour": 16,
       "ts": 1783958485.8541675,
       "eng": null
+    },
+    {
+      "id": "2076743803814252776",
+      "pillar": "us_foreign_policy",
+      "hour": 19,
+      "ts": 1783969281.6587365,
+      "eng": null
     }
   ],
   "insights": {
@@ -871,7 +880,6 @@
     "afghanistan": 0.6
   },
   "recent": [
-    "Saar: Ongoing condemnation of Pakistan\u2019s attacks on Afghanistan discussed",
     "Founder of prominent underground church released from prison in China",
     "Marine Le Pen appeal verdict: Why this moment matters for France",
     "Australia news live: PM signs defence pact with Fiji; Meta tells antisemitism inquiry it banned some claims about \u2018Zionists\u2019",
@@ -895,7 +903,8 @@
     "Syrian parliament convenes for first time following al-Assad\u2019s overthrow",
     "Concern for renewed war in Iran as US attacks military, civilian targets",
     "Iranian deputy foreign minister arrives in Kabul for talks",
-    "British couple confirmed to have been killed by deadly wildfires in Spain"
+    "British couple confirmed to have been killed by deadly wildfires in Spain",
+    "Trump administration vows to \u2018disable\u2019 International Criminal Court"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -914,6 +923,7 @@
   ],
   "slots_done": [
     14,
-    16
+    16,
+    19
   ]
 }
