@@ -22,6 +22,7 @@
     "2075727757787431247",
     "2076094786692317290",
     "2076452855100129401",
+    "2076815162229612767",
     "34 Hindu families in Canada seeking return to Afghanistan, says former MP",
     "6.1-Magnitude Earthquake Shakes Kabul and Northern Afghanistan",
     "6.1-magnitude earthquake hits Afghanistan, epicenter in Badakhshan",
@@ -270,12 +271,12 @@
     "\u2018No sense of direction\u2019: The downfall of Keir Starmer",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-07-13",
-  "posts_today": 3,
+  "date": "2026-07-14",
+  "posts_today": 0,
   "last_news_ts": 1783969281.6587353,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-13",
-  "football_date": "2026-07-13",
+  "football_date": "2026-07-14",
   "log": [
     {
       "id": "2070647765747839358",
@@ -871,6 +872,13 @@
       "hour": 19,
       "ts": 1783969281.6587365,
       "eng": 0
+    },
+    {
+      "id": "2076819246856667187",
+      "pillar": "worldcup",
+      "hour": 0,
+      "ts": 1783987268.7219179,
+      "eng": null
     }
   ],
   "insights": {
@@ -921,9 +929,5 @@
     "At Hadda, near Jalalabad, ancient Afghan sculptors fused Hellenic and Buddhist worlds into stucco of astonishing tenderness. Buddhas with the serene features of Apollo, monks rendered with unnerving realism. This was Gandhara's genius, born on Afghan soil. The East gave it soul, Afghanistan gave it form. Who else did this first?",
     "In 1747, at a loya jirga in Kandahar, tribal leaders chose Ahmad Shah Durrani to lead them. He was crowned with wheat stalks, not jewels. Within years he forged an empire stretching from Mashhad to Delhi and Kashmir to the Arabian Sea. That coronation is the birth of modern Afghanistan."
   ],
-  "slots_done": [
-    14,
-    16,
-    19
-  ]
+  "slots_done": []
 }
