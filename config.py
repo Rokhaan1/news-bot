@@ -145,7 +145,7 @@ HERITAGE_TOPICS = [
     "the Kabul Shahi (Hindu Shahi) kingdoms of Kabul and Gandhara",
     "Seistan/Zabulistan and the epic hero Rustam of the Shahnameh",
     "Khwaja Abdullah Ansari, the revered Sage of Herat",
-    "Sanai of Ghazni, pioneer of Persian Sufi poetry",
+    "Sanai of Ghazni, pioneer of Dari Sufi poetry",
     "Khushal Khan Khattak, the warrior-poet of the Pashtuns",
     "Rumi (Jalaluddin Balkhi) and Rabia Balkhi, poets born of the Afghan lands",
     "the Wakhan corridor, Badakhshan and the ancient Silk Road trade",
