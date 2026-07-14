@@ -903,13 +903,13 @@
       "pillar": "us_foreign_policy",
       "hour": 19,
       "ts": 1784055673.7055178,
-      "eng": null
+      "eng": 1
     }
   ],
   "insights": {
     "global": 0.4,
     "worldcup": 0.3,
-    "us_foreign_policy": 0.2,
+    "us_foreign_policy": 0.3,
     "afghanistan": 0.6
   },
   "recent": [
