@@ -35,6 +35,7 @@
     "Afghanistan ranks last in KidsRights Index 2026",
     "Afghanistan records historic 95% drop in opium production: UNODC",
     "Afghanistan, India hold fourth Joint Committee Meeting",
+    "Afghanistan, Russia and Kazakhstan sign AFN 446 million in Trade Agreements",
     "Afghanistan, Uzbekistan set for friendly cricket clash in Khost",
     "Afghanistan\u2019s U.N. envoy condemns Pakistani airstrikes on eastern provinces",
     "After rainy Dharamsala, India and Afghanistan brace for Lucknow's heat",
@@ -272,8 +273,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-14",
-  "posts_today": 0,
-  "last_news_ts": 1783969281.6587353,
+  "posts_today": 1,
+  "last_news_ts": 1784037685.1604202,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-14",
   "football_date": "2026-07-14",
@@ -879,6 +880,13 @@
       "hour": 0,
       "ts": 1783987268.7219179,
       "eng": 0
+    },
+    {
+      "id": "2077030708862660671",
+      "pillar": "afghanistan",
+      "hour": 14,
+      "ts": 1784037685.1604214,
+      "eng": null
     }
   ],
   "insights": {
@@ -888,7 +896,6 @@
     "afghanistan": 0.6
   },
   "recent": [
-    "Founder of prominent underground church released from prison in China",
     "Marine Le Pen appeal verdict: Why this moment matters for France",
     "Australia news live: PM signs defence pact with Fiji; Meta tells antisemitism inquiry it banned some claims about \u2018Zionists\u2019",
     "Sweden spends millions on Afghan voluntary return campaign with no participants so far",
@@ -912,7 +919,8 @@
     "Concern for renewed war in Iran as US attacks military, civilian targets",
     "Iranian deputy foreign minister arrives in Kabul for talks",
     "British couple confirmed to have been killed by deadly wildfires in Spain",
-    "Trump administration vows to \u2018disable\u2019 International Criminal Court"
+    "Trump administration vows to \u2018disable\u2019 International Criminal Court",
+    "Afghanistan, Russia and Kazakhstan sign AFN 446 million in Trade Agreements"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -931,5 +939,7 @@
     "In 1747, at a loya jirga in Kandahar, tribal leaders chose Ahmad Shah Durrani to lead them. He was crowned with wheat stalks, not jewels. Within years he forged an empire stretching from Mashhad to Delhi and Kashmir to the Arabian Sea. That coronation is the birth of modern Afghanistan.",
     "Long before the mystics of later centuries, it was Sanai of Ghazni who first bent Persian poetry toward God. In the early 12th century, his Hadiqat al-Haqiqa became the first great Sufi masterwork in verse, the road Rumi himself would later walk. Afghanistan gave Sufism its poetic tongue."
   ],
-  "slots_done": []
+  "slots_done": [
+    14
+  ]
 }
