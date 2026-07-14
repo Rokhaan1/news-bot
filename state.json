@@ -86,6 +86,7 @@
     "Cracks are showing in Trump\u2019s blue-collar base | Steven Greenhouse",
     "Critically injured airstrike victims airlifted to Kabul for emergency treatment",
     "Dettol apologises after \u2018toxic men\u2019 advert sparks backlash in China",
+    "EU rejects Trump administration claims that ICC threatens US sovereignty",
     "Earthquake of magnitude 5.2 strikes Afghanistan\u2019s Hindu Kush region",
     "Ebola cases surpass 1,000 in DR Congo amid violence and displacement",
     "Egypt say Dallas police officer pushed player, team director at World Cup",
@@ -273,8 +274,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-14",
-  "posts_today": 1,
-  "last_news_ts": 1784037685.1604202,
+  "posts_today": 2,
+  "last_news_ts": 1784044882.4698706,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-14",
   "football_date": "2026-07-14",
@@ -887,6 +888,13 @@
       "hour": 14,
       "ts": 1784037685.1604214,
       "eng": null
+    },
+    {
+      "id": "2077060896568799586",
+      "pillar": "global",
+      "hour": 16,
+      "ts": 1784044882.4698713,
+      "eng": null
     }
   ],
   "insights": {
@@ -896,7 +904,6 @@
     "afghanistan": 0.6
   },
   "recent": [
-    "Marine Le Pen appeal verdict: Why this moment matters for France",
     "Australia news live: PM signs defence pact with Fiji; Meta tells antisemitism inquiry it banned some claims about \u2018Zionists\u2019",
     "Sweden spends millions on Afghan voluntary return campaign with no participants so far",
     "Jailers and officials at Russia's 'torture prisons' in Ukraine exposed by BBC",
@@ -920,7 +927,8 @@
     "Iranian deputy foreign minister arrives in Kabul for talks",
     "British couple confirmed to have been killed by deadly wildfires in Spain",
     "Trump administration vows to \u2018disable\u2019 International Criminal Court",
-    "Afghanistan, Russia and Kazakhstan sign AFN 446 million in Trade Agreements"
+    "Afghanistan, Russia and Kazakhstan sign AFN 446 million in Trade Agreements",
+    "EU rejects Trump administration claims that ICC threatens US sovereignty"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -940,6 +948,7 @@
     "Long before the mystics of later centuries, it was Sanai of Ghazni who first bent Persian poetry toward God. In the early 12th century, his Hadiqat al-Haqiqa became the first great Sufi masterwork in verse, the road Rumi himself would later walk. Afghanistan gave Sufism its poetic tongue."
   ],
   "slots_done": [
-    14
+    14,
+    16
   ]
 }
