@@ -134,6 +134,7 @@
     "Largest ever cocaine bust in Australia after police raid underground bunker",
     "Late singer Oliver Tree's body returned to US after helicopter crash",
     "Lost memoir of Hiroshima survivor found after decades in US archive",
+    "Mahmoud Khalil sues Trump officials and pro-Israel groups over \u2018conspiracy\u2019 to target him",
     "Marine Le Pen appeal verdict: Why this moment matters for France",
     "Martha Lillard, last known US polio survivor using iron lung, dies aged 78",
     "Mbapp\u00e9: I knew Messi would keeping scoring goals",
@@ -232,6 +233,7 @@
     "US launches strikes on Iran after tankers hit in Strait of Hormuz",
     "US players insist momentum remains with them despite late loss to Turkey",
     "US raises concern as RSF forces encircle Sudanese city of el-Obeid",
+    "US risks falling into \u2018escalation trap\u2019 if it deploys troops in Iran",
     "US strike on an alleged drug boat in eastern Pacific kills two",
     "US top court says Rastafarian man cannot sue prison guards who cut his dreadlocks",
     "USMNT's World Cup success brings dilemma: Rotate t...",
@@ -274,8 +276,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-14",
-  "posts_today": 2,
-  "last_news_ts": 1784044882.4698706,
+  "posts_today": 3,
+  "last_news_ts": 1784055673.7055166,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-14",
   "football_date": "2026-07-14",
@@ -895,6 +897,13 @@
       "hour": 16,
       "ts": 1784044882.4698713,
       "eng": null
+    },
+    {
+      "id": "2077106158410649602",
+      "pillar": "us_foreign_policy",
+      "hour": 19,
+      "ts": 1784055673.7055178,
+      "eng": null
     }
   ],
   "insights": {
@@ -904,7 +913,6 @@
     "afghanistan": 0.6
   },
   "recent": [
-    "Australia news live: PM signs defence pact with Fiji; Meta tells antisemitism inquiry it banned some claims about \u2018Zionists\u2019",
     "Sweden spends millions on Afghan voluntary return campaign with no participants so far",
     "Jailers and officials at Russia's 'torture prisons' in Ukraine exposed by BBC",
     "Tahawol: UN Officials Visit Kabul \u2014 Political Impact & Consequences",
@@ -928,7 +936,8 @@
     "British couple confirmed to have been killed by deadly wildfires in Spain",
     "Trump administration vows to \u2018disable\u2019 International Criminal Court",
     "Afghanistan, Russia and Kazakhstan sign AFN 446 million in Trade Agreements",
-    "EU rejects Trump administration claims that ICC threatens US sovereignty"
+    "EU rejects Trump administration claims that ICC threatens US sovereignty",
+    "US risks falling into \u2018escalation trap\u2019 if it deploys troops in Iran"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -949,6 +958,7 @@
   ],
   "slots_done": [
     14,
-    16
+    16,
+    19
   ]
 }
