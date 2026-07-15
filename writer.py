@@ -9,8 +9,10 @@ junk, we never post it — news falls back to the raw headline, video is skipped
 import re
 import anthropic
 
-MODEL = "claude-haiku-4-5"          # fast/cheap for high-volume news
-QUALITY_MODEL = "claude-opus-4-8"   # best quality for facts + Pashto (low volume)
+# At 3 news posts/day, top quality everywhere costs pennies and the posts ARE
+# the account's public face — so no cheap model for anything reader-facing.
+MODEL = "claude-opus-4-8"           # news rewrites (was Haiku when volume was high)
+QUALITY_MODEL = "claude-opus-4-8"   # facts, threads, replies, quotes
 _client = None
 
 
