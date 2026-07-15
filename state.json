@@ -989,5 +989,7 @@
   "quotes_today": 0,
   "replies_today": 0,
   "last_engage_ts": 0,
-  "engaged_ids": []
+  "engaged_ids": [],
+  "thread_week": "",
+  "engage_blocked": 0
 }
