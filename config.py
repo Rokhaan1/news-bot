@@ -18,6 +18,14 @@ THREAD_ENABLED = True
 THREAD_WEEKDAY = 4               # 0=Mon .. 6=Sun; 4=Friday (weekend reading)
 THREAD_WINDOW = (13, 19)         # UTC hours; Afghan evening + Western daytime
 
+# ----- MENTION REPLIES (permitted on pay-per-use: "summoned" posts) -----
+# The pay-per-use API track blocks cold replies/quotes to strangers, but allows
+# replying when @Rokhaan is mentioned or is the author. So: reply to people who
+# reply to/mention us. Keeps our threads alive (conversation ranks well) and
+# rewards commenters. Reads of own mentions are cheap Owned Reads.
+MENTION_REPLIES_PER_DAY = 5
+MENTION_MAX_AGE_HOURS = 12       # only reply while the conversation is warm
+
 # ----- ENGAGEMENT (grow via others' audiences) -----
 # The bot joins bigger in-niche conversations with a FEW expert quote-tweets and
 # replies per day. Kept deliberately low-volume and value-additive: automated

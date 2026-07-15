@@ -62,6 +62,9 @@ def load_state():
     s.setdefault("last_engage_ts", 0)
     s.setdefault("engaged_ids", [])   # tweet IDs we've already engaged (dedup)
     s.setdefault("thread_week", "")   # ISO week of the last deep-dive thread
+    s.setdefault("own_user_id", "")   # cached numeric id of @Rokhaan
+    s.setdefault("mention_replies_today", 0)
+    s.setdefault("replied_ids", [])   # mention tweet IDs already answered
     s.setdefault("engage_blocked", 0)  # ts when the API plan refused reply/quote
     # reset the daily counters when the date rolls over
     if s["date"] != today():
@@ -70,6 +73,7 @@ def load_state():
         s["slots_done"] = []
         s["quotes_today"] = 0
         s["replies_today"] = 0
+        s["mention_replies_today"] = 0
     s["posted_set"] = set(s["posted"])
     return s
 
@@ -344,6 +348,55 @@ def maybe_post_thread(client, state):
         print(f"FAILED [thread] {e}")
 
 
+def maybe_reply_mentions(client, state):
+    """Reply to people who replied to / mentioned @Rokhaan. This is permitted
+    on the pay-per-use track ("summoned" posts) even though cold replies are
+    blocked, and conversation in our threads is strong algorithm signal."""
+    if state["mention_replies_today"] >= config.MENTION_REPLIES_PER_DAY:
+        return
+    try:
+        if not state.get("own_user_id"):
+            me = client.get_me(user_auth=True)
+            state["own_user_id"] = str(me.data.id)
+        resp = client.get_users_mentions(
+            id=state["own_user_id"], max_results=10,
+            tweet_fields=["created_at", "author_id", "possibly_sensitive"],
+            expansions=["author_id"], user_fields=["username"],
+            user_auth=True,
+        )
+    except Exception as e:
+        print(f"  (mentions fetch failed: {e})")
+        return
+
+    users = {u.id: u for u in ((resp.includes or {}).get("users") or [])}
+    now = datetime.now(timezone.utc)
+    for t in (resp.data or []):
+        if state["mention_replies_today"] >= config.MENTION_REPLIES_PER_DAY:
+            break
+        tid = str(t.id)
+        if tid in state["replied_ids"]:
+            continue
+        if str(t.author_id) == state["own_user_id"]:
+            continue                       # our own thread tweets
+        if getattr(t, "possibly_sensitive", False):
+            continue
+        ca = getattr(t, "created_at", None)
+        if ca and (now - ca).total_seconds() > config.MENTION_MAX_AGE_HOURS * 3600:
+            continue
+
+        author = getattr(users.get(t.author_id), "username", None)
+        take = writer.write_reply(t.text, author)
+        state["replied_ids"] = (state["replied_ids"] + [tid])[-200:]  # seen either way
+        if not take:
+            continue                       # guard said the mention isn't worth it
+        try:
+            client.create_tweet(text=take, in_reply_to_tweet_id=tid)
+            state["mention_replies_today"] += 1
+            print(f"POSTED [mention_reply] to @{author} :: {take[:60]}")
+        except Exception as e:
+            print(f"FAILED [mention_reply] {tid}: {e}")
+
+
 def maybe_engage(client, state):
     """Grow by joining bigger conversations: a few expert quote-tweets and
     replies per day to recent, high-traction in-niche tweets. Low-volume and
@@ -527,7 +580,9 @@ def main():
             state["slots_done"].append(slot["hour"])
             print(f"Filled {slot['hour']:02d}:00 UTC slot ({slot['pillars'][0]}).")
 
-    # 3) engagement — a few expert quote-tweets/replies a day to grow reach
+    # 3) engagement — reply to our mentions (always permitted); cold
+    #    quotes/replies to strangers only if the API track allows them
+    maybe_reply_mentions(client, state)
     maybe_engage(client, state)
 
     save_state(state)

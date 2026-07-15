@@ -45,3 +45,8 @@ The account's voice lives in `writer.py:VOICE`. Key standing rules:
   90-min gap, reply-weighted) and guarded by `writer._ENGAGE_GUARD` (never amplify
   anti-Afghan/pro-Taliban/pro-Pakistan content; SKIP unless it adds real value).
   Needs an API tier with search (Basic+); no-ops gracefully if search returns 403.
+- **API track (2026 pay-per-use):** no subscriptions exist anymore. This track
+  BLOCKS cold replies/quotes to strangers (403 "mentioned or are the author");
+  `maybe_engage` detects this and pauses itself a week at a time. Permitted and
+  used instead: `maybe_reply_mentions` replies to people who reply to/mention
+  @Rokhaan ("summoned" posts, $0.010; own-mention reads are cheap Owned Reads).
