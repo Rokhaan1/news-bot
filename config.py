@@ -8,7 +8,8 @@ No secret keys live here — those are stored safely in GitHub Secrets.
 # X charges ~$0.015 per post (text/image), ~$0.20 if the post contains a link.
 MAX_POSTS_PER_RUN = 1     # news posts per scheduled run (runs every ~15 min)
 MAX_POSTS_PER_DAY = 3     # safety cap; day is driven by POST_SLOTS below (3 slots)
-FOOTBALL_PER_DAY  = 1     # English-football native take/day (reads X trends, posts own text)
+FOOTBALL_PER_DAY  = 0     # disabled: England-football takes diluted the Afghan
+                          # analyst identity (profile coherence -> follows)
 
 # ----- WEEKLY DEEP-DIVE THREAD -----
 # Once a week: a 3-5 tweet expert thread on one Afghan heritage/history topic.
@@ -59,7 +60,9 @@ ENGAGE_QUERIES = [               # one is chosen per run; add/reorder freely
 # engagement, so a slot is never wasted.
 POST_SLOTS = [
     {"hour": 14, "pillars": ["afghanistan", "afghan_cricket", "global"]},
-    {"hour": 16, "pillars": ["worldcup", "global", "afghanistan"]},
+    # worldcup demoted to last: England/football takes diluted the Afghan
+    # analyst identity; big World Cup stories can still fill an empty slot.
+    {"hour": 16, "pillars": ["global", "afghanistan", "worldcup"]},
     # 19:00: us_foreign_policy earned 0.0 avg engagement, while Afghanistan is
     # the account's proven strongest pillar (0.6) — so the US/UK-evening slot
     # leads with Afghanistan for the diaspora + policy-watcher audience.
