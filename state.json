@@ -985,5 +985,9 @@
   "slots_done": [
     14,
     16
-  ]
+  ],
+  "quotes_today": 0,
+  "replies_today": 0,
+  "last_engage_ts": 0,
+  "engaged_ids": []
 }
