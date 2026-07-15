@@ -92,6 +92,7 @@
     "Earthquake of magnitude 5.2 strikes Afghanistan\u2019s Hindu Kush region",
     "Ebola cases surpass 1,000 in DR Congo amid violence and displacement",
     "Egypt say Dallas police officer pushed player, team director at World Cup",
+    "England weighing man-marking plan to stop Messi",
     "England\u2019s Spence appears to refuse handshake with booed Ghana player Partey",
     "Every team's odds to win the World Cup",
     "Ex-Trump adviser John Bolton expected to plead guilty in classified information case \u2013 US politics live",
@@ -278,8 +279,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-15",
-  "posts_today": 1,
-  "last_news_ts": 1784124077.5526009,
+  "posts_today": 2,
+  "last_news_ts": 1784131272.2231715,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-15",
   "football_date": "2026-07-15",
@@ -920,6 +921,13 @@
       "hour": 14,
       "ts": 1784124077.5526016,
       "eng": null
+    },
+    {
+      "id": "2077423241388290126",
+      "pillar": "worldcup",
+      "hour": 16,
+      "ts": 1784131272.223173,
+      "eng": null
     }
   ],
   "insights": {
@@ -929,7 +937,6 @@
     "afghanistan": 0.6
   },
   "recent": [
-    "Jailers and officials at Russia's 'torture prisons' in Ukraine exposed by BBC",
     "Tahawol: UN Officials Visit Kabul \u2014 Political Impact & Consequences",
     "Australia news live: China missile test \u2018not something a friend does\u2019, Solomon Islands PM says in joint appearance with Albanese",
     "US launches strikes on Iran after tankers hit in Strait of Hormuz",
@@ -953,7 +960,8 @@
     "Afghanistan, Russia and Kazakhstan sign AFN 446 million in Trade Agreements",
     "EU rejects Trump administration claims that ICC threatens US sovereignty",
     "US risks falling into \u2018escalation trap\u2019 if it deploys troops in Iran",
-    "Afghanistan and Iran agree to expand cooperation on product standards and quality control"
+    "Afghanistan and Iran agree to expand cooperation on product standards and quality control",
+    "England weighing man-marking plan to stop Messi"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -975,6 +983,7 @@
     "In 1709, a Kandahari named Mirwais Hotak rose against a foreign empire and won. He shattered Safavid rule over Kandahar, founding the Hotak dynasty and lighting the fuse that would one day topple Isfahan itself. Afghans call him Mirwais Nika, the grandfather of the nation. And rightly so."
   ],
   "slots_done": [
-    14
+    14,
+    16
   ]
 }
