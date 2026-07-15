@@ -363,3 +363,73 @@ def write_pashto_post():
     except Exception as e:
         print(f"  (pashto failed: {e})")
         return None
+
+
+# Shared guardrails for engaging with OTHER people's tweets (quotes + replies):
+# only add genuine expert value, never amplify content against our stance.
+_ENGAGE_GUARD = (
+    "Reply with the single word SKIP (nothing else) if ANY of these hold:\n"
+    "  - the post is anti-Afghanistan, pro-Taliban, or pro-Pakistan-state, or "
+    "praises/legitimizes them (never amplify or argue with troll/propaganda bait),\n"
+    "  - it is graphic, sensitive, hateful, or about a personal tragedy,\n"
+    "  - it is trivial, off our topics, or you cannot add REAL expert value.\n"
+    "Only proceed when you can add genuine analytical value in our voice.\n"
+    "Follow ALL voice rules (Dari never 'Persian'/'Farsi'; 'the Taliban' never "
+    "'Afghan government'; 'Durand Line' never 'border'; no hashtags; no em-dashes "
+    "or '--'; NO manufactured engagement-bait question). No @handles, no preamble, "
+    "no surrounding quotes."
+)
+
+
+def write_quote_take(tweet_text, author=None):
+    """An expert quote-tweet take on someone else's post. None if we should skip.
+    The reader sees the original attached, so do NOT restate it."""
+    who = f" by @{author}" if author else ""
+    prompt = (
+        f"You are QUOTE-TWEETING this post{who} (the original will be shown attached, "
+        f"so do NOT repeat or paraphrase its text):\n\"{tweet_text[:600]}\"\n\n"
+        "Add ONE professional, expert analyst take in @Rokhaan's voice that adds REAL "
+        "value: sharp geopolitical or historical context, a precise correction, or a "
+        "strong principled stance. Never merely agree, praise, or summarize. 1-3 "
+        "sentences, 120-350 characters, authoritative and human.\n"
+        + _ENGAGE_GUARD +
+        "\nOtherwise output ONLY the quote-tweet take."
+    )
+    try:
+        resp = _c().messages.create(
+            model=QUALITY_MODEL, max_tokens=300, system=VOICE,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        out = next(b.text for b in resp.content if b.type == "text").strip().strip('"')
+        if out.upper().startswith("SKIP") or _looks_bad(out):
+            return None
+        return _sanitize(out)
+    except Exception as e:
+        print(f"  (quote take failed: {e})")
+        return None
+
+
+def write_reply(tweet_text, author=None):
+    """An expert reply under someone else's post. None if we should skip."""
+    who = f" by @{author}" if author else ""
+    prompt = (
+        f"You are REPLYING under this post{who}:\n\"{tweet_text[:600]}\"\n\n"
+        "Write ONE substantive, expert reply in @Rokhaan's voice that genuinely adds "
+        "to the conversation, context, insight, or a well-argued perspective, so that "
+        "people reading the thread want to check our profile. Be respectful and "
+        "confident, not combative or spammy. 1-3 sentences, 100-320 characters.\n"
+        + _ENGAGE_GUARD +
+        "\nOtherwise output ONLY the reply."
+    )
+    try:
+        resp = _c().messages.create(
+            model=QUALITY_MODEL, max_tokens=300, system=VOICE,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        out = next(b.text for b in resp.content if b.type == "text").strip().strip('"')
+        if out.upper().startswith("SKIP") or _looks_bad(out):
+            return None
+        return _sanitize(out)
+    except Exception as e:
+        print(f"  (reply failed: {e})")
+        return None

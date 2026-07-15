@@ -10,6 +10,27 @@ MAX_POSTS_PER_RUN = 1     # news posts per scheduled run (runs every ~15 min)
 MAX_POSTS_PER_DAY = 3     # safety cap; day is driven by POST_SLOTS below (3 slots)
 FOOTBALL_PER_DAY  = 1     # English-football native take/day (reads X trends, posts own text)
 
+# ----- ENGAGEMENT (grow via others' audiences) -----
+# The bot joins bigger in-niche conversations with a FEW expert quote-tweets and
+# replies per day. Kept deliberately low-volume and value-additive: automated
+# high-volume engagement is what X's spam systems punish. Needs an API tier with
+# search (Basic+); degrades gracefully to no-op if search is unavailable.
+ACCOUNT_HANDLE = "Rokhaan"        # our own handle, excluded from search results
+ENGAGE_ENABLED = True
+ENGAGE_REPLIES_PER_DAY = 2        # reply-weighted (replies grow reach, lower risk)
+ENGAGE_QUOTES_PER_DAY = 2
+ENGAGE_WINDOW = (13, 21)          # UTC hours to engage (active global audience)
+ENGAGE_MIN_GAP_MIN = 90           # min minutes between engagement actions
+ENGAGE_MIN_LIKES = 15             # only join tweets with real traction
+ENGAGE_MAX_AGE_HOURS = 10         # recent enough that the thread is still live
+ENGAGE_QUERIES = [               # one is chosen per run; add/reorder freely
+    'Afghanistan (history OR heritage OR Ariana OR ancient OR civilization OR Dari) lang:en -is:retweet -is:reply',
+    '(Afghanistan OR Kabul OR Afghan) lang:en -is:retweet -is:reply',
+    'Afghan (cricket OR Rashid OR Nabi OR Gurbaz OR Afghanistan) lang:en -is:retweet -is:reply',
+    '("Durand Line" OR Pashtun OR "Pakistan Afghanistan") lang:en -is:retweet -is:reply',
+    '(US OR Washington OR UN) Afghanistan (policy OR sanctions OR aid OR withdrawal OR women) lang:en -is:retweet -is:reply',
+]
+
 # ----- POSTING SCHEDULE (UTC) -----
 # Three news posts/day, each fired at a fixed UTC hour timed to a real
 # audience's peak local time (summer offsets: UK=BST/UTC+1, Afghanistan=UTC+4:30,

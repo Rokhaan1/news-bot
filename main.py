@@ -25,6 +25,7 @@ import tweepy
 import config
 import writer
 import football
+import engage
 from verify import is_corroborated, keywords
 from graphics import make_card
 
@@ -56,11 +57,17 @@ def load_state():
     s.setdefault("fact_topics", [])  # recently used heritage topics (rotation memory)
     s.setdefault("recent_facts", [])  # recent Afghan-fact tweets (anti-repeat memory)
     s.setdefault("slots_done", [])  # UTC hours of POST_SLOTS already filled today
+    s.setdefault("quotes_today", 0)   # engagement counters (reset daily)
+    s.setdefault("replies_today", 0)
+    s.setdefault("last_engage_ts", 0)
+    s.setdefault("engaged_ids", [])   # tweet IDs we've already engaged (dedup)
     # reset the daily counters when the date rolls over
     if s["date"] != today():
         s["date"] = today()
         s["posts_today"] = 0
         s["slots_done"] = []
+        s["quotes_today"] = 0
+        s["replies_today"] = 0
     s["posted_set"] = set(s["posted"])
     return s
 
@@ -289,6 +296,67 @@ def maybe_post_football(client, state):
         print(f"FAILED [football] {e}")
 
 
+def maybe_engage(client, state):
+    """Grow by joining bigger conversations: a few expert quote-tweets and
+    replies per day to recent, high-traction in-niche tweets. Low-volume and
+    heavily guarded. No-op if search is unavailable on this API tier."""
+    if not getattr(config, "ENGAGE_ENABLED", False):
+        return
+    hour = datetime.now(timezone.utc).hour
+    if not _in_window(config.ENGAGE_WINDOW, hour):
+        return
+
+    want_reply = state["replies_today"] < config.ENGAGE_REPLIES_PER_DAY
+    want_quote = state["quotes_today"] < config.ENGAGE_QUOTES_PER_DAY
+    if not (want_reply or want_quote):
+        return                                   # both daily quotas used up
+    if time.time() - state.get("last_engage_ts", 0) < config.ENGAGE_MIN_GAP_MIN * 60:
+        return                                   # space engagements out
+
+    query = random.choice(config.ENGAGE_QUERIES)
+    cands = engage.find_engageable(
+        client, query,
+        max_age_hours=config.ENGAGE_MAX_AGE_HOURS,
+        min_likes=config.ENGAGE_MIN_LIKES,
+        exclude_ids=set(state.get("engaged_ids", [])),
+        own_handle=config.ACCOUNT_HANDLE,
+    )
+    if not cands:
+        print("Engage: no suitable tweets this run.")
+        return
+
+    # reply-weighted: reply while that quota remains, else quote-tweet
+    action = "reply" if want_reply else "quote"
+    for c in cands:
+        take = (writer.write_reply(c["text"], c["author"]) if action == "reply"
+                else writer.write_quote_take(c["text"], c["author"]))
+        if not take:
+            continue                             # guard SKIP -> try next candidate
+        try:
+            if action == "reply":
+                resp = client.create_tweet(text=take, in_reply_to_tweet_id=c["id"])
+                state["replies_today"] += 1
+            else:
+                resp = client.create_tweet(text=take, quote_tweet_id=c["id"])
+                state["quotes_today"] += 1
+            rid = None
+            try:
+                rid = str(resp.data["id"])
+            except Exception:
+                pass
+            state["engaged_ids"] = (state.get("engaged_ids", []) + [c["id"]])[-300:]
+            state["last_engage_ts"] = time.time()
+            if rid:
+                state["log"].append({"id": rid, "pillar": action, "hour": hour,
+                                     "ts": time.time(), "eng": None})
+            print(f"POSTED [{action}] on @{c['author']} ({c['author_followers']} flw) "
+                  f":: {take[:70]}")
+            return
+        except Exception as e:
+            print(f"FAILED [{action}] on {c['id']}: {e}")
+    print("Engage: all candidates skipped this run.")
+
+
 def measure_and_learn(client, state):
     """Read engagement for posts >3h old, then average it per topic (insights)."""
     now = time.time()
@@ -399,9 +467,13 @@ def main():
             state["slots_done"].append(slot["hour"])
             print(f"Filled {slot['hour']:02d}:00 UTC slot ({slot['pillars'][0]}).")
 
+    # 3) engagement — a few expert quote-tweets/replies a day to grow reach
+    maybe_engage(client, state)
+
     save_state(state)
     print(f"Done. {posts_made} news post(s) this run; {state['posts_today']}/"
-          f"{config.MAX_POSTS_PER_DAY} today.")
+          f"{config.MAX_POSTS_PER_DAY} today; "
+          f"engage {state['replies_today']}R/{state['quotes_today']}Q.")
 
 
 if __name__ == "__main__":

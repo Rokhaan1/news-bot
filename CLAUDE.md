@@ -39,3 +39,9 @@ The account's voice lives in `writer.py:VOICE`. Key standing rules:
   anti-repeat memory (`state.fact_topics`, `state.recent_facts`).
 - Pashto auto-post is **disabled** (quality was unreliable); helpers kept dormant
   in case it's re-enabled.
+- **Engagement** (`engage.py`, `main.py:maybe_engage`): a few expert quote-tweets
+  and replies/day to recent, high-traction in-niche tweets, to grow via others'
+  audiences. Deliberately low-volume (`config.ENGAGE_*`: 2 replies + 2 quotes/day,
+  90-min gap, reply-weighted) and guarded by `writer._ENGAGE_GUARD` (never amplify
+  anti-Afghan/pro-Taliban/pro-Pakistan content; SKIP unless it adds real value).
+  Needs an API tier with search (Basic+); no-ops gracefully if search returns 403.
