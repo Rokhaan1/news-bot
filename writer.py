@@ -226,7 +226,12 @@ def write_news(pillar, headline, source):
         "  - it's clearly trivial / not real news (celebrity gossip, lifestyle).\n"
         "Otherwise reply with ONLY the rewritten post: aim for 250-450 characters "
         "(this is a Premium account — write a substantive, engaging post, not just "
-        "a headline), third person, no quotes, no preamble, no hashtags, and NEVER "
+        "a headline). LEAD WITH THE ANALYSIS, NOT THE HEADLINE: open with your "
+        "expert angle — what this really means, the historical or geopolitical "
+        "context, who benefits, what everyone is missing — then anchor it with the "
+        "fact. Readers can get the headline anywhere; they follow this account for "
+        "the analyst's take (stay strictly truthful, never invent beyond the "
+        "headline). Third person, no quotes, no preamble, no hashtags, and NEVER "
         "mention @Rokhaan, the account, or its 'coverage'. A source credit is added "
         "separately. Write naturally like a human; do NOT use em-dashes (—) or "
         "double hyphens (--) anywhere, use commas or periods instead."
@@ -362,6 +367,46 @@ def write_pashto_post():
         return out   # Pashto: skip the English-centric guards/sanitizer
     except Exception as e:
         print(f"  (pashto failed: {e})")
+        return None
+
+
+def write_thread(topic, avoid=None):
+    """A 3-5 tweet expert deep-dive thread on an Afghan heritage topic.
+    Returns a list of tweet strings, or None if generation looked bad."""
+    avoid_block = ""
+    if avoid:
+        joined = "\n".join(f"- {a[:100]}" for a in avoid)
+        avoid_block = ("Recently covered (do NOT repeat these angles):\n"
+                       f"{joined}\n")
+    prompt = (
+        "Write an expert X thread of 3 to 5 tweets about this Afghan heritage "
+        f"topic: {topic}.\n{avoid_block}"
+        "Rules:\n"
+        "- Tweet 1 is the HOOK: a bold, surprising, scroll-stopping opening that "
+        "makes people need the rest (no 'a thread' or numbering clutter).\n"
+        "- Each tweet: ONE vivid, concrete, true detail (names, dates, places), "
+        "180-270 characters, standing on its own but pulling to the next.\n"
+        "- Final tweet lands the point with pride: Afghanistan's ~5,000-year "
+        "Aryana civilization and its ownership of this heritage.\n"
+        "- Factual, never fabricate. No hashtags, no em-dashes or '--', no "
+        "engagement-bait questions, no numbering like '1/'.\n"
+        "Output ONLY the tweets, separated by a line containing exactly: ---"
+    )
+    try:
+        resp = _c().messages.create(
+            model=QUALITY_MODEL, max_tokens=1200, system=VOICE,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        out = next(b.text for b in resp.content if b.type == "text").strip()
+        parts = [p.strip().strip('"') for p in out.split("---") if p.strip()]
+        if not (3 <= len(parts) <= 6):
+            print(f"  (thread: got {len(parts)} parts, expected 3-5)")
+            return None
+        if any(_looks_bad(p) or len(p) > 400 for p in parts):
+            return None
+        return [_sanitize(p) for p in parts]
+    except Exception as e:
+        print(f"  (thread failed: {e})")
         return None
 
 

@@ -10,6 +10,14 @@ MAX_POSTS_PER_RUN = 1     # news posts per scheduled run (runs every ~15 min)
 MAX_POSTS_PER_DAY = 3     # safety cap; day is driven by POST_SLOTS below (3 slots)
 FOOTBALL_PER_DAY  = 1     # English-football native take/day (reads X trends, posts own text)
 
+# ----- WEEKLY DEEP-DIVE THREAD -----
+# Once a week: a 3-5 tweet expert thread on one Afghan heritage/history topic.
+# Threads are X's highest-ceiling format (bookmarks + shares) and showcase the
+# account's analyst depth better than single posts.
+THREAD_ENABLED = True
+THREAD_WEEKDAY = 4               # 0=Mon .. 6=Sun; 4=Friday (weekend reading)
+THREAD_WINDOW = (13, 19)         # UTC hours; Afghan evening + Western daytime
+
 # ----- ENGAGEMENT (grow via others' audiences) -----
 # The bot joins bigger in-niche conversations with a FEW expert quote-tweets and
 # replies per day. Kept deliberately low-volume and value-additive: automated
@@ -44,7 +52,10 @@ ENGAGE_QUERIES = [               # one is chosen per run; add/reorder freely
 POST_SLOTS = [
     {"hour": 14, "pillars": ["afghanistan", "afghan_cricket", "global"]},
     {"hour": 16, "pillars": ["worldcup", "global", "afghanistan"]},
-    {"hour": 19, "pillars": ["us_foreign_policy", "global", "worldcup"]},
+    # 19:00: us_foreign_policy earned 0.0 avg engagement, while Afghanistan is
+    # the account's proven strongest pillar (0.6) — so the US/UK-evening slot
+    # leads with Afghanistan for the diaspora + policy-watcher audience.
+    {"hour": 19, "pillars": ["afghanistan", "global", "us_foreign_policy"]},
 ]
 # A run may be late (cron hiccup / Actions queue). Still fire a slot up to this
 # many UTC hours after its target — but never past the next slot's hour — so one

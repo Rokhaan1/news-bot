@@ -61,6 +61,8 @@ def load_state():
     s.setdefault("replies_today", 0)
     s.setdefault("last_engage_ts", 0)
     s.setdefault("engaged_ids", [])   # tweet IDs we've already engaged (dedup)
+    s.setdefault("thread_week", "")   # ISO week of the last deep-dive thread
+    s.setdefault("engage_blocked", 0)  # ts when the API plan refused reply/quote
     # reset the daily counters when the date rolls over
     if s["date"] != today():
         s["date"] = today()
@@ -296,11 +298,61 @@ def maybe_post_football(client, state):
         print(f"FAILED [football] {e}")
 
 
+def maybe_post_thread(client, state):
+    """Once a week: a 3-5 tweet expert deep-dive thread on one heritage topic.
+    Threads are X's highest-ceiling format; this showcases the account's depth."""
+    if not getattr(config, "THREAD_ENABLED", False):
+        return
+    now = datetime.now(timezone.utc)
+    week = now.strftime("%G-W%V")
+    if state.get("thread_week") == week:
+        return
+    if now.weekday() != config.THREAD_WEEKDAY:
+        return
+    if not _in_window(config.THREAD_WINDOW, now.hour):
+        return
+
+    recent_topics = state.get("fact_topics", [])
+    pool = [t for t in config.HERITAGE_TOPICS if t not in recent_topics] \
+        or list(config.HERITAGE_TOPICS)
+    topic = random.choice(pool)
+    tweets = writer.write_thread(topic, avoid=state.get("recent_facts", [])[-6:])
+    if not tweets:
+        print("SKIPPED [thread] generation failed guard")
+        return
+    try:
+        first_id, prev_id = None, None
+        for tw in tweets:
+            resp = client.create_tweet(
+                text=tw,
+                in_reply_to_tweet_id=prev_id) if prev_id else \
+                client.create_tweet(text=tw)
+            prev_id = str(resp.data["id"])
+            first_id = first_id or prev_id
+        state["thread_week"] = week
+        # share rotation memory with the daily fact so they never collide
+        state["fact_topics"] = (recent_topics + [topic])[-14:]
+        state["recent_facts"] = (state.get("recent_facts", []) + [tweets[0]])[-12:]
+        if first_id:
+            state["log"].append({"id": first_id, "pillar": "thread",
+                                 "hour": now.hour, "ts": time.time(), "eng": None})
+        print(f"POSTED [thread] {len(tweets)} tweets :: {tweets[0][:60]}")
+    except Exception as e:
+        # partial thread is fine to leave up; just don't retry this week
+        if first_id:
+            state["thread_week"] = week
+        print(f"FAILED [thread] {e}")
+
+
 def maybe_engage(client, state):
     """Grow by joining bigger conversations: a few expert quote-tweets and
     replies per day to recent, high-traction in-niche tweets. Low-volume and
     heavily guarded. No-op if search is unavailable on this API tier."""
     if not getattr(config, "ENGAGE_ENABLED", False):
+        return
+    # If the API plan refused reply/quote writes, don't burn search/AI quota on
+    # attempts that can't post; probe again weekly in case the plan was upgraded.
+    if time.time() - state.get("engage_blocked", 0) < 7 * 86400:
         return
     hour = datetime.now(timezone.utc).hour
     if not _in_window(config.ENGAGE_WINDOW, hour):
@@ -353,6 +405,13 @@ def maybe_engage(client, state):
                   f":: {take[:70]}")
             return
         except Exception as e:
+            if "mentioned or are the author" in str(e):
+                # X plan restriction: replies/quotes to others not permitted.
+                state["engage_blocked"] = time.time()
+                print("Engage: API plan blocks replying/quoting others. "
+                      "Pausing engagement for a week (upgrade the X API plan "
+                      "at developer.x.com to enable this).")
+                return
             print(f"FAILED [{action}] on {c['id']}: {e}")
     print("Engage: all candidates skipped this run.")
 
@@ -406,6 +465,7 @@ def main():
     # Pashto post disabled: generated Pashto quality was not reliable.
     maybe_post_afghan_fact(client, state)
     maybe_post_football(client, state)
+    maybe_post_thread(client, state)   # weekly 3-5 tweet heritage deep-dive
 
     # 2) news — post at fixed UTC slots, each timed to a target audience.
     posts_made = 0
