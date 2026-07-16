@@ -146,6 +146,7 @@
     "Messi, Haaland, Mbapp\u00e9, Kane: Who will be the Worl...",
     "Mohammad Saleem added to Afghanistan squad for India ODIs",
     "Moira Deeming launches lawsuit against Victorian Liberal president before party meets to decide her future",
+    "More than 800 Canadian wildfires burning as air quality alerts extend to US",
     "Neymar trains before Scotland World Cup clash",
     "North Korea\u2019s Kim hails \u2018unshakeable will\u2019 to develop ties with China\u2019s Xi",
     "OIC, Muslim World League discuss support for Afghanistan on sidelines of Islamabad conference",
@@ -282,8 +283,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-16",
-  "posts_today": 1,
-  "last_news_ts": 1784210478.6104991,
+  "posts_today": 2,
+  "last_news_ts": 1784217663.9999068,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-16",
   "football_date": "2026-07-15",
@@ -945,6 +946,13 @@
       "hour": 14,
       "ts": 1784210478.6105006,
       "eng": null
+    },
+    {
+      "id": "2077785594768622038",
+      "pillar": "global",
+      "hour": 16,
+      "ts": 1784217663.9999075,
+      "eng": null
     }
   ],
   "insights": {
@@ -954,7 +962,6 @@
     "afghanistan": 0.6
   },
   "recent": [
-    "US launches strikes on Iran after tankers hit in Strait of Hormuz",
     "Australia news live: PM says \u2018no evidence\u2019 cyber-attack behind national Telstra outages as carrier tries to pin down cause",
     "Shapoor Zadran\u2019s body returns to Kabul as family, teammates and officials pay tribute",
     "Afghanistan, India hold fourth Joint Committee Meeting",
@@ -978,7 +985,8 @@
     "Afghanistan and Iran agree to expand cooperation on product standards and quality control",
     "England weighing man-marking plan to stop Messi",
     "Saar: Growing trade ties between Kabul-New Delhi discussed",
-    "EU moves toward practical engagement with Afghanistan on migration"
+    "EU moves toward practical engagement with Afghanistan on migration",
+    "More than 800 Canadian wildfires burning as air quality alerts extend to US"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1002,7 +1010,8 @@
     "Deep in the mountains of Ghor, where central Afghanistan folds into ravines few outsiders ever reach, stands the Minaret of Jam. Built around 1190 under Sultan Ghiyath al-Din, its 65 meters of intricate brick and blue tile mark the lost Ghurid capital of Firozkoh. From these highlands the Ghurids conquered Delhi."
   ],
   "slots_done": [
-    14
+    14,
+    16
   ],
   "quotes_today": 0,
   "replies_today": 0,
