@@ -194,6 +194,7 @@
     "Sweden spends millions on Afghan voluntary return campaign with no participants so far",
     "Syrian parliament convenes for first time following al-Assad\u2019s overthrow",
     "Tahawol: Afghanistan\u2019s retaliatory attacks against Pakistan discussed",
+    "Tahawol: Appointment of new UN envoy for Afghanistan discussed",
     "Tahawol: Central Asia, European Union and Afghanistan discussed",
     "Tahawol: Efforts to eliminate drugs across Afghanistan discussed",
     "Tahawol: Pakistan\u2019s attacks on civilians in Afghanistan",
@@ -283,8 +284,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-16",
-  "posts_today": 2,
-  "last_news_ts": 1784217663.9999068,
+  "posts_today": 3,
+  "last_news_ts": 1784228462.6782231,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-16",
   "football_date": "2026-07-15",
@@ -953,6 +954,13 @@
       "hour": 16,
       "ts": 1784217663.9999075,
       "eng": null
+    },
+    {
+      "id": "2077830886972658052",
+      "pillar": "afghanistan",
+      "hour": 19,
+      "ts": 1784228462.6782243,
+      "eng": null
     }
   ],
   "insights": {
@@ -962,7 +970,6 @@
     "afghanistan": 0.6
   },
   "recent": [
-    "Australia news live: PM says \u2018no evidence\u2019 cyber-attack behind national Telstra outages as carrier tries to pin down cause",
     "Shapoor Zadran\u2019s body returns to Kabul as family, teammates and officials pay tribute",
     "Afghanistan, India hold fourth Joint Committee Meeting",
     "Chemical weapons watchdog restores Syria\u2019s voting rights, citing progress",
@@ -986,7 +993,8 @@
     "England weighing man-marking plan to stop Messi",
     "Saar: Growing trade ties between Kabul-New Delhi discussed",
     "EU moves toward practical engagement with Afghanistan on migration",
-    "More than 800 Canadian wildfires burning as air quality alerts extend to US"
+    "More than 800 Canadian wildfires burning as air quality alerts extend to US",
+    "Tahawol: Appointment of new UN envoy for Afghanistan discussed"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1011,7 +1019,8 @@
   ],
   "slots_done": [
     14,
-    16
+    16,
+    19
   ],
   "quotes_today": 0,
   "replies_today": 0,
