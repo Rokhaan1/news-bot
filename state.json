@@ -969,7 +969,7 @@
       "pillar": "thread",
       "hour": 13,
       "ts": 1784293268.828148,
-      "eng": null
+      "eng": 2
     },
     {
       "id": "2078117801986781506",
@@ -990,7 +990,8 @@
     "global": 0.4,
     "worldcup": 0.3,
     "us_foreign_policy": 0.3,
-    "afghanistan": 0.6
+    "afghanistan": 0.6,
+    "thread": 2.0
   },
   "recent": [
     "Chemical weapons watchdog restores Syria\u2019s voting rights, citing progress",
