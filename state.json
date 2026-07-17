@@ -282,11 +282,12 @@
     "\u2018Daily cuts\u2026 infections\u2019: India\u2019s e-waste workers face toxic health risks",
     "\u2018I leave the biggest job\u2019: Keir Stamer\u2019s resignation speech in full",
     "\u2018No sense of direction\u2019: The downfall of Keir Starmer",
+    "\u2018They took our toilet\u2019: How a settlement has squeezed a Palestinian village",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-17",
-  "posts_today": 1,
-  "last_news_ts": 1784296868.396395,
+  "posts_today": 2,
+  "last_news_ts": 1784304065.7700746,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-17",
   "football_date": "2026-07-15",
@@ -976,6 +977,13 @@
       "hour": 14,
       "ts": 1784296868.3963966,
       "eng": null
+    },
+    {
+      "id": "2078147990079111548",
+      "pillar": "global",
+      "hour": 16,
+      "ts": 1784304065.7700758,
+      "eng": null
     }
   ],
   "insights": {
@@ -985,7 +993,6 @@
     "afghanistan": 0.6
   },
   "recent": [
-    "Afghanistan, India hold fourth Joint Committee Meeting",
     "Chemical weapons watchdog restores Syria\u2019s voting rights, citing progress",
     "US expands Iran strikes Iran hitting  fishing piers near nuclear plant",
     "Pakistan to Begin Deportation of Around 20,000 Afghans From Peshawar",
@@ -1009,7 +1016,8 @@
     "EU moves toward practical engagement with Afghanistan on migration",
     "More than 800 Canadian wildfires burning as air quality alerts extend to US",
     "Tahawol: Appointment of new UN envoy for Afghanistan discussed",
-    "Afghanistan temporarily eases fuel import standards to help curb rising prices"
+    "Afghanistan temporarily eases fuel import standards to help curb rising prices",
+    "\u2018They took our toilet\u2019: How a settlement has squeezed a Palestinian village"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1037,7 +1045,8 @@
     "For nearly 1,500 years two giant Buddhas stood carved into the cliffs of Bamiyan, the tallest 55 meters high, watching over a valley in the heart of Afghanistan. They were the largest standing Buddhas the world had ever seen, and they were Afghan."
   ],
   "slots_done": [
-    14
+    14,
+    16
   ],
   "quotes_today": 0,
   "replies_today": 0,
