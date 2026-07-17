@@ -961,6 +961,13 @@
       "hour": 19,
       "ts": 1784228462.6782243,
       "eng": 0
+    },
+    {
+      "id": "2078102699015393412",
+      "pillar": "thread",
+      "hour": 13,
+      "ts": 1784293268.828148,
+      "eng": null
     }
   ],
   "insights": {
@@ -1006,7 +1013,8 @@
     "Sanai of Ghazni, pioneer of Persian Sufi poetry",
     "Mirwais Hotak and the Hotak dynasty of Kandahar",
     "the Minaret of Jam and the Ghurid Empire of central Afghanistan",
-    "the Greco-Bactrian kingdom and the Hellenistic city of Ai-Khanoum on the Oxus"
+    "the Greco-Bactrian kingdom and the Hellenistic city of Ai-Khanoum on the Oxus",
+    "the Bamiyan valley, its colossal Buddhas and painted cave monasteries"
   ],
   "recent_facts": [
     "At Mahmud of Ghazni's court around 1000 AD, Afghanistan hosted one of history's greatest minds: Al-Biruni. From Ghazni, he calculated the Earth's radius with stunning accuracy, mastered astronomy, and wrote the Kitab al-Hind. The Ghaznavid Empire made this land a beacon of science. Who else was doing this a thousand years ago?",
@@ -1017,14 +1025,15 @@
     "Long before the mystics of later centuries, it was Sanai of Ghazni who first bent Persian poetry toward God. In the early 12th century, his Hadiqat al-Haqiqa became the first great Sufi masterwork in verse, the road Rumi himself would later walk. Afghanistan gave Sufism its poetic tongue.",
     "In 1709, a Kandahari named Mirwais Hotak rose against a foreign empire and won. He shattered Safavid rule over Kandahar, founding the Hotak dynasty and lighting the fuse that would one day topple Isfahan itself. Afghans call him Mirwais Nika, the grandfather of the nation. And rightly so.",
     "Deep in the mountains of Ghor, where central Afghanistan folds into ravines few outsiders ever reach, stands the Minaret of Jam. Built around 1190 under Sultan Ghiyath al-Din, its 65 meters of intricate brick and blue tile mark the lost Ghurid capital of Firozkoh. From these highlands the Ghurids conquered Delhi.",
-    "On the banks of the Oxus in northern Afghanistan, Greek settlers built Ai Khanoum, a full Hellenistic city with a theater, gymnasium, and columns rising over the river. Deep inside, someone carved the maxims of Delphi onto stone. Greece, transplanted into the Afghan heart of Ariana."
+    "On the banks of the Oxus in northern Afghanistan, Greek settlers built Ai Khanoum, a full Hellenistic city with a theater, gymnasium, and columns rising over the river. Deep inside, someone carved the maxims of Delphi onto stone. Greece, transplanted into the Afghan heart of Ariana.",
+    "For nearly 1,500 years two giant Buddhas stood carved into the cliffs of Bamiyan, the tallest 55 meters high, watching over a valley in the heart of Afghanistan. They were the largest standing Buddhas the world had ever seen, and they were Afghan."
   ],
   "slots_done": [],
   "quotes_today": 0,
   "replies_today": 0,
   "last_engage_ts": 0,
   "engaged_ids": [],
-  "thread_week": "",
+  "thread_week": "2026-W29",
   "engage_blocked": 1784142084.060159,
   "own_user_id": "1361781678",
   "mention_replies_today": 0,
