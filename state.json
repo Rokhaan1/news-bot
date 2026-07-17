@@ -200,6 +200,7 @@
     "Tahawol: Efforts to eliminate drugs across Afghanistan discussed",
     "Tahawol: Pakistan\u2019s attacks on civilians in Afghanistan",
     "Tahawol: UN Officials Visit Kabul \u2014 Political Impact & Consequences",
+    "Tawsia: Reasons behind Afghanistan\u2019s fuel price rise discussed",
     "Tesla crash that killed a woman under US federal investigation",
     "The ICC must investigate Israel\u2019s genocidal use of sexual violence",
     "The champion they didn\u2019t want: inside Wyndham Clark\u2019s lonely US Open coronation",
@@ -286,8 +287,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-17",
-  "posts_today": 2,
-  "last_news_ts": 1784304065.7700746,
+  "posts_today": 3,
+  "last_news_ts": 1784314864.704726,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-17",
   "football_date": "2026-07-15",
@@ -984,6 +985,13 @@
       "hour": 16,
       "ts": 1784304065.7700758,
       "eng": null
+    },
+    {
+      "id": "2078193284153819491",
+      "pillar": "afghanistan",
+      "hour": 19,
+      "ts": 1784314864.7047274,
+      "eng": null
     }
   ],
   "insights": {
@@ -994,7 +1002,6 @@
     "thread": 2.0
   },
   "recent": [
-    "Chemical weapons watchdog restores Syria\u2019s voting rights, citing progress",
     "US expands Iran strikes Iran hitting  fishing piers near nuclear plant",
     "Pakistan to Begin Deportation of Around 20,000 Afghans From Peshawar",
     "Copy of Police called to incident at England media center",
@@ -1018,7 +1025,8 @@
     "More than 800 Canadian wildfires burning as air quality alerts extend to US",
     "Tahawol: Appointment of new UN envoy for Afghanistan discussed",
     "Afghanistan temporarily eases fuel import standards to help curb rising prices",
-    "\u2018They took our toilet\u2019: How a settlement has squeezed a Palestinian village"
+    "\u2018They took our toilet\u2019: How a settlement has squeezed a Palestinian village",
+    "Tawsia: Reasons behind Afghanistan\u2019s fuel price rise discussed"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1047,7 +1055,8 @@
   ],
   "slots_done": [
     14,
-    16
+    16,
+    19
   ],
   "quotes_today": 0,
   "replies_today": 0,
