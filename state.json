@@ -36,6 +36,7 @@
     "Afghanistan opt to bat; Reddy, Prasidh and Dubey return for India",
     "Afghanistan ranks last in KidsRights Index 2026",
     "Afghanistan records historic 95% drop in opium production: UNODC",
+    "Afghanistan temporarily eases fuel import standards to help curb rising prices",
     "Afghanistan, India hold fourth Joint Committee Meeting",
     "Afghanistan, Russia and Kazakhstan sign AFN 446 million in Trade Agreements",
     "Afghanistan, Uzbekistan set for friendly cricket clash in Khost",
@@ -284,8 +285,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-17",
-  "posts_today": 0,
-  "last_news_ts": 1784228462.6782231,
+  "posts_today": 1,
+  "last_news_ts": 1784296868.396395,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-17",
   "football_date": "2026-07-15",
@@ -968,6 +969,13 @@
       "hour": 13,
       "ts": 1784293268.828148,
       "eng": null
+    },
+    {
+      "id": "2078117801986781506",
+      "pillar": "afghanistan",
+      "hour": 14,
+      "ts": 1784296868.3963966,
+      "eng": null
     }
   ],
   "insights": {
@@ -977,7 +985,6 @@
     "afghanistan": 0.6
   },
   "recent": [
-    "Shapoor Zadran\u2019s body returns to Kabul as family, teammates and officials pay tribute",
     "Afghanistan, India hold fourth Joint Committee Meeting",
     "Chemical weapons watchdog restores Syria\u2019s voting rights, citing progress",
     "US expands Iran strikes Iran hitting  fishing piers near nuclear plant",
@@ -1001,7 +1008,8 @@
     "Saar: Growing trade ties between Kabul-New Delhi discussed",
     "EU moves toward practical engagement with Afghanistan on migration",
     "More than 800 Canadian wildfires burning as air quality alerts extend to US",
-    "Tahawol: Appointment of new UN envoy for Afghanistan discussed"
+    "Tahawol: Appointment of new UN envoy for Afghanistan discussed",
+    "Afghanistan temporarily eases fuel import standards to help curb rising prices"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1028,7 +1036,9 @@
     "On the banks of the Oxus in northern Afghanistan, Greek settlers built Ai Khanoum, a full Hellenistic city with a theater, gymnasium, and columns rising over the river. Deep inside, someone carved the maxims of Delphi onto stone. Greece, transplanted into the Afghan heart of Ariana.",
     "For nearly 1,500 years two giant Buddhas stood carved into the cliffs of Bamiyan, the tallest 55 meters high, watching over a valley in the heart of Afghanistan. They were the largest standing Buddhas the world had ever seen, and they were Afghan."
   ],
-  "slots_done": [],
+  "slots_done": [
+    14
+  ],
   "quotes_today": 0,
   "replies_today": 0,
   "last_engage_ts": 0,
