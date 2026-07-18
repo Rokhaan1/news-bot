@@ -119,6 +119,7 @@
     "IEA PM reviews progress of Kabul\u2013Jalalabad second highway project",
     "India face test of depth in first-ever ODI series against Afghanistan",
     "India hand Prince Yadav debut as Afghanistan bowl in Lucknow",
+    "International-standard textile factory to begin operations in Kabul",
     "Iran football team welcomed home after World Cup exit",
     "Iran invites Afghanistan\u2019s prime minister to attend funeral ceremony of Ali Khamenei",
     "Iran leave note in dressing room thanking LA",
@@ -287,8 +288,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-18",
-  "posts_today": 0,
-  "last_news_ts": 1784314864.704726,
+  "posts_today": 1,
+  "last_news_ts": 1784383348.8025053,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-18",
   "football_date": "2026-07-15",
@@ -992,6 +993,13 @@
       "hour": 19,
       "ts": 1784314864.7047274,
       "eng": 0
+    },
+    {
+      "id": "2078480527124988299",
+      "pillar": "afghanistan",
+      "hour": 14,
+      "ts": 1784383348.802506,
+      "eng": null
     }
   ],
   "insights": {
@@ -1002,7 +1010,6 @@
     "thread": 2.0
   },
   "recent": [
-    "US expands Iran strikes Iran hitting  fishing piers near nuclear plant",
     "Pakistan to Begin Deportation of Around 20,000 Afghans From Peshawar",
     "Copy of Police called to incident at England media center",
     "Trump hints at further Iran negotiations after exchange of fire over Hormuz",
@@ -1026,7 +1033,8 @@
     "Tahawol: Appointment of new UN envoy for Afghanistan discussed",
     "Afghanistan temporarily eases fuel import standards to help curb rising prices",
     "\u2018They took our toilet\u2019: How a settlement has squeezed a Palestinian village",
-    "Tawsia: Reasons behind Afghanistan\u2019s fuel price rise discussed"
+    "Tawsia: Reasons behind Afghanistan\u2019s fuel price rise discussed",
+    "International-standard textile factory to begin operations in Kabul"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1055,7 +1063,9 @@
     "For nearly 1,500 years two giant Buddhas stood carved into the cliffs of Bamiyan, the tallest 55 meters high, watching over a valley in the heart of Afghanistan. They were the largest standing Buddhas the world had ever seen, and they were Afghan.",
     "Beneath modern Kandahar lies Old Kandahar, likely the Alexandria in Arachosia founded by Alexander in 330 BC. There, in the 3rd century BC, the emperor Ashoka carved his edicts in flawless Greek and Aramaic, not for distant lands but for the people already living here. Afghan soil was cosmopolitan millennia before the word existed."
   ],
-  "slots_done": [],
+  "slots_done": [
+    14
+  ],
   "quotes_today": 0,
   "replies_today": 0,
   "last_engage_ts": 0,
