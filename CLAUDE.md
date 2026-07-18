@@ -27,6 +27,9 @@ The account's voice lives in `writer.py:VOICE`. Key standing rules:
 - **Durand Line**, not "the Afghanistan-Pakistan border". Anti-Pakistan-state
   stance (never pro-Taliban).
 - **Never fabricate** specific facts, quotes, dates, or events.
+- **Natural human style.** Vary sentence length/structure/tone across posts; no
+  templates, clichés, or marketing-speak; genuine value and clear opinions over
+  formula (rules live in `writer.py:VOICE` point 4).
 - **No engagement-bait questions.** Don't end posts with a manufactured question
   or "what do you think?" call to react — drive replies with a strong, debatable
   stance. Questions only when the post is genuinely about that question.
