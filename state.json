@@ -130,6 +130,7 @@
     "Is Harry Kane the last of England's world-class st...",
     "Israel and Lebanon sign framework agreement after US-brokered talks",
     "Israel kills turtle conservationist Mona Khalil",
+    "Israel uses law to destroy Palestinian education in East Jerusalem",
     "Israeli strike kills two, setting tents ablaze in Gaza humanitarian zone",
     "JD Vance touts progress on key issues in US-Iran negotiations",
     "Jailers and officials at Russia's 'torture prisons' in Ukraine exposed by BBC",
@@ -292,8 +293,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-19",
-  "posts_today": 1,
-  "last_news_ts": 1784469754.5923274,
+  "posts_today": 2,
+  "last_news_ts": 1784476861.2209814,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-19",
   "football_date": "2026-07-15",
@@ -1025,6 +1026,13 @@
       "hour": 14,
       "ts": 1784469754.5923288,
       "eng": null
+    },
+    {
+      "id": "2078872746743001572",
+      "pillar": "global",
+      "hour": 16,
+      "ts": 1784476861.2209828,
+      "eng": null
     }
   ],
   "insights": {
@@ -1035,7 +1043,6 @@
     "thread": 2.0
   },
   "recent": [
-    "Afghan envoy, UNHCR chief discuss support for returnees from Pakistan and Iran",
     "A tale of two No. 10s: England's Bellingham, Norwa...",
     "Trump rushed Kennedy Center renovations for Fifa peace prize ceremony, whistleblowers say",
     "OIC, Muslim World League discuss support for Afghanistan on sidelines of Islamabad conference",
@@ -1059,7 +1066,8 @@
     "International-standard textile factory to begin operations in Kabul",
     "Venezuela quake death toll tops 5,000 as IMF releases emergency aid",
     "Pakistan Detains 121 Afghans in Lahore Immigration Crackdown",
-    "Poppy ban helps strengthen Afghanistan\u2019s international reputation: official"
+    "Poppy ban helps strengthen Afghanistan\u2019s international reputation: official",
+    "Israel uses law to destroy Palestinian education in East Jerusalem"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1091,7 +1099,8 @@
     "For centuries the Kabul Shahis held the passes of Kabul and Gandhara against wave after wave of invasion from the west. Their capital at Kabul, later Udabhandapura on the Indus, guarded the gates of the Hindu Kush. Kings like Lagaturman and later Jayapala ruled a proud Afghan realm that outlasted empires most people have never heard of."
   ],
   "slots_done": [
-    14
+    14,
+    16
   ],
   "quotes_today": 0,
   "replies_today": 0,
