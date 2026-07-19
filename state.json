@@ -165,6 +165,7 @@
     "Polio-Free Afghanistan Calls for Nationwide Effort to Eliminate Polio",
     "Political turmoil: UK will see its seventh prime minister in 10 years",
     "Polygamous sect leader guilty of abuse after girls found in trailer on highway",
+    "Poppy ban helps strengthen Afghanistan\u2019s international reputation: official",
     "Portugal fans gather ahead of Ronaldo-Modric clash",
     "Prabhsimran, Gaikwad, Tilak score fifties in DLS loss to Afghanistan A",
     "Prasidh five-for, Jaiswal hundred help India sweep Afghanistan 3-0",
@@ -291,8 +292,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-19",
-  "posts_today": 0,
-  "last_news_ts": 1784401261.5695887,
+  "posts_today": 1,
+  "last_news_ts": 1784469754.5923274,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-19",
   "football_date": "2026-07-15",
@@ -1017,6 +1018,13 @@
       "hour": 19,
       "ts": 1784401261.5695899,
       "eng": 0
+    },
+    {
+      "id": "2078842939308925097",
+      "pillar": "afghanistan",
+      "hour": 14,
+      "ts": 1784469754.5923288,
+      "eng": null
     }
   ],
   "insights": {
@@ -1027,7 +1035,6 @@
     "thread": 2.0
   },
   "recent": [
-    "Trump hints at further Iran negotiations after exchange of fire over Hormuz",
     "Afghan envoy, UNHCR chief discuss support for returnees from Pakistan and Iran",
     "A tale of two No. 10s: England's Bellingham, Norwa...",
     "Trump rushed Kennedy Center renovations for Fifa peace prize ceremony, whistleblowers say",
@@ -1051,7 +1058,8 @@
     "Tawsia: Reasons behind Afghanistan\u2019s fuel price rise discussed",
     "International-standard textile factory to begin operations in Kabul",
     "Venezuela quake death toll tops 5,000 as IMF releases emergency aid",
-    "Pakistan Detains 121 Afghans in Lahore Immigration Crackdown"
+    "Pakistan Detains 121 Afghans in Lahore Immigration Crackdown",
+    "Poppy ban helps strengthen Afghanistan\u2019s international reputation: official"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1082,7 +1090,9 @@
     "Beneath modern Kandahar lies Old Kandahar, likely the Alexandria in Arachosia founded by Alexander in 330 BC. There, in the 3rd century BC, the emperor Ashoka carved his edicts in flawless Greek and Aramaic, not for distant lands but for the people already living here. Afghan soil was cosmopolitan millennia before the word existed.",
     "For centuries the Kabul Shahis held the passes of Kabul and Gandhara against wave after wave of invasion from the west. Their capital at Kabul, later Udabhandapura on the Indus, guarded the gates of the Hindu Kush. Kings like Lagaturman and later Jayapala ruled a proud Afghan realm that outlasted empires most people have never heard of."
   ],
-  "slots_done": [],
+  "slots_done": [
+    14
+  ],
   "quotes_today": 0,
   "replies_today": 0,
   "last_engage_ts": 0,
