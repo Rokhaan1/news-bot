@@ -203,6 +203,7 @@
     "Tahawol: Appointment of new UN envoy for Afghanistan discussed",
     "Tahawol: Central Asia, European Union and Afghanistan discussed",
     "Tahawol: Efforts to eliminate drugs across Afghanistan discussed",
+    "Tahawol: More Than 4,000 Afghans Return Home in One Day",
     "Tahawol: Pakistan\u2019s attacks on civilians in Afghanistan",
     "Tahawol: UN Officials Visit Kabul \u2014 Political Impact & Consequences",
     "Tawsia: Reasons behind Afghanistan\u2019s fuel price rise discussed",
@@ -293,8 +294,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-19",
-  "posts_today": 2,
-  "last_news_ts": 1784476861.2209814,
+  "posts_today": 3,
+  "last_news_ts": 1784487665.8193462,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-19",
   "football_date": "2026-07-15",
@@ -1033,6 +1034,13 @@
       "hour": 16,
       "ts": 1784476861.2209828,
       "eng": null
+    },
+    {
+      "id": "2078918064545177944",
+      "pillar": "afghanistan",
+      "hour": 19,
+      "ts": 1784487665.8193474,
+      "eng": null
     }
   ],
   "insights": {
@@ -1043,7 +1051,6 @@
     "thread": 2.0
   },
   "recent": [
-    "A tale of two No. 10s: England's Bellingham, Norwa...",
     "Trump rushed Kennedy Center renovations for Fifa peace prize ceremony, whistleblowers say",
     "OIC, Muslim World League discuss support for Afghanistan on sidelines of Islamabad conference",
     "Syrian parliament convenes for first time following al-Assad\u2019s overthrow",
@@ -1067,7 +1074,8 @@
     "Venezuela quake death toll tops 5,000 as IMF releases emergency aid",
     "Pakistan Detains 121 Afghans in Lahore Immigration Crackdown",
     "Poppy ban helps strengthen Afghanistan\u2019s international reputation: official",
-    "Israel uses law to destroy Palestinian education in East Jerusalem"
+    "Israel uses law to destroy Palestinian education in East Jerusalem",
+    "Tahawol: More Than 4,000 Afghans Return Home in One Day"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1100,7 +1108,8 @@
   ],
   "slots_done": [
     14,
-    16
+    16,
+    19
   ],
   "quotes_today": 0,
   "replies_today": 0,
