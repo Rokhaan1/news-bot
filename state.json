@@ -198,6 +198,7 @@
     "Supreme Court allows Trump to end protected status for Haitian and Syrian immigrants",
     "Supreme court hands Trump administration big win with rulings on key immigration cases \u2013 as it happened",
     "Sweden spends millions on Afghan voluntary return campaign with no participants so far",
+    "Switzerland Contributes $2.4 Million to Support UNHCR Aid Operations in Afghanistan",
     "Syrian parliament convenes for first time following al-Assad\u2019s overthrow",
     "Tahawol: Afghanistan\u2019s retaliatory attacks against Pakistan discussed",
     "Tahawol: Appointment of new UN envoy for Afghanistan discussed",
@@ -294,8 +295,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-20",
-  "posts_today": 0,
-  "last_news_ts": 1784487665.8193462,
+  "posts_today": 1,
+  "last_news_ts": 1784556072.3888779,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-20",
   "football_date": "2026-07-15",
@@ -1041,6 +1042,13 @@
       "hour": 19,
       "ts": 1784487665.8193474,
       "eng": 0
+    },
+    {
+      "id": "2079204982406951278",
+      "pillar": "afghanistan",
+      "hour": 14,
+      "ts": 1784556072.3888788,
+      "eng": null
     }
   ],
   "insights": {
@@ -1051,7 +1059,6 @@
     "thread": 2.0
   },
   "recent": [
-    "Trump rushed Kennedy Center renovations for Fifa peace prize ceremony, whistleblowers say",
     "OIC, Muslim World League discuss support for Afghanistan on sidelines of Islamabad conference",
     "Syrian parliament convenes for first time following al-Assad\u2019s overthrow",
     "Concern for renewed war in Iran as US attacks military, civilian targets",
@@ -1075,7 +1082,8 @@
     "Pakistan Detains 121 Afghans in Lahore Immigration Crackdown",
     "Poppy ban helps strengthen Afghanistan\u2019s international reputation: official",
     "Israel uses law to destroy Palestinian education in East Jerusalem",
-    "Tahawol: More Than 4,000 Afghans Return Home in One Day"
+    "Tahawol: More Than 4,000 Afghans Return Home in One Day",
+    "Switzerland Contributes $2.4 Million to Support UNHCR Aid Operations in Afghanistan"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1107,7 +1115,9 @@
     "For centuries the Kabul Shahis held the passes of Kabul and Gandhara against wave after wave of invasion from the west. Their capital at Kabul, later Udabhandapura on the Indus, guarded the gates of the Hindu Kush. Kings like Lagaturman and later Jayapala ruled a proud Afghan realm that outlasted empires most people have never heard of.",
     "Just south of Kabul, under the copper-rich hills of Logar, lies Mes Aynak, a sprawling Buddhist city more than 1,500 years old. Monasteries, stupas, gilded statues, hundreds of rooms carved into a mountain that sat on the Silk Road. Afghans built this. It deserves to be studied, not stripped."
   ],
-  "slots_done": [],
+  "slots_done": [
+    14
+  ],
   "quotes_today": 0,
   "replies_today": 0,
   "last_engage_ts": 0,
