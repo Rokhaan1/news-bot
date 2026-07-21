@@ -181,6 +181,7 @@
     "Reflecting pool to be drained again as Trump claims five vandalism arrests",
     "Republican-linked PACs funding Democratic US primaries: Why it matters",
     "Rescue efforts turn to recovery as aftershocks shake Venezuela",
+    "Rescuers search for survivors amid risk of fresh floods in Afghanistan",
     "Rescuers search rubble for survivors as Venezuela earthquakes kill at least 235",
     "Russian troop build-up threatens city seen as key to seizing Ukraine's Donbas",
     "Saar: Astana\u2019s New Era of Engagement with Kabul",
@@ -299,8 +300,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-21",
-  "posts_today": 2,
-  "last_news_ts": 1784649675.0302672,
+  "posts_today": 3,
+  "last_news_ts": 1784660475.5448637,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-21",
   "football_date": "2026-07-15",
@@ -1081,6 +1082,13 @@
       "hour": 16,
       "ts": 1784649675.030268,
       "eng": null
+    },
+    {
+      "id": "2079642881061794184",
+      "pillar": "afghanistan",
+      "hour": 19,
+      "ts": 1784660475.5448647,
+      "eng": null
     }
   ],
   "insights": {
@@ -1091,7 +1099,6 @@
     "thread": 2.0
   },
   "recent": [
-    "British couple confirmed to have been killed by deadly wildfires in Spain",
     "Trump administration vows to \u2018disable\u2019 International Criminal Court",
     "Afghanistan, Russia and Kazakhstan sign AFN 446 million in Trade Agreements",
     "EU rejects Trump administration claims that ICC threatens US sovereignty",
@@ -1115,7 +1122,8 @@
     "Canada issues air quality warnings over US wildfire smoke after Trump tariff threat",
     "Deadly Floods Devastate Afghanistan\u2019s Nuristan; Death Toll Rises to 20, More Than 100 Missing",
     "India says UN sanctions on Afghanistan no longer effective",
-    "Israeli air strike in Gaza City kills family of six, medics say"
+    "Israeli air strike in Gaza City kills family of six, medics say",
+    "Rescuers search for survivors amid risk of fresh floods in Afghanistan"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1150,7 +1158,8 @@
   ],
   "slots_done": [
     14,
-    16
+    16,
+    19
   ],
   "quotes_today": 0,
   "replies_today": 0,
