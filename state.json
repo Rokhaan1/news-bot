@@ -134,6 +134,7 @@
     "Israel and Lebanon sign framework agreement after US-brokered talks",
     "Israel kills turtle conservationist Mona Khalil",
     "Israel uses law to destroy Palestinian education in East Jerusalem",
+    "Israeli air strike in Gaza City kills family of six, medics say",
     "Israeli strike kills two, setting tents ablaze in Gaza humanitarian zone",
     "JD Vance touts progress on key issues in US-Iran negotiations",
     "Jailers and officials at Russia's 'torture prisons' in Ukraine exposed by BBC",
@@ -298,8 +299,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-21",
-  "posts_today": 1,
-  "last_news_ts": 1784642473.3690467,
+  "posts_today": 2,
+  "last_news_ts": 1784649675.0302672,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-21",
   "football_date": "2026-07-15",
@@ -1073,6 +1074,13 @@
       "hour": 14,
       "ts": 1784642473.3690479,
       "eng": null
+    },
+    {
+      "id": "2079597580187844796",
+      "pillar": "global",
+      "hour": 16,
+      "ts": 1784649675.030268,
+      "eng": null
     }
   ],
   "insights": {
@@ -1083,7 +1091,6 @@
     "thread": 2.0
   },
   "recent": [
-    "Iranian deputy foreign minister arrives in Kabul for talks",
     "British couple confirmed to have been killed by deadly wildfires in Spain",
     "Trump administration vows to \u2018disable\u2019 International Criminal Court",
     "Afghanistan, Russia and Kazakhstan sign AFN 446 million in Trade Agreements",
@@ -1107,7 +1114,8 @@
     "Switzerland Contributes $2.4 Million to Support UNHCR Aid Operations in Afghanistan",
     "Canada issues air quality warnings over US wildfire smoke after Trump tariff threat",
     "Deadly Floods Devastate Afghanistan\u2019s Nuristan; Death Toll Rises to 20, More Than 100 Missing",
-    "India says UN sanctions on Afghanistan no longer effective"
+    "India says UN sanctions on Afghanistan no longer effective",
+    "Israeli air strike in Gaza City kills family of six, medics say"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1141,7 +1149,8 @@
     "Under Kanishka, whose empire was ruled from Kapisa and Peshawar in the 2nd century, the Kushans turned Afghanistan into the hinge of the ancient world. Roman gold flowed east, Chinese silk moved west, and Indian Buddhism traveled north into China, all through Kushan hands. This was Aryana at the center of the earth."
   ],
   "slots_done": [
-    14
+    14,
+    16
   ],
   "quotes_today": 0,
   "replies_today": 0,
