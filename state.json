@@ -1106,7 +1106,7 @@
       "pillar": "global",
       "hour": 16,
       "ts": 1784736068.9823525,
-      "eng": null
+      "eng": 0
     },
     {
       "id": "2080005254544834855",
@@ -1191,7 +1191,7 @@
   "last_engage_ts": 0,
   "engaged_ids": [],
   "thread_week": "2026-W29",
-  "engage_blocked": 1784142084.060159,
+  "engage_blocked": 1784747741.9965076,
   "own_user_id": "1361781678",
   "mention_replies_today": 0,
   "replied_ids": [
