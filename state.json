@@ -303,7 +303,7 @@
   "posts_today": 0,
   "last_news_ts": 1784660475.5448637,
   "videos_date": "2026-06-26",
-  "fact_date": "2026-07-21",
+  "fact_date": "2026-07-22",
   "football_date": "2026-07-15",
   "log": [
     {
@@ -1127,7 +1127,6 @@
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
-    "the Ghaznavid Empire of Mahmud of Ghazni and the polymath Al-Biruni at his court",
     "Khwaja Abdullah Ansari, the revered Sage of Herat",
     "Ghazni as a medieval world center of learning, the 'Bride of Cities'",
     "Gandhara civilization and its Greco-Buddhist art at Hadda",
@@ -1140,10 +1139,10 @@
     "Old Kandahar, Alexandria in Arachosia, and Ashoka's bilingual Greek-Aramaic edicts",
     "the Kabul Shahi (Hindu Shahi) kingdoms of Kabul and Gandhara",
     "Mes Aynak, the vast ancient Buddhist copper city south of Kabul",
-    "the Kushan Empire under Kanishka linking Rome, India and China along the Silk Road"
+    "the Kushan Empire under Kanishka linking Rome, India and China along the Silk Road",
+    "Zoroaster (Zarathustra) and the birth of Zoroastrian thought in ancient Ariana"
   ],
   "recent_facts": [
-    "They called Ghazni the \"Bride of Cities,\" and it earned the title. Under the Ghaznavids in the 11th century, this Afghan capital drew poets like Farrukhi and Unsuri, and its libraries and madrasas made it a magnet of learning from India to Central Asia. A world capital, on Afghan soil. Who taught the world then?",
     "At Hadda, near Jalalabad, ancient Afghan sculptors fused Hellenic and Buddhist worlds into stucco of astonishing tenderness. Buddhas with the serene features of Apollo, monks rendered with unnerving realism. This was Gandhara's genius, born on Afghan soil. The East gave it soul, Afghanistan gave it form. Who else did this first?",
     "In 1747, at a loya jirga in Kandahar, tribal leaders chose Ahmad Shah Durrani to lead them. He was crowned with wheat stalks, not jewels. Within years he forged an empire stretching from Mashhad to Delhi and Kashmir to the Arabian Sea. That coronation is the birth of modern Afghanistan.",
     "Long before the mystics of later centuries, it was Sanai of Ghazni who first bent Persian poetry toward God. In the early 12th century, his Hadiqat al-Haqiqa became the first great Sufi masterwork in verse, the road Rumi himself would later walk. Afghanistan gave Sufism its poetic tongue.",
@@ -1154,7 +1153,8 @@
     "Beneath modern Kandahar lies Old Kandahar, likely the Alexandria in Arachosia founded by Alexander in 330 BC. There, in the 3rd century BC, the emperor Ashoka carved his edicts in flawless Greek and Aramaic, not for distant lands but for the people already living here. Afghan soil was cosmopolitan millennia before the word existed.",
     "For centuries the Kabul Shahis held the passes of Kabul and Gandhara against wave after wave of invasion from the west. Their capital at Kabul, later Udabhandapura on the Indus, guarded the gates of the Hindu Kush. Kings like Lagaturman and later Jayapala ruled a proud Afghan realm that outlasted empires most people have never heard of.",
     "Just south of Kabul, under the copper-rich hills of Logar, lies Mes Aynak, a sprawling Buddhist city more than 1,500 years old. Monasteries, stupas, gilded statues, hundreds of rooms carved into a mountain that sat on the Silk Road. Afghans built this. It deserves to be studied, not stripped.",
-    "Under Kanishka, whose empire was ruled from Kapisa and Peshawar in the 2nd century, the Kushans turned Afghanistan into the hinge of the ancient world. Roman gold flowed east, Chinese silk moved west, and Indian Buddhism traveled north into China, all through Kushan hands. This was Aryana at the center of the earth."
+    "Under Kanishka, whose empire was ruled from Kapisa and Peshawar in the 2nd century, the Kushans turned Afghanistan into the hinge of the ancient world. Roman gold flowed east, Chinese silk moved west, and Indian Buddhism traveled north into China, all through Kushan hands. This was Aryana at the center of the earth.",
+    "Before Athens theorized and Rome legislated, a prophet in ancient Ariana was already teaching that the whole cosmos turns on one choice: truth against the lie, good thought against evil. That was Zarathustra. Many traditions place his Gathas, hymns still recited today, in the lands that became Afghanistan."
   ],
   "slots_done": [],
   "quotes_today": 0,
