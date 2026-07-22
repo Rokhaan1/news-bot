@@ -1113,14 +1113,14 @@
       "pillar": "afghanistan",
       "hour": 19,
       "ts": 1784746872.1371906,
-      "eng": null
+      "eng": 0
     }
   ],
   "insights": {
     "global": 0.4,
     "worldcup": 0.3,
     "us_foreign_policy": 0.3,
-    "afghanistan": 0.6,
+    "afghanistan": 0.5,
     "thread": 2.0
   },
   "recent": [
