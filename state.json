@@ -31,6 +31,7 @@
     "Afghan envoy, UNHCR chief discuss support for returnees from Pakistan and Iran",
     "Afghan women\u2019s situation highlighted at SCO Forum amid ongoing global debate",
     "Afghanistan and Iran agree to expand cooperation on product standards and quality control",
+    "Afghanistan and Uzbekistan advance railway cooperation, discuss Trans-Afghan project",
     "Afghanistan committed to continued cooperation with UN on humanitarian and development projects: FM Muttaqi",
     "Afghanistan officials call for investment during Indian expo visit",
     "Afghanistan opt to bat; Reddy, Prasidh and Dubey return for India",
@@ -300,8 +301,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-22",
-  "posts_today": 0,
-  "last_news_ts": 1784660475.5448637,
+  "posts_today": 1,
+  "last_news_ts": 1784728875.2003129,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-22",
   "football_date": "2026-07-15",
@@ -1089,6 +1090,13 @@
       "hour": 19,
       "ts": 1784660475.5448647,
       "eng": 0
+    },
+    {
+      "id": "2079929769974747252",
+      "pillar": "afghanistan",
+      "hour": 14,
+      "ts": 1784728875.200314,
+      "eng": null
     }
   ],
   "insights": {
@@ -1099,7 +1107,6 @@
     "thread": 2.0
   },
   "recent": [
-    "Trump administration vows to \u2018disable\u2019 International Criminal Court",
     "Afghanistan, Russia and Kazakhstan sign AFN 446 million in Trade Agreements",
     "EU rejects Trump administration claims that ICC threatens US sovereignty",
     "US risks falling into \u2018escalation trap\u2019 if it deploys troops in Iran",
@@ -1123,7 +1130,8 @@
     "Deadly Floods Devastate Afghanistan\u2019s Nuristan; Death Toll Rises to 20, More Than 100 Missing",
     "India says UN sanctions on Afghanistan no longer effective",
     "Israeli air strike in Gaza City kills family of six, medics say",
-    "Rescuers search for survivors amid risk of fresh floods in Afghanistan"
+    "Rescuers search for survivors amid risk of fresh floods in Afghanistan",
+    "Afghanistan and Uzbekistan advance railway cooperation, discuss Trans-Afghan project"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1156,7 +1164,9 @@
     "Under Kanishka, whose empire was ruled from Kapisa and Peshawar in the 2nd century, the Kushans turned Afghanistan into the hinge of the ancient world. Roman gold flowed east, Chinese silk moved west, and Indian Buddhism traveled north into China, all through Kushan hands. This was Aryana at the center of the earth.",
     "Before Athens theorized and Rome legislated, a prophet in ancient Ariana was already teaching that the whole cosmos turns on one choice: truth against the lie, good thought against evil. That was Zarathustra. Many traditions place his Gathas, hymns still recited today, in the lands that became Afghanistan."
   ],
-  "slots_done": [],
+  "slots_done": [
+    14
+  ],
   "quotes_today": 0,
   "replies_today": 0,
   "last_engage_ts": 0,
