@@ -186,6 +186,7 @@
     "Rescuers search for survivors amid risk of fresh floods in Afghanistan",
     "Rescuers search rubble for survivors as Venezuela earthquakes kill at least 235",
     "Russian troop build-up threatens city seen as key to seizing Ukraine's Donbas",
+    "Saar: Amnesty International\u2019s reaction to Pakistan\u2019s attack in Kabul discussed",
     "Saar: Astana\u2019s New Era of Engagement with Kabul",
     "Saar: Concerns over Afghan deportations from Europe discussed",
     "Saar: Concerns over rising fuel prices across Afghanistan discussed",
@@ -303,8 +304,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-22",
-  "posts_today": 2,
-  "last_news_ts": 1784736068.9823515,
+  "posts_today": 3,
+  "last_news_ts": 1784746872.1371894,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-22",
   "football_date": "2026-07-15",
@@ -1106,6 +1107,13 @@
       "hour": 16,
       "ts": 1784736068.9823525,
       "eng": null
+    },
+    {
+      "id": "2080005254544834855",
+      "pillar": "afghanistan",
+      "hour": 19,
+      "ts": 1784746872.1371906,
+      "eng": null
     }
   ],
   "insights": {
@@ -1116,7 +1124,6 @@
     "thread": 2.0
   },
   "recent": [
-    "EU rejects Trump administration claims that ICC threatens US sovereignty",
     "US risks falling into \u2018escalation trap\u2019 if it deploys troops in Iran",
     "Afghanistan and Iran agree to expand cooperation on product standards and quality control",
     "England weighing man-marking plan to stop Messi",
@@ -1140,7 +1147,8 @@
     "Israeli air strike in Gaza City kills family of six, medics say",
     "Rescuers search for survivors amid risk of fresh floods in Afghanistan",
     "Afghanistan and Uzbekistan advance railway cooperation, discuss Trans-Afghan project",
-    "France recorded more than 5,700 excess deaths during June heatwave"
+    "France recorded more than 5,700 excess deaths during June heatwave",
+    "Saar: Amnesty International\u2019s reaction to Pakistan\u2019s attack in Kabul discussed"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1175,7 +1183,8 @@
   ],
   "slots_done": [
     14,
-    16
+    16,
+    19
   ],
   "quotes_today": 0,
   "replies_today": 0,
