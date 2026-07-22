@@ -111,6 +111,7 @@
     "Four years later, same debate for Portugal: Why is...",
     "France braces for another day of sweltering heat as Europe heatwave spreads",
     "France confirms first Ebola case",
+    "France recorded more than 5,700 excess deaths during June heatwave",
     "Gaza\u2019s surfers seek solace from war in the Mediterranean Sea",
     "Ghalibaf: US and Iran can work together to reopen Strait of Hormuz",
     "Gill, Rahul seal India's chase for 1-0 lead after Gurbaz century",
@@ -288,6 +289,7 @@
     "World Cup daily: Free England-Norway ticket for Er...",
     "World Cup live updates: Ronaldo nets a pair of goa...",
     "Worries exposed for England as Kane looks lost and...",
+    "Wreckage of Pan Am plane that shaped aviation safety found 74 years on",
     "https://www.reddit.com/r/funny/comments/1ubta6p/camo/",
     "https://www.reddit.com/r/funny/comments/1ucmswe/my_cat_finding_out_the_tin_i_opened_contained/",
     "https://www.reddit.com/r/funny/comments/1udo6i4/referee_drops_his_watch_player_picks_it_up/",
@@ -301,8 +303,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-22",
-  "posts_today": 1,
-  "last_news_ts": 1784728875.2003129,
+  "posts_today": 2,
+  "last_news_ts": 1784736068.9823515,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-22",
   "football_date": "2026-07-15",
@@ -1097,6 +1099,13 @@
       "hour": 14,
       "ts": 1784728875.200314,
       "eng": null
+    },
+    {
+      "id": "2079959942702698747",
+      "pillar": "global",
+      "hour": 16,
+      "ts": 1784736068.9823525,
+      "eng": null
     }
   ],
   "insights": {
@@ -1107,7 +1116,6 @@
     "thread": 2.0
   },
   "recent": [
-    "Afghanistan, Russia and Kazakhstan sign AFN 446 million in Trade Agreements",
     "EU rejects Trump administration claims that ICC threatens US sovereignty",
     "US risks falling into \u2018escalation trap\u2019 if it deploys troops in Iran",
     "Afghanistan and Iran agree to expand cooperation on product standards and quality control",
@@ -1131,7 +1139,8 @@
     "India says UN sanctions on Afghanistan no longer effective",
     "Israeli air strike in Gaza City kills family of six, medics say",
     "Rescuers search for survivors amid risk of fresh floods in Afghanistan",
-    "Afghanistan and Uzbekistan advance railway cooperation, discuss Trans-Afghan project"
+    "Afghanistan and Uzbekistan advance railway cooperation, discuss Trans-Afghan project",
+    "France recorded more than 5,700 excess deaths during June heatwave"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1165,7 +1174,8 @@
     "Before Athens theorized and Rome legislated, a prophet in ancient Ariana was already teaching that the whole cosmos turns on one choice: truth against the lie, good thought against evil. That was Zarathustra. Many traditions place his Gathas, hymns still recited today, in the lands that became Afghanistan."
   ],
   "slots_done": [
-    14
+    14,
+    16
   ],
   "quotes_today": 0,
   "replies_today": 0,
