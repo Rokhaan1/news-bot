@@ -308,10 +308,10 @@ def maybe_post_thread(client, state):
     if not getattr(config, "THREAD_ENABLED", False):
         return
     now = datetime.now(timezone.utc)
-    week = now.strftime("%G-W%V")
+    week = now.strftime("%G-W%V-%u")   # per-day stamp -> one thread per slot day
     if state.get("thread_week") == week:
         return
-    if now.weekday() != config.THREAD_WEEKDAY:
+    if now.weekday() not in config.THREAD_WEEKDAYS:
         return
     if not _in_window(config.THREAD_WINDOW, now.hour):
         return
@@ -482,6 +482,7 @@ def measure_and_learn(client, state):
                 m = (t.data.public_metrics if t and t.data else {}) or {}
                 e["eng"] = (m.get("like_count", 0) + m.get("retweet_count", 0)
                             + m.get("reply_count", 0) + m.get("quote_count", 0))
+                e["imp"] = m.get("impression_count", 0)   # real reach signal
                 measured += 1
             except Exception:
                 e["eng"] = -1  # inaccessible/deleted — skip it
@@ -496,6 +497,10 @@ def measure_and_learn(client, state):
     state["insights"] = {p: round(sums[p] / counts[p], 1) for p in sums}
     if state["insights"]:
         print("Insights (avg engagement per topic):", state["insights"])
+    imps = [e["imp"] for e in state["log"] if isinstance(e.get("imp"), int)]
+    if imps:
+        print(f"Reach: avg {sum(imps)/len(imps):.0f} impressions over "
+              f"last {len(imps)} measured posts")
 
 
 def ranked_pillars(state):

@@ -7,7 +7,8 @@ No secret keys live here — those are stored safely in GitHub Secrets.
 # ----- POSTING LIMITS (cost control) -----
 # X charges ~$0.015 per post (text/image), ~$0.20 if the post contains a link.
 MAX_POSTS_PER_RUN = 1     # news posts per scheduled run (runs every ~15 min)
-MAX_POSTS_PER_DAY = 3     # safety cap; day is driven by POST_SLOTS below (3 slots)
+MAX_POSTS_PER_DAY = 2     # authority recovery: every low-engagement post lowers
+                          # future reach, so fewer + better beats volume
 FOOTBALL_PER_DAY  = 0     # disabled: England-football takes diluted the Afghan
                           # analyst identity (profile coherence -> follows)
 
@@ -16,7 +17,9 @@ FOOTBALL_PER_DAY  = 0     # disabled: England-football takes diluted the Afghan
 # Threads are X's highest-ceiling format (bookmarks + shares) and showcase the
 # account's analyst depth better than single posts.
 THREAD_ENABLED = True
-THREAD_WEEKDAY = 4               # 0=Mon .. 6=Sun; 4=Friday (weekend reading)
+# Threads are the account's best format by far (2.0 avg engagement vs 0.3-0.5
+# for single posts) — run two a week.
+THREAD_WEEKDAYS = [1, 4]         # 0=Mon .. 6=Sun; Tuesday + Friday
 THREAD_WINDOW = (13, 19)         # UTC hours; Afghan evening + Western daytime
 
 # ----- MENTION REPLIES (permitted on pay-per-use: "summoned" posts) -----
@@ -59,13 +62,9 @@ ENGAGE_QUERIES = [               # one is chosen per run; add/reorder freely
 # has a fresh, verified item and falls back through the rest by learned
 # engagement, so a slot is never wasted.
 POST_SLOTS = [
+    # Two slots only (authority recovery): the 16:00 global slot was the
+    # weakest performer and every weak post now compounds against reach.
     {"hour": 14, "pillars": ["afghanistan", "afghan_cricket", "global"]},
-    # worldcup demoted to last: England/football takes diluted the Afghan
-    # analyst identity; big World Cup stories can still fill an empty slot.
-    {"hour": 16, "pillars": ["global", "afghanistan", "worldcup"]},
-    # 19:00: us_foreign_policy earned 0.0 avg engagement, while Afghanistan is
-    # the account's proven strongest pillar (0.6) — so the US/UK-evening slot
-    # leads with Afghanistan for the diaspora + policy-watcher audience.
     {"hour": 19, "pillars": ["afghanistan", "global", "us_foreign_policy"]},
 ]
 # A run may be late (cron hiccup / Actions queue). Still fire a slot up to this
