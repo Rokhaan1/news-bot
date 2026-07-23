@@ -233,6 +233,7 @@
     "Trump made more than $1bn from crypto in first year back in office",
     "Trump news at a glance: president tests out a new \u2018red scare\u2019 ahead of midterms",
     "Trump news at a glance: president\u2019s pool project plagued by peeling paint \u2013 and algae blooms",
+    "Trump once again criticizes US withdrawal from Afghanistan, raises issue of military equipment",
     "Trump rushed Kennedy Center renovations for Fifa peace prize ceremony, whistleblowers say",
     "Trump says five people arrested as he again blames \u2018vandals\u2019 for reflecting pool damage without giving evidence \u2013 live",
     "Trump says repairs to algae-plagued Reflecting Pool will begin immediately",
@@ -303,11 +304,11 @@
     "\u2018They took our toilet\u2019: How a settlement has squeezed a Palestinian village",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-07-22",
-  "posts_today": 3,
-  "last_news_ts": 1784746872.1371894,
+  "date": "2026-07-23",
+  "posts_today": 1,
+  "last_news_ts": 1784822354.7227495,
   "videos_date": "2026-06-26",
-  "fact_date": "2026-07-22",
+  "fact_date": "2026-07-23",
   "football_date": "2026-07-15",
   "log": [
     {
@@ -1114,6 +1115,13 @@
       "hour": 19,
       "ts": 1784746872.1371906,
       "eng": 0
+    },
+    {
+      "id": "2080321851562270894",
+      "pillar": "afghanistan",
+      "hour": 15,
+      "ts": 1784822354.7227507,
+      "eng": null
     }
   ],
   "insights": {
@@ -1124,7 +1132,6 @@
     "thread": 2.0
   },
   "recent": [
-    "US risks falling into \u2018escalation trap\u2019 if it deploys troops in Iran",
     "Afghanistan and Iran agree to expand cooperation on product standards and quality control",
     "England weighing man-marking plan to stop Messi",
     "Saar: Growing trade ties between Kabul-New Delhi discussed",
@@ -1148,11 +1155,11 @@
     "Rescuers search for survivors amid risk of fresh floods in Afghanistan",
     "Afghanistan and Uzbekistan advance railway cooperation, discuss Trans-Afghan project",
     "France recorded more than 5,700 excess deaths during June heatwave",
-    "Saar: Amnesty International\u2019s reaction to Pakistan\u2019s attack in Kabul discussed"
+    "Saar: Amnesty International\u2019s reaction to Pakistan\u2019s attack in Kabul discussed",
+    "Trump once again criticizes US withdrawal from Afghanistan, raises issue of military equipment"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
-    "Khwaja Abdullah Ansari, the revered Sage of Herat",
     "Ghazni as a medieval world center of learning, the 'Bride of Cities'",
     "Gandhara civilization and its Greco-Buddhist art at Hadda",
     "the Durrani Empire founded by Ahmad Shah Durrani in 1747, the birth of modern Afghanistan",
@@ -1165,10 +1172,10 @@
     "the Kabul Shahi (Hindu Shahi) kingdoms of Kabul and Gandhara",
     "Mes Aynak, the vast ancient Buddhist copper city south of Kabul",
     "the Kushan Empire under Kanishka linking Rome, India and China along the Silk Road",
-    "Zoroaster (Zarathustra) and the birth of Zoroastrian thought in ancient Ariana"
+    "Zoroaster (Zarathustra) and the birth of Zoroastrian thought in ancient Ariana",
+    "Timurid Herat's golden age: Queen Gawharshad, the Musalla complex and the painter Behzad"
   ],
   "recent_facts": [
-    "At Hadda, near Jalalabad, ancient Afghan sculptors fused Hellenic and Buddhist worlds into stucco of astonishing tenderness. Buddhas with the serene features of Apollo, monks rendered with unnerving realism. This was Gandhara's genius, born on Afghan soil. The East gave it soul, Afghanistan gave it form. Who else did this first?",
     "In 1747, at a loya jirga in Kandahar, tribal leaders chose Ahmad Shah Durrani to lead them. He was crowned with wheat stalks, not jewels. Within years he forged an empire stretching from Mashhad to Delhi and Kashmir to the Arabian Sea. That coronation is the birth of modern Afghanistan.",
     "Long before the mystics of later centuries, it was Sanai of Ghazni who first bent Persian poetry toward God. In the early 12th century, his Hadiqat al-Haqiqa became the first great Sufi masterwork in verse, the road Rumi himself would later walk. Afghanistan gave Sufism its poetic tongue.",
     "In 1709, a Kandahari named Mirwais Hotak rose against a foreign empire and won. He shattered Safavid rule over Kandahar, founding the Hotak dynasty and lighting the fuse that would one day topple Isfahan itself. Afghans call him Mirwais Nika, the grandfather of the nation. And rightly so.",
@@ -1179,12 +1186,11 @@
     "For centuries the Kabul Shahis held the passes of Kabul and Gandhara against wave after wave of invasion from the west. Their capital at Kabul, later Udabhandapura on the Indus, guarded the gates of the Hindu Kush. Kings like Lagaturman and later Jayapala ruled a proud Afghan realm that outlasted empires most people have never heard of.",
     "Just south of Kabul, under the copper-rich hills of Logar, lies Mes Aynak, a sprawling Buddhist city more than 1,500 years old. Monasteries, stupas, gilded statues, hundreds of rooms carved into a mountain that sat on the Silk Road. Afghans built this. It deserves to be studied, not stripped.",
     "Under Kanishka, whose empire was ruled from Kapisa and Peshawar in the 2nd century, the Kushans turned Afghanistan into the hinge of the ancient world. Roman gold flowed east, Chinese silk moved west, and Indian Buddhism traveled north into China, all through Kushan hands. This was Aryana at the center of the earth.",
-    "Before Athens theorized and Rome legislated, a prophet in ancient Ariana was already teaching that the whole cosmos turns on one choice: truth against the lie, good thought against evil. That was Zarathustra. Many traditions place his Gathas, hymns still recited today, in the lands that became Afghanistan."
+    "Before Athens theorized and Rome legislated, a prophet in ancient Ariana was already teaching that the whole cosmos turns on one choice: truth against the lie, good thought against evil. That was Zarathustra. Many traditions place his Gathas, hymns still recited today, in the lands that became Afghanistan.",
+    "Fifteenth-century Herat was the most cultured city on earth, and a woman built its crown. Queen Gawharshad raised the vast Musalla complex with its towering minarets and turquoise domes. In her Herat worked Kamal ud-Din Behzad, the master miniaturist who taught the world how paint could breathe. Afghan genius, at its height."
   ],
   "slots_done": [
-    14,
-    16,
-    19
+    14
   ],
   "quotes_today": 0,
   "replies_today": 0,
@@ -1196,6 +1202,8 @@
   "mention_replies_today": 0,
   "replied_ids": [
     "2077506571672625519",
-    "2078762391504925080"
+    "2078762391504925080",
+    "2080175730684486027",
+    "2080161338463031714"
   ]
 }
