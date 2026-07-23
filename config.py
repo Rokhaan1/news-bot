@@ -16,10 +16,8 @@ FOOTBALL_PER_DAY  = 0     # disabled: England-football takes diluted the Afghan
 # Once a week: a 3-5 tweet expert thread on one Afghan heritage/history topic.
 # Threads are X's highest-ceiling format (bookmarks + shares) and showcase the
 # account's analyst depth better than single posts.
-THREAD_ENABLED = True
-# Threads are the account's best format by far (2.0 avg engagement vs 0.3-0.5
-# for single posts) — run two a week.
-THREAD_WEEKDAYS = [1, 4]         # 0=Mon .. 6=Sun; Tuesday + Friday
+THREAD_ENABLED = False           # owner call: threads off (n=1 sample anyway)
+THREAD_WEEKDAYS = [1, 4]         # 0=Mon .. 6=Sun; used only if re-enabled
 THREAD_WINDOW = (13, 19)         # UTC hours; Afghan evening + Western daytime
 
 # ----- MENTION REPLIES (permitted on pay-per-use: "summoned" posts) -----
@@ -62,10 +60,10 @@ ENGAGE_QUERIES = [               # one is chosen per run; add/reorder freely
 # has a fresh, verified item and falls back through the rest by learned
 # engagement, so a slot is never wasted.
 POST_SLOTS = [
-    # Two slots only (authority recovery): the 16:00 global slot was the
-    # weakest performer and every weak post now compounds against reach.
-    {"hour": 14, "pillars": ["afghanistan", "afghan_cricket", "global"]},
-    {"hour": 19, "pillars": ["afghanistan", "global", "us_foreign_policy"]},
+    # Afghanistan-only focus (owner call): no global/US/worldcup fallbacks.
+    # If Afghan news is dry a slot stays empty — fine during authority recovery.
+    {"hour": 14, "pillars": ["afghanistan", "afghan_cricket"]},
+    {"hour": 19, "pillars": ["afghanistan", "afghan_cricket"]},
 ]
 # A run may be late (cron hiccup / Actions queue). Still fire a slot up to this
 # many UTC hours after its target — but never past the next slot's hour — so one
