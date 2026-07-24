@@ -310,7 +310,7 @@
   "posts_today": 1,
   "last_news_ts": 1784907314.5875123,
   "videos_date": "2026-06-26",
-  "fact_date": "2026-07-23",
+  "fact_date": "2026-07-24",
   "football_date": "2026-07-15",
   "log": [
     {
@@ -1178,7 +1178,6 @@
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
-    "Ghazni as a medieval world center of learning, the 'Bride of Cities'",
     "Gandhara civilization and its Greco-Buddhist art at Hadda",
     "the Durrani Empire founded by Ahmad Shah Durrani in 1747, the birth of modern Afghanistan",
     "Sanai of Ghazni, pioneer of Persian Sufi poetry",
@@ -1191,10 +1190,10 @@
     "Mes Aynak, the vast ancient Buddhist copper city south of Kabul",
     "the Kushan Empire under Kanishka linking Rome, India and China along the Silk Road",
     "Zoroaster (Zarathustra) and the birth of Zoroastrian thought in ancient Ariana",
-    "Timurid Herat's golden age: Queen Gawharshad, the Musalla complex and the painter Behzad"
+    "Timurid Herat's golden age: Queen Gawharshad, the Musalla complex and the painter Behzad",
+    "the Saffarids of Yaqub ibn Layth and the Samanid renaissance"
   ],
   "recent_facts": [
-    "In 1747, at a loya jirga in Kandahar, tribal leaders chose Ahmad Shah Durrani to lead them. He was crowned with wheat stalks, not jewels. Within years he forged an empire stretching from Mashhad to Delhi and Kashmir to the Arabian Sea. That coronation is the birth of modern Afghanistan.",
     "Long before the mystics of later centuries, it was Sanai of Ghazni who first bent Persian poetry toward God. In the early 12th century, his Hadiqat al-Haqiqa became the first great Sufi masterwork in verse, the road Rumi himself would later walk. Afghanistan gave Sufism its poetic tongue.",
     "In 1709, a Kandahari named Mirwais Hotak rose against a foreign empire and won. He shattered Safavid rule over Kandahar, founding the Hotak dynasty and lighting the fuse that would one day topple Isfahan itself. Afghans call him Mirwais Nika, the grandfather of the nation. And rightly so.",
     "Deep in the mountains of Ghor, where central Afghanistan folds into ravines few outsiders ever reach, stands the Minaret of Jam. Built around 1190 under Sultan Ghiyath al-Din, its 65 meters of intricate brick and blue tile mark the lost Ghurid capital of Firozkoh. From these highlands the Ghurids conquered Delhi.",
@@ -1205,7 +1204,8 @@
     "Just south of Kabul, under the copper-rich hills of Logar, lies Mes Aynak, a sprawling Buddhist city more than 1,500 years old. Monasteries, stupas, gilded statues, hundreds of rooms carved into a mountain that sat on the Silk Road. Afghans built this. It deserves to be studied, not stripped.",
     "Under Kanishka, whose empire was ruled from Kapisa and Peshawar in the 2nd century, the Kushans turned Afghanistan into the hinge of the ancient world. Roman gold flowed east, Chinese silk moved west, and Indian Buddhism traveled north into China, all through Kushan hands. This was Aryana at the center of the earth.",
     "Before Athens theorized and Rome legislated, a prophet in ancient Ariana was already teaching that the whole cosmos turns on one choice: truth against the lie, good thought against evil. That was Zarathustra. Many traditions place his Gathas, hymns still recited today, in the lands that became Afghanistan.",
-    "Fifteenth-century Herat was the most cultured city on earth, and a woman built its crown. Queen Gawharshad raised the vast Musalla complex with its towering minarets and turquoise domes. In her Herat worked Kamal ud-Din Behzad, the master miniaturist who taught the world how paint could breathe. Afghan genius, at its height."
+    "Fifteenth-century Herat was the most cultured city on earth, and a woman built its crown. Queen Gawharshad raised the vast Musalla complex with its towering minarets and turquoise domes. In her Herat worked Kamal ud-Din Behzad, the master miniaturist who taught the world how paint could breathe. Afghan genius, at its height.",
+    "In 861 a coppersmith from Sistan named Yaqub ibn Layth broke Baghdad's grip and built an empire that reached from Herat to Kabul. His court is where Dari poetry first rose as a language of kings. The Samanids carried that torch, and out of it came Rudaki, the father of Dari verse."
   ],
   "slots_done": [
     14
