@@ -24,6 +24,7 @@
     "2076452855100129401",
     "2076815162229612767",
     "2077178454923993230",
+    "3 Afghan nationals sentenced to death in Iran over alleged protest role",
     "34 Hindu families in Canada seeking return to Afghanistan, says former MP",
     "6.1-Magnitude Earthquake Shakes Kabul and Northern Afghanistan",
     "6.1-magnitude earthquake hits Afghanistan, epicenter in Badakhshan",
@@ -217,6 +218,7 @@
     "Tahawol: Pakistan\u2019s attacks on civilians in Afghanistan",
     "Tahawol: UN Officials Visit Kabul \u2014 Political Impact & Consequences",
     "Tahawol: US-Kabul engagement on security issues discussed",
+    "Tawsia: Factors behind rising fuel prices in Afghanistan discussed",
     "Tawsia: Reasons behind Afghanistan\u2019s fuel price rise discussed",
     "Tesla crash that killed a woman under US federal investigation",
     "The ICC must investigate Israel\u2019s genocidal use of sexual violence",
@@ -307,8 +309,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-24",
-  "posts_today": 1,
-  "last_news_ts": 1784907314.5875123,
+  "posts_today": 2,
+  "last_news_ts": 1784924204.942819,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-24",
   "football_date": "2026-07-15",
@@ -1139,6 +1141,14 @@
       "pillar": "afghanistan",
       "hour": 15,
       "ts": 1784907314.5875134,
+      "eng": 2,
+      "imp": 18
+    },
+    {
+      "id": "2080749042326515747",
+      "pillar": "afghanistan",
+      "hour": 20,
+      "ts": 1784924204.94282,
       "eng": null
     }
   ],
@@ -1150,7 +1160,6 @@
     "thread": 2.0
   },
   "recent": [
-    "Saar: Growing trade ties between Kabul-New Delhi discussed",
     "EU moves toward practical engagement with Afghanistan on migration",
     "More than 800 Canadian wildfires burning as air quality alerts extend to US",
     "Tahawol: Appointment of new UN envoy for Afghanistan discussed",
@@ -1174,7 +1183,8 @@
     "Saar: Amnesty International\u2019s reaction to Pakistan\u2019s attack in Kabul discussed",
     "Trump once again criticizes US withdrawal from Afghanistan, raises issue of military equipment",
     "Tahawol: US-Kabul engagement on security issues discussed",
-    "German Court Blocks Mass Cancellation of Afghan Resettlement Cases"
+    "German Court Blocks Mass Cancellation of Afghan Resettlement Cases",
+    "3 Afghan nationals sentenced to death in Iran over alleged protest role"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1208,7 +1218,8 @@
     "In 861 a coppersmith from Sistan named Yaqub ibn Layth broke Baghdad's grip and built an empire that reached from Herat to Kabul. His court is where Dari poetry first rose as a language of kings. The Samanids carried that torch, and out of it came Rudaki, the father of Dari verse."
   ],
   "slots_done": [
-    14
+    14,
+    19
   ],
   "quotes_today": 0,
   "replies_today": 0,
