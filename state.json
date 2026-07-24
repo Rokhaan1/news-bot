@@ -113,6 +113,7 @@
     "France confirms first Ebola case",
     "France recorded more than 5,700 excess deaths during June heatwave",
     "Gaza\u2019s surfers seek solace from war in the Mediterranean Sea",
+    "German Court Blocks Mass Cancellation of Afghan Resettlement Cases",
     "Ghalibaf: US and Iran can work together to reopen Strait of Hormuz",
     "Gill, Rahul seal India's chase for 1-0 lead after Gurbaz century",
     "Guinea bans exports of raw gold to boost local refining",
@@ -305,9 +306,9 @@
     "\u2018They took our toilet\u2019: How a settlement has squeezed a Palestinian village",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-07-23",
-  "posts_today": 2,
-  "last_news_ts": 1784837396.0462174,
+  "date": "2026-07-24",
+  "posts_today": 1,
+  "last_news_ts": 1784907314.5875123,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-23",
   "football_date": "2026-07-15",
@@ -1130,6 +1131,14 @@
       "pillar": "afghanistan",
       "hour": 20,
       "ts": 1784837396.0462184,
+      "eng": 2,
+      "imp": 47
+    },
+    {
+      "id": "2080678198715818088",
+      "pillar": "afghanistan",
+      "hour": 15,
+      "ts": 1784907314.5875134,
       "eng": null
     }
   ],
@@ -1137,11 +1146,10 @@
     "global": 0.4,
     "worldcup": 0.3,
     "us_foreign_policy": 0.3,
-    "afghanistan": 0.5,
+    "afghanistan": 0.6,
     "thread": 2.0
   },
   "recent": [
-    "England weighing man-marking plan to stop Messi",
     "Saar: Growing trade ties between Kabul-New Delhi discussed",
     "EU moves toward practical engagement with Afghanistan on migration",
     "More than 800 Canadian wildfires burning as air quality alerts extend to US",
@@ -1165,7 +1173,8 @@
     "France recorded more than 5,700 excess deaths during June heatwave",
     "Saar: Amnesty International\u2019s reaction to Pakistan\u2019s attack in Kabul discussed",
     "Trump once again criticizes US withdrawal from Afghanistan, raises issue of military equipment",
-    "Tahawol: US-Kabul engagement on security issues discussed"
+    "Tahawol: US-Kabul engagement on security issues discussed",
+    "German Court Blocks Mass Cancellation of Afghan Resettlement Cases"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1199,8 +1208,7 @@
     "Fifteenth-century Herat was the most cultured city on earth, and a woman built its crown. Queen Gawharshad raised the vast Musalla complex with its towering minarets and turquoise domes. In her Herat worked Kamal ud-Din Behzad, the master miniaturist who taught the world how paint could breathe. Afghan genius, at its height."
   ],
   "slots_done": [
-    14,
-    19
+    14
   ],
   "quotes_today": 0,
   "replies_today": 0,
