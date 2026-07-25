@@ -267,6 +267,7 @@
     "US strike on an alleged drug boat in eastern Pacific kills two",
     "US top court says Rastafarian man cannot sue prison guards who cut his dreadlocks",
     "USMNT's World Cup success brings dilemma: Rotate t...",
+    "Uzbekistan delegation arrives in Kabul to attend trade forum",
     "Vance says Iran will allow nuclear inspectors back into the country",
     "Vance\u2019s warning to Israel signals a new phase in US-Israeli relations",
     "Venezuela earthquakes live updates: buildings collapse in Caracas as officials warn \u2018high casualties\u2019 likely",
@@ -308,9 +309,9 @@
     "\u2018They took our toilet\u2019: How a settlement has squeezed a Palestinian village",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-07-24",
-  "posts_today": 2,
-  "last_news_ts": 1784924204.942819,
+  "date": "2026-07-25",
+  "posts_today": 1,
+  "last_news_ts": 1784992186.676061,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-24",
   "football_date": "2026-07-15",
@@ -1149,6 +1150,14 @@
       "pillar": "afghanistan",
       "hour": 20,
       "ts": 1784924204.94282,
+      "eng": 2,
+      "imp": 44
+    },
+    {
+      "id": "2081034178288599540",
+      "pillar": "afghanistan",
+      "hour": 15,
+      "ts": 1784992186.6760619,
       "eng": null
     }
   ],
@@ -1160,7 +1169,6 @@
     "thread": 2.0
   },
   "recent": [
-    "EU moves toward practical engagement with Afghanistan on migration",
     "More than 800 Canadian wildfires burning as air quality alerts extend to US",
     "Tahawol: Appointment of new UN envoy for Afghanistan discussed",
     "Afghanistan temporarily eases fuel import standards to help curb rising prices",
@@ -1184,7 +1192,8 @@
     "Trump once again criticizes US withdrawal from Afghanistan, raises issue of military equipment",
     "Tahawol: US-Kabul engagement on security issues discussed",
     "German Court Blocks Mass Cancellation of Afghan Resettlement Cases",
-    "3 Afghan nationals sentenced to death in Iran over alleged protest role"
+    "3 Afghan nationals sentenced to death in Iran over alleged protest role",
+    "Uzbekistan delegation arrives in Kabul to attend trade forum"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1218,8 +1227,7 @@
     "In 861 a coppersmith from Sistan named Yaqub ibn Layth broke Baghdad's grip and built an empire that reached from Herat to Kabul. His court is where Dari poetry first rose as a language of kings. The Samanids carried that torch, and out of it came Rudaki, the father of Dari verse."
   ],
   "slots_done": [
-    14,
-    19
+    14
   ],
   "quotes_today": 0,
   "replies_today": 0,
