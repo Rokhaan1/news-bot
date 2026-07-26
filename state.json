@@ -30,9 +30,11 @@
     "6.1-magnitude earthquake hits Afghanistan, epicenter in Badakhshan",
     "A tale of two No. 10s: England's Bellingham, Norwa...",
     "Afghan envoy, UNHCR chief discuss support for returnees from Pakistan and Iran",
+    "Afghan team arrives in England for training camp ahead of Ireland ODI series",
     "Afghan women\u2019s situation highlighted at SCO Forum amid ongoing global debate",
     "Afghanistan and Iran agree to expand cooperation on product standards and quality control",
     "Afghanistan and Uzbekistan advance railway cooperation, discuss Trans-Afghan project",
+    "Afghanistan can link South and Central Asia through data transit: Baradar",
     "Afghanistan committed to continued cooperation with UN on humanitarian and development projects: FM Muttaqi",
     "Afghanistan officials call for investment during Indian expo visit",
     "Afghanistan opt to bat; Reddy, Prasidh and Dubey return for India",
@@ -310,9 +312,9 @@
     "\u2018They took our toilet\u2019: How a settlement has squeezed a Palestinian village",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-07-25",
-  "posts_today": 2,
-  "last_news_ts": 1785010131.2162952,
+  "date": "2026-07-26",
+  "posts_today": 1,
+  "last_news_ts": 1785078664.738983,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-25",
   "football_date": "2026-07-15",
@@ -1160,6 +1162,14 @@
       "pillar": "afghanistan",
       "hour": 20,
       "ts": 1785010131.2162962,
+      "eng": 3,
+      "imp": 87
+    },
+    {
+      "id": "2081396893637308636",
+      "pillar": "afghanistan",
+      "hour": 15,
+      "ts": 1785078664.7389839,
       "eng": null
     }
   ],
@@ -1167,11 +1177,10 @@
     "worldcup": 0.3,
     "us_foreign_policy": 0.3,
     "global": 0.4,
-    "afghanistan": 0.6,
+    "afghanistan": 0.7,
     "thread": 2.0
   },
   "recent": [
-    "Tahawol: Appointment of new UN envoy for Afghanistan discussed",
     "Afghanistan temporarily eases fuel import standards to help curb rising prices",
     "\u2018They took our toilet\u2019: How a settlement has squeezed a Palestinian village",
     "Tawsia: Reasons behind Afghanistan\u2019s fuel price rise discussed",
@@ -1195,7 +1204,8 @@
     "German Court Blocks Mass Cancellation of Afghan Resettlement Cases",
     "3 Afghan nationals sentenced to death in Iran over alleged protest role",
     "Uzbekistan delegation arrives in Kabul to attend trade forum",
-    "Saar: Rising tensions between Kabul and Islamabad discussed"
+    "Saar: Rising tensions between Kabul and Islamabad discussed",
+    "Afghanistan can link South and Central Asia through data transit: Baradar"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1229,8 +1239,7 @@
     "The high Wakhan was never a dead end. Through this narrow spine of the Pamirs, at passes above 4,000 meters, Badakhshan fed the Silk Road, and here Marco Polo crossed in the 1270s, marveling at wild mountain sheep still called after him. Afghan roads carried the trade of continents."
   ],
   "slots_done": [
-    14,
-    19
+    14
   ],
   "quotes_today": 0,
   "replies_today": 0,
