@@ -190,6 +190,7 @@
     "Rescuers search for survivors amid risk of fresh floods in Afghanistan",
     "Rescuers search rubble for survivors as Venezuela earthquakes kill at least 235",
     "Russian troop build-up threatens city seen as key to seizing Ukraine's Donbas",
+    "Saar: Afghanistan-Uzbekistan economic ties",
     "Saar: Amnesty International\u2019s reaction to Pakistan\u2019s attack in Kabul discussed",
     "Saar: Astana\u2019s New Era of Engagement with Kabul",
     "Saar: Concerns over Afghan deportations from Europe discussed",
@@ -313,8 +314,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-26",
-  "posts_today": 1,
-  "last_news_ts": 1785078664.738983,
+  "posts_today": 2,
+  "last_news_ts": 1785096370.378445,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-26",
   "football_date": "2026-07-15",
@@ -1163,6 +1164,14 @@
       "pillar": "afghanistan",
       "hour": 15,
       "ts": 1785078664.7389839,
+      "eng": 0,
+      "imp": 24
+    },
+    {
+      "id": "2081471156415017149",
+      "pillar": "afghanistan",
+      "hour": 20,
+      "ts": 1785096370.378446,
       "eng": null
     }
   ],
@@ -1170,11 +1179,10 @@
     "worldcup": 0.3,
     "us_foreign_policy": 0.3,
     "global": 0.4,
-    "afghanistan": 0.7,
+    "afghanistan": 0.6,
     "thread": 2.0
   },
   "recent": [
-    "Afghanistan temporarily eases fuel import standards to help curb rising prices",
     "\u2018They took our toilet\u2019: How a settlement has squeezed a Palestinian village",
     "Tawsia: Reasons behind Afghanistan\u2019s fuel price rise discussed",
     "International-standard textile factory to begin operations in Kabul",
@@ -1198,7 +1206,8 @@
     "3 Afghan nationals sentenced to death in Iran over alleged protest role",
     "Uzbekistan delegation arrives in Kabul to attend trade forum",
     "Saar: Rising tensions between Kabul and Islamabad discussed",
-    "Afghanistan can link South and Central Asia through data transit: Baradar"
+    "Afghanistan can link South and Central Asia through data transit: Baradar",
+    "Saar: Afghanistan-Uzbekistan economic ties"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1232,7 +1241,8 @@
     "The oldest texts of the Avesta remember a homeland called Airyanem Vaejah, the cradle of the Aryans, and its geography points east, to the rivers and mountains of the Afghan lands. Aryana is not a borrowed name. It is where the word itself was born, and it has held for roughly 5,000 years."
   ],
   "slots_done": [
-    14
+    14,
+    19
   ],
   "quotes_today": 0,
   "replies_today": 0,
