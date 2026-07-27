@@ -214,6 +214,7 @@
     "Sweden spends millions on Afghan voluntary return campaign with no participants so far",
     "Switzerland Contributes $2.4 Million to Support UNHCR Aid Operations in Afghanistan",
     "Syrian parliament convenes for first time following al-Assad\u2019s overthrow",
+    "Tahawol: Afghanistan\u2013Uzbekistan Economic Cooperation Enters New Phase",
     "Tahawol: Afghanistan\u2019s retaliatory attacks against Pakistan discussed",
     "Tahawol: Appointment of new UN envoy for Afghanistan discussed",
     "Tahawol: Central Asia, European Union and Afghanistan discussed",
@@ -313,11 +314,11 @@
     "\u2018They took our toilet\u2019: How a settlement has squeezed a Palestinian village",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-07-26",
-  "posts_today": 2,
-  "last_news_ts": 1785096370.378445,
+  "date": "2026-07-27",
+  "posts_today": 1,
+  "last_news_ts": 1785169583.3295977,
   "videos_date": "2026-06-26",
-  "fact_date": "2026-07-26",
+  "fact_date": "2026-07-27",
   "football_date": "2026-07-15",
   "log": [
     {
@@ -1165,6 +1166,14 @@
       "pillar": "afghanistan",
       "hour": 20,
       "ts": 1785096370.378446,
+      "eng": 4,
+      "imp": 97
+    },
+    {
+      "id": "2081778233834394069",
+      "pillar": "afghanistan",
+      "hour": 16,
+      "ts": 1785169583.3295987,
       "eng": null
     }
   ],
@@ -1172,11 +1181,10 @@
     "worldcup": 0.3,
     "us_foreign_policy": 0.3,
     "global": 0.4,
-    "afghanistan": 0.6,
+    "afghanistan": 0.7,
     "thread": 2.0
   },
   "recent": [
-    "\u2018They took our toilet\u2019: How a settlement has squeezed a Palestinian village",
     "Tawsia: Reasons behind Afghanistan\u2019s fuel price rise discussed",
     "International-standard textile factory to begin operations in Kabul",
     "Venezuela quake death toll tops 5,000 as IMF releases emergency aid",
@@ -1200,11 +1208,11 @@
     "Uzbekistan delegation arrives in Kabul to attend trade forum",
     "Saar: Rising tensions between Kabul and Islamabad discussed",
     "Afghanistan can link South and Central Asia through data transit: Baradar",
-    "Saar: Afghanistan-Uzbekistan economic ties"
+    "Saar: Afghanistan-Uzbekistan economic ties",
+    "Tahawol: Afghanistan\u2013Uzbekistan Economic Cooperation Enters New Phase"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
-    "Sanai of Ghazni, pioneer of Persian Sufi poetry",
     "Mirwais Hotak and the Hotak dynasty of Kandahar",
     "the Minaret of Jam and the Ghurid Empire of central Afghanistan",
     "the Greco-Bactrian kingdom and the Hellenistic city of Ai-Khanoum on the Oxus",
@@ -1217,10 +1225,10 @@
     "Timurid Herat's golden age: Queen Gawharshad, the Musalla complex and the painter Behzad",
     "the Saffarids of Yaqub ibn Layth and the Samanid renaissance",
     "the Wakhan corridor, Badakhshan and the ancient Silk Road trade",
-    "the ancient name Aryana/Ariana and the Aryan homeland of the Avesta, marking ~5,000 years of continuous civilization across the Afghan lands"
+    "the ancient name Aryana/Ariana and the Aryan homeland of the Avesta, marking ~5,000 years of continuous civilization across the Afghan lands",
+    "Seistan/Zabulistan and the epic hero Rustam of the Shahnameh"
   ],
   "recent_facts": [
-    "Deep in the mountains of Ghor, where central Afghanistan folds into ravines few outsiders ever reach, stands the Minaret of Jam. Built around 1190 under Sultan Ghiyath al-Din, its 65 meters of intricate brick and blue tile mark the lost Ghurid capital of Firozkoh. From these highlands the Ghurids conquered Delhi.",
     "On the banks of the Oxus in northern Afghanistan, Greek settlers built Ai Khanoum, a full Hellenistic city with a theater, gymnasium, and columns rising over the river. Deep inside, someone carved the maxims of Delphi onto stone. Greece, transplanted into the Afghan heart of Ariana.",
     "For nearly 1,500 years two giant Buddhas stood carved into the cliffs of Bamiyan, the tallest 55 meters high, watching over a valley in the heart of Afghanistan. They were the largest standing Buddhas the world had ever seen, and they were Afghan.",
     "Beneath modern Kandahar lies Old Kandahar, likely the Alexandria in Arachosia founded by Alexander in 330 BC. There, in the 3rd century BC, the emperor Ashoka carved his edicts in flawless Greek and Aramaic, not for distant lands but for the people already living here. Afghan soil was cosmopolitan millennia before the word existed.",
@@ -1231,11 +1239,11 @@
     "Fifteenth-century Herat was the most cultured city on earth, and a woman built its crown. Queen Gawharshad raised the vast Musalla complex with its towering minarets and turquoise domes. In her Herat worked Kamal ud-Din Behzad, the master miniaturist who taught the world how paint could breathe. Afghan genius, at its height.",
     "In 861 a coppersmith from Sistan named Yaqub ibn Layth broke Baghdad's grip and built an empire that reached from Herat to Kabul. His court is where Dari poetry first rose as a language of kings. The Samanids carried that torch, and out of it came Rudaki, the father of Dari verse.",
     "The high Wakhan was never a dead end. Through this narrow spine of the Pamirs, at passes above 4,000 meters, Badakhshan fed the Silk Road, and here Marco Polo crossed in the 1270s, marveling at wild mountain sheep still called after him. Afghan roads carried the trade of continents.",
-    "The oldest texts of the Avesta remember a homeland called Airyanem Vaejah, the cradle of the Aryans, and its geography points east, to the rivers and mountains of the Afghan lands. Aryana is not a borrowed name. It is where the word itself was born, and it has held for roughly 5,000 years."
+    "The oldest texts of the Avesta remember a homeland called Airyanem Vaejah, the cradle of the Aryans, and its geography points east, to the rivers and mountains of the Afghan lands. Aryana is not a borrowed name. It is where the word itself was born, and it has held for roughly 5,000 years.",
+    "Rustam, the mightiest hero of the Shahnameh, is a son of Seistan and Zabulistan, the ancient Afghan lands of Zaranj and Ghazni. Firdawsi made him champion of Iran, yet his home, his horse Rakhsh, his father Zal reared in the Alborz of legend, all root him in the soil of the southwest. Afghanistan's epic gave the region its greatest warrior."
   ],
   "slots_done": [
-    14,
-    19
+    14
   ],
   "quotes_today": 0,
   "replies_today": 0,
