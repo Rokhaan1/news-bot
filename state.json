@@ -160,6 +160,7 @@
     "Mohammad Saleem added to Afghanistan squad for India ODIs",
     "Moira Deeming launches lawsuit against Victorian Liberal president before party meets to decide her future",
     "More than 800 Canadian wildfires burning as air quality alerts extend to US",
+    "Muttaqi discusses development projects with new UNDP envoy in Afghanistan",
     "Neymar trains before Scotland World Cup clash",
     "North Korea\u2019s Kim hails \u2018unshakeable will\u2019 to develop ties with China\u2019s Xi",
     "OIC, Muslim World League discuss support for Afghanistan on sidelines of Islamabad conference",
@@ -317,8 +318,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-28",
-  "posts_today": 1,
-  "last_news_ts": 1785254876.1421163,
+  "posts_today": 2,
+  "last_news_ts": 1785269604.9416044,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-28",
   "football_date": "2026-07-15",
@@ -1171,6 +1172,14 @@
       "pillar": "afghanistan",
       "hour": 16,
       "ts": 1785254876.1421173,
+      "eng": 0,
+      "imp": 12
+    },
+    {
+      "id": "2082197754692898889",
+      "pillar": "afghanistan",
+      "hour": 20,
+      "ts": 1785269604.9416053,
       "eng": null
     }
   ],
@@ -1182,7 +1191,6 @@
     "thread": 2.0
   },
   "recent": [
-    "Venezuela quake death toll tops 5,000 as IMF releases emergency aid",
     "Pakistan Detains 121 Afghans in Lahore Immigration Crackdown",
     "Poppy ban helps strengthen Afghanistan\u2019s international reputation: official",
     "Israel uses law to destroy Palestinian education in East Jerusalem",
@@ -1206,7 +1214,8 @@
     "Saar: Afghanistan-Uzbekistan economic ties",
     "Tahawol: Afghanistan\u2013Uzbekistan Economic Cooperation Enters New Phase",
     "Saar: Growing Criticism in Pakistan Over Islamabad\u2019s Afghanistan Policy",
-    "UNAMA Quarterly Report Raises Concerns Over Human Rights, Media Freedom in Afghanistan"
+    "UNAMA Quarterly Report Raises Concerns Over Human Rights, Media Freedom in Afghanistan",
+    "Muttaqi discusses development projects with new UNDP envoy in Afghanistan"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1240,7 +1249,8 @@
     "When the Sasanians seized Bactria in the 3rd century, they didn't erase the Kushans, they became them. Their governors struck coins reading Kushanshah, minted at Balkh and Herat, blending Persian fire altars with Bactrian script and Shiva imagery. Afghanistan absorbed empires and made them speak its language."
   ],
   "slots_done": [
-    14
+    14,
+    19
   ],
   "quotes_today": 0,
   "replies_today": 0,
