@@ -254,6 +254,7 @@
     "UK Prime Minister Keir Starmer announces resignation plan",
     "UK Prime Minister Keir Starmer\u2019s resignation speech in full",
     "UNAMA Calls for Equal Opportunities for Afghan Women on International Day of Women in Diplomacy",
+    "UNAMA Quarterly Report Raises Concerns Over Human Rights, Media Freedom in Afghanistan",
     "UNICEF Warns Climate Change Increasing Child Malnutrition Risks in Afghanistan",
     "US Backs Pakistan\u2019s Right to Self-Defense After Deadly Strikes in Afghanistan",
     "US House committee reaches bipartisan deal on social media rules for kids",
@@ -315,9 +316,9 @@
     "\u2018They took our toilet\u2019: How a settlement has squeezed a Palestinian village",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-07-27",
-  "posts_today": 2,
-  "last_news_ts": 1785183541.223317,
+  "date": "2026-07-28",
+  "posts_today": 1,
+  "last_news_ts": 1785254876.1421163,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-27",
   "football_date": "2026-07-15",
@@ -1169,6 +1170,14 @@
       "pillar": "afghanistan",
       "hour": 20,
       "ts": 1785183541.2233183,
+      "eng": 0,
+      "imp": 30
+    },
+    {
+      "id": "2082135977594589229",
+      "pillar": "afghanistan",
+      "hour": 16,
+      "ts": 1785254876.1421173,
       "eng": null
     }
   ],
@@ -1180,7 +1189,6 @@
     "thread": 2.0
   },
   "recent": [
-    "International-standard textile factory to begin operations in Kabul",
     "Venezuela quake death toll tops 5,000 as IMF releases emergency aid",
     "Pakistan Detains 121 Afghans in Lahore Immigration Crackdown",
     "Poppy ban helps strengthen Afghanistan\u2019s international reputation: official",
@@ -1204,7 +1212,8 @@
     "Afghanistan can link South and Central Asia through data transit: Baradar",
     "Saar: Afghanistan-Uzbekistan economic ties",
     "Tahawol: Afghanistan\u2013Uzbekistan Economic Cooperation Enters New Phase",
-    "Saar: Growing Criticism in Pakistan Over Islamabad\u2019s Afghanistan Policy"
+    "Saar: Growing Criticism in Pakistan Over Islamabad\u2019s Afghanistan Policy",
+    "UNAMA Quarterly Report Raises Concerns Over Human Rights, Media Freedom in Afghanistan"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1238,8 +1247,7 @@
     "Rustam, the mightiest hero of the Shahnameh, is a son of Seistan and Zabulistan, the ancient Afghan lands of Zaranj and Ghazni. Firdawsi made him champion of Iran, yet his home, his horse Rakhsh, his father Zal reared in the Alborz of legend, all root him in the soil of the southwest. Afghanistan's epic gave the region its greatest warrior."
   ],
   "slots_done": [
-    14,
-    19
+    14
   ],
   "quotes_today": 0,
   "replies_today": 0,
