@@ -320,16 +320,9 @@
   "posts_today": 1,
   "last_news_ts": 1785254876.1421163,
   "videos_date": "2026-06-26",
-  "fact_date": "2026-07-27",
+  "fact_date": "2026-07-28",
   "football_date": "2026-07-15",
   "log": [
-    {
-      "id": "2070659839299330553",
-      "pillar": "worldcup",
-      "hour": 0,
-      "ts": 1782518751.463108,
-      "eng": 1
-    },
     {
       "id": "2070677383628120095",
       "pillar": "us_foreign_policy",
@@ -1182,10 +1175,10 @@
     }
   ],
   "insights": {
-    "worldcup": 0.2,
     "us_foreign_policy": 0.3,
     "global": 0.4,
     "afghanistan": 0.7,
+    "worldcup": 0.2,
     "thread": 2.0
   },
   "recent": [
@@ -1217,7 +1210,6 @@
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
-    "Mirwais Hotak and the Hotak dynasty of Kandahar",
     "the Minaret of Jam and the Ghurid Empire of central Afghanistan",
     "the Greco-Bactrian kingdom and the Hellenistic city of Ai-Khanoum on the Oxus",
     "the Bamiyan valley, its colossal Buddhas and painted cave monasteries",
@@ -1230,10 +1222,10 @@
     "the Saffarids of Yaqub ibn Layth and the Samanid renaissance",
     "the Wakhan corridor, Badakhshan and the ancient Silk Road trade",
     "the ancient name Aryana/Ariana and the Aryan homeland of the Avesta, marking ~5,000 years of continuous civilization across the Afghan lands",
-    "Seistan/Zabulistan and the epic hero Rustam of the Shahnameh"
+    "Seistan/Zabulistan and the epic hero Rustam of the Shahnameh",
+    "the Kushano-Sasanian era and the crossroads culture of ancient Afghanistan"
   ],
   "recent_facts": [
-    "On the banks of the Oxus in northern Afghanistan, Greek settlers built Ai Khanoum, a full Hellenistic city with a theater, gymnasium, and columns rising over the river. Deep inside, someone carved the maxims of Delphi onto stone. Greece, transplanted into the Afghan heart of Ariana.",
     "For nearly 1,500 years two giant Buddhas stood carved into the cliffs of Bamiyan, the tallest 55 meters high, watching over a valley in the heart of Afghanistan. They were the largest standing Buddhas the world had ever seen, and they were Afghan.",
     "Beneath modern Kandahar lies Old Kandahar, likely the Alexandria in Arachosia founded by Alexander in 330 BC. There, in the 3rd century BC, the emperor Ashoka carved his edicts in flawless Greek and Aramaic, not for distant lands but for the people already living here. Afghan soil was cosmopolitan millennia before the word existed.",
     "For centuries the Kabul Shahis held the passes of Kabul and Gandhara against wave after wave of invasion from the west. Their capital at Kabul, later Udabhandapura on the Indus, guarded the gates of the Hindu Kush. Kings like Lagaturman and later Jayapala ruled a proud Afghan realm that outlasted empires most people have never heard of.",
@@ -1244,7 +1236,8 @@
     "In 861 a coppersmith from Sistan named Yaqub ibn Layth broke Baghdad's grip and built an empire that reached from Herat to Kabul. His court is where Dari poetry first rose as a language of kings. The Samanids carried that torch, and out of it came Rudaki, the father of Dari verse.",
     "The high Wakhan was never a dead end. Through this narrow spine of the Pamirs, at passes above 4,000 meters, Badakhshan fed the Silk Road, and here Marco Polo crossed in the 1270s, marveling at wild mountain sheep still called after him. Afghan roads carried the trade of continents.",
     "The oldest texts of the Avesta remember a homeland called Airyanem Vaejah, the cradle of the Aryans, and its geography points east, to the rivers and mountains of the Afghan lands. Aryana is not a borrowed name. It is where the word itself was born, and it has held for roughly 5,000 years.",
-    "Rustam, the mightiest hero of the Shahnameh, is a son of Seistan and Zabulistan, the ancient Afghan lands of Zaranj and Ghazni. Firdawsi made him champion of Iran, yet his home, his horse Rakhsh, his father Zal reared in the Alborz of legend, all root him in the soil of the southwest. Afghanistan's epic gave the region its greatest warrior."
+    "Rustam, the mightiest hero of the Shahnameh, is a son of Seistan and Zabulistan, the ancient Afghan lands of Zaranj and Ghazni. Firdawsi made him champion of Iran, yet his home, his horse Rakhsh, his father Zal reared in the Alborz of legend, all root him in the soil of the southwest. Afghanistan's epic gave the region its greatest warrior.",
+    "When the Sasanians seized Bactria in the 3rd century, they didn't erase the Kushans, they became them. Their governors struck coins reading Kushanshah, minted at Balkh and Herat, blending Persian fire altars with Bactrian script and Shiva imagery. Afghanistan absorbed empires and made them speak its language."
   ],
   "slots_done": [
     14
