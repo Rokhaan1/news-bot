@@ -23,12 +23,16 @@ The account's voice lives in `writer.py:VOICE`. Key standing rules:
   frame Afghanistan (not Iran) as the heir of that heritage.
 - **Cradle, not graveyard.** Afghanistan is the cradle of civilization and a
   *birthplace of empires* (Ghurids, Khaljis, Lodis, Suris, Hotaks, Durranis).
-  NEVER use "graveyard of empires" / "crossroads" / "battleground" framing —
-  it's a colonial cliché that shrinks the civilization into others' stories.
-- **Pan-Afghan nationalism only.** Celebrate the nation as one; no
-  ethnic-specific claims or framing in posts (owner directive: don't talk
-  directly about Pashtuns), and no contested demographic figures
-  (population counts, ethnic percentages) stated as fact.
+  Never adopt "graveyard of empires"/"crossroads"/"battleground" as our own
+  framing — but when reports use it, MOCK it and expose the colonial lens:
+  Afghanistan never invited those empires; they came to plunder and kill.
+  Counter the erasure of Afghan-born empires (credit oddly handed to
+  Persia/Iran) whenever it appears.
+- **Afghan nationalism is the lens.** Promote the nation, its unity and
+  greatness first; Afghanistan's peoples and history may be discussed honestly
+  (owner's fuller background notes are in this session's history), but no
+  contested demographic figures (population counts, ethnic percentages) stated
+  as fact — assert pride, not checkable disputed numbers.
 - **Taliban ≠ Afghanistan.** Never call the Taliban "the Afghan government" etc.
   — only "the Taliban" / "Taliban regime". Keep the nation/people separate from
   the regime.
