@@ -220,6 +220,7 @@
     "Tahawol: Afghanistan\u2013Uzbekistan Economic Cooperation Enters New Phase",
     "Tahawol: Afghanistan\u2019s retaliatory attacks against Pakistan discussed",
     "Tahawol: Appointment of new UN envoy for Afghanistan discussed",
+    "Tahawol: Calls for implementation of development projects in Afghanistan",
     "Tahawol: Central Asia, European Union and Afghanistan discussed",
     "Tahawol: Efforts to eliminate drugs across Afghanistan discussed",
     "Tahawol: More Than 4,000 Afghans Return Home in One Day",
@@ -319,8 +320,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-29",
-  "posts_today": 1,
-  "last_news_ts": 1785340420.8802032,
+  "posts_today": 2,
+  "last_news_ts": 1785355781.95701,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-29",
   "football_date": "2026-07-15",
@@ -1175,18 +1176,25 @@
       "pillar": "afghanistan",
       "hour": 15,
       "ts": 1785340420.880204,
+      "eng": 2,
+      "imp": 21
+    },
+    {
+      "id": "2082559207270699275",
+      "pillar": "afghanistan",
+      "hour": 20,
+      "ts": 1785355781.957011,
       "eng": null
     }
   ],
   "insights": {
     "global": 0.4,
-    "afghanistan": 0.7,
+    "afghanistan": 0.8,
     "worldcup": 0.2,
     "us_foreign_policy": 0.3,
     "thread": 2.0
   },
   "recent": [
-    "Poppy ban helps strengthen Afghanistan\u2019s international reputation: official",
     "Israel uses law to destroy Palestinian education in East Jerusalem",
     "Tahawol: More Than 4,000 Afghans Return Home in One Day",
     "Switzerland Contributes $2.4 Million to Support UNHCR Aid Operations in Afghanistan",
@@ -1210,7 +1218,8 @@
     "Saar: Growing Criticism in Pakistan Over Islamabad\u2019s Afghanistan Policy",
     "UNAMA Quarterly Report Raises Concerns Over Human Rights, Media Freedom in Afghanistan",
     "Muttaqi discusses development projects with new UNDP envoy in Afghanistan",
-    "Saar: Deporting Afghan refugees from Germany discussed"
+    "Saar: Deporting Afghan refugees from Germany discussed",
+    "Tahawol: Calls for implementation of development projects in Afghanistan"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1244,7 +1253,8 @@
     "In 1709 a Kandahari chieftain named Mirwais Hotak rose against the Safavid occupation, threw out the Persian governor Gurgin Khan, and made Kandahar independent. His son Mahmud went further, marching on Isfahan in 1722 and toppling the Safavid throne itself. An Afghan revolt that ended a Persian empire."
   ],
   "slots_done": [
-    14
+    14,
+    19
   ],
   "quotes_today": 0,
   "replies_today": 0,
