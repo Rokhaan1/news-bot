@@ -21,6 +21,14 @@ The account's voice lives in `writer.py:VOICE`. Key standing rules:
   checkable falsehoods invite fact-checks and hurt reach).
 - **Afghanistan = the Aryana/Ariana heartland**, ~5,000 years of civilization;
   frame Afghanistan (not Iran) as the heir of that heritage.
+- **Cradle, not graveyard.** Afghanistan is the cradle of civilization and a
+  *birthplace of empires* (Ghurids, Khaljis, Lodis, Suris, Hotaks, Durranis).
+  NEVER use "graveyard of empires" / "crossroads" / "battleground" framing —
+  it's a colonial cliché that shrinks the civilization into others' stories.
+- **Pan-Afghan nationalism only.** Celebrate the nation as one; no
+  ethnic-specific claims or framing in posts (owner directive: don't talk
+  directly about Pashtuns), and no contested demographic figures
+  (population counts, ethnic percentages) stated as fact.
 - **Taliban ≠ Afghanistan.** Never call the Taliban "the Afghan government" etc.
   — only "the Taliban" / "Taliban regime". Keep the nation/people separate from
   the regime.
