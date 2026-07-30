@@ -29,6 +29,7 @@
     "6.1-Magnitude Earthquake Shakes Kabul and Northern Afghanistan",
     "6.1-magnitude earthquake hits Afghanistan, epicenter in Badakhshan",
     "A tale of two No. 10s: England's Bellingham, Norwa...",
+    "Afghan envoy meets head of Oman policy center",
     "Afghan envoy, UNHCR chief discuss support for returnees from Pakistan and Iran",
     "Afghan team arrives in England for training camp ahead of Ireland ODI series",
     "Afghan women\u2019s situation highlighted at SCO Forum amid ongoing global debate",
@@ -319,11 +320,11 @@
     "\u2018They took our toilet\u2019: How a settlement has squeezed a Palestinian village",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-07-29",
-  "posts_today": 2,
-  "last_news_ts": 1785355781.95701,
+  "date": "2026-07-30",
+  "posts_today": 1,
+  "last_news_ts": 1785426868.2410595,
   "videos_date": "2026-06-26",
-  "fact_date": "2026-07-29",
+  "fact_date": "2026-07-30",
   "football_date": "2026-07-15",
   "log": [
     {
@@ -1177,6 +1178,14 @@
       "pillar": "afghanistan",
       "hour": 20,
       "ts": 1785355781.957011,
+      "eng": 2,
+      "imp": 30
+    },
+    {
+      "id": "2082857365003788744",
+      "pillar": "afghanistan",
+      "hour": 15,
+      "ts": 1785426868.2410612,
       "eng": null
     }
   ],
@@ -1188,7 +1197,6 @@
     "thread": 2.0
   },
   "recent": [
-    "Israel uses law to destroy Palestinian education in East Jerusalem",
     "Tahawol: More Than 4,000 Afghans Return Home in One Day",
     "Switzerland Contributes $2.4 Million to Support UNHCR Aid Operations in Afghanistan",
     "Canada issues air quality warnings over US wildfire smoke after Trump tariff threat",
@@ -1212,11 +1220,11 @@
     "UNAMA Quarterly Report Raises Concerns Over Human Rights, Media Freedom in Afghanistan",
     "Muttaqi discusses development projects with new UNDP envoy in Afghanistan",
     "Saar: Deporting Afghan refugees from Germany discussed",
-    "Tahawol: Calls for implementation of development projects in Afghanistan"
+    "Tahawol: Calls for implementation of development projects in Afghanistan",
+    "Afghan envoy meets head of Oman policy center"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
-    "the Greco-Bactrian kingdom and the Hellenistic city of Ai-Khanoum on the Oxus",
     "the Bamiyan valley, its colossal Buddhas and painted cave monasteries",
     "Old Kandahar, Alexandria in Arachosia, and Ashoka's bilingual Greek-Aramaic edicts",
     "the Kabul Shahi (Hindu Shahi) kingdoms of Kabul and Gandhara",
@@ -1229,10 +1237,10 @@
     "the ancient name Aryana/Ariana and the Aryan homeland of the Avesta, marking ~5,000 years of continuous civilization across the Afghan lands",
     "Seistan/Zabulistan and the epic hero Rustam of the Shahnameh",
     "the Kushano-Sasanian era and the crossroads culture of ancient Afghanistan",
-    "Mirwais Hotak and the Hotak dynasty of Kandahar"
+    "Mirwais Hotak and the Hotak dynasty of Kandahar",
+    "the Minaret of Jam and the Ghurid Empire of central Afghanistan"
   ],
   "recent_facts": [
-    "Beneath modern Kandahar lies Old Kandahar, likely the Alexandria in Arachosia founded by Alexander in 330 BC. There, in the 3rd century BC, the emperor Ashoka carved his edicts in flawless Greek and Aramaic, not for distant lands but for the people already living here. Afghan soil was cosmopolitan millennia before the word existed.",
     "For centuries the Kabul Shahis held the passes of Kabul and Gandhara against wave after wave of invasion from the west. Their capital at Kabul, later Udabhandapura on the Indus, guarded the gates of the Hindu Kush. Kings like Lagaturman and later Jayapala ruled a proud Afghan realm that outlasted empires most people have never heard of.",
     "Just south of Kabul, under the copper-rich hills of Logar, lies Mes Aynak, a sprawling Buddhist city more than 1,500 years old. Monasteries, stupas, gilded statues, hundreds of rooms carved into a mountain that sat on the Silk Road. Afghans built this. It deserves to be studied, not stripped.",
     "Under Kanishka, whose empire was ruled from Kapisa and Peshawar in the 2nd century, the Kushans turned Afghanistan into the hinge of the ancient world. Roman gold flowed east, Chinese silk moved west, and Indian Buddhism traveled north into China, all through Kushan hands. This was Aryana at the center of the earth.",
@@ -1243,18 +1251,18 @@
     "The oldest texts of the Avesta remember a homeland called Airyanem Vaejah, the cradle of the Aryans, and its geography points east, to the rivers and mountains of the Afghan lands. Aryana is not a borrowed name. It is where the word itself was born, and it has held for roughly 5,000 years.",
     "Rustam, the mightiest hero of the Shahnameh, is a son of Seistan and Zabulistan, the ancient Afghan lands of Zaranj and Ghazni. Firdawsi made him champion of Iran, yet his home, his horse Rakhsh, his father Zal reared in the Alborz of legend, all root him in the soil of the southwest. Afghanistan's epic gave the region its greatest warrior.",
     "When the Sasanians seized Bactria in the 3rd century, they didn't erase the Kushans, they became them. Their governors struck coins reading Kushanshah, minted at Balkh and Herat, blending Persian fire altars with Bactrian script and Shiva imagery. Afghanistan absorbed empires and made them speak its language.",
-    "In 1709 a Kandahari chieftain named Mirwais Hotak rose against the Safavid occupation, threw out the Persian governor Gurgin Khan, and made Kandahar independent. His son Mahmud went further, marching on Isfahan in 1722 and toppling the Safavid throne itself. An Afghan revolt that ended a Persian empire."
+    "In 1709 a Kandahari chieftain named Mirwais Hotak rose against the Safavid occupation, threw out the Persian governor Gurgin Khan, and made Kandahar independent. His son Mahmud went further, marching on Isfahan in 1722 and toppling the Safavid throne itself. An Afghan revolt that ended a Persian empire.",
+    "Deep in the mountains of Ghor stands a 65-meter tower of baked brick, raised around 1190 by Sultan Ghiyath al-Din. The Minaret of Jam is all that survives of Firuzkuh, the summer capital of the Ghurids, an Afghan dynasty that ruled from Herat to Delhi. Empire born of central Afghanistan."
   ],
   "slots_done": [
-    14,
-    19
+    14
   ],
   "quotes_today": 0,
   "replies_today": 0,
   "last_engage_ts": 0,
   "engaged_ids": [],
   "thread_week": "2026-W29",
-  "engage_blocked": 1784747741.9965076,
+  "engage_blocked": 1785426873.0204983,
   "own_user_id": "1361781678",
   "mention_replies_today": 0,
   "replied_ids": [
