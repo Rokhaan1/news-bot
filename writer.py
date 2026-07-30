@@ -20,7 +20,8 @@ _client = None
 _GOV = (r"(government|administration|cabinet|authorities|officials?|ministry|"
         r"ministries|minister|prime minister|deputy prime minister|"
         r"foreign minister|interior minister|spokesman|spokesperson|"
-        r"spokespeople|regime|leadership|rule)")
+        r"spokespeople|regime|leadership|rule|envoys?|ambassadors?|"
+        r"diplomats?|emissar(?:y|ies)|delegations?)")
 
 
 def _fix_taliban(text):
@@ -36,6 +37,7 @@ def _fix_taliban(text):
     text = re.sub(r"\b(the\s+)?Afghan(istan)?\s+government\b", "the Taliban", text, flags=re.I)
     text = re.sub(r"\bgovernment of Afghanistan\b", "the Taliban", text, flags=re.I)
     text = re.sub(r"\bTaliban government\b", "Taliban regime", text, flags=re.I)
+    text = re.sub(r"\bAn(\s+Taliban)\b", r"A\1", text)   # "An Afghan..." -> "A Taliban..."
     return text
 
 
