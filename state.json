@@ -1,6 +1,7 @@
 {
   "posted": [
     "'Every team does it': How World Cup sides thwart o...",
+    "14 Afghan Nationals Found Dead on Smuggling Route to Iran in Nimroz",
     "2070647008600150080",
     "2070650055271546974",
     "2070652122463445440",
@@ -323,8 +324,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-07-31",
-  "posts_today": 1,
-  "last_news_ts": 1785513855.152404,
+  "posts_today": 2,
+  "last_news_ts": 1785529012.1203685,
   "videos_date": "2026-06-26",
   "fact_date": "2026-07-31",
   "football_date": "2026-07-15",
@@ -1183,6 +1184,14 @@
       "pillar": "afghanistan",
       "hour": 16,
       "ts": 1785513855.1524055,
+      "eng": 0,
+      "imp": 20
+    },
+    {
+      "id": "2083285787446038531",
+      "pillar": "afghanistan",
+      "hour": 20,
+      "ts": 1785529012.1203692,
       "eng": null
     }
   ],
@@ -1194,7 +1203,6 @@
     "thread": 2.0
   },
   "recent": [
-    "Canada issues air quality warnings over US wildfire smoke after Trump tariff threat",
     "Deadly Floods Devastate Afghanistan\u2019s Nuristan; Death Toll Rises to 20, More Than 100 Missing",
     "India says UN sanctions on Afghanistan no longer effective",
     "Israeli air strike in Gaza City kills family of six, medics say",
@@ -1218,7 +1226,8 @@
     "Tahawol: Calls for implementation of development projects in Afghanistan",
     "Afghan envoy meets head of Oman policy center",
     "Qosh Tepa crowned champions of inaugural Afghanistan Wrestling Premier League",
-    "UNAMA Calls for Reopening Girls\u2019 Schools and Universities in Afghanistan"
+    "UNAMA Calls for Reopening Girls\u2019 Schools and Universities in Afghanistan",
+    "14 Afghan Nationals Found Dead on Smuggling Route to Iran in Nimroz"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1252,7 +1261,8 @@
     "The Citadel of Herat has been rebuilt on the same ground for over 2,300 years, since Alexander's army raised a fortress here on foundations already ancient. Timurids, Ghaznavids, Kartids all held it. Beneath Qala Ikhtyaruddin lie layers of a city that outlived every empire that thought it had conquered her."
   ],
   "slots_done": [
-    14
+    14,
+    19
   ],
   "quotes_today": 0,
   "replies_today": 0,
