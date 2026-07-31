@@ -259,6 +259,7 @@
     "UK Prime Minister Keir Starmer announces resignation plan",
     "UK Prime Minister Keir Starmer\u2019s resignation speech in full",
     "UNAMA Calls for Equal Opportunities for Afghan Women on International Day of Women in Diplomacy",
+    "UNAMA Calls for Reopening Girls\u2019 Schools and Universities in Afghanistan",
     "UNAMA Quarterly Report Raises Concerns Over Human Rights, Media Freedom in Afghanistan",
     "UNICEF Warns Climate Change Increasing Child Malnutrition Risks in Afghanistan",
     "US Backs Pakistan\u2019s Right to Self-Defense After Deadly Strikes in Afghanistan",
@@ -321,11 +322,11 @@
     "\u2018They took our toilet\u2019: How a settlement has squeezed a Palestinian village",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-07-30",
-  "posts_today": 2,
-  "last_news_ts": 1785442363.0020952,
+  "date": "2026-07-31",
+  "posts_today": 1,
+  "last_news_ts": 1785513855.152404,
   "videos_date": "2026-06-26",
-  "fact_date": "2026-07-30",
+  "fact_date": "2026-07-31",
   "football_date": "2026-07-15",
   "log": [
     {
@@ -1181,6 +1182,14 @@
       "pillar": "afghanistan",
       "hour": 20,
       "ts": 1785442363.0020964,
+      "eng": 3,
+      "imp": 80
+    },
+    {
+      "id": "2083222214607003971",
+      "pillar": "afghanistan",
+      "hour": 16,
+      "ts": 1785513855.1524055,
       "eng": null
     }
   ],
@@ -1192,7 +1201,6 @@
     "thread": 2.0
   },
   "recent": [
-    "Switzerland Contributes $2.4 Million to Support UNHCR Aid Operations in Afghanistan",
     "Canada issues air quality warnings over US wildfire smoke after Trump tariff threat",
     "Deadly Floods Devastate Afghanistan\u2019s Nuristan; Death Toll Rises to 20, More Than 100 Missing",
     "India says UN sanctions on Afghanistan no longer effective",
@@ -1216,11 +1224,11 @@
     "Saar: Deporting Afghan refugees from Germany discussed",
     "Tahawol: Calls for implementation of development projects in Afghanistan",
     "Afghan envoy meets head of Oman policy center",
-    "Qosh Tepa crowned champions of inaugural Afghanistan Wrestling Premier League"
+    "Qosh Tepa crowned champions of inaugural Afghanistan Wrestling Premier League",
+    "UNAMA Calls for Reopening Girls\u2019 Schools and Universities in Afghanistan"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
-    "the Bamiyan valley, its colossal Buddhas and painted cave monasteries",
     "Old Kandahar, Alexandria in Arachosia, and Ashoka's bilingual Greek-Aramaic edicts",
     "the Kabul Shahi (Hindu Shahi) kingdoms of Kabul and Gandhara",
     "Mes Aynak, the vast ancient Buddhist copper city south of Kabul",
@@ -1233,10 +1241,10 @@
     "Seistan/Zabulistan and the epic hero Rustam of the Shahnameh",
     "the Kushano-Sasanian era and the crossroads culture of ancient Afghanistan",
     "Mirwais Hotak and the Hotak dynasty of Kandahar",
-    "the Minaret of Jam and the Ghurid Empire of central Afghanistan"
+    "the Minaret of Jam and the Ghurid Empire of central Afghanistan",
+    "Herat's Citadel (Qala Ikhtyaruddin) and the city's layered ancient history"
   ],
   "recent_facts": [
-    "For centuries the Kabul Shahis held the passes of Kabul and Gandhara against wave after wave of invasion from the west. Their capital at Kabul, later Udabhandapura on the Indus, guarded the gates of the Hindu Kush. Kings like Lagaturman and later Jayapala ruled a proud Afghan realm that outlasted empires most people have never heard of.",
     "Just south of Kabul, under the copper-rich hills of Logar, lies Mes Aynak, a sprawling Buddhist city more than 1,500 years old. Monasteries, stupas, gilded statues, hundreds of rooms carved into a mountain that sat on the Silk Road. Afghans built this. It deserves to be studied, not stripped.",
     "Under Kanishka, whose empire was ruled from Kapisa and Peshawar in the 2nd century, the Kushans turned Afghanistan into the hinge of the ancient world. Roman gold flowed east, Chinese silk moved west, and Indian Buddhism traveled north into China, all through Kushan hands. This was Aryana at the center of the earth.",
     "Before Athens theorized and Rome legislated, a prophet in ancient Ariana was already teaching that the whole cosmos turns on one choice: truth against the lie, good thought against evil. That was Zarathustra. Many traditions place his Gathas, hymns still recited today, in the lands that became Afghanistan.",
@@ -1247,11 +1255,11 @@
     "Rustam, the mightiest hero of the Shahnameh, is a son of Seistan and Zabulistan, the ancient Afghan lands of Zaranj and Ghazni. Firdawsi made him champion of Iran, yet his home, his horse Rakhsh, his father Zal reared in the Alborz of legend, all root him in the soil of the southwest. Afghanistan's epic gave the region its greatest warrior.",
     "When the Sasanians seized Bactria in the 3rd century, they didn't erase the Kushans, they became them. Their governors struck coins reading Kushanshah, minted at Balkh and Herat, blending Persian fire altars with Bactrian script and Shiva imagery. Afghanistan absorbed empires and made them speak its language.",
     "In 1709 a Kandahari chieftain named Mirwais Hotak rose against the Safavid occupation, threw out the Persian governor Gurgin Khan, and made Kandahar independent. His son Mahmud went further, marching on Isfahan in 1722 and toppling the Safavid throne itself. An Afghan revolt that ended a Persian empire.",
-    "Deep in the mountains of Ghor stands a 65-meter tower of baked brick, raised around 1190 by Sultan Ghiyath al-Din. The Minaret of Jam is all that survives of Firuzkuh, the summer capital of the Ghurids, an Afghan dynasty that ruled from Herat to Delhi. Empire born of central Afghanistan."
+    "Deep in the mountains of Ghor stands a 65-meter tower of baked brick, raised around 1190 by Sultan Ghiyath al-Din. The Minaret of Jam is all that survives of Firuzkuh, the summer capital of the Ghurids, an Afghan dynasty that ruled from Herat to Delhi. Empire born of central Afghanistan.",
+    "The Citadel of Herat has been rebuilt on the same ground for over 2,300 years, since Alexander's army raised a fortress here on foundations already ancient. Timurids, Ghaznavids, Kartids all held it. Beneath Qala Ikhtyaruddin lie layers of a city that outlived every empire that thought it had conquered her."
   ],
   "slots_done": [
-    14,
-    19
+    14
   ],
   "quotes_today": 0,
   "replies_today": 0,
