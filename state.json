@@ -404,13 +404,6 @@
   "football_date": "2026-07-15",
   "log": [
     {
-      "id": "2071021014075523200",
-      "pillar": "worldcup",
-      "hour": 0,
-      "ts": 1782604862.3040578,
-      "eng": 0
-    },
-    {
       "id": "2071051217351168204",
       "pillar": "afghanistan",
       "hour": 2,
@@ -1270,8 +1263,8 @@
     }
   ],
   "insights": {
-    "worldcup": 0.2,
     "afghanistan": 0.8,
+    "worldcup": 0.2,
     "global": 0.4,
     "us_foreign_policy": 0.3,
     "thread": 2.0
