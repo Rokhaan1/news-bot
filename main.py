@@ -534,11 +534,9 @@ def main():
     elif state["posts_today"] >= config.MAX_POSTS_PER_DAY:
         print("Daily post cap reached.")
     else:
-        # this slot's preferred pillars first, then the rest by learned
-        # engagement, so the slot still fires if the preferred topics are dry.
-        ranked = [p for p, _ in ranked_pillars(state)]
-        order = slot["pillars"] + [p for p in ranked if p not in slot["pillars"]]
-        for pillar in order:
+        # slot pillars ONLY — no fallback to other topics. Afghanistan-only
+        # focus means a dry slot stays empty rather than posting off-topic.
+        for pillar in slot["pillars"]:
             if posts_made >= config.MAX_POSTS_PER_RUN:
                 break
             spec = config.PILLARS.get(pillar)
