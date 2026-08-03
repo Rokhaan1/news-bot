@@ -34,6 +34,7 @@
     "A record number of First Nations people died in NSW prison custody last year. Advocates fear this year will be worse",
     "A tale of two No. 10s: England's Bellingham, Norwa...",
     "Adani to pay no company tax despite $1bn revenue from Queensland coalmine",
+    "Afghan agriculture delegation visits Moldova to boost scientific cooperation",
     "Afghan envoy meets head of Oman policy center",
     "Afghan envoy, UNHCR chief discuss support for returnees from Pakistan and Iran",
     "Afghan team arrives in England for training camp ahead of Ireland ODI series",
@@ -514,8 +515,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-08-03",
-  "posts_today": 1,
-  "last_news_ts": 1785774674.6043506,
+  "posts_today": 2,
+  "last_news_ts": 1785788624.8771377,
   "videos_date": "2026-06-26",
   "fact_date": "2026-08-03",
   "football_date": "2026-07-15",
@@ -1377,6 +1378,14 @@
       "pillar": "afghanistan",
       "hour": 16,
       "ts": 1785774674.6043513,
+      "eng": 2,
+      "imp": 12
+    },
+    {
+      "id": "2084374682330075311",
+      "pillar": "afghanistan",
+      "hour": 20,
+      "ts": 1785788624.8771389,
       "eng": null
     }
   ],
@@ -1388,7 +1397,6 @@
     "thread": 2.0
   },
   "recent": [
-    "Rescuers search for survivors amid risk of fresh floods in Afghanistan",
     "Afghanistan and Uzbekistan advance railway cooperation, discuss Trans-Afghan project",
     "France recorded more than 5,700 excess deaths during June heatwave",
     "Saar: Amnesty International\u2019s reaction to Pakistan\u2019s attack in Kabul discussed",
@@ -1412,7 +1420,8 @@
     "14 Afghan Nationals Found Dead on Smuggling Route to Iran in Nimroz",
     "At least 11 wounded by Colombia car bomb days before presidential election",
     "Three killed in Moscow restaurant explosion",
-    "Kabul\u2019s Omid Sabz Township declared state-owned, occupants told to seek compensation from seller"
+    "Kabul\u2019s Omid Sabz Township declared state-owned, occupants told to seek compensation from seller",
+    "Afghan agriculture delegation visits Moldova to boost scientific cooperation"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1446,7 +1455,8 @@
     "On the banks of the Oxus in what is now Takhar, French archaeologists uncovered Ai-Khanoum: a full Greek city deep in Afghanistan, with a gymnasium, a theatre seating thousands, and Corinthian columns. There a man named Klearchos carved the maxims of Delphi in stone. Greek philosophy, at home on the Amu Darya."
   ],
   "slots_done": [
-    14
+    14,
+    19
   ],
   "quotes_today": 0,
   "replies_today": 0,
