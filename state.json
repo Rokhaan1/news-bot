@@ -40,6 +40,7 @@
     "Afghan team arrives in England for training camp ahead of Ireland ODI series",
     "Afghan women\u2019s situation highlighted at SCO Forum amid ongoing global debate",
     "Afghanistan Shifts Trade Routes Toward Iran, Central Asia Amid Pakistan Disruptions: World Bank",
+    "Afghanistan aim to strengthen ODI ranking in Ireland series",
     "Afghanistan and Iran agree to expand cooperation on product standards and quality control",
     "Afghanistan and Uzbekistan advance railway cooperation, discuss Trans-Afghan project",
     "Afghanistan can link South and Central Asia through data transit: Baradar",
@@ -514,11 +515,11 @@
     "\u2018They took our toilet\u2019: How a settlement has squeezed a Palestinian village",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-08-03",
-  "posts_today": 2,
-  "last_news_ts": 1785788624.8771377,
+  "date": "2026-08-04",
+  "posts_today": 1,
+  "last_news_ts": 1785860180.326851,
   "videos_date": "2026-06-26",
-  "fact_date": "2026-08-03",
+  "fact_date": "2026-08-04",
   "football_date": "2026-07-15",
   "log": [
     {
@@ -1379,6 +1380,14 @@
       "pillar": "afghanistan",
       "hour": 20,
       "ts": 1785788624.8771389,
+      "eng": 0,
+      "imp": 63
+    },
+    {
+      "id": "2084674807652635010",
+      "pillar": "afghanistan",
+      "hour": 16,
+      "ts": 1785860180.3268518,
       "eng": null
     }
   ],
@@ -1390,7 +1399,6 @@
     "thread": 2.0
   },
   "recent": [
-    "Afghanistan and Uzbekistan advance railway cooperation, discuss Trans-Afghan project",
     "France recorded more than 5,700 excess deaths during June heatwave",
     "Saar: Amnesty International\u2019s reaction to Pakistan\u2019s attack in Kabul discussed",
     "Trump once again criticizes US withdrawal from Afghanistan, raises issue of military equipment",
@@ -1414,11 +1422,11 @@
     "At least 11 wounded by Colombia car bomb days before presidential election",
     "Three killed in Moscow restaurant explosion",
     "Kabul\u2019s Omid Sabz Township declared state-owned, occupants told to seek compensation from seller",
-    "Afghan agriculture delegation visits Moldova to boost scientific cooperation"
+    "Afghan agriculture delegation visits Moldova to boost scientific cooperation",
+    "Afghanistan aim to strengthen ODI ranking in Ireland series"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
-    "Mes Aynak, the vast ancient Buddhist copper city south of Kabul",
     "the Kushan Empire under Kanishka linking Rome, India and China along the Silk Road",
     "Zoroaster (Zarathustra) and the birth of Zoroastrian thought in ancient Ariana",
     "Timurid Herat's golden age: Queen Gawharshad, the Musalla complex and the painter Behzad",
@@ -1431,10 +1439,10 @@
     "the Minaret of Jam and the Ghurid Empire of central Afghanistan",
     "Herat's Citadel (Qala Ikhtyaruddin) and the city's layered ancient history",
     "Ghazni as a medieval world center of learning, the 'Bride of Cities'",
-    "the Greco-Bactrian kingdom and the Hellenistic city of Ai-Khanoum on the Oxus"
+    "the Greco-Bactrian kingdom and the Hellenistic city of Ai-Khanoum on the Oxus",
+    "Rumi (Jalaluddin Balkhi) and Rabia Balkhi, poets born of the Afghan lands"
   ],
   "recent_facts": [
-    "Before Athens theorized and Rome legislated, a prophet in ancient Ariana was already teaching that the whole cosmos turns on one choice: truth against the lie, good thought against evil. That was Zarathustra. Many traditions place his Gathas, hymns still recited today, in the lands that became Afghanistan.",
     "Fifteenth-century Herat was the most cultured city on earth, and a woman built its crown. Queen Gawharshad raised the vast Musalla complex with its towering minarets and turquoise domes. In her Herat worked Kamal ud-Din Behzad, the master miniaturist who taught the world how paint could breathe. Afghan genius, at its height.",
     "In 861 a coppersmith from Sistan named Yaqub ibn Layth broke Baghdad's grip and built an empire that reached from Herat to Kabul. His court is where Dari poetry first rose as a language of kings. The Samanids carried that torch, and out of it came Rudaki, the father of Dari verse.",
     "The high Wakhan was never a dead end. Through this narrow spine of the Pamirs, at passes above 4,000 meters, Badakhshan fed the Silk Road, and here Marco Polo crossed in the 1270s, marveling at wild mountain sheep still called after him. Afghan roads carried the trade of continents.",
@@ -1445,11 +1453,11 @@
     "Deep in the mountains of Ghor stands a 65-meter tower of baked brick, raised around 1190 by Sultan Ghiyath al-Din. The Minaret of Jam is all that survives of Firuzkuh, the summer capital of the Ghurids, an Afghan dynasty that ruled from Herat to Delhi. Empire born of central Afghanistan.",
     "The Citadel of Herat has been rebuilt on the same ground for over 2,300 years, since Alexander's army raised a fortress here on foundations already ancient. Timurids, Ghaznavids, Kartids all held it. Beneath Qala Ikhtyaruddin lie layers of a city that outlived every empire that thought it had conquered her.",
     "They called Ghazni the Bride of Cities. Under Mahmud, from around 1000, this mountain capital pulled in the greatest minds of the age. Al-Biruni wrote his masterworks here. Ferdowsi's Shahnameh was dedicated to its court. Sanai turned Ghazni into a summit of poetry and science, not a footnote to anyone.",
-    "On the banks of the Oxus in what is now Takhar, French archaeologists uncovered Ai-Khanoum: a full Greek city deep in Afghanistan, with a gymnasium, a theatre seating thousands, and Corinthian columns. There a man named Klearchos carved the maxims of Delphi in stone. Greek philosophy, at home on the Amu Darya."
+    "On the banks of the Oxus in what is now Takhar, French archaeologists uncovered Ai-Khanoum: a full Greek city deep in Afghanistan, with a gymnasium, a theatre seating thousands, and Corinthian columns. There a man named Klearchos carved the maxims of Delphi in stone. Greek philosophy, at home on the Amu Darya.",
+    "Rumi opens the Masnavi with a reed torn from its bed, crying to return. Fitting, for a poet born in Balkh who never saw home again. Centuries earlier Rabia Balkhi, the first woman to write verse in Dari, died there for love. Two voices of the Afghan north, and the world still reads them wrong as anything but ours."
   ],
   "slots_done": [
-    14,
-    19
+    14
   ],
   "quotes_today": 0,
   "replies_today": 0,
