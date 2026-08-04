@@ -360,6 +360,7 @@
     "Tahawol: Appointment of new UN envoy for Afghanistan discussed",
     "Tahawol: Calls for implementation of development projects in Afghanistan",
     "Tahawol: Central Asia, European Union and Afghanistan discussed",
+    "Tahawol: China-Pakistan talks on Afghanistan security reviewed",
     "Tahawol: Efforts to eliminate drugs across Afghanistan discussed",
     "Tahawol: More Than 4,000 Afghans Return Home in One Day",
     "Tahawol: Pakistan\u2019s attacks on civilians in Afghanistan",
@@ -516,8 +517,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-08-04",
-  "posts_today": 1,
-  "last_news_ts": 1785860180.326851,
+  "posts_today": 2,
+  "last_news_ts": 1785874877.5231128,
   "videos_date": "2026-06-26",
   "fact_date": "2026-08-04",
   "football_date": "2026-07-15",
@@ -1381,6 +1382,14 @@
       "pillar": "afghanistan",
       "hour": 16,
       "ts": 1785860180.3268518,
+      "eng": 0,
+      "imp": 14
+    },
+    {
+      "id": "2084736452080931037",
+      "pillar": "afghanistan",
+      "hour": 20,
+      "ts": 1785874877.5231137,
       "eng": null
     }
   ],
@@ -1392,7 +1401,6 @@
     "thread": 2.0
   },
   "recent": [
-    "France recorded more than 5,700 excess deaths during June heatwave",
     "Saar: Amnesty International\u2019s reaction to Pakistan\u2019s attack in Kabul discussed",
     "Trump once again criticizes US withdrawal from Afghanistan, raises issue of military equipment",
     "Tahawol: US-Kabul engagement on security issues discussed",
@@ -1416,7 +1424,8 @@
     "Three killed in Moscow restaurant explosion",
     "Kabul\u2019s Omid Sabz Township declared state-owned, occupants told to seek compensation from seller",
     "Afghan agriculture delegation visits Moldova to boost scientific cooperation",
-    "Afghanistan aim to strengthen ODI ranking in Ireland series"
+    "Afghanistan aim to strengthen ODI ranking in Ireland series",
+    "Tahawol: China-Pakistan talks on Afghanistan security reviewed"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1450,7 +1459,8 @@
     "Rumi opens the Masnavi with a reed torn from its bed, crying to return. Fitting, for a poet born in Balkh who never saw home again. Centuries earlier Rabia Balkhi, the first woman to write verse in Dari, died there for love. Two voices of the Afghan north, and the world still reads them wrong as anything but ours."
   ],
   "slots_done": [
-    14
+    14,
+    19
   ],
   "quotes_today": 0,
   "replies_today": 0,
