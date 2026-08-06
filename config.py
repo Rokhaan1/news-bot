@@ -62,8 +62,9 @@ ENGAGE_QUERIES = [               # one is chosen per run; add/reorder freely
 POST_SLOTS = [
     # Afghanistan-only focus (owner call): no global/US/worldcup fallbacks.
     # If Afghan news is dry a slot stays empty — fine during authority recovery.
-    {"hour": 14, "pillars": ["afghanistan", "afghan_cricket"]},
-    {"hour": 19, "pillars": ["afghanistan", "afghan_cricket"]},
+    # cricket dropped (owner call) — Afghanistan news only
+    {"hour": 14, "pillars": ["afghanistan"]},
+    {"hour": 19, "pillars": ["afghanistan"]},
 ]
 # A run may be late (cron hiccup / Actions queue). Still fire a slot up to this
 # many UTC hours after its target — but never past the next slot's hour — so one
