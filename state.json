@@ -470,6 +470,7 @@
     "Venezuela\u2019s Rodriguez blames \u2018propaganda\u2019 for quake response backlash",
     "Venice protest planned for US ambassador\u2019s superyacht visit",
     "WFP Says Pakistan Border Closures Deepen Afghanistan\u2019s Humanitarian Crisis",
+    "WHO warns aid cuts disrupting healthcare services across Afghanistan",
     "Watch World Cup Day 11: Egypt\u2019s first-ever win; Spain crushes Saudi Arabia",
     "Watch: 'I wish him well' - Trump reacts to Starmer's resignation",
     "Watch: Why Fifa dropped plans to sell stakes in the World Cup",
@@ -520,10 +521,10 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-08-07",
-  "posts_today": 0,
-  "last_news_ts": 1785961326.9904392,
+  "posts_today": 1,
+  "last_news_ts": 1786114759.0312304,
   "videos_date": "2026-06-26",
-  "fact_date": "2026-08-05",
+  "fact_date": "2026-08-07",
   "football_date": "2026-07-15",
   "log": [
     {
@@ -1390,6 +1391,13 @@
       "ts": 1785961326.9904401,
       "eng": 0,
       "imp": 0
+    },
+    {
+      "id": "2085742588066238806",
+      "pillar": "afghanistan",
+      "hour": 14,
+      "ts": 1786114759.0312316,
+      "eng": null
     }
   ],
   "insights": {
@@ -1400,7 +1408,6 @@
     "thread": 2.0
   },
   "recent": [
-    "Tahawol: US-Kabul engagement on security issues discussed",
     "German Court Blocks Mass Cancellation of Afghan Resettlement Cases",
     "3 Afghan nationals sentenced to death in Iran over alleged protest role",
     "Uzbekistan delegation arrives in Kabul to attend trade forum",
@@ -1424,11 +1431,11 @@
     "Afghanistan aim to strengthen ODI ranking in Ireland series",
     "Tahawol: China-Pakistan talks on Afghanistan security reviewed",
     "Afghan boxer appears in Greek court over death of Scottish woman",
-    "Afghanistan aim for winning start against Ireland"
+    "Afghanistan aim for winning start against Ireland",
+    "WHO warns aid cuts disrupting healthcare services across Afghanistan"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
-    "Zoroaster (Zarathustra) and the birth of Zoroastrian thought in ancient Ariana",
     "Timurid Herat's golden age: Queen Gawharshad, the Musalla complex and the painter Behzad",
     "the Saffarids of Yaqub ibn Layth and the Samanid renaissance",
     "the Wakhan corridor, Badakhshan and the ancient Silk Road trade",
@@ -1441,10 +1448,10 @@
     "Ghazni as a medieval world center of learning, the 'Bride of Cities'",
     "the Greco-Bactrian kingdom and the Hellenistic city of Ai-Khanoum on the Oxus",
     "Rumi (Jalaluddin Balkhi) and Rabia Balkhi, poets born of the Afghan lands",
-    "Old Kandahar, Alexandria in Arachosia, and Ashoka's bilingual Greek-Aramaic edicts"
+    "Old Kandahar, Alexandria in Arachosia, and Ashoka's bilingual Greek-Aramaic edicts",
+    "Nuristan (ancient Kafiristan) and its distinct pre-Islamic culture"
   ],
   "recent_facts": [
-    "In 861 a coppersmith from Sistan named Yaqub ibn Layth broke Baghdad's grip and built an empire that reached from Herat to Kabul. His court is where Dari poetry first rose as a language of kings. The Samanids carried that torch, and out of it came Rudaki, the father of Dari verse.",
     "The high Wakhan was never a dead end. Through this narrow spine of the Pamirs, at passes above 4,000 meters, Badakhshan fed the Silk Road, and here Marco Polo crossed in the 1270s, marveling at wild mountain sheep still called after him. Afghan roads carried the trade of continents.",
     "The oldest texts of the Avesta remember a homeland called Airyanem Vaejah, the cradle of the Aryans, and its geography points east, to the rivers and mountains of the Afghan lands. Aryana is not a borrowed name. It is where the word itself was born, and it has held for roughly 5,000 years.",
     "Rustam, the mightiest hero of the Shahnameh, is a son of Seistan and Zabulistan, the ancient Afghan lands of Zaranj and Ghazni. Firdawsi made him champion of Iran, yet his home, his horse Rakhsh, his father Zal reared in the Alborz of legend, all root him in the soil of the southwest. Afghanistan's epic gave the region its greatest warrior.",
@@ -1455,9 +1462,12 @@
     "They called Ghazni the Bride of Cities. Under Mahmud, from around 1000, this mountain capital pulled in the greatest minds of the age. Al-Biruni wrote his masterworks here. Ferdowsi's Shahnameh was dedicated to its court. Sanai turned Ghazni into a summit of poetry and science, not a footnote to anyone.",
     "On the banks of the Oxus in what is now Takhar, French archaeologists uncovered Ai-Khanoum: a full Greek city deep in Afghanistan, with a gymnasium, a theatre seating thousands, and Corinthian columns. There a man named Klearchos carved the maxims of Delphi in stone. Greek philosophy, at home on the Amu Darya.",
     "Rumi opens the Masnavi with a reed torn from its bed, crying to return. Fitting, for a poet born in Balkh who never saw home again. Centuries earlier Rabia Balkhi, the first woman to write verse in Dari, died there for love. Two voices of the Afghan north, and the world still reads them wrong as anything but ours.",
-    "Old Kandahar sits on a mound that Alexander refounded as Alexandria in Arachosia around 330 BC. A century later, the emperor Ashoka carved edicts there in flawless Greek and Aramaic, side by side, preaching mercy and restraint. On Afghan soil, two of the ancient world's great languages met and spoke as one."
+    "Old Kandahar sits on a mound that Alexander refounded as Alexandria in Arachosia around 330 BC. A century later, the emperor Ashoka carved edicts there in flawless Greek and Aramaic, side by side, preaching mercy and restraint. On Afghan soil, two of the ancient world's great languages met and spoke as one.",
+    "High in the Hindu Kush, the people of Kafiristan held out for millennia, worshipping their own gods, carving ancestors into wooden effigies, pressing wine in valleys Islam had swept past everywhere else. Only in 1896 did the land take the name Nuristan. A whole pre-Islamic Afghan world, preserved by sheer altitude and will."
   ],
-  "slots_done": [],
+  "slots_done": [
+    14
+  ],
   "quotes_today": 0,
   "replies_today": 0,
   "last_engage_ts": 0,
