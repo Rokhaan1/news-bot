@@ -519,8 +519,8 @@
     "\u2018They took our toilet\u2019: How a settlement has squeezed a Palestinian village",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-08-05",
-  "posts_today": 2,
+  "date": "2026-08-07",
+  "posts_today": 0,
   "last_news_ts": 1785961326.9904392,
   "videos_date": "2026-06-26",
   "fact_date": "2026-08-05",
@@ -1388,7 +1388,8 @@
       "pillar": "afghanistan",
       "hour": 20,
       "ts": 1785961326.9904401,
-      "eng": null
+      "eng": 0,
+      "imp": 0
     }
   ],
   "insights": {
@@ -1456,10 +1457,7 @@
     "Rumi opens the Masnavi with a reed torn from its bed, crying to return. Fitting, for a poet born in Balkh who never saw home again. Centuries earlier Rabia Balkhi, the first woman to write verse in Dari, died there for love. Two voices of the Afghan north, and the world still reads them wrong as anything but ours.",
     "Old Kandahar sits on a mound that Alexander refounded as Alexandria in Arachosia around 330 BC. A century later, the emperor Ashoka carved edicts there in flawless Greek and Aramaic, side by side, preaching mercy and restraint. On Afghan soil, two of the ancient world's great languages met and spoke as one."
   ],
-  "slots_done": [
-    14,
-    19
-  ],
+  "slots_done": [],
   "quotes_today": 0,
   "replies_today": 0,
   "last_engage_ts": 0,
