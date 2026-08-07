@@ -167,7 +167,7 @@ AFGHAN_FACT_WINDOW = (2, 19)         # post the daily Afghan pride fact in Afgha
 # They span the WHOLE country and its full ~5,000-year Aryana (Ariana) timeline
 # on purpose. Add or reorder freely — one is chosen per day.
 HERITAGE_TOPICS = [
-    "the ancient name Aryana/Ariana and the Aryan homeland of the Avesta, marking ~5,000 years of continuous civilization across the Afghan lands",
+    "the ancient name Aryana/Ariana and the Aryan homeland of the Avesta, the deep continuity of civilization across the Afghan lands",
     "Zoroaster (Zarathustra) and the birth of Zoroastrian thought in ancient Ariana",
     "the Greco-Bactrian kingdom and the Hellenistic city of Ai-Khanoum on the Oxus",
     "the Kushan Empire under Kanishka linking Rome, India and China along the Silk Road",
