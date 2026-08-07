@@ -528,13 +528,6 @@
   "football_date": "2026-07-15",
   "log": [
     {
-      "id": "2071413595418845505",
-      "pillar": "worldcup",
-      "hour": 2,
-      "ts": 1782698460.9398816,
-      "eng": 0
-    },
-    {
       "id": "2071443793371643952",
       "pillar": "afghanistan",
       "hour": 4,
@@ -1401,8 +1394,8 @@
     }
   ],
   "insights": {
-    "worldcup": 0.2,
     "afghanistan": 0.8,
+    "worldcup": 0.3,
     "global": 0.4,
     "us_foreign_policy": 0.3,
     "thread": 2.0
@@ -1473,7 +1466,7 @@
   "last_engage_ts": 0,
   "engaged_ids": [],
   "thread_week": "2026-W29",
-  "engage_blocked": 1785426873.0204983,
+  "engage_blocked": 1786118370.797162,
   "own_user_id": "1361781678",
   "mention_replies_today": 0,
   "replied_ids": [
