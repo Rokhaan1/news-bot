@@ -175,6 +175,7 @@
     "Five dead and 41 missing after Indonesia ferry catches fire",
     "Five dead, 41 missing, after Indonesia ferry catches fire",
     "For most US small businesses, Trump\u2019s tariffs aren\u2019t the big issue they were",
+    "Foreign companies eye investment in Afghanistan\u2019s electrical equipment industry: DABS",
     "Former Kenyan justice minister blocked from entering Uganda, lawyers' body says",
     "Founder of Asian super-app Gojek sentenced to years in jail for corruption",
     "Founder of prominent underground church released from prison in China",
@@ -521,11 +522,11 @@
     "\u2018They took our toilet\u2019: How a settlement has squeezed a Palestinian village",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-08-07",
-  "posts_today": 2,
-  "last_news_ts": 1786132218.1322615,
+  "date": "2026-08-08",
+  "posts_today": 1,
+  "last_news_ts": 1786199888.7817216,
   "videos_date": "2026-06-26",
-  "fact_date": "2026-08-07",
+  "fact_date": "2026-08-08",
   "football_date": "2026-07-15",
   "log": [
     {
@@ -1392,6 +1393,14 @@
       "pillar": "afghanistan",
       "hour": 19,
       "ts": 1786132218.1322627,
+      "eng": 2,
+      "imp": 41
+    },
+    {
+      "id": "2086099648071270553",
+      "pillar": "afghanistan",
+      "hour": 14,
+      "ts": 1786199888.7817225,
       "eng": null
     }
   ],
@@ -1403,7 +1412,6 @@
     "thread": 2.0
   },
   "recent": [
-    "3 Afghan nationals sentenced to death in Iran over alleged protest role",
     "Uzbekistan delegation arrives in Kabul to attend trade forum",
     "Saar: Rising tensions between Kabul and Islamabad discussed",
     "Afghanistan can link South and Central Asia through data transit: Baradar",
@@ -1427,11 +1435,11 @@
     "Afghan boxer appears in Greek court over death of Scottish woman",
     "Afghanistan aim for winning start against Ireland",
     "WHO warns aid cuts disrupting healthcare services across Afghanistan",
-    "CSTO says Afghanistan remains a key security priority"
+    "CSTO says Afghanistan remains a key security priority",
+    "Foreign companies eye investment in Afghanistan\u2019s electrical equipment industry: DABS"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
-    "Timurid Herat's golden age: Queen Gawharshad, the Musalla complex and the painter Behzad",
     "the Saffarids of Yaqub ibn Layth and the Samanid renaissance",
     "the Wakhan corridor, Badakhshan and the ancient Silk Road trade",
     "the ancient name Aryana/Ariana and the Aryan homeland of the Avesta, marking ~5,000 years of continuous civilization across the Afghan lands",
@@ -1444,10 +1452,10 @@
     "the Greco-Bactrian kingdom and the Hellenistic city of Ai-Khanoum on the Oxus",
     "Rumi (Jalaluddin Balkhi) and Rabia Balkhi, poets born of the Afghan lands",
     "Old Kandahar, Alexandria in Arachosia, and Ashoka's bilingual Greek-Aramaic edicts",
-    "Nuristan (ancient Kafiristan) and its distinct pre-Islamic culture"
+    "Nuristan (ancient Kafiristan) and its distinct pre-Islamic culture",
+    "the Durrani Empire founded by Ahmad Shah Durrani in 1747, the birth of modern Afghanistan"
   ],
   "recent_facts": [
-    "The high Wakhan was never a dead end. Through this narrow spine of the Pamirs, at passes above 4,000 meters, Badakhshan fed the Silk Road, and here Marco Polo crossed in the 1270s, marveling at wild mountain sheep still called after him. Afghan roads carried the trade of continents.",
     "The oldest texts of the Avesta remember a homeland called Airyanem Vaejah, the cradle of the Aryans, and its geography points east, to the rivers and mountains of the Afghan lands. Aryana is not a borrowed name. It is where the word itself was born, and it has held for roughly 5,000 years.",
     "Rustam, the mightiest hero of the Shahnameh, is a son of Seistan and Zabulistan, the ancient Afghan lands of Zaranj and Ghazni. Firdawsi made him champion of Iran, yet his home, his horse Rakhsh, his father Zal reared in the Alborz of legend, all root him in the soil of the southwest. Afghanistan's epic gave the region its greatest warrior.",
     "When the Sasanians seized Bactria in the 3rd century, they didn't erase the Kushans, they became them. Their governors struck coins reading Kushanshah, minted at Balkh and Herat, blending Persian fire altars with Bactrian script and Shiva imagery. Afghanistan absorbed empires and made them speak its language.",
@@ -1458,11 +1466,11 @@
     "On the banks of the Oxus in what is now Takhar, French archaeologists uncovered Ai-Khanoum: a full Greek city deep in Afghanistan, with a gymnasium, a theatre seating thousands, and Corinthian columns. There a man named Klearchos carved the maxims of Delphi in stone. Greek philosophy, at home on the Amu Darya.",
     "Rumi opens the Masnavi with a reed torn from its bed, crying to return. Fitting, for a poet born in Balkh who never saw home again. Centuries earlier Rabia Balkhi, the first woman to write verse in Dari, died there for love. Two voices of the Afghan north, and the world still reads them wrong as anything but ours.",
     "Old Kandahar sits on a mound that Alexander refounded as Alexandria in Arachosia around 330 BC. A century later, the emperor Ashoka carved edicts there in flawless Greek and Aramaic, side by side, preaching mercy and restraint. On Afghan soil, two of the ancient world's great languages met and spoke as one.",
-    "High in the Hindu Kush, the people of Kafiristan held out for millennia, worshipping their own gods, carving ancestors into wooden effigies, pressing wine in valleys Islam had swept past everywhere else. Only in 1896 did the land take the name Nuristan. A whole pre-Islamic Afghan world, preserved by sheer altitude and will."
+    "High in the Hindu Kush, the people of Kafiristan held out for millennia, worshipping their own gods, carving ancestors into wooden effigies, pressing wine in valleys Islam had swept past everywhere else. Only in 1896 did the land take the name Nuristan. A whole pre-Islamic Afghan world, preserved by sheer altitude and will.",
+    "October 1747, Kandahar. A loya jirga of tribal elders chose a young cavalry commander, Ahmad Shah Abdali, and crowned him with wheat stalks in his turban. He took the name Durr-i-Durran, Pearl of Pearls. From that gathering came a state stretching from Mashhad to Delhi, and the nation we call Afghanistan."
   ],
   "slots_done": [
-    14,
-    19
+    14
   ],
   "quotes_today": 0,
   "replies_today": 0,
