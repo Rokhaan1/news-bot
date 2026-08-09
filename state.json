@@ -48,10 +48,12 @@
     "Afghanistan can link South and Central Asia through data transit: Baradar",
     "Afghanistan committed to continued cooperation with UN on humanitarian and development projects: FM Muttaqi",
     "Afghanistan currently transits internet traffic to Central Asia, says MCIT",
+    "Afghanistan issues more than 650,000 passports in one year",
     "Afghanistan officials call for investment during Indian expo visit",
     "Afghanistan opt to bat; Reddy, Prasidh and Dubey return for India",
     "Afghanistan ranks last in KidsRights Index 2026",
     "Afghanistan records historic 95% drop in opium production: UNODC",
+    "Afghanistan secure direct qualification for 2027 Men\u2019s ODI World Cup",
     "Afghanistan temporarily eases fuel import standards to help curb rising prices",
     "Afghanistan, India hold fourth Joint Committee Meeting",
     "Afghanistan, Norwegian committee discuss expanded cooperation",
@@ -68,6 +70,7 @@
     "Anthropic says US lifts export ban on its advanced AI tools",
     "Anti-LGBTQ+ laws are on the rise across west Africa, campaigners warn",
     "Argentina vs Austria LIVE: World Cup 2026",
+    "Ariana Airlines brings $2.3 million Boeing 737 engine from US to Kabul",
     "Arias sends Colombia into World Cup last-16 with 1-0 win over Ghana",
     "As retired US judges, we\u2019re not used to speaking out. But we cannot be silent | Michael P Donnelly and Robert F Orr",
     "At Least 12 Afghans Executed in Iran This Year, Rights Monitors Report",
@@ -292,6 +295,7 @@
     "Pakistan says its security forces killed 29 fighters along Afghan border",
     "Pakistan to Begin Deportation of Around 20,000 Afghans From Peshawar",
     "Pakistan-administered Kashmir election boycott follows deadly crackdown",
+    "Pakistan-backed armed groups in Balochistan using former Afghan government forces: report",
     "Pakistani strikes kill dozens of Afghan villagers",
     "Pakistani truckers return home after 9 months stranded in Afghanistan",
     "Partey 'ready' for England after missing opener",
@@ -523,9 +527,9 @@
     "\u2018They took our toilet\u2019: How a settlement has squeezed a Palestinian village",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-08-08",
-  "posts_today": 2,
-  "last_news_ts": 1786217106.2164123,
+  "date": "2026-08-09",
+  "posts_today": 1,
+  "last_news_ts": 1786286448.9594219,
   "videos_date": "2026-06-26",
   "fact_date": "2026-08-08",
   "football_date": "2026-07-15",
@@ -1396,6 +1400,13 @@
       "pillar": "afghanistan",
       "hour": 19,
       "ts": 1786217106.2164133,
+      "eng": -1
+    },
+    {
+      "id": "2086462707813753225",
+      "pillar": "afghanistan",
+      "hour": 14,
+      "ts": 1786286448.9594228,
       "eng": null
     }
   ],
@@ -1407,7 +1418,6 @@
     "thread": 2.0
   },
   "recent": [
-    "Saar: Rising tensions between Kabul and Islamabad discussed",
     "Afghanistan can link South and Central Asia through data transit: Baradar",
     "Saar: Afghanistan-Uzbekistan economic ties",
     "Tahawol: Afghanistan\u2013Uzbekistan Economic Cooperation Enters New Phase",
@@ -1431,7 +1441,8 @@
     "WHO warns aid cuts disrupting healthcare services across Afghanistan",
     "CSTO says Afghanistan remains a key security priority",
     "Foreign companies eye investment in Afghanistan\u2019s electrical equipment industry: DABS",
-    "From Nangarhar to Scotland: Afghan refugee cricketer eyes ODI debut"
+    "From Nangarhar to Scotland: Afghan refugee cricketer eyes ODI debut",
+    "Afghanistan secure direct qualification for 2027 Men\u2019s ODI World Cup"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1465,8 +1476,7 @@
     "October 1747, Kandahar. A loya jirga of tribal elders chose a young cavalry commander, Ahmad Shah Abdali, and crowned him with wheat stalks in his turban. He took the name Durr-i-Durran, Pearl of Pearls. From that gathering came a state stretching from Mashhad to Delhi, and the nation we call Afghanistan."
   ],
   "slots_done": [
-    14,
-    19
+    14
   ],
   "quotes_today": 0,
   "replies_today": 0,
