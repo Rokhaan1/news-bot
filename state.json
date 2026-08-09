@@ -531,7 +531,7 @@
   "posts_today": 1,
   "last_news_ts": 1786286448.9594219,
   "videos_date": "2026-06-26",
-  "fact_date": "2026-08-08",
+  "fact_date": "2026-08-09",
   "football_date": "2026-07-15",
   "log": [
     {
@@ -1439,7 +1439,6 @@
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
-    "the Saffarids of Yaqub ibn Layth and the Samanid renaissance",
     "the Wakhan corridor, Badakhshan and the ancient Silk Road trade",
     "the ancient name Aryana/Ariana and the Aryan homeland of the Avesta, marking ~5,000 years of continuous civilization across the Afghan lands",
     "Seistan/Zabulistan and the epic hero Rustam of the Shahnameh",
@@ -1452,10 +1451,10 @@
     "Rumi (Jalaluddin Balkhi) and Rabia Balkhi, poets born of the Afghan lands",
     "Old Kandahar, Alexandria in Arachosia, and Ashoka's bilingual Greek-Aramaic edicts",
     "Nuristan (ancient Kafiristan) and its distinct pre-Islamic culture",
-    "the Durrani Empire founded by Ahmad Shah Durrani in 1747, the birth of modern Afghanistan"
+    "the Durrani Empire founded by Ahmad Shah Durrani in 1747, the birth of modern Afghanistan",
+    "the Kabul Shahi (Hindu Shahi) kingdoms of Kabul and Gandhara"
   ],
   "recent_facts": [
-    "The oldest texts of the Avesta remember a homeland called Airyanem Vaejah, the cradle of the Aryans, and its geography points east, to the rivers and mountains of the Afghan lands. Aryana is not a borrowed name. It is where the word itself was born, and it has held for roughly 5,000 years.",
     "Rustam, the mightiest hero of the Shahnameh, is a son of Seistan and Zabulistan, the ancient Afghan lands of Zaranj and Ghazni. Firdawsi made him champion of Iran, yet his home, his horse Rakhsh, his father Zal reared in the Alborz of legend, all root him in the soil of the southwest. Afghanistan's epic gave the region its greatest warrior.",
     "When the Sasanians seized Bactria in the 3rd century, they didn't erase the Kushans, they became them. Their governors struck coins reading Kushanshah, minted at Balkh and Herat, blending Persian fire altars with Bactrian script and Shiva imagery. Afghanistan absorbed empires and made them speak its language.",
     "In 1709 a Kandahari chieftain named Mirwais Hotak rose against the Safavid occupation, threw out the Persian governor Gurgin Khan, and made Kandahar independent. His son Mahmud went further, marching on Isfahan in 1722 and toppling the Safavid throne itself. An Afghan revolt that ended a Persian empire.",
@@ -1466,7 +1465,8 @@
     "Rumi opens the Masnavi with a reed torn from its bed, crying to return. Fitting, for a poet born in Balkh who never saw home again. Centuries earlier Rabia Balkhi, the first woman to write verse in Dari, died there for love. Two voices of the Afghan north, and the world still reads them wrong as anything but ours.",
     "Old Kandahar sits on a mound that Alexander refounded as Alexandria in Arachosia around 330 BC. A century later, the emperor Ashoka carved edicts there in flawless Greek and Aramaic, side by side, preaching mercy and restraint. On Afghan soil, two of the ancient world's great languages met and spoke as one.",
     "High in the Hindu Kush, the people of Kafiristan held out for millennia, worshipping their own gods, carving ancestors into wooden effigies, pressing wine in valleys Islam had swept past everywhere else. Only in 1896 did the land take the name Nuristan. A whole pre-Islamic Afghan world, preserved by sheer altitude and will.",
-    "October 1747, Kandahar. A loya jirga of tribal elders chose a young cavalry commander, Ahmad Shah Abdali, and crowned him with wheat stalks in his turban. He took the name Durr-i-Durran, Pearl of Pearls. From that gathering came a state stretching from Mashhad to Delhi, and the nation we call Afghanistan."
+    "October 1747, Kandahar. A loya jirga of tribal elders chose a young cavalry commander, Ahmad Shah Abdali, and crowned him with wheat stalks in his turban. He took the name Durr-i-Durran, Pearl of Pearls. From that gathering came a state stretching from Mashhad to Delhi, and the nation we call Afghanistan.",
+    "From roughly the 7th to 10th centuries, the Kabul Shahis ruled Kabul and Gandhara from the fortress of Kabul and later Udabhandapura, holding the Hindu Kush passes against wave after wave of invaders for nearly three centuries. Kings like Lagaturman and later the Hindu Shahi Kallar minted their own coinage and defended a civilization older than the armies at their gates."
   ],
   "slots_done": [
     14
