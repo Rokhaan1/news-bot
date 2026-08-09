@@ -365,6 +365,7 @@
     "Sweden spends millions on Afghan voluntary return campaign with no participants so far",
     "Switzerland Contributes $2.4 Million to Support UNHCR Aid Operations in Afghanistan",
     "Syrian parliament convenes for first time following al-Assad\u2019s overthrow",
+    "Tahawol: Afghanistan: An Alternative to the Strait of Hormuz?",
     "Tahawol: Afghanistan\u2013Uzbekistan Economic Cooperation Enters New Phase",
     "Tahawol: Afghanistan\u2019s retaliatory attacks against Pakistan discussed",
     "Tahawol: Appointment of new UN envoy for Afghanistan discussed",
@@ -528,8 +529,8 @@
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
   "date": "2026-08-09",
-  "posts_today": 1,
-  "last_news_ts": 1786286448.9594219,
+  "posts_today": 2,
+  "last_news_ts": 1786303722.5733879,
   "videos_date": "2026-06-26",
   "fact_date": "2026-08-09",
   "football_date": "2026-07-15",
@@ -1400,6 +1401,14 @@
       "pillar": "afghanistan",
       "hour": 14,
       "ts": 1786286448.9594228,
+      "eng": 0,
+      "imp": 0
+    },
+    {
+      "id": "2086535158623097273",
+      "pillar": "afghanistan",
+      "hour": 19,
+      "ts": 1786303722.5733886,
       "eng": null
     }
   ],
@@ -1411,7 +1420,6 @@
     "thread": 2.0
   },
   "recent": [
-    "Afghanistan can link South and Central Asia through data transit: Baradar",
     "Saar: Afghanistan-Uzbekistan economic ties",
     "Tahawol: Afghanistan\u2013Uzbekistan Economic Cooperation Enters New Phase",
     "Saar: Growing Criticism in Pakistan Over Islamabad\u2019s Afghanistan Policy",
@@ -1435,7 +1443,8 @@
     "CSTO says Afghanistan remains a key security priority",
     "Foreign companies eye investment in Afghanistan\u2019s electrical equipment industry: DABS",
     "From Nangarhar to Scotland: Afghan refugee cricketer eyes ODI debut",
-    "Afghanistan secure direct qualification for 2027 Men\u2019s ODI World Cup"
+    "Afghanistan secure direct qualification for 2027 Men\u2019s ODI World Cup",
+    "Tahawol: Afghanistan: An Alternative to the Strait of Hormuz?"
   ],
   "pashto_date": "2026-07-08",
   "fact_topics": [
@@ -1469,7 +1478,8 @@
     "From roughly the 7th to 10th centuries, the Kabul Shahis ruled Kabul and Gandhara from the fortress of Kabul and later Udabhandapura, holding the Hindu Kush passes against wave after wave of invaders for nearly three centuries. Kings like Lagaturman and later the Hindu Shahi Kallar minted their own coinage and defended a civilization older than the armies at their gates."
   ],
   "slots_done": [
-    14
+    14,
+    19
   ],
   "quotes_today": 0,
   "replies_today": 0,
