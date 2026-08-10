@@ -7,6 +7,11 @@ No secret keys live here — those are stored safely in GitHub Secrets.
 # ----- POSTING LIMITS (cost control) -----
 # X charges ~$0.015 per post (text/image), ~$0.20 if the post contains a link.
 MAX_POSTS_PER_RUN = 1     # news posts per scheduled run (runs every ~15 min)
+# MASTER SWITCH — owner call: no automated tweets of any kind until the
+# content bar is worth people's time. Measurement keeps running so we can
+# still see reach data. Flip to False to resume everything.
+POSTING_PAUSED = True
+
 MAX_POSTS_PER_DAY = 2     # authority recovery: every low-engagement post lowers
                           # future reach, so fewer + better beats volume
 FOOTBALL_PER_DAY  = 0     # disabled: England-football takes diluted the Afghan

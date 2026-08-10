@@ -519,6 +519,12 @@ def main():
 
     measure_and_learn(client, state)   # read recent performance, refresh insights
 
+    if getattr(config, "POSTING_PAUSED", False):
+        save_state(state)
+        print("POSTING PAUSED (config.POSTING_PAUSED) — no tweets of any kind. "
+              "Measurement only.")
+        return
+
     # 1) one Afghan pride fact + one viral English-football share per day
     # Pashto post disabled: generated Pashto quality was not reliable.
     maybe_post_afghan_fact(client, state)
