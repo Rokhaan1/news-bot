@@ -528,8 +528,8 @@
     "\u2018They took our toilet\u2019: How a settlement has squeezed a Palestinian village",
     "\ud83e\udd14 Permutations: How teams qualify for knockouts"
   ],
-  "date": "2026-08-09",
-  "posts_today": 2,
+  "date": "2026-08-10",
+  "posts_today": 0,
   "last_news_ts": 1786303722.5733879,
   "videos_date": "2026-06-26",
   "fact_date": "2026-08-09",
@@ -1402,7 +1402,8 @@
       "pillar": "afghanistan",
       "hour": 19,
       "ts": 1786303722.5733886,
-      "eng": null
+      "eng": 1,
+      "imp": 34
     }
   ],
   "insights": {
@@ -1470,10 +1471,7 @@
     "October 1747, Kandahar. A loya jirga of tribal elders chose a young cavalry commander, Ahmad Shah Abdali, and crowned him with wheat stalks in his turban. He took the name Durr-i-Durran, Pearl of Pearls. From that gathering came a state stretching from Mashhad to Delhi, and the nation we call Afghanistan.",
     "From roughly the 7th to 10th centuries, the Kabul Shahis ruled Kabul and Gandhara from the fortress of Kabul and later Udabhandapura, holding the Hindu Kush passes against wave after wave of invaders for nearly three centuries. Kings like Lagaturman and later the Hindu Shahi Kallar minted their own coinage and defended a civilization older than the armies at their gates."
   ],
-  "slots_done": [
-    14,
-    19
-  ],
+  "slots_done": [],
   "quotes_today": 0,
   "replies_today": 0,
   "last_engage_ts": 0,
